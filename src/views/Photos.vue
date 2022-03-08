@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" style="color: white; padding: 30px">
-    <v-col v-for="img in images" v-bind:key="img"
+    <v-col style = "display: flex; width:50%; justify-content: center;" v-for="img in images" v-bind:key="img"
       ><v-img :aspect-ratio="5 / 4" :width="500" :src="img" contain></v-img
     ></v-col>
   </v-row>
