@@ -80,7 +80,7 @@
       <v-col>
         <v-row>
           <h2 class="green darken-4" style="padding: 5px">
-            Instructive Assistant @ UCSD
+            Instructional Assistant @ UCSD
           </h2>
         </v-row>
         <v-row>
@@ -95,7 +95,7 @@
         </v-row>
                 <v-row>
           <h2 class="green darken-1" style="padding: 5px">
-            Photography Coath @ Vigorous Youth Training Camp
+            Photography Coach @ Vigorous Youth Training Camp
           </h2>
         </v-row>
       </v-col>
@@ -118,7 +118,9 @@
 
 <script>
 export default {
-  // Nothing needed here
+    data: () => ({
+    
+  }),
 };
 </script>
 
