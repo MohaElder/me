@@ -1,2 +1,2 @@
-const images = [require("../images/_DSF4726.jpg"),require("../images/_DSF4739.jpg"),require("../images/_DSF4793.jpg"),require("../images/_DSF4795.jpg"),] 
+const images = ["https://github.com/MohaElder/me/raw/main/src/images/_DSF4726.jpg","https://github.com/MohaElder/me/raw/main/src/images/_DSF4739.jpg","https://github.com/MohaElder/me/raw/main/src/images/_DSF4793.jpg","https://github.com/MohaElder/me/raw/main/src/images/_DSF4795.jpg",] 
  export { images };
