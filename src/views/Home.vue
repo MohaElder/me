@@ -1,8 +1,7 @@
 <template>
   <div class="home-container">
-    <div
-      class="background-pic"
-    >
+    <div id="father" class="animated-image" :style="blur">
+      <img src="../assets/beachFrame/frame (1).jpg" alt="" class="each-image" />
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
@@ -11,12 +10,51 @@
         </h1>
       </v-col>
     </v-row>
+    <div class="second">
+      <v-row align="center" justify="center">
+        <v-col class="text-center second" cols="12">
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 </template>
 
 <script>
 import "animate.css";
 // @ is an alias to /src
+
+var images = [];
+const names = ["翁安志", "お やすし", "Yasushi Oh"];
 
 const animateCSS = (element, animation, prefix = "animate__") =>
   // We create a Promise and return it
@@ -41,51 +79,76 @@ export default {
   name: "Home",
   components: {},
   data: () => ({
-    names: ["翁安志", "お やすし", "Yasushi Oh"],
     activeName: "翁安志",
+    blur: 'filter: blur(10px)',
   }),
-  beforeMount() {
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  beforeMount() {},
+  mounted() {
     var index = 0;
     setInterval(() => {
       animateCSS("#name", "fadeIn");
-      index = index + 1 == this.names.length ? 0 : index + 1;
-      this.activeName = this.names[index];
+      index = index + 1 == names.length ? 0 : index + 1;
+      this.activeName = names[index];
     }, 2500);
+    this.loadImages();
+  },
+  methods: {
+    loadImages() {
+      for (let i = 1; i < 108; i++) {
+        let img = new Image();
+        img.src = require("../assets/beachFrame/frame (" + i + ").jpg");
+        images.push(img);
+      }
+    },
+    handleScroll() {
+      var index = Math.floor(window.scrollY / 72) % 108;
+      var father = document.querySelector("#father");
+      father.children[0].replaceWith(images[index]);
+      this.blur = "filter: blur(" + index / 10 + "px)"
+      images[index].classList.add("each-image");
+    },
   },
 };
 </script>
 
-<style scoped>
+<style>
 .foreground {
-  z-index: 1;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px; /* Negative half of width. */
 }
 
-.background-pic {
-  /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-
-  /* Full height */
+.animated-image {
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 100%;
-  background-image: url("https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg");
+  z-index: 0;
+  opacity: 0.8;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.each-image {
+  width: 100%;
+  height: 100%;
+}
+
+.second {
+  z-index: 1;
 }
 
 .home-container {
-  height: 100%;
+  height: 500vh;
 }
 
 * {
   box-sizing: border-box;
 }
-
 </style>
