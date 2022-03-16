@@ -1,7 +1,12 @@
 <template>
   <div class="home-container">
     <div id="father" class="animated-image" :style="blur">
-      <img src="../assets/beachFrame/frame (1).jpg" alt="" class="each-image" />
+      <img
+        src="../assets/beachFrame/frame (1).jpg"
+        alt=""
+        class="each-image"
+        :style="opacity"
+      />
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
@@ -51,6 +56,7 @@
 
 <script>
 import "animate.css";
+//import { printf } from "../utils/dev.js";
 // @ is an alias to /src
 
 var images = [];
@@ -80,7 +86,8 @@ export default {
   components: {},
   data: () => ({
     activeName: "翁安志",
-    blur: 'filter: blur(10px)',
+    blur: "filter: blur(10px)",
+    opacity: "opacity: 0",
   }),
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -110,8 +117,9 @@ export default {
       var index = Math.floor(window.scrollY / 72) % 108;
       var father = document.querySelector("#father");
       father.children[0].replaceWith(images[index]);
-      this.blur = "filter: blur(" + index / 10 + "px)"
       images[index].classList.add("each-image");
+      images[index].setAttribute("style", "opacity: " + index / 80);
+      this.blur = "filter: blur(" + (8 - index / 10) + "px)";
     },
   },
 };
@@ -132,7 +140,6 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 0;
-  opacity: 0.8;
 }
 
 .each-image {
