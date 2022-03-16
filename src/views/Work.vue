@@ -6,7 +6,7 @@
       x-large
       outlined
       color="white"
-      href="../assets/resume.pdf"
+      href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
       >Download</v-btn
     >
 
