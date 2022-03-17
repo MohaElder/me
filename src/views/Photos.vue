@@ -4,6 +4,20 @@
       <v-img :src="activeImage" :width="2000"></v-img>
     </v-overlay>
     <v-row justify="center" style="color: white; padding: 30px">
+      <h3 style="text-align: start; width: 100%">To use my photo:</h3>
+      <div style="width: 100%; text-align: start">
+        <b>non-commercial:</b> Please give credit to the name "Yasushi Oh" or
+        "Anzhi Weng" or "翁安志" or "お やすし" (your choice :))
+      </div>
+      <b style="width: 100%; text-align: start"
+        ><a
+          style="color: white;"
+          href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)"
+          >commercial</a
+        ></b
+      >
+    </v-row>
+    <v-row justify="center" style="color: white; padding: 30px">
       <v-col
         style="display: flex; width: 50%; justify-content: center"
         v-for="img in images"
