@@ -49,9 +49,9 @@ def updateBlogLink(path):
     for file in files:
         if os.path.isfile(os.path.join(path, file)):
             colors = {
-                "share": "#1F7087",
-                "life": "#952175",
-                "comment": "#FF0000",
+                "share": "#64b5f6",
+                "life": "#ffee58",
+                "comment": "#ff8a65",
             }
             color = ""
             img = ""
