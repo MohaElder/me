@@ -106,5 +106,27 @@ def updateBlogLink(path):
     print("blogLink.js Updated!")
 
 
-# updateImageLink('../src/images')
-updateBlogLink('../src/blogs')
+while True:
+    print("This is a helper that updates javascript files, enter 'h' for help")
+    command = input("Enter your command: ")
+    
+    match command:
+        case "h":
+            print("image: update images")
+            print("blog: update blogs")
+            print("all: executes all update commands")
+            print("help: help screen")
+            print("q: quit")
+        case "image":
+            updateImageLink('../src/images')
+        case "blog":
+            updateBlogLink('../src/blogs')
+        case "all":
+            updateImageLink('../src/images')
+            updateBlogLink('../src/blogs')
+        case "q":
+            print("Exited gracefully")
+            break
+        case _:
+            print("command not found, please try again! You can enter 'h' for help")
+

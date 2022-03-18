@@ -1,4 +1,4 @@
-const blogs = {"3bcaf4a7a6ef11ec88f468545a57002a": {
+const blogs = {"384973d2a6f011eca8af68545a57002a": {
                 color:"#1F7087",
                 img: "https://mdg.imgix.net/assets/images/book-cover.jpg?auto=format&fit=clip&q=40&w=1080",
                 title: "Sample Title",
