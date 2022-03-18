@@ -1,17 +1,9 @@
-const blogs = {
-    "a3c8-8992": {
-        color: "#1F7087",
-        img: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
-        title: "Test Article",
-        brief: "This is a test article that tests markdown parse functionality",
-        article: "<h2> h2 Heading by HTML</h2> Here is a [link](https://baidu.com) \n next line! ``` javascript \
-        var foo = function (bar) { \
-          return bar++; \
-        }; \
-        \
-        console.log(foo(5)); \
-        ```  Inline `code`",
-    },
-}
-
-export { blogs };
+const blogs = {"3bcaf4a7a6ef11ec88f468545a57002a": {
+                color:"#1F7087",
+                img: "https://mdg.imgix.net/assets/images/book-cover.jpg?auto=format&fit=clip&q=40&w=1080",
+                title: "Sample Title",
+                brief: "This is a sample brief",
+                article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/SampleBlog.md",
+                },
+                } 
+ export { blogs };
