@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Work from '../views/Work.vue'
 import Life from '../views/Life.vue'
 import Photos from '../views/Photos.vue'
+import Blogs from '../views/Blogs.vue'
+import Blog from '../views/Blog.vue'
 
 Vue.use(VueRouter)
 
@@ -28,10 +30,20 @@ const routes = [
     name: 'Photos',
     component: Photos
   },
+  {
+    path: '/blogs',
+    name: 'Blogs',
+    component: Blogs
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog
+  },
 ]
 
 const router = new VueRouter({
-  mode : 'hash',
+  mode: 'hash',
   routes
 })
 
