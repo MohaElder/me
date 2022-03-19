@@ -8,7 +8,7 @@
     <v-container>
       <v-row dense>
         <v-col v-for="(item, key) in items" :key="key" cols="6" style="">
-          <v-card class="mx-auto" max-width="600" :color="item.color">
+          <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(key)">
             <v-img class="white--text align-end" height="400px" :src="item.img">
               <v-card-title>{{ item.title }}</v-card-title>
             </v-img>
@@ -18,7 +18,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn color="white" text @click="travel(key)"> READ </v-btn>
+              <v-btn color="white" text > READ </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>

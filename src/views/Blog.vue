@@ -55,7 +55,7 @@ export default {
         },
         (response) => {
           // error callback
-          this.fileContent = "An error ocurred";
+          this.fileContent = "An error ocurred, this is probably an internet issue";
           console.log(response);
         }
       );

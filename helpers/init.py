@@ -98,7 +98,7 @@ def updateBlogLink(path):
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
                 },
                 '''
-        str += "} \n export { blogs };"
+    str += "} \n export { blogs };"
 
     with open('../src/utils/blogLink.js', "w") as myfile:
         myfile.write(str)

@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-overlay :value="previewPic" @click="previewPic = false">
-      <v-img :src="activeImage" :width="2000"></v-img>
+      <v-img :src="activeImage" :max-width="$vuetify.breakpoint.width * 0.8" :max-height="$vuetify.breakpoint.height * 0.8"></v-img>
     </v-overlay>
     <v-row justify="center" style="color: white; padding: 30px">
       <h3 style="text-align: start; width: 100%">To use my photo:</h3>
@@ -17,7 +17,7 @@
         ></b
       >
     </v-row>
-    <v-row justify="center" style="color: white; padding: 30px">
+    <v-row justify="center" style="color: white; padding: 30px" class="d-flex child-flex">
       <v-col
         style="display: flex; width: 50%; justify-content: center"
         v-for="img in images"
