@@ -195,7 +195,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.4.0/css/zocial.min.css";
 
 .big-title {
-  font-size: 150px;
+  font-size: 100px;
 }
 
 h4 {

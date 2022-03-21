@@ -1,21 +1,27 @@
 <template>
   <v-container>
-    <v-overlay :value="previewPic" @click="previewPic = false">
-      <v-img :src="activeImage" :max-width="$vuetify.breakpoint.width * 0.8" :max-height="$vuetify.breakpoint.height * 0.8"></v-img>
+    <v-overlay :value="previewPic">
+      <v-img
+        :src="activeImage"
+        :max-width="$vuetify.breakpoint.width * 0.8"
+        :max-height="$vuetify.breakpoint.height * 0.8"
+        @click="previewPic = false"
+      ></v-img>
+      <v-btn style="margin-top: 10px" @click="download">download</v-btn>
     </v-overlay>
     <v-row justify="center" style="padding: 30px">
-      <h3 style="text-align: start; width: 100%">To use my photo:</h3>
-      <div style="width: 100%; text-align: start">
-        <b>non-commercial:</b> Please give credit to the name "Yasushi Oh" or
+      <p style="width: 100%; text-align: start">
+        <b>USING MY PHOTO</b>
+        <br>
+        non-commercial: Please give credit to the name "Yasushi Oh" or
         "Anzhi Weng" or "翁安志" or "お やすし" (your choice :))
-      </div>
-      <b style="width: 100%; text-align: start"
-        ><a
-          style="color: white;"
+        <br>
+        <a
+          style="color: white"
           href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)"
           >commercial</a
-        ></b
-      >
+        >
+      </p>
     </v-row>
     <v-row justify="center" style="padding: 30px" class="d-flex child-flex">
       <v-col
@@ -54,6 +60,9 @@ export default {
       this.activeImage = img;
       this.previewPic = true;
     },
+    download(){
+      window.open(this.activeImage);
+    }
   },
 };
 </script>

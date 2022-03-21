@@ -133,13 +133,13 @@ img {
 }
 
 .blog-brief {
-  font-size: 150%;
+  font-size: 120%;
   font-weight: 300;
   text-align: start;
 }
 
 .blog-date {
-  font-size: 120%;
+  font-size: 100%;
   font-weight: 300;
   text-align: start;
 }

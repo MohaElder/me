@@ -5,21 +5,22 @@
       <span style="color: #ffee58"> LIFE </span>/
       <span style="color: #ff8a65"> COMMENTS </span>
     </h1>
-    <v-container style="margin-top:20px;">
+    <v-container style="margin-top: 20px">
       <v-row>
         <v-col v-for="(item, key) in items" :key="key" cols="6" style="">
-          <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(key)">
-            <v-img class="white--text align-end" height="400px" :src="item.img">
+          <v-card
+            class="mx-auto"
+            max-width="600"
+            :color="item.color"
+            @click="travel(key)"
+          >
+            <v-img class="white--text align-end" height="300px" :src="item.img">
               <v-card-title>{{ item.title }}</v-card-title>
             </v-img>
 
             <v-card-text class="text--primary">
-              <div>{{ item.brief }}</div>
+              {{ item.brief }}
             </v-card-text>
-
-            <v-card-actions>
-              <v-btn color="white" text > READ </v-btn>
-            </v-card-actions>
           </v-card>
         </v-col>
       </v-row>

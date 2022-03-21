@@ -59,6 +59,7 @@ def updateBlogLink(path):
             img = ""
             title = ""
             brief = ""
+            date = ""
 
             with open(os.path.join(path, file), "r") as myfile:
                 print("Reading markdown file to get all data")
@@ -97,6 +98,9 @@ def updateBlogLink(path):
                             case "brief":
                                 print("brief: " + res)
                                 brief = res
+                            case "date":
+                                print("date: " + res)
+                                date = res
                             case _:
                                 print(
                                     "warning: possible syntax error at md file heading")
@@ -107,6 +111,7 @@ def updateBlogLink(path):
                 img: "''' + img + '''",
                 title: "''' + title + '''",
                 brief: "''' + brief + '''",
+                date: "''' + date + '''",
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
                 },
                 '''
