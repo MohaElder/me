@@ -13,6 +13,7 @@
     "animate.css": "^4.1.1",
     "babel-runtime": "^6.26.0",
     "core-js": "^3.6.5",
+    "prismjs": "^1.27.0",
     "vue": "^2.6.11",
     "vue-markdown": "^2.2.4",
     "vue-resource": "^1.5.3",

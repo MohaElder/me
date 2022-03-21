@@ -10,7 +10,7 @@
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
-        <h1 id="name" style="color: white; font-size: 100px" class="foreground">
+        <h1 id="name" style="font-size: 100px" class="foreground">
           {{ activeName }}
         </h1>
       </v-col>
@@ -18,36 +18,36 @@
     <div class="second">
       <v-row align="center" justify="center">
         <v-col class="text-center second" cols="12">
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
-          <h1 id="name" style="color: white; font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
+          <h1 id="name" style=" font-size: 100px">aaaaa</h1>
         </v-col>
       </v-row>
     </div>

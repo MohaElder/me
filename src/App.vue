@@ -31,7 +31,7 @@
       </v-btn> -->
     </v-app-bar>
 
-    <v-main style="background-color: black">
+    <v-main>
       <router-view />
     </v-main>
   </v-app>
@@ -44,6 +44,9 @@ export default {
   data: () => ({
     //
   }),
+  mounted() {
+    this.$vuetify.theme.dark = true;
+  },
 };
 </script>
 

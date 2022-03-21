@@ -1,12 +1,12 @@
 <template>
-  <div style="color: white">
+  <div>
     <h1 style="padding: 30px; text-align: center">
       <span style="color: #64b5f6"> SHARE </span> /
       <span style="color: #ffee58"> LIFE </span>/
       <span style="color: #ff8a65"> COMMENTS </span>
     </h1>
-    <v-container>
-      <v-row dense>
+    <v-container style="margin-top:20px;">
+      <v-row>
         <v-col v-for="(item, key) in items" :key="key" cols="6" style="">
           <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(key)">
             <v-img class="white--text align-end" height="400px" :src="item.img">
@@ -14,7 +14,7 @@
             </v-img>
 
             <v-card-text class="text--primary">
-              <div style="color: white">{{ item.brief }}</div>
+              <div>{{ item.brief }}</div>
             </v-card-text>
 
             <v-card-actions>

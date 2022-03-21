@@ -1,4 +1,5 @@
 <!-- 
+id: e62d9cc3a94a11ecaf6e68545a57002a
 type: share
 title: Development Log of this website
 brief: This blog notes the development progress of this website, including why this website exists and how does it become what you see today.
@@ -11,15 +12,15 @@ I built this website to showcase myself, photos I took, and to write blogs(like 
 
 # How is this site built(building)?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By my hands, my loyal HKKB keyboard, and a logitech ergonomic mouse. 
+By my hands, my loyal HKKB keyboard, and a logitech ergonomic mouse. 
 
 ![picture of my keyboard and mouse](../assets/blogPics/keyboard.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first, I think I should use Wordpress or something like that(maybe wix, I see their Ads on YouTube everyday). But I figured that costs money and there are limitations.
+At first, I think I should use Wordpress or something like that(maybe wix, I see their Ads on YouTube everyday). But I figured that costs money and there are limitations.
 
 > And hey! I'm something of a computer scientist myself, I can do this by myself.
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then I wanted to use somethign like hexo or GitHub Pages. Sadly, I find hexo hard to work with and GitHub Pages too simple. Eventually, I realized that GitHub Pages could be more than it can be(just reading markdown files). This website is built with `Vue` with some super good open source dependencies like `Vuetify` or `Vue-router`. The website supports CI/CD using Github Actions and the action deploys the site to <i>Github Pages</i>(shout out to Github Pages).
+Then I wanted to use somethign like hexo or GitHub Pages. Sadly, I find hexo hard to work with and GitHub Pages too simple. Eventually, I realized that GitHub Pages could be more than it can be(just reading markdown files). This website is built with `Vue` with some super good open source dependencies like `Vuetify` or `Vue-router`. The website supports CI/CD using Github Actions and the action deploys the site to <i>Github Pages</i>(shout out to Github Pages).
 
 # DevLog
 

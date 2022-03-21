@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 import uuid
-
+import fileinput
 
 # define a function for
 # compressing an image
@@ -45,6 +45,7 @@ def updateImageLink(path):
 
 def updateBlogLink(path):
     files = os.listdir(path)
+    org_content = ""
     str = "const blogs = {"
     for file in files:
         if os.path.isfile(os.path.join(path, file)):
@@ -53,13 +54,18 @@ def updateBlogLink(path):
                 "life": "#ffee58",
                 "comment": "#ff8a65",
             }
+            id = ""
             color = ""
             img = ""
             title = ""
             brief = ""
 
             with open(os.path.join(path, file), "r") as myfile:
-                print("Reading markdown file")
+                print("Reading markdown file to get all data")
+                org_content = myfile.readlines()
+
+            with open(os.path.join(path, file), "r") as myfile:
+                print("Reading markdown file to get header")
                 while content := myfile.readline():
                     if "-->" in content:
                         print("End of header")
@@ -70,6 +76,12 @@ def updateBlogLink(path):
                     else:
                         res = lst[1].strip().replace("\n", "")
                         match lst[0]:
+                            case "id":
+                                if (id := res) == "":
+                                    print("generating id")
+                                    id = uuid.uuid1().hex
+                                org_content[1] = "id: " + id + "\n"
+                                print("id: " + res)
                             case "type":
                                 print("type: " + res)
                                 if not res in colors.keys():
@@ -90,7 +102,7 @@ def updateBlogLink(path):
                                     "warning: possible syntax error at md file heading")
 
                 str += \
-                    '"' + uuid.uuid1().hex + '''": {
+                    '"' + id + '''": {
                 color:"''' + color + '''",
                 img: "''' + img + '''",
                 title: "''' + title + '''",
@@ -98,18 +110,23 @@ def updateBlogLink(path):
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
                 },
                 '''
-    str += "} \n export { blogs };"
+    
+            with open(os.path.join(path, file), "w") as myfile:
+                myfile.writelines(org_content)
 
+    str += "} \n export { blogs };"
+    
     with open('../src/utils/blogLink.js', "w") as myfile:
         myfile.write(str)
 
+        
     print("blogLink.js Updated!")
 
 
 while True:
     print("This is a helper that updates javascript files, enter 'h' for help")
     command = input("Enter your command: ")
-    
+
     match command:
         case "h":
             print("image: update images")
@@ -129,4 +146,3 @@ while True:
             break
         case _:
             print("command not found, please try again! You can enter 'h' for help")
-
