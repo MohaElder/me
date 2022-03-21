@@ -1,14 +1,32 @@
 <template>
   <v-container>
     <v-parallax dark :src="blog.img">
-      <v-row align="center" justify="center">
+      <v-row align="center" justify="start">
         <v-col
           class="text-center"
           cols="12"
-          style="background-color: rgba(25, 25, 25, 0.45)"
+          style="
+            background-color: rgba(25, 25, 25, 0.45);
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            flex-wrap: wrap;
+          "
         >
-          <h1>{{ blog.title }}</h1>
-          <h2>{{ blog.brief }}</h2>
+          <h1 class="blog-title">{{ blog.title }}</h1>
+          <h2 class="blog-brief">{{ blog.brief }}</h2>
+          <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
+          <v-btn
+            color="white"
+            class="white--text"
+            outlined
+            style="margin-top: 15px"
+            @click="share()"
+            small
+          >
+            {{ shared ? "Copied to Clipboard" : "Share" }}
+            <v-icon right dark> mdi-share </v-icon>
+          </v-btn>
         </v-col>
       </v-row>
     </v-parallax>
@@ -21,6 +39,7 @@ import { blogs } from "../utils/blogLink.js";
 
 export default {
   data: () => ({
+    shared: false,
     blog: {
       title: "42",
       brief: "This might answer everything!",
@@ -60,21 +79,68 @@ export default {
         }
       );
     },
+    share() {
+      this.shared = true;
+      navigator.clipboard.writeText(window.location.href);
+    },
   },
 };
 </script>
 
 <style>
 code {
-  background-color: rgba(107, 95, 26, 0.856) !important;
+  background-color: rgba(0, 158, 206, 0.856) !important;
+  font-family: "Courier New", Courier, monospace;
 }
 
-p{
-  text-indent:10%;
+p {
+  /* text-indent: 2%; */
   line-height: 2;
+  font-size: 80%;
+  font-weight: 300;
 }
 
-h1{
+h1 {
   padding-top: 20px;
+  font-weight: 500;
+  font-size: 180%;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+blockquote {
+  font-size: 130%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  /* padding: 5px; */
+}
+
+img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-title {
+  font-size: 300%;
+  font-weight: 500;
+  text-align: start;
+}
+
+.blog-brief {
+  font-size: 150%;
+  font-weight: 300;
+  text-align: start;
+}
+
+.blog-date {
+  font-size: 120%;
+  font-weight: 300;
+  text-align: start;
 }
 </style>

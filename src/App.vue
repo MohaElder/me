@@ -21,19 +21,66 @@
 
       <v-spacer></v-spacer>
 
-      <!-- <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+      <v-btn
+        href="https://crowdsurf.ucsd.edu/campaigns/support-for-those-impacted-by-the-crisis-in-ukraine#/"
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn> -->
+        <span class="mr-2"
+          >Support the people of <span style="color: #0057b7">Ukr</span
+          ><span style="color: #ffdd00">aine</span> &
+          <span style="color: #0072ce">Rus</span
+          ><span style="color: #ef3340">sia</span></span
+        >
+      </v-btn>
     </v-app-bar>
 
     <v-main>
       <router-view />
     </v-main>
+
+    <v-footer dark padless>
+      <v-card
+        flat
+        tile
+        class="white--text text-center"
+        style="background-color: #121212; width: 100%"
+      >
+        <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4 white--text"
+            @click="goTo(icon.substring(4))"
+            icon
+          >
+            <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-text>
+
+        <v-card-text class="white--text pt-0">
+          Made with <v-icon size="14px"> $vueIcon </v-icon>, 🧠, and ❤️.
+          <a style="color: white" href="https://github.com/MohaElder/me">
+            source code
+          </a>
+        </v-card-text>
+
+        <v-divider></v-divider>
+        <v-card-text class="white--text">
+          {{ new Date().getFullYear() }} —
+          <strong
+            ><span style="color: #0057b7">MO</span>
+            <span style="color: #ffdd00">HA</span>
+            <span style="color: #0072ce">EL</span>
+            <span style="color: #ef3340">DER</span>
+            <span> #FuckWars</span>
+          </strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -42,13 +89,32 @@ export default {
   name: "App",
 
   data: () => ({
-    //
+    icons: ["mdi-github", "mdi-linkedin", "$eroducate"],
   }),
   mounted() {
     this.$vuetify.theme.dark = true;
+  },
+  methods: {
+    goTo(dest) {
+      console.log(dest);
+      switch (dest) {
+        case "github":
+          window.open("https://github.com/mohaelder");
+          break;
+        case "linkedin":
+          window.open("https://linkedin.com/in/mohaelder");
+          break;
+        case "ducate": //ducate because it is not mdi- prefix
+          window.open("https://eroducate.xyz");
+          break;
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
+p {
+  font-size: 100%;
+}
 </style>

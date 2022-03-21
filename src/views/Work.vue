@@ -7,11 +7,11 @@
       outlined
       color="white"
       href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
-      style="margin-left: 5px;"
+      style="margin-left: 5px"
       >Download</v-btn
     >
 
-    <v-row style="padding-left:15px" justify="space-between">
+    <v-row style="padding-left: 15px" justify="space-between">
       <v-col>
         <v-row style="margin-top: 50px">
           <h1>Skills</h1>
@@ -56,16 +56,13 @@
       </v-col>
     </v-row>
 
-    <v-row style="padding-left:15px">
+    <v-row style="padding-left: 15px">
       <v-col>
-        <v-row style=" margin-top: 50px">
+        <v-row style="margin-top: 50px">
           <h1>Education</h1>
         </v-row>
         <v-row>
-          <h4>
-            UCSD
-            <img height="25" src="../assets/triton.png" alt="" />
-          </h4>
+          <h4>UCSD 🔱</h4>
         </v-row>
         <v-row>
           <h4>Shanghai High School International Division</h4>
@@ -75,7 +72,7 @@
         </v-row>
       </v-col>
       <v-col style="padding-left: 35px" md="5">
-        <v-row style=" margin-top: 50px">
+        <v-row style="margin-top: 50px">
           <h1>Great Stuff</h1>
         </v-row>
         <v-row>
@@ -104,9 +101,9 @@
       </v-col>
     </v-row>
 
-    <v-row style="padding-left:15px">
+    <v-row style="padding-left: 15px">
       <v-col>
-        <v-row style=" margin-top: 50px">
+        <v-row style="margin-top: 50px">
           <h1>Work Experience</h1>
         </v-row>
         <v-row>
@@ -123,7 +120,7 @@
         </v-row>
       </v-col>
       <v-col style="padding-left: 35px" md="5">
-        <v-row style=" margin-top: 50px">
+        <v-row style="margin-top: 50px">
           <h1>Honors & News</h1>
         </v-row>
         <v-row>
@@ -156,9 +153,9 @@
       </v-col>
     </v-row>
 
-    <v-row style="margin-bottom: 50px; padding-left:15px">
+    <v-row style="margin-bottom: 50px; padding-left: 15px">
       <v-col>
-        <v-row style=" margin-top: 50px">
+        <v-row style="margin-top: 50px">
           <h1>Published Projects</h1>
         </v-row>
         <v-row>

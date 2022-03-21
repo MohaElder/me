@@ -4,6 +4,7 @@ const blogs = {"e62d9cc3a94a11ecaf6e68545a57002a": {
                 title: "Development Log of this website",
                 brief: "This blog notes the development progress of this website, including why this website exists and how does it become what you see today.",
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/DevLog.md",
+                date: "Jul 06, 2022"
                 },
                 } 
  export { blogs };
