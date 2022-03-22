@@ -1,35 +1,24 @@
 <template>
-  <v-container>
-    <v-parallax dark :src="blog.img">
-      <v-row align="center" justify="start">
-        <v-col
-          class="text-center"
-          cols="12"
-          style="
-            background-color: rgba(25, 25, 25, 0.45);
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            flex-wrap: wrap;
-          "
+  <v-container style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%;">
+    <v-row style="margin-bottom: 40px">
+      <v-col class="text-center head-section" cols="12">
+        <h1 class="blog-title">{{ blog.title }}</h1>
+        <h2 style="width: 100%" class="blog-date">Author: MohaElder</h2>
+        <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="white--text"
+          @click="share(icon.substring(4))"
+          icon
         >
-          <h1 class="blog-title">{{ blog.title }}</h1>
-          <h2 class="blog-brief">{{ blog.brief }}</h2>
-          <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
-          <v-btn
-            color="white"
-            class="white--text"
-            outlined
-            style="margin-top: 15px"
-            @click="share()"
-            small
-          >
-            {{ shared ? "Copied to Clipboard" : "Share" }}
-            <v-icon right dark> mdi-share </v-icon>
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-parallax>
+          <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
+          <v-icon size="24px">
+            {{ icon }}
+          </v-icon>
+        </v-btn>
+      </v-col>
+    </v-row>
     <VueMarkdown :source="fileContent">{{ blog.article }}</VueMarkdown>
   </v-container>
 </template>
@@ -39,10 +28,15 @@ import { blogs } from "../utils/blogLink.js";
 
 export default {
   data: () => ({
-    shared: false,
+    icons: [
+      "mdi-link-box-variant-outline",
+      "mdi-twitter",
+      "mdi-linkedin",
+      "mdi-facebook",
+    ],
+    copied: false,
     blog: {
       title: "42",
-      brief: "This might answer everything!",
       article: "# Whoops! Seems like you have reached a nonexisting article ;)",
       img: "",
     },
@@ -79,15 +73,35 @@ export default {
         }
       );
     },
-    share() {
+    share(name) {
+      var link = window.location.href;
+      switch (name) {
+        case "link-box-variant-outline":
+          navigator.clipboard.writeText(link);
+          break;
+        case "twitter":
+          window.open("http://twitter.com/share?text=" + this.blog.title + "&url=" + link);
+          break;
+        case "linkedin":
+          window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + link);
+          break;
+        case "facebook":
+          window.open("https://www.facebook.com/sharer/sharer.php?u=" + link);
+          break;
+      }
       this.shared = true;
-      navigator.clipboard.writeText(window.location.href);
     },
   },
 };
 </script>
 
 <style>
+.middle {
+  /* Center child horizontally*/
+  display: flex;
+  justify-content: center;
+}
+
 code {
   background-color: rgba(0, 158, 206, 0.856) !important;
   font-family: "Courier New", Courier, monospace;
@@ -95,8 +109,8 @@ code {
 
 p {
   /* text-indent: 2%; */
-  line-height: 2;
-  font-size: 80%;
+  line-height: 1.5;
+  font-size: 90%;
   font-weight: 300;
 }
 
@@ -118,12 +132,9 @@ blockquote {
 }
 
 img {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .blog-title {
@@ -132,15 +143,17 @@ img {
   text-align: start;
 }
 
-.blog-brief {
-  font-size: 120%;
-  font-weight: 300;
-  text-align: start;
-}
-
 .blog-date {
   font-size: 100%;
   font-weight: 300;
   text-align: start;
+}
+
+.head-section {
+  background-color: rgba(25, 25, 25, 0.45);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 </style>

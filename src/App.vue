@@ -72,10 +72,7 @@
         <v-card-text class="white--text">
           {{ new Date().getFullYear() }} —
           <strong
-            ><span style="color: #0057b7">MO</span>
-            <span style="color: #ffdd00">HA</span>
-            <span style="color: #0072ce">EL</span>
-            <span style="color: #ef3340">DER</span>
+            >MOHAELDER
             <span> #FuckWars</span>
           </strong>
         </v-card-text>

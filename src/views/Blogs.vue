@@ -19,7 +19,7 @@
             </v-img>
 
             <v-card-text class="text--primary">
-              {{ item.brief }}
+              <span :style="'color: ' + (item.color == '#ffee58' ? 'black;' : 'white;')"> {{ item.brief }}</span>
             </v-card-text>
           </v-card>
         </v-col>

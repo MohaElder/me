@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import os
 from PIL import Image
 import uuid
@@ -61,11 +63,11 @@ def updateBlogLink(path):
             brief = ""
             date = ""
 
-            with open(os.path.join(path, file), "r") as myfile:
+            with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
                 print("Reading markdown file to get all data")
                 org_content = myfile.readlines()
 
-            with open(os.path.join(path, file), "r") as myfile:
+            with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
                 print("Reading markdown file to get header")
                 while content := myfile.readline():
                     if "-->" in content:
@@ -116,12 +118,12 @@ def updateBlogLink(path):
                 },
                 '''
     
-            with open(os.path.join(path, file), "w") as myfile:
+            with open(os.path.join(path, file), "w", encoding="utf-8") as myfile:
                 myfile.writelines(org_content)
 
     str += "} \n export { blogs };"
     
-    with open('../src/utils/blogLink.js', "w") as myfile:
+    with open('../src/utils/blogLink.js', "w", encoding="utf-8") as myfile:
         myfile.write(str)
 
         
