@@ -1,5 +1,7 @@
 <template>
-  <v-container style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%;">
+  <v-container
+    style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%"
+  >
     <v-row style="margin-bottom: 40px">
       <v-col class="text-center head-section" cols="12">
         <h1 class="blog-title">{{ blog.title }}</h1>
@@ -60,10 +62,11 @@ export default {
       this.$http.get(this.blog.article).then(
         (response) => {
           //replace the link to let it read image properly, then assign to source variable for rendering
-          this.fileContent = response.body.replace(
-            "../assets",
-            "https://raw.githubusercontent.com/MohaElder/me/main/src/assets"
-          );
+          this.fileContent = response.body
+            .split("../assets")
+            .join(
+              "https://raw.githubusercontent.com/MohaElder/me/main/src/assets"
+            );
         },
         (response) => {
           // error callback
@@ -80,10 +83,14 @@ export default {
           navigator.clipboard.writeText(link);
           break;
         case "twitter":
-          window.open("http://twitter.com/share?text=" + this.blog.title + "&url=" + link);
+          window.open(
+            "http://twitter.com/share?text=" + this.blog.title + "&url=" + link
+          );
           break;
         case "linkedin":
-          window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + link);
+          window.open(
+            "https://www.linkedin.com/sharing/share-offsite/?url=" + link
+          );
           break;
         case "facebook":
           window.open("https://www.facebook.com/sharer/sharer.php?u=" + link);
