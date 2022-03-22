@@ -3,11 +3,16 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import VueResource from "vue-resource";
-
-import VueSocialSharing from 'vue-social-sharing'
+import VueSocialSharing from 'vue-social-sharing';
+import VueAnalytics from 'vue-analytics';
 
 Vue.use(VueSocialSharing);
 Vue.use(VueResource);
+
+Vue.use(VueAnalytics, {
+  id: 'G-CSNBNESM81',
+  router
+})
 Vue.config.productionTip = false
 
 // Import prism components whatever you like.
