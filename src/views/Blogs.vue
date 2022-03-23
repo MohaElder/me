@@ -7,7 +7,12 @@
     </h1>
     <v-container style="margin-top: 20px">
       <v-row>
-        <v-col v-for="(item, key) in items" :key="key" cols="6" style="">
+        <v-col
+          v-for="(item, key) in items"
+          :key="key"
+          :cols="$vuetify.breakpoint.width < $vuetify.breakpoint.height ? 12 : 6"
+          :style="$vuetify.breakpoint.width < $vuetify.breakpoint.height ? 'padding-left: 10%; padding-right: 10%;':''"
+        >
           <v-card
             class="mx-auto"
             max-width="600"
@@ -19,7 +24,13 @@
             </v-img>
 
             <v-card-text class="text--primary">
-              <span :style="'color: ' + (item.color == '#ffee58' ? 'black;' : 'white;')"> {{ item.brief }}</span>
+              <span
+                :style="
+                  'color: ' + (item.color == '#ffee58' ? 'black;' : 'white;')
+                "
+              >
+                {{ item.brief }}</span
+              >
             </v-card-text>
           </v-card>
         </v-col>

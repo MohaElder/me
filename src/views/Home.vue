@@ -5,7 +5,7 @@
         src="../assets/beachFrame/frame (1).jpg"
         alt=""
         class="each-image"
-        :style="opacity"
+        style="opacity: 0"
       />
     </div>
     <v-row align="center" justify="center">
@@ -19,12 +19,18 @@
         </h1>
       </v-col>
     </v-row>
-    <div class="second">
-      <v-row align="center" justify="center">
-        <v-col class="text-center second intro" :style="'top: ' +
-              ($vuetify.breakpoint.width < $vuetify.breakpoint.height
-                ? '11.5%;'
-                : '10.5%;')" cols="12">
+    <div>
+      <v-row align="center" justify="center" :style="opacity">
+        <v-col
+          class="text-center second intro"
+          :style="
+            'top: ' +
+            ($vuetify.breakpoint.width < $vuetify.breakpoint.height
+              ? '10%;'
+              : '10.5%;')
+          "
+          cols="12"
+        >
           <v-img src="../assets/bak.png" class="bak"></v-img>
           <h3
             class="intro-text"
@@ -40,17 +46,17 @@
               'padding-right: ' +
               ($vuetify.breakpoint.width < $vuetify.breakpoint.height
                 ? '10%;'
-                : '30%;')"
+                : '30%;')
+            "
           >
-            Hi, I'm glad that you are here. If you are interested in my
-            profesional background, please press WORK; if you are interested in
-            knowing me more, please press LIFE; if you are interested in the
-            pictures that I took, please press PHOTOS; if you are interested in
-            my writings, please press BLOGS. Have a wonderful day and please
-            scroll down to feel some beautiful waves🌊
+            Hi, I'm glad that you are here. I hope you can find everything you
+            want to know about here. Feel free to scroll down and feel some
+            beautiful waves🌊
           </h3>
         </v-col>
       </v-row>
+
+      <v-row class="below">{{ quote }} <br />--- {{ quoteAuthor }}</v-row>
     </div>
   </div>
 </template>
@@ -91,10 +97,26 @@ export default {
   data: () => ({
     activeName: "翁安志",
     blur: "filter: blur(10px)",
-    opacity: "opacity: 0",
+    opacity: "opacity: 1",
+    quote: "",
+    quoteAuthor: "MohaElder",
   }),
   created() {
     window.addEventListener("scroll", this.handleScroll);
+    this.$http.get("https://zenquotes.io/api/random").then(
+      (response) => {
+        //replace the link to let it read image properly, then assign to source variable for rendering
+        this.quote = this.text2Hex(response.body[0].q);
+        this.quoteAuthor = response.body[0].a.includes("Dalai")
+          ? "A 404 quote has been generated"
+          : response.body[0].a;
+      },
+      (response) => {
+        // error callback
+        this.quote = "have a nice day!";
+        console.warn(response);
+      }
+    );
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
@@ -109,6 +131,15 @@ export default {
     this.loadImages();
   },
   methods: {
+    //modified from https://stackoverflow.com/questions/14430633/how-to-convert-text-to-binary-code-in-javascript
+    text2Hex(string) {
+      return string
+        .split("")
+        .map(function (char) {
+          return char.charCodeAt(0).toString(16);
+        })
+        .join(" ");
+    },
     calcSize() {
       return this.$vuetify.breakpoint.width < this.$vuetify.breakpoint.height
         ? this.$vuetify.breakpoint.width * 0.08
@@ -128,6 +159,7 @@ export default {
       images[index].classList.add("each-image");
       images[index].setAttribute("style", "opacity: " + index / 30);
       this.blur = "filter: blur(" + (8 - index / 7) + "px)";
+      this.opacity = "opacity: " + (1 - index / 7) + ";";
     },
   },
 };
@@ -185,8 +217,20 @@ export default {
 
 .intro-text {
   font-weight: 300;
-  text-align: justify;
+  text-align: center;
   text-indent: 2%;
   line-height: 2;
+}
+
+.below {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  bottom: 1%;
+  font-size: 70%;
+  font-weight: 300;
+  width: 50%;
 }
 </style>
