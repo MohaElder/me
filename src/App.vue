@@ -1,7 +1,12 @@
 <template>
   <v-app>
     <v-app-bar app color="black" flat dark>
-      <div class="d-flex align-center">
+      <v-app-bar-nav-icon
+        v-if="$vuetify.breakpoint.width < $vuetify.breakpoint.height"
+        @click.stop="drawer = !drawer"
+      ></v-app-bar-nav-icon>
+
+      <div class="d-flex align-center" v-else>
         <v-btn @click="$router.push({ name: 'Hi' }).catch(() => {})" text>
           <span class="mr-2">Hi</span>
         </v-btn>
@@ -26,14 +31,62 @@
         target="_blank"
         text
       >
+      <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
         <span class="mr-2"
           >Support the people of <span style="color: #0057b7">Ukr</span
           ><span style="color: #ffdd00">aine</span> &
           <span style="color: #0072ce">Rus</span
           ><span style="color: #ef3340">sia</span></span
         >
+      </span>
+      <span v-else>
+        🇺🇦 ❤️ 🇷🇺
+      </span>
       </v-btn>
     </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" app bottom temporary style="background-color: #121212;">
+      <v-list nav dense >
+        <v-list-item-group
+          v-model="group"
+          
+        >
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'Hi' }).catch(() => {})"
+              >Hi</v-list-item-title
+            >
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'Work' }).catch(() => {})"
+              >Work</v-list-item-title
+            >
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'Life' }).catch(() => {})"
+              >Life</v-list-item-title
+            >
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'Photos' }).catch(() => {})"
+              >Photos</v-list-item-title
+            >
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'Blogs' }).catch(() => {})"
+              >Blogs</v-list-item-title
+            >
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
 
     <v-main>
       <router-view />
@@ -82,13 +135,18 @@
 </template>
 
 <script>
-
 export default {
   name: "App",
-
   data: () => ({
     icons: ["mdi-github", "mdi-linkedin", "$eroducate"],
+    drawer: false,
+    group: null,
   }),
+  watch: {
+    group() {
+      this.drawer = false;
+    },
+  },
   mounted() {
     this.$vuetify.theme.dark = true;
   },
@@ -111,8 +169,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 p {
   font-size: 100%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 </style>

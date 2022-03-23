@@ -21,13 +21,19 @@
         </v-btn>
       </v-col>
     </v-row>
-    <VueMarkdown :source="fileContent">{{ blog.article }}</VueMarkdown>
+    <vue-markdown :postrender="rendered" :source="fileContent">{{
+      blog.article
+    }}</vue-markdown>
   </v-container>
 </template>
 
 <script>
 import { blogs } from "../utils/blogLink.js";
+import VueMarkdown from "@adapttive/vue-markdown";
 
+function view(src){  // eslint-disable-line
+  console.log(src)
+}
 export default {
   data: () => ({
     icons: [
@@ -44,7 +50,9 @@ export default {
     },
     fileContent: null,
   }),
-  components: {},
+  components: {
+    VueMarkdown,
+  },
   beforeMount() {
     {
       if (blogs[this.$route.query.id] != null) {
@@ -56,6 +64,30 @@ export default {
     }
   },
   methods: {
+    rendered(e) {
+      return e;
+    //   let lines = e.split("\n");
+    //   for (let i = 0; i < lines.length; i++) {
+    //     let element = lines[i];
+    //     if (element.includes("<img")) {
+    //       let idx = element.indexOf("<img");
+    //       let startPos = idx + 10;
+    //       //we find the start position of <img and treat that as idx(0th position), then we add 10 because it's set to be '<img src="'
+    //       let endPos = element.indexOf('"', startPos);
+    //       //we find the first occurance of " after startPos to locate the end of the link
+    //       let src = element.slice(startPos, endPos);
+    //       let lst = element.split("");
+    //       console.log(src)
+    //       lst[idx + 3] += " @click= 'view'"; //+3 because '<img' where idx is at the position of '<'
+    //       lines[i] = lst.join("");
+    //     }
+    //   }
+    //   console.log(lines.join("\n"));
+    //   return lines.join("\n");
+    },
+    // view(src) {
+    //   console.log(src);
+    // },
     getContent() {
       this.fileContent = "rendering ";
       // var self;
@@ -157,7 +189,6 @@ img {
 }
 
 .head-section {
-  background-color: rgba(25, 25, 25, 0.45);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

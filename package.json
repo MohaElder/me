@@ -10,13 +10,14 @@
     "update-image": "python helpers/init.py"
   },
   "dependencies": {
+    "@adapttive/vue-markdown": "^4.0.1",
     "animate.css": "^4.1.1",
     "babel-runtime": "^6.26.0",
     "core-js": "^3.6.5",
     "prismjs": "^1.27.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
-    "vue-markdown": "^2.2.4",
+    "vue-markdown": "npm:@adapttive/vue-markdown@^X.X.X",
     "vue-resource": "^1.5.3",
     "vue-router": "^3.2.0",
     "vue-social-sharing": "^3.0.9",
