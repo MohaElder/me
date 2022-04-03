@@ -22,6 +22,9 @@
         <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => {})" text>
           <span class="mr-2">Blogs</span>
         </v-btn>
+        <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => {})" text>
+          <span class="mr-2">If I Die</span>
+        </v-btn>
       </div>
 
       <v-spacer></v-spacer>
@@ -31,26 +34,27 @@
         target="_blank"
         text
       >
-      <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-        <span class="mr-2"
-          >Support the people of <span style="color: #0057b7">Ukr</span
-          ><span style="color: #ffdd00">aine</span> &
-          <span style="color: #0072ce">Rus</span
-          ><span style="color: #ef3340">sia</span></span
-        >
-      </span>
-      <span v-else>
-        🇺🇦 ❤️ 🇷🇺
-      </span>
+        <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
+          <span class="mr-2"
+            >Support the people of <span style="color: #0057b7">Ukr</span
+            ><span style="color: #ffdd00">aine</span> &
+            <span style="color: #0072ce">Rus</span
+            ><span style="color: #ef3340">sia</span></span
+          >
+        </span>
+        <span v-else> 🇺🇦 ❤️ 🇷🇺 </span>
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app bottom temporary style="background-color: #121212;">
-      <v-list nav dense >
-        <v-list-item-group
-          v-model="group"
-          
-        >
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      bottom
+      temporary
+      style="background-color: #121212"
+    >
+      <v-list nav dense>
+        <v-list-item-group v-model="group">
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'Hi' }).catch(() => {})"
@@ -82,6 +86,12 @@
             <v-list-item-title
               @click="$router.push({ name: 'Blogs' }).catch(() => {})"
               >Blogs</v-list-item-title
+            >
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'IfIDie' }).catch(() => {})"
+              >If I Die</v-list-item-title
             >
           </v-list-item>
         </v-list-item-group>
