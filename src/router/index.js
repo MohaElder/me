@@ -6,6 +6,7 @@ import Life from '../views/Life.vue'
 import Photos from '../views/Photos.vue'
 import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
+import IfIDie from '../views/IfIDie.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/blog',
     name: 'Blog',
     component: Blog
+  },
+  {
+    path: '/final_words',
+    name: 'IfIDie',
+    component: IfIDie
   },
 ]
 
