@@ -13,8 +13,8 @@
         <v-btn @click="$router.push({ name: 'Work' }).catch(() => {})" text>
           <span class="mr-2">Work</span>
         </v-btn>
-        <v-btn @click="$router.push({ name: 'Life' }).catch(() => {})" text>
-          <span class="mr-2">Life</span>
+        <v-btn @click="$router.push({ name: 'Receipt' }).catch(() => {})" text>
+          <span class="mr-2">Cocktail</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Photos' }).catch(() => {})" text>
           <span class="mr-2">Photos</span>
@@ -30,19 +30,14 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://crowdsurf.ucsd.edu/campaigns/support-for-those-impacted-by-the-crisis-in-ukraine#/"
+        href="https://share.streamlit.io/kevin-meng/2022shanghai-covid/main/full_app.py"
         target="_blank"
         text
       >
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-          <span class="mr-2"
-            >Support the people of <span style="color: #0057b7">Ukr</span
-            ><span style="color: #ffdd00">aine</span> &
-            <span style="color: #0072ce">Rus</span
-            ><span style="color: #ef3340">sia</span></span
-          >
+          Shanghai
         </span>
-        <span v-else> 🇺🇦 ❤️ 🇷🇺 </span>
+        <span v-else> Shanghai </span>
       </v-btn>
     </v-app-bar>
 
@@ -71,8 +66,8 @@
 
           <v-list-item>
             <v-list-item-title
-              @click="$router.push({ name: 'Life' }).catch(() => {})"
-              >Life</v-list-item-title
+              @click="$router.push({ name: 'Receipt' }).catch(() => {})"
+              >Cocktail</v-list-item-title
             >
           </v-list-item>
 
@@ -136,7 +131,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #FuckWars</span>
+            <span> #CovidQuarantineInShanghaiIsAjoke🤡 </span>
           </strong>
         </v-card-text>
       </v-card>
