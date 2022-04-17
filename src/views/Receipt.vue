@@ -1,16 +1,47 @@
 <template>
   <v-container>
-    <v-img class="bannerImage" src="../assets/drink_lab.png"></v-img>
-    <v-row style="padding-left: 30%; padding-right: 30%">
-      <p style="text-align: justify; width: 100%; text-indent: 4%">
+    <v-img
+      :class="
+        $vuetify.breakpoint.width < $vuetify.breakpoint.height
+          ? 'bannerImageMobile'
+          : 'bannerImage'
+      "
+      src="../assets/drink_lab.png"
+    ></v-img>
+    <v-row
+      :class="
+        $vuetify.breakpoint.width < $vuetify.breakpoint.height
+          ? 'bannerRowMobile'
+          : 'bannerRow'
+      "
+    >
+      <p
+        :classstyle="
+          $vuetify.breakpoint.width < $vuetify.breakpoint.height
+            ? 'bannerTextMobile'
+            : 'bannerText'
+        "
+      >
         酒鬼实验室是一个记录我瞎琢磨的鸡尾酒配发的地方。以下所有饮料不保证好喝，
         不保证安全，仅供参考。欢迎发送<a href="mailto:calen0909@Hotmail.com"
           >邮件</a
         >讨论。
       </p>
     </v-row>
-    <v-row style="padding-left: 30%; padding-right: 30%">
-      <p style="text-align: justify; width: 100%; text-indent: 4%">
+    <v-row
+      :class="
+        $vuetify.breakpoint.width < $vuetify.breakpoint.height
+          ? 'bannerRowMobile'
+          : 'bannerRow'
+      "
+    >
+      <p
+        :classstyle="
+          $vuetify.breakpoint.width < $vuetify.breakpoint.height
+            ? 'bannerTextMobile'
+            : 'bannerText'
+        "
+      >
         Alcoholic lab is a place where I take notes of the drinks that I
         developed for fun. All the drinks below are not guaranteed to be legit
         nor safe. They are just for hobby purposes. If you have some
@@ -39,11 +70,10 @@
           <span>{{ ingredient }}</span>
         </p>
         <p
-          style="
-            text-align: center;
-            margin-top: 10px;
-            padding-left: 30%;
-            padding-right: 30%;
+          :class="
+            $vuetify.breakpoint.width < $vuetify.breakpoint.height
+              ? 'menuDescMobile'
+              : 'menuDesc'
           "
         >
           <i>{{ item.desc }}</i>
@@ -106,7 +136,12 @@ export default {
       {
         name: "lychirui",
         link: "baidu.com",
-        ingredients: ["Fresh Lychi 3-5", "Earl Gray Vodka 30ml", "Simple Syrup 15ml", "Lime Juice 20ml"],
+        ingredients: [
+          "Fresh Lychi 3-5",
+          "Earl Gray Vodka 30ml",
+          "Simple Syrup 15ml",
+          "Lime Juice 20ml",
+        ],
         desc: "Under development",
       },
       {
@@ -136,6 +171,15 @@ export default {
   margin-bottom: 3%;
 }
 
+.bannerImageMobile {
+  width: 82.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
 .bannerItem {
   width: 100%;
   display: block;
@@ -143,6 +187,18 @@ export default {
   margin-right: auto;
   margin-top: 2%;
   margin-bottom: 3%;
+}
+
+.bannerText {
+  text-align: justify;
+  width: 100%;
+  text-indent: 4%;
+}
+
+.bannerTextMobile {
+  text-align: justify;
+  width: 100%;
+  font-size: 2%;
 }
 
 .menu {
@@ -153,5 +209,29 @@ export default {
 .menuItemText {
   margin-bottom: 0px;
   text-align: center;
+}
+
+.bannerRow {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.bannerRowMobile {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menuDesc {
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.menuDescMobile {
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 </style>
