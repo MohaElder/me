@@ -113,7 +113,16 @@ export default {
       },
       (response) => {
         // error callback
-        this.quote = "have a nice day!";
+        let quotes = [
+          ["Don't regret, because it's useless", "MohaElder"],
+          ["It's a-me, Mario!", "Mario Auditore"],
+          ["War…war never changes", "Fallout"],
+          ["Nothing is true, everything is permitted.", "Assassin's Creed"],
+          ["Snake? Snake? SNAKE!", "Metal Gear Solid"],
+        ];
+        let quote = quotes[Math.floor(Math.random() * quotes.length)];
+        this.quote = this.text2Hex(quote[0])
+        this.quoteAuthor = quote[1]
         console.warn(response);
       }
     );
