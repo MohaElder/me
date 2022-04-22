@@ -30,14 +30,14 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://share.streamlit.io/kevin-meng/2022shanghai-covid/main/full_app.py"
+        href="https://www.youtube.com/watch?v=38_thLXNHY8&t=42s"
         target="_blank"
         text
       >
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-          Shanghai
+          April in Shanghai 四月之声
         </span>
-        <span v-else> Shanghai </span>
+        <span v-else> 四月之声</span>
       </v-btn>
     </v-app-bar>
 
@@ -131,7 +131,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #CovidQuarantineInShanghaiIsAjoke🤡 </span>
+            <span> #ShanghaiGovernmentIsAJoke🤡 </span>
           </strong>
         </v-card-text>
       </v-card>
