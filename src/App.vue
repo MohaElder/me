@@ -30,7 +30,7 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://www.youtube.com/watch?v=38_thLXNHY8&t=42s"
+        href="https://www.youtube.com/watch?app=desktop&v=fpAOJ8KRKqg&feature=youtu.be"
         target="_blank"
         text
       >
