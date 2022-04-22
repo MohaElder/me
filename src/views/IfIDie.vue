@@ -11,6 +11,10 @@
       <p>
         您好，欢迎访问这个页面。这个页面包含了我的遗言，以及遗嘱。本页面将会不定期更新，直至其正式生效。
       </p>
+      <p>
+        Hello! Welcome to this page. This page hosts my final words. The page
+        would non-periodically update until the day finally comes
+      </p>
     </v-row>
     <v-row>
       <v-col
@@ -25,10 +29,18 @@
       >
     </v-row>
     <h2>以下数据为我的遗言，皆进行了AES-128加密，可通过相应的key解密</h2>
+    <h2>
+      The following data is my eulogy, they are all encrypted in AES-128, and
+      can be decrypted with the corresponding key
+    </h2>
     <p>
       解密方式：将你收到的key粘贴在Paste key
       here处，并且点击DECRYPT按钮。如果key合法，相应的加密文本将解锁，否则不会有任何反应。
       示例key: TEST@TEST
+    </p>
+    <p>Instruction: Paste your key at Paste key here, then click DECRYPT button. If the key is valid, the 
+      encrypted text will be unlocked, otherwise no response.
+      Example key: TEST@TEST
     </p>
     <v-row>
       <div style="margin-top: 20px" v-for="data in eulogies" v-bind:key="data">
@@ -79,7 +91,7 @@ export default {
         bytes = CryptoJS.AES.decrypt(this.eulogies[key], this.key);
         try {
           originalText = bytes.toString(CryptoJS.enc.Utf8);
-          console.log(originalText)
+          console.log(originalText);
           if (originalText.includes("DECRYPTED")) {
             that.eulogies[key] = originalText;
           }
