@@ -131,7 +131,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #ShanghaiGovernmentIsAJoke🤡 </span>
+            <span> #HaveAGreatDay! </span>
           </strong>
         </v-card-text>
       </v-card>
