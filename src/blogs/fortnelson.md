@@ -122,9 +122,9 @@ Fort Nelson真的很小，它的中心城区就沿着阿拉斯加高速。我来
 
 我困在Fort Nelson这几天在附近找到的湖泊和山脉。我很开心它不出名（甚至网络上没什么它的踪影）。
 
-![muncho_lake_1](../images/20220703-_DSF5516.jpg)
+![muncho_lake_1](../assets/blogPics/20220703-_DSF5516.jpg)
 
-![muncho_lake_2](../images/20220703-_DSF5503.jpg)
+![muncho_lake_2](../assets/blogPics/20220703-_DSF5503.jpg)
 
-![muncho_lake_2](../images/20220703-_DSF5508.jpg)
+![muncho_lake_2](../assets/blogPics/20220703-_DSF5508.jpg)
 
