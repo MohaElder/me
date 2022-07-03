@@ -22,6 +22,22 @@ const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
                 date: "2022/3/31",
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/jade_grape_juice.md",
                 },
+                "2d3a604cfaf311ec9fe5acde48001122": {
+                color:"#64b5f6",
+                img: "https://github.com/MohaElder/me/raw/main/src/assets/blogPics/baboa_milktea/_R006837.JPG",
+                title: "[鸡酒分享] 巴波亚奶茶",
+                brief: "分享一款作者在深夜EMO的时候即兴制作的烈酒",
+                date: "2022/4/18",
+                article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/milktea.md",
+                },
+                "2d3b5e70faf311ec9fe5acde48001122": {
+                color:"#ffee58",
+                img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.47784.69945075044825416.99d4e5d8-fac1-421b-8986-d0fed49db992.3cffda34-9da3-4a35-a94e-da061aa0ce7f%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920&f=1&nofb=1",
+                title: "在靠近北极的镇上住一天是什么样的体验",
+                brief: "旅行途中被困住了，只能在小镇呆两天！",
+                date: "2022/3/21",
+                article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/fortnelson.md",
+                },
                 "d6ffad89baf711eca94e68545a57002a": {
                 color:"#64b5f6",
                 img: "https://github.com/MohaElder/me/raw/main/src/assets/blogPics/respect_women/_R006812.JPG",
