@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Work from '../views/Work.vue'
-import Life from '../views/Life.vue'
+import Receipt from '../views/Receipt.vue'
 import Photos from '../views/Photos.vue'
 import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
@@ -22,9 +22,9 @@ const routes = [
     component: Work
   },
   {
-    path: '/life',
-    name: 'Life',
-    component: Life
+    path: '/Receipt',
+    name: 'Receipt',
+    component: Receipt
   },
   {
     path: '/photos',

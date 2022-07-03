@@ -22,5 +22,13 @@ const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
                 date: "2022/3/31",
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/jade_grape_juice.md",
                 },
+                "d6ffad89baf711eca94e68545a57002a": {
+                color:"#64b5f6",
+                img: "https://github.com/MohaElder/me/raw/main/src/assets/blogPics/respect_women/_R006812.JPG",
+                title: "[鸡酒分享] 尊重女性",
+                brief: "分享一款作者在深夜EMO的时候即兴制作的烈酒",
+                date: "2022/4/12",
+                article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/respect_women.md",
+                },
                 } 
  export { blogs };

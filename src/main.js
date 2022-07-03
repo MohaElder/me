@@ -12,7 +12,7 @@ Vue.use(VueSocialSharing);
 Vue.use(VueResource);
 
 Vue.use(VueAnalytics, {
-  id: 'G-CSNBNESM81',
+  id: 'G-G1LKCMNE1V',
   router
 })
 Vue.config.productionTip = false

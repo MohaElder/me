@@ -13,8 +13,8 @@
         <v-btn @click="$router.push({ name: 'Work' }).catch(() => {})" text>
           <span class="mr-2">Work</span>
         </v-btn>
-        <v-btn @click="$router.push({ name: 'Life' }).catch(() => {})" text>
-          <span class="mr-2">Life</span>
+        <v-btn @click="$router.push({ name: 'Receipt' }).catch(() => {})" text>
+          <span class="mr-2">Cocktail</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Photos' }).catch(() => {})" text>
           <span class="mr-2">Photos</span>
@@ -30,19 +30,14 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://crowdsurf.ucsd.edu/campaigns/support-for-those-impacted-by-the-crisis-in-ukraine#/"
+        href="https://www.youtube.com/watch?app=desktop&v=fpAOJ8KRKqg&feature=youtu.be"
         target="_blank"
         text
       >
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-          <span class="mr-2"
-            >Support the people of <span style="color: #0057b7">Ukr</span
-            ><span style="color: #ffdd00">aine</span> &
-            <span style="color: #0072ce">Rus</span
-            ><span style="color: #ef3340">sia</span></span
-          >
+          April in Shanghai 四月之声
         </span>
-        <span v-else> 🇺🇦 ❤️ 🇷🇺 </span>
+        <span v-else> 四月之声</span>
       </v-btn>
     </v-app-bar>
 
@@ -71,8 +66,8 @@
 
           <v-list-item>
             <v-list-item-title
-              @click="$router.push({ name: 'Life' }).catch(() => {})"
-              >Life</v-list-item-title
+              @click="$router.push({ name: 'Receipt' }).catch(() => {})"
+              >Cocktail</v-list-item-title
             >
           </v-list-item>
 
@@ -136,7 +131,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #FuckWars</span>
+            <span> #HaveAGreatDay! </span>
           </strong>
         </v-card-text>
       </v-card>

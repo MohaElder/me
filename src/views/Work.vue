@@ -20,7 +20,7 @@
           <h4>English, Mandarin, Asian Sign Language</h4>
         </v-row>
         <v-row>
-          <h4>Java, JavaScript, C, C#, ARM Assembly, Python, Lua</h4>
+          <h4>Java, JavaScript, C, C++, C#, ARM Assembly, Python, Lua</h4>
         </v-row>
         <v-row>
           <h4>Unity3D, Virtualization, Web, CI/CD, Linux, Benchmark</h4>
