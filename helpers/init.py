@@ -35,7 +35,7 @@ def updateImageLink(path):
     for file in files:
         if os.path.isfile(os.path.join(path, file)):
             compress(file)
-            print("All images compressed!")
+            print("Image compressed!")
             str += '"https://github.com/MohaElder/me/raw/main/src/images/' + file + '",'
     str += "] \n export { images };"
 
