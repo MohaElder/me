@@ -31,9 +31,6 @@
 import { blogs } from "../utils/blogLink.js";
 import VueMarkdown from "@adapttive/vue-markdown";
 
-function view(src){  // eslint-disable-line
-  console.log(src)
-}
 export default {
   data: () => ({
     icons: [
@@ -65,32 +62,30 @@ export default {
   },
   methods: {
     rendered(e) {
-      return e;
-    //   let lines = e.split("\n");
-    //   for (let i = 0; i < lines.length; i++) {
-    //     let element = lines[i];
-    //     if (element.includes("<img")) {
-    //       let idx = element.indexOf("<img");
-    //       let startPos = idx + 10;
-    //       //we find the start position of <img and treat that as idx(0th position), then we add 10 because it's set to be '<img src="'
-    //       let endPos = element.indexOf('"', startPos);
-    //       //we find the first occurance of " after startPos to locate the end of the link
-    //       let src = element.slice(startPos, endPos);
-    //       let lst = element.split("");
-    //       console.log(src)
-    //       lst[idx + 3] += " @click= 'view'"; //+3 because '<img' where idx is at the position of '<'
-    //       lines[i] = lst.join("");
-    //     }
-    //   }
-    //   console.log(lines.join("\n"));
-    //   return lines.join("\n");
+      console.log(e)
+      let lines = e.split("\n");
+      for (let i = 0; i < lines.length; i++) {
+        let element = lines[i];
+        if (element.includes("<img")) {
+          let idx = element.indexOf("<img");
+          let startPos = idx + 10;
+          //we find the start position of <img and treat that as idx(0th position), then we add 10 because it's set to be '<img src="'
+          let endPos = element.indexOf('"', startPos);
+          //we find the first occurance of " after startPos to locate the end of the link
+          let src = element.slice(startPos, endPos);
+          let lst = element.split("");
+          console.log(src)
+          lst[idx + 3] += " onclick= 'view(" + '"' + src + '"' +  ")'"; //+3 because '<img' where idx is at the position of '<'
+          lines[i] = lst.join("");
+        }
+      }
+      //console.log(lines.join("\n"));
+      return lines.join("\n");
+      //return e;
     },
-    // view(src) {
-    //   console.log(src);
-    // },
+
     getContent() {
       this.fileContent = "rendering ";
-      // var self;
       this.$http.get(this.blog.article).then(
         (response) => {
           //replace the link to let it read image properly, then assign to source variable for rendering
@@ -173,7 +168,7 @@ blockquote {
 img {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 50%;
+  width: 100%;
 }
 
 .blog-title {

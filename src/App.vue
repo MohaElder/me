@@ -29,7 +29,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
+      <!-- <v-btn
         href="https://www.youtube.com/watch?app=desktop&v=fpAOJ8KRKqg&feature=youtu.be"
         target="_blank"
         text
@@ -38,7 +38,7 @@
           April in Shanghai 四月之声
         </span>
         <span v-else> 四月之声</span>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
 
     <v-navigation-drawer
@@ -131,7 +131,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #HaveAGreatDay! </span>
+            <span> #🇨🇦IsAGoodPlace </span>
           </strong>
         </v-card-text>
       </v-card>
