@@ -118,6 +118,14 @@ Fort Nelson真的很小，它的中心城区就沿着阿拉斯加高速。我来
 
 > 这就是我心目中的最佳隐居生活。
 
+![smily_face](../assets/blogPics/IMG_3213.JPG)
+
+<div style="text-align:center">不知道谁这两天在我的车子后面画的笑脸😊</div>
+
+![smily_face](../assets/blogPics/IMG_3210.JPG)
+
+<div style="text-align:center">当地的车子都不怎么洗，因为马上就要脏了</div>
+
 ## 附注
 
 我困在Fort Nelson这几天在附近找到的湖泊和山脉。我很开心它不出名（甚至网络上没什么它的踪影）。
