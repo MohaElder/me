@@ -14,6 +14,14 @@ const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
                 date: "2022/3/19",
                 article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/DevLog.md",
                 },
+                "43529ec4ff5511ec8a36acde48001122": {
+                color:"#ffee58",
+                img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.47784.69945075044825416.99d4e5d8-fac1-421b-8986-d0fed49db992.3cffda34-9da3-4a35-a94e-da061aa0ce7f%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920&f=1&nofb=1",
+                title: "【精致流浪】在车里露营是什么体验 #CarGlamping",
+                brief: "在汽车里露营也很决绝子哦～",
+                date: "2022/7/8",
+                article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/carcamping.md",
+                },
                 "bb309f2fb17011ecbef668545a57002a": {
                 color:"#64b5f6",
                 img: "https://github.com/MohaElder/me/raw/main/src/assets/blogPics/grape_juice/grape_cover.JPG",

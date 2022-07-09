@@ -88,7 +88,7 @@ export default {
   data: () => ({
     menu: [
       {
-        name: "baboa milktea",
+        name: "balboa milktea",
         link: "baidu.com",
         ingredients: [
           "Fresh Milk 30ml",
@@ -100,7 +100,7 @@ export default {
         desc: "A milk tea cocktail that follows the classic flavor of a milk tea. But instead of black tea,\
         the earl gray vodka is being used instead. Alcohol is able to extract more flavor from the tea, resulting in \
         a richer taste comparing to normal black tea. The vodka itself also brings up a nice tipsy feeling combining with \
-        the aroma of coffee brought by Kahlua Coffee Liquer. P.S: The name Baboa is from Baboa Park in San Diego City. The name's \
+        the aroma of coffee brought by Kahlua Coffee Liquer. P.S: The name Balboa is from Balboa Park in San Diego City. The name's \
         similarity to Boba and the place's diverse and historical vibe makes it a perfect choice for the drink's name.",
       },
       {
