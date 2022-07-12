@@ -49,8 +49,7 @@
                 : '30%;')
             "
           >
-            Hi, I'm glad that you are here. I hope you can find everything you
-            want to know about here. Feel free to scroll down and feel some
+            Hi, I'm glad that you are here :) Feel free to scroll down and feel some
             beautiful waves🌊
           </h3>
         </v-col>
