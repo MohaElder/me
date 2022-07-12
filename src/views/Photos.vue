@@ -5,6 +5,7 @@
         :src="activeImage"
         :max-width="$vuetify.breakpoint.width * 0.8"
         :max-height="$vuetify.breakpoint.height * 0.8"
+        contain
         @click="previewPic = false"
       ></v-img>
       <v-btn style="margin-top: 10px" @click="download">download</v-btn>
