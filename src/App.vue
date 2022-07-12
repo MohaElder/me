@@ -37,7 +37,7 @@
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
            靠嫩娘！
         </span>
-        <span v-else> 四月之声</span>
+        <span v-else> 靠嫩娘！</span>
       </v-btn>
     </v-app-bar>
 
