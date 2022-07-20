@@ -18,6 +18,11 @@
   
 -->
   <v-container>
+
+    <Unity :unity="unityContext" width="800px" height="600px" />
+
+    <!-- <canvas id="unity-canvas" width=1024 height=768 style="width: 1024px; height: 768px; background: #231F20"></canvas> -->
+
     <v-overlay :value="previewPic">
       <v-img
         :src="activeImage"
@@ -59,20 +64,48 @@
   </v-container>
 </template>
 
+
 <script>
 import { images } from "../utils/imageLink.js";
+// import {createUnityInstance} from "../assets/gallery/Build/GallerOutput.loader.js";
+import UnityWebgl from 'unity-webgl';
+
+const Unity = new UnityWebgl({
+  loaderUrl: "../assets/gallery/Build/GallerOutput.loader.js",
+  dataUrl: "../assets/gallery/Build/GallerOutput.data.gz",
+  frameworkUrl: "../assets/gallery/Build/GallerOutput.framework.js.gz",
+  codeUrl: "../assets/gallery/Build/GallerOutput.wasm.gz",
+  streamingAssetsUrl: "../assets/gallery/StreamingAssets",
+})
 
 export default {
   name: "Photos",
 
+  components: {
+    Unity: UnityWebgl.vueComponent
+  },
+
   mounted() {
     this.images = images;
+
+    // createUnityInstance(document.querySelector("#unity-canvas"), {
+    //     dataUrl: "../assets/gallery/Build/GallerOutput.data.gz",
+    //     frameworkUrl: "../assets/gallery/Build/GallerOutput.framework.js.gz",
+    //     codeUrl: "../assets/gallery/Build/GallerOutput.wasm.gz",
+    //     streamingAssetsUrl: "../assets/gallery/StreamingAssets",
+    //     companyName: "DefaultCompany",
+    //     productName: "Gallery",
+    //     productVersion: "0.1",
+    //     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+    //     // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+    //   });
   },
 
   data: () => ({
     images: ["../images/_DSF4726.jpg"],
     previewPic: false,
     activeImage: "",
+    unityContext: Unity,
   }),
   methods: {
     showPic(img) {

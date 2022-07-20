@@ -16,6 +16,7 @@
     "core-js": "^3.6.5",
     "crypto-js": "^4.1.1",
     "prismjs": "^1.27.0",
+    "unity-webgl": "^2.0.5",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
     "vue-markdown": "npm:@adapttive/vue-markdown@^X.X.X",
