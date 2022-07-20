@@ -71,11 +71,12 @@ import { images } from "../utils/imageLink.js";
 import UnityWebgl from 'unity-webgl';
 
 const Unity = new UnityWebgl({
+  //remember to unzip the files
   loaderUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.loader.js",
-  dataUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.data.gz",
-  frameworkUrl: "https://github.com/MohaElder/me/raw/main/src/assets/gallery/Build/GallerOutput.framework.js.gz",
-  codeUrl: "https://raw.githubusercontent.com/MohaElder/me/main/src/assets/gallery/Build/GallerOutput.wasm.gz",
-  streamingAssetsUrl: "https://raw.githubusercontent.com/MohaElder/me/main/src/assets/gallery/StreamingAssets",
+  dataUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.data",
+  frameworkUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.framework.js",
+  codeUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.wasm",
+  streamingAssetsUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/StreamingAssets",
 })
  
 export default {
