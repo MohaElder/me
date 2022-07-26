@@ -2,14 +2,8 @@
 <template >
   <v-container>
     <h1 class="big-title">Resume</h1>
-    <v-btn
-      x-large
-      outlined
-      color="white"
-      href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
-      style="margin-left: 5px"
-      >Download</v-btn
-    >
+    <v-btn x-large outlined color="white" href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
+      style="margin-left: 5px">Download</v-btn>
 
     <v-row style="padding-left: 15px" justify="space-between">
       <v-col>
@@ -23,14 +17,19 @@
           <h4>Java, JavaScript, C, C++, C#, ARM Assembly, Python, Lua</h4>
         </v-row>
         <v-row>
-          <h4>Unity3D, Virtualization, Web, CI/CD, Linux, Benchmark</h4>
+          <h4>Unity3D, Docker, Web, CI/CD, Linux, Benchmark</h4>
         </v-row>
         <v-row>
-          <h4>Sketch, XD, Figma, Abstract</h4>
+          <h4>Adobe XD, Figma, Abstract</h4>
         </v-row>
         <v-row>
           <h4>
             Photoshop, Premiere Pro, illustrator, After Effects, FinalCut Pro
+          </h4>
+        </v-row>
+        <v-row>
+          <h4>
+            Photography, Cinematography
           </h4>
         </v-row>
       </v-col>
@@ -91,11 +90,7 @@
         <v-row>
           <h4>
             Co-organizer of
-            <a
-              href="https://www.youtube.com/watch?v=tM800TIQeIs"
-              style="color: white"
-              >TEDxSHSID</a
-            >
+            <a href="https://www.youtube.com/watch?v=tM800TIQeIs" style="color: white">TEDxSHSID</a>
           </h4>
         </v-row>
       </v-col>
@@ -125,28 +120,22 @@
         </v-row>
         <v-row>
           <h4>
-            <a href="https://www.chinathinksbig.com/"
-              >Harvard China Thinks Big</a
-            >
+            <a href="https://www.chinathinksbig.com/">Harvard China Thinks Big</a>
             Young Innovator Award (1 out of 30,000 Nationalwide)
           </h4>
         </v-row>
         <v-row>
           <h4>
-            <a
-              href="https://news.cgtn.com/news/3d3d674d7851544f33457a6333566d54/index.html"
-              >Sex education game developed by Chinese high-school</a
-            >
+            <a href="https://news.cgtn.com/news/3d3d674d7851544f33457a6333566d54/index.html">Sex education game
+              developed by Chinese high-school</a>
             - CGTN
           </h4>
         </v-row>
         <v-row>
           <h4>
-            <a
-              href="https://radiichina.com/chinese-high-school-students-release-interactive-sex-education-game/"
-              >Chinese High School Students Release Interactive Sex Education
-              Game</a
-            >
+            <a href="https://radiichina.com/chinese-high-school-students-release-interactive-sex-education-game/">Chinese
+              High School Students Release Interactive Sex Education
+              Game</a>
             - RADII
           </h4>
         </v-row>
@@ -170,18 +159,14 @@
         <v-row>
           <h4>
             A
-            <a href="https://www.eroducate.xyz/games/"
-              >sex-education video game</a
-            >
+            <a href="https://www.eroducate.xyz/games/">sex-education video game</a>
             that went viral and has highest DAU of 30,000
           </h4>
         </v-row>
         <v-row>
           <h4>
             Another
-            <a href="https://www.eroducate.xyz/spermdash/"
-              >sex-education video game</a
-            >
+            <a href="https://www.eroducate.xyz/spermdash/">sex-education video game</a>
             that not many people play, but I personally like it more
           </h4>
         </v-row>
