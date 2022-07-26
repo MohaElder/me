@@ -70,10 +70,10 @@ import UnityWebgl from 'unity-webgl';
 
 const Unity = new UnityWebgl({
   //remember to unzip the files
-  loaderUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.loader.js",
-  dataUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.data",
-  frameworkUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.framework.js",
-  codeUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/GallerOutput.wasm",
+  loaderUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/Output.loader.js",
+  dataUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/Output.data",
+  frameworkUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/Output.framework.js",
+  codeUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/Build/Output.wasm",
   streamingAssetsUrl: "https://cdn.jsdelivr.net/gh/MohaElder/me/src/assets/gallery/StreamingAssets",
 })
  
