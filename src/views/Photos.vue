@@ -19,9 +19,7 @@
 -->
   <v-container>
 
-    <Unity :unity="unityContext" width="800px" height="600px" />
-
-    <!-- <canvas id="unity-canvas" width=1024 height=768 style="width: 1024px; height: 768px; background: #231F20"></canvas> -->
+    <Unity :unity="unityContext" width="1920px" height="1080px" />
 
     <v-overlay :value="previewPic">
       <v-img
