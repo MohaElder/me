@@ -31,16 +31,24 @@ def compress(file, verbose=False):
 
 def updateImageLink(path):
     files = os.listdir(path)
-    str = "const images = ["
+    js_str = "const images = ["
+    json_str = '{"images": ['
     for file in files:
         if os.path.isfile(os.path.join(path, file)):
             compress(file)
             print("Image compressed!")
-            str += '"https://github.com/MohaElder/me/raw/main/src/images/' + file + '",'
-    str += "] \n export { images };"
+            str = '"https://github.com/MohaElder/me/raw/main/src/images/' + file + '",'
+            js_str += str
+            json_str += str
+    json_str = json_str[:-1]
+    js_str += "] \n export { images };"
+    json_str += "]}"
 
     with open('../src/utils/imageLink.js', "w") as myfile:
-        myfile.write(str)
+        myfile.write(js_str)
+
+    with open('../src/utils/imageLink.json', "w") as myfile:
+        myfile.write(json_str)
 
     print("imageLink.js Updated!")
 

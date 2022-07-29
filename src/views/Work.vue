@@ -167,7 +167,7 @@
           <h4>
             Another
             <a href="https://www.eroducate.xyz/spermdash/">sex-education video game</a>
-            that not many people play, but I personally like it more
+            that not many people play, but I personally like it better
           </h4>
         </v-row>
       </v-col>
