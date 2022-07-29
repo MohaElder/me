@@ -4,7 +4,7 @@
   "private": true,
   "homepage": ".",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "update-image": "python helpers/init.py"
@@ -16,7 +16,7 @@
     "core-js": "^3.6.5",
     "crypto-js": "^4.1.1",
     "prismjs": "^1.27.0",
-    "unity-webgl": "^2.0.5",
+    "unity-webgl": "^2.0.6",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
     "vue-markdown": "npm:@adapttive/vue-markdown@^X.X.X",
@@ -26,6 +26,7 @@
     "vuetify": "^2.6.0"
   },
   "devDependencies": {
+    "cross-env": "7.0.3",
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
     "@vue/cli-plugin-router": "~4.5.13",
