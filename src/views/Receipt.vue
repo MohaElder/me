@@ -89,7 +89,7 @@ export default {
     menu: [
       {
         name: "balboa milktea",
-        link: "baidu.com",
+        link: "https://mohaelder.github.io/me/#/blog?id=2d3a604cfaf311ec9fe5acde48001122",
         ingredients: [
           "Fresh Milk 30ml",
           "Homemade Earl Gray Vodka 45ml",
