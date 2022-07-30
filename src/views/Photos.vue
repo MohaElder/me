@@ -50,7 +50,7 @@
     </span>
     <span v-else>
       <iframe mozallowfullscreen="true" src="https://mohaelder.github.io/Gallery/" scrolling="no" frameborder="0"
-        :width="1920 + 'px'" :height="1080 + 'px'"></iframe>
+        :width="$vuetify.breakpoint.width * 0.8 + 'px'" :height="$vuetify.breakpoint.height * 0.8 + 'px'"></iframe>
     </span>
 
   </v-container>
