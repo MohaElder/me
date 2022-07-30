@@ -39,7 +39,7 @@ def updateImageLink(path):
             print("Image compressed!")
             str = '"https://github.com/MohaElder/me/raw/main/src/images/' + file + '",'
             js_str += str
-            json_str += '"https://cdn.jsdelivr.net/gh//mohaelder/me/src/images/' + file + '",'
+            json_str += '"https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/' + file + '",'
     json_str = json_str[:-1]
     js_str += "] \n export { images };"
     json_str += "]}"
