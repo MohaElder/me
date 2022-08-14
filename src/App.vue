@@ -30,14 +30,14 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://www.instagram.com/p/Cf1IwAps9wF/"
+        href="https://baijiahao.baidu.com/s?id=1741109780155921735&wfr=spider&for=pc"
         target="_blank"
         text
       >
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-           靠嫩娘！
+           中国大陆政府从未像现在这样令我失望
         </span>
-        <span v-else> 靠嫩娘！</span>
+        <span v-else> 中国大陆政府从未像现在这样令我失望 </span>
       </v-btn>
     </v-app-bar>
 
@@ -131,7 +131,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #HeNan河南 </span>
+            <span> #FuckCCCP </span>
           </strong>
         </v-card-text>
       </v-card>
