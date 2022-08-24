@@ -17,7 +17,7 @@
           <h4>Java, JavaScript, TypeScript, C, C++, C#, ARM Assembly, Python, Lua</h4>
         </v-row>
         <v-row>
-          <h4>Unity3D, Docker, Web, CI/CD, Linux, Benchmark</h4>
+          <h4>Unity3D, Docker, Web(Vue, React, etc), CI/CD, Linux, Benchmark</h4>
         </v-row>
         <v-row>
           <h4>Adobe XD, Figma, Abstract</h4>
@@ -146,6 +146,9 @@
       <v-col>
         <v-row style="margin-top: 50px">
           <h1>Published Projects</h1>
+        </v-row>
+        <v-row>
+          <h4>A REAL <a href="https://lpat.netlify.app/">trip planning app</a></h4>
         </v-row>
         <v-row>
           <h4>A live voting webapp for some AI projects @NVIDIA</h4>
