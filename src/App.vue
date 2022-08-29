@@ -13,6 +13,9 @@
         <v-btn @click="$router.push({ name: 'Work' }).catch(() => {})" text>
           <span class="mr-2">Work</span>
         </v-btn>
+        <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => {})" text>
+          <span class="mr-2">Open Source</span>
+        </v-btn>
         <v-btn @click="$router.push({ name: 'Receipt' }).catch(() => {})" text>
           <span class="mr-2">Cocktail</span>
         </v-btn>
@@ -61,6 +64,13 @@
             <v-list-item-title
               @click="$router.push({ name: 'Work' }).catch(() => {})"
               >Work</v-list-item-title
+            >
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'OpenSource' }).catch(() => {})"
+              >Open Source</v-list-item-title
             >
           </v-list-item>
 

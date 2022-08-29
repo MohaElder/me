@@ -7,6 +7,7 @@ import Photos from '../views/Photos.vue'
 import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
 import IfIDie from '../views/IfIDie.vue'
+import OpenSource from '../views/OpenSource.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
     path: '/work',
     name: 'Work',
     component: Work
+  },
+  {
+    path: '/opensource',
+    name: 'OpenSource',
+    component: OpenSource
   },
   {
     path: '/Receipt',
