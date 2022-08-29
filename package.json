@@ -2,7 +2,7 @@
   "name": "mohaelder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohaelder.com",
+  "homepage": ".",
   "scripts": {
     "serve": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build",
