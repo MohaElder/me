@@ -16,4 +16,5 @@ jobs:
       with:
         username: 'MohaElder'
         reponame: 'me'
+        cname: 'mohaelder.com'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
