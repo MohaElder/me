@@ -17,7 +17,7 @@
           <h4>Java, JavaScript, TypeScript, C, C++, C#, ARM Assembly, Python, Lua</h4>
         </v-row>
         <v-row>
-          <h4>Unity3D, Docker, Web(Vue, React, etc), CI/CD, Linux, Benchmark</h4>
+          <h4>Unity3D, Docker, Web, CI/CD, Linux, Benchmark</h4>
         </v-row>
         <v-row>
           <h4>Adobe XD, Figma, Abstract</h4>
@@ -100,6 +100,9 @@
       <v-col>
         <v-row style="margin-top: 50px">
           <h1>Work Experience</h1>
+        </v-row>
+        <v-row>
+          <h4>Incoming Software Engineer Intern @ UNOPS 🇺🇳</h4>
         </v-row>
         <v-row>
           <h4>Instructional Assistant @ UCSD</h4>

@@ -1,8 +1,9 @@
 <!-- 
 id: 2d3a604cfaf311ec9fe5acde48001122
+published: true
 type: share
 title: [鸡酒分享] 巴波亚奶茶
-brief: 分享一款作者在深夜EMO的时候即兴制作的烈酒
+brief: 分享一款奶茶酒
 cover: https://github.com/MohaElder/me/raw/main/src/assets/blogPics/baboa_milktea/_R006837.JPG
 date: 2022/4/18
 -->

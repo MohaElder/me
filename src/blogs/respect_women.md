@@ -1,5 +1,6 @@
 <!-- 
 id: d6ffad89baf711eca94e68545a57002a
+published: true
 type: share
 title: [鸡酒分享] 尊重女性
 brief: 分享一款作者在深夜EMO的时候即兴制作的烈酒

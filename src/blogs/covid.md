@@ -1,5 +1,6 @@
 <!-- 
 id: b33c27e1a98011ecbeb368545a57002a
+published: true
 type: life
 title: 新冠轻症是什么体验？
 brief: 作者在这篇文章当中回忆了新冠期间的生活及感受，并聊了聊新冠对自己的影响。

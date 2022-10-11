@@ -1,5 +1,6 @@
 <!-- 
 id: bb309f2fb17011ecbef668545a57002a
+published: true
 type: share
 title: [鸡酒分享] 玉光葡汁
 brief: 分享一款之前有一天喝酒即兴调的还不错的配方，自由度较高。

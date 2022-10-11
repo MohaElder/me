@@ -1,5 +1,6 @@
 <!-- 
 id: 2d3b5e70faf311ec9fe5acde48001122
+published: true
 type: life
 title: 在靠近北极的镇上住一天是什么样的体验
 brief: 我“被迫“体验的三天隐居生活

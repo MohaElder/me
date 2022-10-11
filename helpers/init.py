@@ -71,6 +71,7 @@ def updateBlogLink(path):
             title = ""
             brief = ""
             date = ""
+            published = True
 
             with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
                 print("Reading markdown file to get all data")
@@ -94,6 +95,9 @@ def updateBlogLink(path):
                                     id = uuid.uuid1().hex
                                 org_content[1] = "id: " + id + "\n"
                                 print("id: " + res)
+                            case "published":
+                                print("Published: " + res)
+                                published = True if res == "true" else False
                             case "type":
                                 print("type: " + res)
                                 if not res in colors.keys():
@@ -116,16 +120,17 @@ def updateBlogLink(path):
                                 print(
                                     "warning: possible syntax error at md file heading")
 
-                str += \
-                    '"' + id + '''": {
-                color:"''' + color + '''",
-                img: "''' + img + '''",
-                title: "''' + title + '''",
-                brief: "''' + brief + '''",
-                date: "''' + date + '''",
-                article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
-                },
-                '''
+                if published:
+                    str += \
+                        '"' + id + '''": {
+                    color:"''' + color + '''",
+                    img: "''' + img + '''",
+                    title: "''' + title + '''",
+                    brief: "''' + brief + '''",
+                    date: "''' + date + '''",
+                    article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
+                    },
+                    '''
     
             with open(os.path.join(path, file), "w", encoding="utf-8") as myfile:
                 myfile.writelines(org_content)
