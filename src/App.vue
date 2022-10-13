@@ -33,14 +33,14 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://baijiahao.baidu.com/s?id=1741109780155921735&wfr=spider&for=pc"
+        :href="statement.link"
         target="_blank"
         text
       >
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-           中国大陆政府从未像现在这样令我失望
+           {{statement.longName}}
         </span>
-        <span v-else> 中国大陆政府从未像现在这样令我失望 </span>
+        <span v-else>  {{statement.shortName}} </span>
       </v-btn>
     </v-app-bar>
 
@@ -141,7 +141,7 @@
           {{ new Date().getFullYear() }} —
           <strong
             >MOHAELDER
-            <span> #FuckCCCP </span>
+            <span> {{statement.hashtag}} </span>
           </strong>
         </v-card-text>
       </v-card>
@@ -153,6 +153,12 @@
 export default {
   name: "App",
   data: () => ({
+    statement: {
+      longName: "The World Needs Love",
+      shortName: "The World Needs Love",
+      hashtag: "#WhereIsThe❤️",
+      link: "https://youtu.be/WpYeekQkAdc"
+    },
     icons: ["mdi-github", "mdi-linkedin", "$eroducate"],
     drawer: false,
     group: null,
