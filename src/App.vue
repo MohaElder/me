@@ -154,10 +154,10 @@ export default {
   name: "App",
   data: () => ({
     statement: {
-      longName: "The World Needs Love",
-      shortName: "The World Needs Love",
-      hashtag: "#WhereIsThe❤️",
-      link: "https://youtu.be/WpYeekQkAdc"
+      longName: "不做奴才做公民",
+      shortName: "不做奴才做公民",
+      hashtag: "#不自由，毋宁死",
+      link: "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%9B%9B%E9%80%9A%E6%A1%A5%E6%8A%97%E8%AE%AE"
     },
     icons: ["mdi-github", "mdi-linkedin", "$eroducate"],
     drawer: false,
