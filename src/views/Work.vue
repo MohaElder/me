@@ -11,25 +11,34 @@
           <h1>Skills</h1>
         </v-row>
         <v-row>
-          <h4>English, Mandarin, Asian Sign Language</h4>
+          <h4>English, Mandarin, Spanish,</h4>
         </v-row>
         <v-row>
-          <h4>Java, JavaScript, TypeScript, C, C++, C#, ARM Assembly, Python, Lua</h4>
+          <h4>Shanghainese, Asian Sign Language;</h4>
         </v-row>
         <v-row>
-          <h4>Unity3D, Docker, Web, CI/CD, Linux, Benchmark</h4>
+          <h4>JavaScript, TypeScript,</h4>
         </v-row>
         <v-row>
-          <h4>Adobe XD, Figma, Abstract</h4>
+          <h4>Java, C, C++, C#,</h4>
+        </v-row>
+        <v-row>
+          <h4>Python, Lua, ARM, Latex;</h4>
+        </v-row>
+        <v-row>
+          <h4>Web, SQL, Container, CI/CD, Unix;</h4>
+        </v-row>
+        <v-row>
+          <h4>Unity3D, Wwise, C4D;</h4>
         </v-row>
         <v-row>
           <h4>
-            Photoshop, Premiere Pro, illustrator, After Effects, FinalCut Pro
+            Adobe XD, Figma, Abstract;
           </h4>
         </v-row>
         <v-row>
           <h4>
-            Photography, Cinematography
+            Ps, Pr, Ai, Ae, Lr, Id
           </h4>
         </v-row>
       </v-col>
@@ -183,7 +192,6 @@
 </template>
 
 <style scoped>
-@import "https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.4.0/css/zocial.min.css";
 
 .big-title {
   font-size: 100px;
