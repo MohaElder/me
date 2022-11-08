@@ -1,9 +1,9 @@
 
 <template >
   <v-container>
-    <h1 class="big-title">Resume</h1>
+    <h1 class="big-title">{{ $t("message.resume")}}</h1>
     <v-btn x-large outlined color="white" href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
-      style="margin-left: 5px">Download</v-btn>
+      style="margin-left: 5px">{{ $t("message.download")}}</v-btn>
 
     <v-row style="padding-left: 15px" justify="space-between">
       <v-col>

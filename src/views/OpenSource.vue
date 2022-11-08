@@ -1,7 +1,7 @@
 
 <template >
   <v-container>
-    <h1 class="big-title">Open Source Projects</h1>
+    <h1 class="big-title">{{ $t("message.open_source") }}</h1>
     <p class="text-justify" style="width: 70%">
       I believe that Open Source is a must to achieve Net Neutrality and
       Democracy. In addition to accomplishing those 'Big Word' milestones, Open

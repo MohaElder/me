@@ -8,29 +8,36 @@
 
       <div class="d-flex align-center" v-else>
         <v-btn @click="$router.push({ name: 'Hi' }).catch(() => {})" text>
-          <span class="mr-2">Hi</span>
+          <span class="mr-2">{{ $t("message.nav_hi") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Work' }).catch(() => {})" text>
-          <span class="mr-2">Work</span>
+          <span class="mr-2">{{ $t("message.nav_work") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => {})" text>
-          <span class="mr-2">Open Source</span>
+          <span class="mr-2">{{ $t("message.nav_open_source") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Receipt' }).catch(() => {})" text>
-          <span class="mr-2">Cocktail</span>
+          <span class="mr-2">{{ $t("message.nav_cocktail") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Photos' }).catch(() => {})" text>
-          <span class="mr-2">Photos</span>
+          <span class="mr-2">{{ $t("message.nav_photos") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => {})" text>
-          <span class="mr-2">Blogs</span>
+          <span class="mr-2">{{ $t("message.nav_blogs") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => {})" text>
-          <span class="mr-2">If I Die</span>
+          <span class="mr-2">{{ $t("message.nav_if_i_die") }}</span>
         </v-btn>
       </div>
 
       <v-spacer></v-spacer>
+
+      <v-btn
+        @click="changeLanguage()"
+        text
+      >
+        中/EN
+      </v-btn>
 
       <v-btn
         :href="statement.link"
@@ -56,47 +63,47 @@
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'Hi' }).catch(() => {})"
-              >Hi</v-list-item-title
+              >{{ $t("message.nav_hi") }}</v-list-item-title
             >
           </v-list-item>
 
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'Work' }).catch(() => {})"
-              >Work</v-list-item-title
+              > {{ $t("message.nav_work") }}</v-list-item-title
             >
           </v-list-item>
 
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'OpenSource' }).catch(() => {})"
-              >Open Source</v-list-item-title
+              >{{ $t("message.nav_open_source") }}</v-list-item-title
             >
           </v-list-item>
 
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'Receipt' }).catch(() => {})"
-              >Cocktail</v-list-item-title
+              >{{ $t("message.nav_cocktail") }}</v-list-item-title
             >
           </v-list-item>
 
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'Photos' }).catch(() => {})"
-              >Photos</v-list-item-title
+              >{{ $t("message.nav_photos") }}</v-list-item-title
             >
           </v-list-item>
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'Blogs' }).catch(() => {})"
-              >Blogs</v-list-item-title
+              >{{ $t("message.nav_blogs") }}</v-list-item-title
             >
           </v-list-item>
           <v-list-item>
             <v-list-item-title
               @click="$router.push({ name: 'IfIDie' }).catch(() => {})"
-              >If I Die</v-list-item-title
+              >{{ $t("message.nav_if_i_die") }}</v-list-item-title
             >
           </v-list-item>
         </v-list-item-group>
@@ -186,6 +193,10 @@ export default {
           break;
       }
     },
+
+    changeLanguage() {
+      this.$i18n.locale = this.$i18n.locale == 'en' ? 'zh' : 'en'
+    }
   },
 };
 </script>

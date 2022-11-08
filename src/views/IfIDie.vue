@@ -9,17 +9,14 @@
   >
     <v-row style="text-align: start; margin-bottom: 30px">
       <p>
-        您好，欢迎访问这个页面。这个页面包含了我的遗言，以及遗嘱。本页面将会不定期更新，直至其正式生效。
-        <br />
-        Hello! Welcome to this page. This page hosts my final words. The page
-        would non-periodically update until the day finally comes
+        {{ $t("message.if_i_die_brief") }}
       </p>
     </v-row>
     <v-row
       ><p>
-        请在我的葬礼播放以下歌曲:
-        <br />
-        Please play the following songs during my funeral:
+        
+        {{ $t("message.if_i_die_music") }}
+        
       </p></v-row
     >
     <v-row style="margin-bottom: 30px">
@@ -39,30 +36,17 @@
     </v-row>
     <v-row>
       <p>
-        以下数据为我的遗言，皆进行了AES-128加密，可通过相应的key解密
-        <br />
-        The following data is my eulogy, they are all encrypted in AES-128, and
-        can be decrypted with the corresponding key
+        
+        {{ $t("message.if_i_die_encryption_note") }}
+        
       </p>
     </v-row>
     <v-row>
       <p>
-        解密方式：将你收到的key粘贴在Paste key
-        here处，并且点击DECRYPT按钮。如果key合法，相应的加密文本将解锁，否则不会有任何反应。
-        示例key: TEST@TEST
+        {{ $t("message.if_i_die_encryption_instructions") }}
         <br />
         <span style="color: orange"
-          >ENCRYPT和Paste Message
-          Here仅用于本人加密信息用，解密时不会用到。</span
-        >
-        <br />
-        Instruction: Paste your key at Paste key here, then click DECRYPT
-        button. If the key is valid, the encrypted text will be unlocked,
-        otherwise no response. Example key: TEST@TEST
-        <br />
-        <span style="color: orange"
-          >ENCRYPT and Paste Message Here are only used for encrypting my
-          messages, you won't need it for decryption.</span
+          >{{ $t("message.if_i_die_encryption_dev_note") }}</span
         >
       </p>
     </v-row>

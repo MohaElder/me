@@ -24,22 +24,20 @@
     </v-overlay>
     <v-row justify="center" style="padding: 30px">
       <p style="width: 100%; text-align: start">
-        <b>USING MY PHOTO</b>
+        <b>{{ $t("message.using_my_photo") }}</b>
         <br>
-        non-commercial: Please give credit to the name "Yasushi Oh" or
-        "Anzhi Weng" or "翁安志" or "お やすし" (your choice :))
+        {{ $t("message.photo_usage_note") }}
         <br>
         <a style="color: white"
-          href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)">commercial</a>
+          href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)">
+          {{ $t("message.commercial") }}</a>
       </p>
     </v-row>
-    <p>Note: Gallery Mode is a new way to view my pictures via a three dimensional interactive interface. Feel free to
-      call it Web3.0 if you like ;) <br /> It's like a little "game" embed inside this web page. It only supports
-      Desktop users for now(and Pad users too), but there will be a mobile version in the near future. <br /> Gallery
-      Mode costs some data, so check it out with Wi-Fi!</p>
-    <p>注意: Gallery Mode 是一个全新的通过3D立体可交互界面浏览我的照片的方式。如果您想称它为Web3.0, 请便;) <br />
-      它算是一个网页当中的“小游戏”。目前画廊模式只支持桌面端(和Pad端),移动端支持将在不久的将来发布。<br /> 此模式将消耗一定流量, 请保证您在Wi-Fi下体验!</p>
-    <v-switch v-model="unity" color="primary" value="primary" label="GALLERY MODE"></v-switch>
+    <v-row justify="start" style="padding: 30px">
+      <p style="width: 100%; text-align: start">{{ $t("message.web_gl_gallery_note") }}</p>
+      <v-switch v-model="unity" color="primary" value="primary" label="GALLERY MODE"></v-switch>
+    </v-row>
+   
     <span v-if="!unity">
 
       <v-row justify="center" style="padding: 30px" class="d-flex child-flex">

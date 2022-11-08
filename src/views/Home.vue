@@ -49,8 +49,7 @@
                 : '30%;')
             "
           >
-            Hi, I'm glad that you are here :) Feel free to scroll down and feel some
-            beautiful waves🌊
+            {{ $t("message.hello") }}
           </h3>
         </v-col>
       </v-row>
@@ -62,8 +61,6 @@
 
 <script>
 import "animate.css";
-//import { printf } from "../utils/dev.js";
-// @ is an alias to /src
 
 var images = [];
 const names = ["翁安志", "お やすし", "Yasushi Oh"];
