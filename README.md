@@ -16,3 +16,7 @@ If you like the way I develop my website, feel free to give me a star! If you wa
 Update: 2022/10/17
 
 I will be working on a localization system for the website when I'm free.
+
+Update: 2022/11/8
+
+A localization system using [Vue I18n](https://kazupon.github.io/vue-i18n/) has been implemented in the code. The website currently supports 2 languages: English and Simplified Chinese. These languages can be toggled with a button on the right cornor of the top bar. The Chinese localization is still ongoing and should be expected to be completed in a week or two.
