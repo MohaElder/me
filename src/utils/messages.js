@@ -28,7 +28,43 @@ const messages = {
             then click DECRYPT button. If the key is valid, the encrypted text will \
             be unlocked, otherwise no response. Example key: TEST@TEST",
             if_i_die_encryption_dev_note: "ENCRYPT and Paste Message Here are only used \
-            for encrypting my messages, you won't need it for decryption."
+            for encrypting my messages, you won't need it for decryption.",
+            skills: "Skills",
+            contact: "Contact",
+            education: "Education",
+            great_stuff: "Great Stuff",
+            work_experience: "Work Experience",
+            published_projects: "Published Projects",
+            honors_and_news: "Honors & News",
+            linkedin: "Linkedin",
+            shsid: "Shanghai High School International Division",
+            wfl: "Shanghai WFL",
+            ucsd: "University of California, San Diego(UCSD)",
+            work_experience_desc: {
+                unops: "Incoming Software Engineer Intern @ UNOPS",
+                ucsd: "Instructional Assistant @ UCSD",
+                nvidia: "Game Performance Analyst Intern @ NVIDIA",
+                axiom: "SWE Intern @ Axiom Technology Group",
+                sdll: "Photography Coach @ Vigorous Youth Training Camp",
+            },
+            great_stuff_desc: {
+                eroducate_before: "Co-founder of",
+                eroducate_link: "Eroducate",
+                eroducate_after: ", a sex-ed organization in China",
+                more_club: "Co-founder of More Club, the greatest high school club in SHSID \
+                history",
+                tedx_before: "Co-organizer of",
+                tedx_link: "TEDxSHSID",
+                tedx_after: "",
+            },
+            honors_and_news_desc: {
+                ctb_link: "Harvard China Thinks Big",
+                ctb_source: "Young Innovator Award (1 out of 30,000 Nationalwide)",
+                cgtn_link: "Sex education game developed by Chinese high-school",
+                cgtn_source: "CGTN",
+                radii_link: "Chinese High School Students Release Interactive Sex Education Game",
+                radii_source: "RADII",
+            },
         }
     },
     zh: {
@@ -58,7 +94,42 @@ const messages = {
             here处，并且点击DECRYPT按钮。如果key合法，相应的加密文本将解锁，否则不会有任何反应。 \
             示例key: TEST@TEST",
             if_i_die_encryption_dev_note: "ENCRYPT和Paste Message \
-            Here仅用于本人加密信息用，解密时不会用到。"
+            Here仅用于本人加密信息用，解密时不会用到。",
+            skills: "技能",
+            contact: "联系方式",
+            education: "教育",
+            great_stuff: "伟大的事情",
+            work_experience: "工作",
+            published_projects: "已发布项目",
+            honors_and_news: "新闻与荣誉",
+            linkedin: "领英",
+            shsid: "上海中学国际部",
+            wfl: "上海市世界外国语小学",
+            ucsd: "加州大学圣迭戈分校(UCSD)",
+            work_experience_desc: {
+                unops: "联合国软件工程实习生",
+                ucsd: "UCSD学生助教",
+                nvidia: "英伟达游戏性能分析实习生",
+                axiom: "代码公理软件工程实习生",
+                sdll: "深度历炼青少年训练营摄影助教",
+            },
+            great_stuff_desc: {
+                eroducate_before: "性教育组织",
+                eroducate_link: "Eroducate亦裸",
+                eroducate_after: "联合创始人",
+                more_club: "上海中学国际部历史上最富盛名的社团, 摩尔俱乐部联合创始人",
+                tedx_before: "",
+                tedx_link: "TEDxSHSID",
+                tedx_after: "联合策划人",
+            },
+            honors_and_news_desc: {
+                ctb_link: "哈佛全球青年研究创新论坛",
+                ctb_source: "年轻创新者奖项 (全国30, 000队伍选1 )",
+                cgtn_link: "来自中国高校学生的性教育游戏",
+                cgtn_source: "CGTN",
+                radii_link: "中国高中生发布交互式性教育游戏",
+                radii_source: "RADII",
+            },
         }
     },
 }

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="black" flat dark>
+    <v-app-bar app color="#121212" flat dark>
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.width < $vuetify.breakpoint.height"
         @click.stop="drawer = !drawer"
