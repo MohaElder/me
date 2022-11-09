@@ -20,3 +20,15 @@ I will be working on a localization system for the website when I'm free.
 Update: 2022/11/8
 
 A localization system using [Vue I18n](https://kazupon.github.io/vue-i18n/) has been implemented in the code. The website currently supports 2 languages: English and Simplified Chinese. These languages can be toggled with a button on the right cornor of the top bar. The Chinese localization is still ongoing and should be expected to be completed in a week or two.
+
+Ideas:
+
+Make a MohaElder's Guide Section
+
+Feature 2 sub-sections:
+
+Trips & Reviews
+
+Trip should feature all trips that I have been to
+
+Reviews should feature all things that I tried and wanted to comment on
