@@ -9,6 +9,7 @@ const messages = {
             nav_photos: "Photos",
             nav_blogs: "Blogs",
             nav_if_i_die: "If I Die",
+            nav_guide: "Guides",
             resume: "Resume",
             download: "Download",
             using_my_photo: "USING MY PHOTO",
@@ -109,7 +110,8 @@ const messages = {
                 a variety of handy tools that I the author use to plan my \
                 trips in a elegant and neat format. and it\'s free~',
                 
-            }
+            },
+            wait: "Construction going on 🏗️",
         }
     },
     zh: {
@@ -122,6 +124,7 @@ const messages = {
             nav_photos: "摄影",
             nav_blogs: "博客",
             nav_if_i_die: "假如我死了",
+            nav_guide: "指南",
             resume: "简历",
             download: "英文简历",
             using_my_photo: "使用我的照片",
@@ -209,7 +212,8 @@ const messages = {
                 助你规划旅行。你能够使用许多作者本人经常使用的便捷行程规划功能获\
                 得一个优雅简洁的行程规划体验！他还是免费的！',
 
-            }
+            },
+            wait: "敬请期待",
         }
     },
 }

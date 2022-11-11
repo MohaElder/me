@@ -25,6 +25,9 @@
         <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => {})" text>
           <span class="mr-2">{{ $t("message.nav_blogs") }}</span>
         </v-btn>
+        <v-btn @click="$router.push({ name: 'Guide' }).catch(() => {})" text>
+          <span class="mr-2">{{ $t("message.nav_guide") }}</span>
+        </v-btn>
         <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => {})" text>
           <span class="mr-2">{{ $t("message.nav_if_i_die") }}</span>
         </v-btn>
@@ -98,6 +101,12 @@
             <v-list-item-title
               @click="$router.push({ name: 'Blogs' }).catch(() => {})"
               >{{ $t("message.nav_blogs") }}</v-list-item-title
+            >
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title
+              @click="$router.push({ name: 'Guide' }).catch(() => {})"
+              >{{ $t("message.nav_guide") }}</v-list-item-title
             >
           </v-list-item>
           <v-list-item>

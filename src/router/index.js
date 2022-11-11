@@ -8,6 +8,7 @@ import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
 import IfIDie from '../views/IfIDie.vue'
 import OpenSource from '../views/OpenSource.vue'
+import Guide from '../views/Guide.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,11 @@ const routes = [
     path: '/final_words',
     name: 'IfIDie',
     component: IfIDie
+  },
+  {
+    path: '/guide',
+    name: 'Guide',
+    component: Guide
   },
 ]
 
