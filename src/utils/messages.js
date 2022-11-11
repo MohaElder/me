@@ -65,6 +65,19 @@ const messages = {
                 radii_link: "Chinese High School Students Release Interactive Sex Education Game",
                 radii_source: "RADII",
             },
+            published_projects_desc: {
+                trip_planning_before: "A REAL ",
+                trip_planning_link: "trip planning app",
+                voting_app: "A live voting webapp for some AI projects @NVIDIA",
+                ocr: "A game frame analyzer that does some OCR and Feature Matching using \
+                OpenCV @NVIDIA",
+                self_reliance_before: "A",
+                self_reliance_link: "sex-education video game",
+                self_reliance_after: "that went viral and has highest DAU of 30,000",
+                sperm_dash_before: "Another",
+                sperm_dash_link: "sex-education video game",
+                sperm_dash_after: "that not many people play, but I personally like it better",
+            },
         }
     },
     zh: {
@@ -78,7 +91,7 @@ const messages = {
             nav_blogs: "博客",
             nav_if_i_die: "假如我死了",
             resume: "简历",
-            download: "下载",
+            download: "英文简历",
             using_my_photo: "使用我的照片",
             commercial: "商业",
             photo_usage_note: "非商业: 请标注下列任意名字为作者： 'Yasushi Oh' 或 \
@@ -129,6 +142,18 @@ const messages = {
                 cgtn_source: "CGTN",
                 radii_link: "中国高中生发布交互式性教育游戏",
                 radii_source: "RADII",
+            },
+            published_projects_desc: {
+                trip_planning_before: "一个真正的",
+                trip_planning_link: "旅行规划App",
+                voting_app: "NVIDIA AI训练投票应用",
+                ocr: "NVIDIA OCR及特征比对应用",
+                self_reliance_before: "一个爆红的30,000 DAU",
+                self_reliance_link: "性教育游戏",
+                self_reliance_after: "",
+                sperm_dash_before: "另一个没那么多人玩但是我更喜欢的",
+                sperm_dash_link: "性教育游戏",
+                sperm_dash_after: "",
             },
         }
     },

@@ -4,7 +4,8 @@
     <h1 class="big-title">{{ $t("message.resume")}}</h1>
     <v-btn x-large outlined color="white" href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
       style="margin-left: 5px">{{ $t("message.download")}}</v-btn>
-
+    <v-btn v-if="$i18n.locale == 'zh'" x-large outlined color="white" href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf"
+      style="margin-left: 5px">中文简历</v-btn>
     <v-row style="padding-left: 15px" justify="space-between">
       <v-col>
         <v-row style="margin-top: 50px">
@@ -158,29 +159,34 @@
           <h1>{{ $t("message.published_projects") }}</h1>
         </v-row>
         <v-row>
-          <h4>A REAL <a href="https://lpat.netlify.app/">trip planning app</a></h4>
+          <h4>{{ $t("message.published_projects_desc.trip_planning_before") }} 
+            <a href="https://lpat.netlify.app/">
+              {{ $t("message.published_projects_desc.trip_planning_link") }} </a></h4>
         </v-row>
         <v-row>
-          <h4>A live voting webapp for some AI projects @NVIDIA</h4>
+          <h4>{{ $t("message.published_projects_desc.voting_app") }} </h4>
         </v-row>
         <v-row>
           <h4>
-            A game frame analyzer that does some OCR and Feature Matching using
-            OpenCV @NVIDIA
+            {{ $t("message.published_projects_desc.ocr") }} 
           </h4>
         </v-row>
         <v-row>
           <h4>
-            A
-            <a href="https://www.eroducate.xyz/games/">sex-education video game</a>
-            that went viral and has highest DAU of 30,000
+            {{ $t("message.published_projects_desc.self_reliance_before") }} 
+            <a href="https://www.eroducate.xyz/games/">
+              {{ $t("message.published_projects_desc.self_reliance_link") }} 
+            </a>
+            {{ $t("message.published_projects_desc.self_reliance_after") }} 
           </h4>
         </v-row>
         <v-row>
           <h4>
-            Another
-            <a href="https://www.eroducate.xyz/spermdash/">sex-education video game</a>
-            that not many people play, but I personally like it better
+            {{ $t("message.published_projects_desc.sperm_dash_before") }} 
+            <a href="https://www.eroducate.xyz/spermdash/">
+              {{ $t("message.published_projects_desc.sperm_dash_link") }} 
+            </a>
+            {{ $t("message.published_projects_desc.sperm_dash_after") }} 
           </h4>
         </v-row>
       </v-col>
