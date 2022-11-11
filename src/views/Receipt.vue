@@ -22,31 +22,10 @@
             : 'bannerText'
         "
       >
-        酒鬼实验室是一个记录我瞎琢磨的鸡尾酒配发的地方。以下所有饮料不保证好喝，
-        不保证安全，仅供参考。欢迎发送<a href="mailto:calen0909@Hotmail.com"
-          >邮件</a
-        >讨论。
-      </p>
-    </v-row>
-    <v-row
-      :class="
-        $vuetify.breakpoint.width < $vuetify.breakpoint.height
-          ? 'bannerRowMobile'
-          : 'bannerRow'
-      "
-    >
-      <p
-        :classstyle="
-          $vuetify.breakpoint.width < $vuetify.breakpoint.height
-            ? 'bannerTextMobile'
-            : 'bannerText'
-        "
-      >
-        Alcoholic lab is a place where I take notes of the drinks that I
-        developed for fun. All the drinks below are not guaranteed to be legit
-        nor safe. They are just for hobby purposes. If you have some
-        suggestions, please send me an
-        <a href="mailto:calen0909@Hotmail.com">email</a> and we can talk!
+      {{ $t("message.cocktail_desc_before") }}
+        <a href="mailto:calen0909@Hotmail.com">
+          {{ $t("message.cocktail_desc_link") }}
+        </a>  {{ $t("message.cocktail_desc_after") }}
       </p>
     </v-row>
     <div class="menu">

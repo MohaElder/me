@@ -3,27 +3,17 @@
   <v-container>
     <h1 class="big-title">{{ $t("message.open_source") }}</h1>
     <p class="text-justify" style="width: 70%">
-      I believe that Open Source is a must to achieve Net Neutrality and
-      Democracy. In addition to accomplishing those 'Big Word' milestones, Open
-      Source communities have provided millions of excellent products that
-      powered our world in a civilized fashion. Therefore, I wish to become an
-      active participant in this community, and hope that I could become a
-      notable contributor one day.
+      {{ $t("message.open_source_desc") }}
     </p>
 
     <p class="text-justify" style="width: 70%">
-      Below are my active open source projects. If you like them, feel free to
-      give them a star. If you would like to contribute, I am more than happy to
-      accept issues and PRs!
+      {{ $t("message.open_source_desc_2") }}
     </p>
 
     <p class="text-justify" style="width: 70%">
-      P.S: There are also some repositories that I did not list below. Most of
-      my repositories are public, they are not shown below is likely becaue
-      their scale or purpose are too specific thus may not be applicable to
-      become a 'project'. But many of them are also interesting! Feel free to
-      check them out<a href="https://github.com/MohaElder?tab=repositories"
-        >&nbsp;here</a
+      {{ $t("message.open_source_desc_3") }}
+      <a href="https://github.com/MohaElder?tab=repositories"
+        >{{ $t("message.open_source_desc_3_link") }}</a
       >.
     </p>
 
@@ -49,13 +39,7 @@
               </v-img>
               <v-card-text class="text--primary">
                 <div>
-                  "Let's Plan A Trip" is a trip planner that focuses on planning
-                  the trip. Unlike most other trip planning apps that emphasizes
-                  on route planning, providing you a fancy map and charging you
-                  for exporting their route into Google Maps, Let's Plan A
-                  Trip's goal is to really help you plan a trip by providing you
-                  a variety of handy tools that I the author use to plan my
-                  trips in a elegant and neat format. and it's free~
+                  {{ $t("message.open_source_projects.lpat") }}
                 </div>
               </v-card-text>
             </v-card>

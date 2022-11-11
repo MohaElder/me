@@ -78,6 +78,38 @@ const messages = {
                 sperm_dash_link: "sex-education video game",
                 sperm_dash_after: "that not many people play, but I personally like it better",
             },
+            cocktail_desc_before: " Alcoholic lab is a place where I take notes of \
+            the drinks that I developed for fun. All the drinks below are not \
+            guaranteed to be legit nor safe. They are just for hobby purposes. \
+            If you have some suggestions, please send me an",
+            cocktail_desc_link: "email",
+            cocktail_desc_after: " and we can talk!",
+            open_source_desc: "I believe that Open Source is a \
+            must to achieve Net Neutrality and Democracy. In addition \
+            to accomplishing those 'Big Word' milestones, Open Source \
+            communities have provided millions of excellent products that \
+            powered our world in a civilized fashion. Therefore, I wish to \
+            become an active participant in this community, and hope that \
+            I could become a notable contributor one day.",
+            open_source_desc_2: "Below are my active open source projects. \
+            If you like them, feel free to give them a star. If you would \
+            like to contribute, I am more than happy to accept issues and PRs!",
+            open_source_desc_3: "P.S: There are also some repositories that \
+            I did not list below. Most of my repositories are public, they \
+            are not shown below is likely becaue their scale or purpose are \
+            too specific thus may not be applicable to become a 'project'. \
+            But many of them are also interesting! Feel free to check them out",
+            open_source_desc_3_link: "here",
+            open_source_projects: {
+                lpat: '"Let\'s Plan A Trip" is a trip planner that focuses on planning \
+                the trip. Unlike most other trip planning apps that emphasizes \
+                on route planning, providing you a fancy map and charging you \
+                for exporting their route into Google Maps, Let\'s Plan A \
+                Trip\'s goal is to really help you plan a trip by providing you \
+                a variety of handy tools that I the author use to plan my \
+                trips in a elegant and neat format. and it\'s free~',
+                
+            }
         }
     },
     zh: {
@@ -155,6 +187,29 @@ const messages = {
                 sperm_dash_link: "性教育游戏",
                 sperm_dash_after: "",
             },
+            cocktail_desc_before: "酒鬼实验室是一个记录我瞎琢磨的鸡尾酒配发的地方。\
+            以下所有饮料不保证好喝，不保证安全，仅供参考。欢迎发送",
+            cocktail_desc_link: "邮件",
+            cocktail_desc_after: "讨论。",
+            open_source_desc: "我相信开源是通往网络中立以及民主的必要元素。\
+            除了达成那些伟大的里程碑外，开源社区提供了数以万计的优秀产品，\
+            驱动了全世界文明。我希望我能够成为这个社区的积极分子，并希望有\
+            一天我能够在此社区取得杰出成就。",
+            open_source_desc_2: "一下是我的一些开源项目。如果你喜欢他们，\
+            请不要吝啬你的星星:)。如果你希望加入其中的项目，我将举双手接受你\
+            提交的issue和PR！",
+            open_source_desc_3: "P.S: 我并没有在此列出我所有的Repo。\
+            我大部分的Repo都是公开的，他们不在此处的原因很可能是因为他们\
+            的规模或太过单一的特性，使他们暂时不具有成为”项目“的资格。\
+            不过他们也都挺有意思的！有兴趣可以在这里找到他们：",
+            open_source_desc_3_link: "我的其他开源Repo",
+            open_source_projects: {
+                lpat: '"Let\'s Plan A Trip" 是一个以规划为核心的旅行规划应用。\
+                和许多其他强调路线规划的旅行规划应用不同，这款应用的目标是真正帮\
+                助你规划旅行。你能够使用许多作者本人经常使用的便捷行程规划功能获\
+                得一个优雅简洁的行程规划体验！他还是免费的！',
+
+            }
         }
     },
 }
