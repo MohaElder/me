@@ -32,3 +32,5 @@ Trips & Reviews
 Trip should feature all trips that I have been to
 
 Reviews should feature all things that I tried and wanted to comment on
+
+Add sorting features and tags for images
