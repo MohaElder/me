@@ -18,7 +18,7 @@
     </v-row>
     <v-row justify="start" style="padding: 30px">
       <p style="width: 100%; text-align: start">{{ $t("message.web_gl_gallery_note") }}</p>
-      <v-switch v-model="unity" color="primary" value="primary" label="GALLERY MODE"></v-switch>
+      <v-switch v-model="unity" color="#ffd738" value="primary" label="GALLERY MODE"></v-switch>
     </v-row>
 
     <span v-if="!unity">
