@@ -2,11 +2,13 @@
 
 import os
 from PIL import Image
+from PIL.ExifTags import TAGS
+from datetime import datetime
+import climage
 import uuid
-import fileinput
+import json
 
-# define a function for
-# compressing an image
+# compressing image, getting exif information, tagging the image
 def compress(file, verbose=False):
 
     # Get the path of the file
@@ -15,6 +17,27 @@ def compress(file, verbose=False):
 
     # open the image
     picture = Image.open(filepath)
+
+    #retreive and process exif data from picture
+    exif_data = {}
+    for k,v in picture.getexif().items():
+        exif_data[TAGS.get(k)] = v
+
+    #assign image data from extracted exif data
+    image_data = {}
+    if "DateTime" in exif_data and "Make" in exif_data and "Model" in exif_data:
+        image_data["DateTime"] = datetime.strptime(exif_data["DateTime"], '%Y:%m:%d %H:%M:%S').timestamp()
+        image_data["Camera"] = exif_data["Make"] + " " + exif_data["Model"]
+    #show a bit-format thumbnail of the picture we are tagging
+    print(climage.convert(filepath, is_unicode=True, is_truecolor=True, is_256color=False, is_16color=False, is_8color=False))
+    
+    #tag input and processing
+    tags = input("input tags and seperate by <,>: ").split(",")
+    for i in range(0, len(tags)):
+        tags[i] = tags[i].strip().capitalize()
+
+    #assign tag value
+    image_data["Tags"] = tags
 
     # Save the picture with desired quality
     # To change the quality of image,
@@ -26,31 +49,35 @@ def compress(file, verbose=False):
                  "JPEG",
                  optimize=True,
                  quality=80)
-    return
+
+    #returns the image metadata
+    return image_data
 
 
 def updateImageLink(path):
     files = os.listdir(path)
-    js_str = "const images = ["
-    json_str = '{"images": ['
-    for file in files:
-        if os.path.isfile(os.path.join(path, file)):
-            compress(file)
-            print("Image compressed!")
-            str = '"https://github.com/MohaElder/me/raw/main/src/images/' + file + '",'
-            js_str += str
-            json_str += '"https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/' + file + '",'
-    json_str = json_str[:-1]
-    js_str += "] \n export { images };"
-    json_str += "]}"
 
-    with open('../src/utils/imageLink.js', "w") as myfile:
-        myfile.write(js_str)
+    with open('../src/utils/imageLink.json', "r") as file:
+        imageLinks = json.load(file)
+    for file in files:
+        if file not in imageLinks["images"]:
+            if os.path.isfile(os.path.join(path, file)):
+                image_data = compress(file)
+                imageLinks["images"][file] = image_data
+                imageLinks["images"][file]["url"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + file
+
+                print("Image compressed!")
+        else:
+            print("already processed before")
+
+    for key in imageLinks["images"]:
+        for tag in imageLinks["images"][key]["Tags"]:
+            if tag not in imageLinks["tags"]:
+                imageLinks["tags"].append(tag)
 
     with open('../src/utils/imageLink.json', "w") as myfile:
-        myfile.write(json_str)
+        myfile.write(json.dumps(imageLinks))
 
-    print("imageLink.js Updated!")
     print("imageLink.json Updated!")
 
 
