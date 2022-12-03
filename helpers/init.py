@@ -25,8 +25,10 @@ def compress(file, verbose=False):
 
     #assign image data from extracted exif data
     image_data = {}
-    if "DateTime" in exif_data and "Make" in exif_data and "Model" in exif_data:
-        image_data["DateTime"] = datetime.strptime(exif_data["DateTime"], '%Y:%m:%d %H:%M:%S').timestamp()
+
+    image_data["DateTime"] = datetime.strptime(exif_data["DateTime"], '%Y:%m:%d %H:%M:%S').timestamp() if "DateTime" in exif_data else datetime.now().timestamp()
+
+    if "Make" in exif_data and "Model" in exif_data:
         image_data["Camera"] = exif_data["Make"] + " " + exif_data["Model"]
     #show a bit-format thumbnail of the picture we are tagging
     print(climage.convert(filepath, is_unicode=True, is_truecolor=True, is_256color=False, is_16color=False, is_8color=False))
@@ -45,11 +47,14 @@ def compress(file, verbose=False):
     # your desired level, The more
     # the value of quality  variable
     # and lesser the compression
-    picture.save(filepath,
-                 "JPEG",
-                 optimize=True,
-                 quality=80)
-
+    try:
+        picture.save(filepath,
+                    "JPEG",
+                    optimize=True,
+                    quality=80)
+    except:
+        print("there's something wrong when saving the image")
+        
     #returns the image metadata
     return image_data
 
