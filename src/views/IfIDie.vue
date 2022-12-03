@@ -45,7 +45,7 @@
       <p>
         {{ $t("message.if_i_die_encryption_instructions") }}
         <br />
-        <span style="color: orange"
+        <span style="color: #ffd738"
           >{{ $t("message.if_i_die_encryption_dev_note") }}</span
         >
       </p>
@@ -53,15 +53,15 @@
 
     <v-row>
       <v-col
-        ><v-text-field v-model="data" label="Paste Message here"></v-text-field
+        ><v-text-field v-model="data" label="Paste Message here" color="#ffd738"></v-text-field
       ></v-col>
       <v-col
-        ><v-text-field v-model="key" label="Paste key here"></v-text-field
+        ><v-text-field v-model="key" label="Paste key here" color="#ffd738"></v-text-field
       ></v-col>
     </v-row>
     <v-row>
       <v-btn @click="encrypt" style="margin-right: 10px">Encrypt</v-btn
-      ><v-btn @click="decrypt">Decrypt</v-btn>
+      ><v-btn color="#ffd738" style = "color: black" @click="decrypt">Decrypt</v-btn>
     </v-row>
     <v-row>
       <div

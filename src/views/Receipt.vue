@@ -23,7 +23,7 @@
         "
       >
       {{ $t("message.cocktail_desc_before") }}
-        <a href="mailto:calen0909@Hotmail.com">
+        <a href="mailto:calen0909@Hotmail.com" style="color: #ffd738">
           {{ $t("message.cocktail_desc_link") }}
         </a>  {{ $t("message.cocktail_desc_after") }}
       </p>
