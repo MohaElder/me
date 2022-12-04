@@ -16,14 +16,14 @@
           {{ $t("message.commercial") }}</a>
       </p>
     </v-row>
-    <v-row justify="start" style="padding: 30px">
+    <v-row v-if="!isPortrait()" justify="start" style="padding: 30px">
       <p style="width: 100%; text-align: start">{{ $t("message.web_gl_gallery_note") }}</p>
       <v-switch v-model="unity" color="#ffd738" value="primary" label="GALLERY MODE"></v-switch>
     </v-row>
 
     <span v-if="!unity">
       <v-row justify="start" style="padding: 30px">
-        <div v-for="tag in tags" v-bind:key="tag" style="margin-right: 10px;">
+        <div v-for="tag in tags" v-bind:key="tag" style="margin-right: 10px; margin-bottom: 10px;">
           <v-chip @click="appendTag(tag)">
             {{ tag }}
           </v-chip>
@@ -76,6 +76,9 @@ export default {
     unity: false,
   }),
   methods: {
+    isPortrait() {
+      return this.$vuetify.breakpoint.width < this.$vuetify.breakpoint.height
+    },
     showPic(img) {
       this.activeImage = img
       this.previewPic = true

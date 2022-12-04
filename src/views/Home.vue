@@ -1,54 +1,42 @@
 <template>
   <div class="home-container">
     <div id="father" class="animated-image" :style="blur">
-      <img
-        src="../assets/beachFrame/frame (1).jpg"
-        alt=""
-        class="each-image"
-        style="opacity: 0"
-      />
+      <img src="../assets/beachFrame/frame (1).jpg" alt="" class="each-image" style="opacity: 0" />
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
-        <h1
-          id="name"
-          class="foreground"
-          :style="'font-size:' + calcSize() + 'px'"
-        >
+        <h1 id="name" class="foreground" :style="'font-size:' + calcSize() + 'px;' +
+      'padding-top: ' +
+      (this.isPortrait()
+        ? '15%;'
+        : '0px;')">
           {{ activeName }}
         </h1>
       </v-col>
     </v-row>
     <div>
       <v-row align="center" justify="center" :style="opacity">
-        <v-col
-          class="text-center second intro"
-          :style="
-            'top: ' +
-            ($vuetify.breakpoint.width < $vuetify.breakpoint.height
-              ? '10%;'
-              : '10.5%;')
-          "
-          cols="12"
-        >
+        <v-col class="text-center second intro" :style="
+          'top: ' +
+          ($vuetify.breakpoint.width < $vuetify.breakpoint.height
+            ? '10%;'
+            : '10.5%;')
+        " cols="12">
           <v-img src="../assets/bak.png" class="bak"></v-img>
-          <h3
-            class="intro-text"
-            :style="
-              'font-size: ' +
-              ($vuetify.breakpoint.width < $vuetify.breakpoint.height
-                ? '50%;'
-                : '100%;') +
-              'padding-left: ' +
-              ($vuetify.breakpoint.width < $vuetify.breakpoint.height
-                ? '10%;'
-                : '30%;') +
-              'padding-right: ' +
-              ($vuetify.breakpoint.width < $vuetify.breakpoint.height
-                ? '10%;'
-                : '30%;')
-            "
-          >
+          <h3 class="intro-text" :style="
+            'font-size: ' +
+            (this.isPortrait()
+              ? '50%;'
+              : '100%;') +
+            'padding-left: ' +
+            (this.isPortrait()
+              ? '0%;'
+              : '30%;') +
+            'padding-right: ' +
+            (this.isPortrait()
+              ? '0%;'
+              : '30%;')
+          ">
             {{ $t("message.hello") }}
           </h3>
         </v-col>
@@ -136,6 +124,7 @@ export default {
     this.loadImages();
   },
   methods: {
+
     //modified from https://stackoverflow.com/questions/14430633/how-to-convert-text-to-binary-code-in-javascript
     text2Hex(string) {
       return string
@@ -145,9 +134,12 @@ export default {
         })
         .join(" ");
     },
-    calcSize() {
+    isPortrait() {
       return this.$vuetify.breakpoint.width < this.$vuetify.breakpoint.height
-        ? this.$vuetify.breakpoint.width * 0.08
+    },
+    calcSize() {
+      return this.isPortrait()
+        ? this.$vuetify.breakpoint.width * 0.075
         : this.$vuetify.breakpoint.width * 0.05;
     },
     loadImages() {
@@ -188,8 +180,8 @@ export default {
 }
 
 .each-image {
-  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .second {

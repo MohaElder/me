@@ -1,74 +1,53 @@
 <template>
-  <v-container
-    style="
+  <v-container style="
       padding-left: 10%;
       padding-right: 10%;
       padding-bottom: 7%;
       padding-top: 2%;
-    "
-  >
+    ">
     <v-row style="text-align: start; margin-bottom: 30px">
       <p>
         {{ $t("message.if_i_die_brief") }}
       </p>
     </v-row>
-    <v-row
-      ><p>
-        
+    <v-row>
+      <p>
+
         {{ $t("message.if_i_die_music") }}
-        
-      </p></v-row
-    >
+
+      </p>
+    </v-row>
     <v-row style="margin-bottom: 30px">
-      <iframe
-        allow="autoplay *; encrypted-media *;"
-        frameborder="0"
-        height="450"
-        style="
-          width: 100%;
-          max-width: 660px;
-          overflow: hidden;
-          background: transparent;
-        "
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450"
+        style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-        src="https://embed.music.apple.com/us/playlist/play-when-im-dead/pl.u-vxy6kEjtym8Y9v?l=zh"
-      ></iframe>
+        src="https://embed.music.apple.com/us/playlist/play-when-im-dead/pl.u-vxy6kEjtym8Y9v"></iframe>
     </v-row>
     <v-row>
       <p>
-        
+
         {{ $t("message.if_i_die_encryption_note") }}
-        
+
       </p>
     </v-row>
     <v-row>
       <p>
         {{ $t("message.if_i_die_encryption_instructions") }}
         <br />
-        <span style="color: #ffd738"
-          >{{ $t("message.if_i_die_encryption_dev_note") }}</span
-        >
+        <span style="color: #ffd738">{{ $t("message.if_i_die_encryption_dev_note") }}</span>
       </p>
     </v-row>
 
     <v-row>
-      <v-col
-        ><v-text-field v-model="data" label="Paste Message here" color="#ffd738"></v-text-field
-      ></v-col>
-      <v-col
-        ><v-text-field v-model="key" label="Paste key here" color="#ffd738"></v-text-field
-      ></v-col>
+      <v-col><v-text-field v-model="data" label="Paste Message here" color="#ffd738"></v-text-field></v-col>
+      <v-col><v-text-field v-model="key" label="Paste key here" color="#ffd738"></v-text-field></v-col>
     </v-row>
     <v-row>
-      <v-btn @click="encrypt" style="margin-right: 10px">Encrypt</v-btn
-      ><v-btn color="#ffd738" style = "color: black" @click="decrypt">Decrypt</v-btn>
+      <v-btn @click="encrypt" style="margin-right: 10px">Encrypt</v-btn><v-btn color="#ffd738" style="color: black"
+        @click="decrypt">Decrypt</v-btn>
     </v-row>
     <v-row>
-      <div
-        style="margin-top: 20px; overflow: hidden"
-        v-for="data in eulogies"
-        v-bind:key="data"
-      >
+      <div style="margin-top: 20px; overflow: hidden" v-for="data in eulogies" v-bind:key="data">
         <p v-if="data.includes('DECRYPTED')"><span v-html="data"></span></p>
         <p v-else style="overflow: hidden; text-overflow: ellipsis">
           {{ data }}
@@ -102,7 +81,7 @@ export default {
     data: "",
   }),
   components: {},
-  beforeMount() {},
+  beforeMount() { },
   methods: {
     encrypt() {
       var ciphertext = CryptoJS.AES.encrypt(
