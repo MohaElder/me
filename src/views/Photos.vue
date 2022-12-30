@@ -1,9 +1,13 @@
 <template>
   <v-container>
     <v-overlay :value="previewPic">
-      <v-img :src="activeImage" :max-width="$vuetify.breakpoint.width * 0.8"
+      <v-img :src="activeImage['url']" :max-width="$vuetify.breakpoint.width * 0.8"
         :max-height="$vuetify.breakpoint.height * 0.8" contain @click="previewPic = false"></v-img>
-      <v-btn style="margin-top: 10px" @click="download">download</v-btn>
+      <div class="image-info-box">
+        <v-btn style="margin-top: 10px" @click="download">download</v-btn>
+        <p style="margin-top:5px">Camera: {{activeImage['Camera']}}</p>
+      </div>
+      
     </v-overlay>
     <v-row justify="center" style="padding: 30px">
       <p style="width: 100%; text-align: start">
@@ -43,7 +47,7 @@
 
       <v-row justify="center" style="padding: 30px" class="d-flex child-flex">
         <v-col style="display: flex; width: 50%; justify-content: center" v-for="img in images" v-bind:key="img['url']">
-          <v-img :aspect-ratio="5 / 4" :width="500" :src="img['url']" contain @click="showPic(img['url'])"></v-img>
+          <v-img :aspect-ratio="5 / 4" :width="500" :src="img['url']" contain @click="showPic(img)"></v-img>
         </v-col>
       </v-row>
     </span>
@@ -53,6 +57,13 @@
     </span>
   </v-container>
 </template>
+
+<style>
+.image-info-box{
+  display: flex;
+  justify-content: space-between;
+}
+</style>
 
 <script>
 import { images as images_imported, tags } from "../utils/imageLink.json"
@@ -82,6 +93,12 @@ export default {
     showPic(img) {
       this.activeImage = img
       this.previewPic = true
+    },
+    getDate(timestamp) {
+      let date = new Date(timestamp)
+      return date.getFullYear() +
+          "/"+(date.getMonth()+1)+
+          "/"+ date.getDate()
     },
     download() {
       window.open(this.activeImage)
