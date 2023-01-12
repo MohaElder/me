@@ -101,7 +101,7 @@ export default {
           "/"+ date.getDate()
     },
     download() {
-      window.open(this.activeImage)
+      window.open(this.activeImage['url'])
     },
     sortImages(method, images = []) {
       if (images_sorted.length == 0) {
