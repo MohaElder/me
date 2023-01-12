@@ -133,7 +133,6 @@ export default {
       let images = images_sorted.filter((img) => {
         for (let i in this.activeTags) {
           if (!img["Tags"].includes(this.activeTags[i])) {
-            console.log(this.activeTags[i])
             return false
           }
         }
