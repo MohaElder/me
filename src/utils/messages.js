@@ -42,7 +42,7 @@ const messages = {
             wfl: "Shanghai WFL",
             ucsd: "University of California, San Diego(UCSD)",
             work_experience_desc: {
-                unops: "Incoming Software Engineer Intern @ UNOPS",
+                unops: "Software Engineer Intern @ UNOPS",
                 ucsd: "Instructional Assistant @ UCSD",
                 nvidia: "Game Performance Analyst Intern @ NVIDIA",
                 axiom: "SWE Intern @ Axiom Technology Group",
@@ -155,7 +155,7 @@ const messages = {
             wfl: "上海市世界外国语小学",
             ucsd: "加州大学圣迭戈分校(UCSD)",
             work_experience_desc: {
-                unops: "联合国软件工程实习生",
+                unops: "联合国项目事务厅（UNOPS）软件工程实习生",
                 ucsd: "UCSD学生助教",
                 nvidia: "英伟达游戏性能分析实习生",
                 axiom: "代码公理软件工程实习生",
