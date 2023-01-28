@@ -47,7 +47,7 @@
 
       <v-row justify="center" style="padding: 30px" class="d-flex child-flex">
         <v-col style="display: flex; width: 50%; justify-content: center" v-for="img in images" v-bind:key="img['url']">
-          <v-img :aspect-ratio="5 / 4" :width="500" :src="img['url']" contain @click="showPic(img)"></v-img>
+          <v-img :aspect-ratio="5 / 4" :width="500" :src="img['thumbnail']" contain @click="showPic(img)"></v-img>
         </v-col>
       </v-row>
     </span>

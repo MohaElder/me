@@ -9,7 +9,23 @@ import uuid
 import json
 
 # compressing image, getting exif information, tagging the image
-def compress(file, verbose=False):
+
+def updateImageData(image_data, file):
+    # Get the path of the file
+    filepath = os.path.join("../src/images",
+                            file)
+
+    # open the image
+    picture = Image.open(filepath)
+    thumbnail_extension = "_thumbnail"
+    compress(filepath, thumbnail_extension, picture, True)
+
+    image_data["thumbnail"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + \
+        file + thumbnail_extension + ".jpg"
+        
+    return image_data
+
+def getImageData(file, verbose=False):
 
     # Get the path of the file
     filepath = os.path.join("../src/images",
@@ -18,63 +34,79 @@ def compress(file, verbose=False):
     # open the image
     picture = Image.open(filepath)
 
-    #retreive and process exif data from picture
+    # retreive and process exif data from picture
     exif_data = {}
-    for k,v in picture.getexif().items():
+    for k, v in picture.getexif().items():
         exif_data[TAGS.get(k)] = v
 
-    #assign image data from extracted exif data
+    # assign image data from extracted exif data
     image_data = {}
 
-    image_data["DateTime"] = datetime.strptime(exif_data["DateTime"], '%Y:%m:%d %H:%M:%S').timestamp() if "DateTime" in exif_data else datetime.now().timestamp()
+    image_data["DateTime"] = datetime.strptime(exif_data["DateTime"], '%Y:%m:%d %H:%M:%S').timestamp(
+    ) if "DateTime" in exif_data else datetime.now().timestamp()
 
     if "Make" in exif_data and "Model" in exif_data:
         image_data["Camera"] = exif_data["Make"] + " " + exif_data["Model"]
-    #show a bit-format thumbnail of the picture we are tagging
-    print(climage.convert(filepath, is_unicode=True, is_truecolor=True, is_256color=False, is_16color=False, is_8color=False))
-    
-    #tag input and processing
+    # show a bit-format thumbnail of the picture we are tagging
+    print(climage.convert(filepath, is_unicode=True, is_truecolor=True,
+          is_256color=False, is_16color=False, is_8color=False))
+
+    # tag input and processing
     tags = input("input tags and seperate by <,>: ").split(",")
     for i in range(0, len(tags)):
         tags[i] = tags[i].strip().capitalize()
 
-    #assign tag value
+    # assign tag value
     image_data["Tags"] = tags
 
-    # Save the picture with desired quality
+    thumbnail_extension = "_thumbnail"
+    compress(filepath, thumbnail_extension, picture, False)
+
+    image_data["url"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + file
+    image_data["thumbnail"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + \
+        file + thumbnail_extension + ".jpg"
+
+    # returns the image metadata
+    return image_data
+
+ # Save the picture with desired quality
     # To change the quality of image,
     # set the quality variable at
     # your desired level, The more
     # the value of quality  variable
     # and lesser the compression
+def compress(filepath, thumbnail_extension, picture, thumbnail_only=False):
     try:
-        picture.save(filepath,
-                    "JPEG",
-                    optimize=True,
-                    quality=80)
+        if not thumbnail_only:
+            picture.save(filepath,
+                        "JPEG",
+                        optimize=True,
+                        quality=80)
+
+        size = 512, 512
+        thumbnail_extension = "_thumbnail"
+        picture.thumbnail(size)
+        picture.save(filepath + thumbnail_extension + ".jpg", "JPEG")
+
     except:
         print("there's something wrong when saving the image")
-        
-    #returns the image metadata
-    return image_data
 
 
-def updateImageLink(path):
+def updateImageLink(path, updateOldLink = False):
     files = os.listdir(path)
 
     with open('../src/utils/imageLink.json', "r") as file:
         imageLinks = json.load(file)
     for file in files:
-        if file not in imageLinks["images"]:
+        if updateOldLink:
+            imageLinks["images"][file] = updateImageData(imageLinks["images"][file], file)
+        elif file not in imageLinks["images"]:
             if os.path.isfile(os.path.join(path, file)):
-                image_data = compress(file)
-                imageLinks["images"][file] = image_data
-                imageLinks["images"][file]["url"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + file
-
-                print("Image compressed!")
+                imageLinks["images"][file] = getImageData(file)
+                
         else:
             print("already processed before")
-
+    print("All Images processed!")
     for key in imageLinks["images"]:
         for tag in imageLinks["images"][key]["Tags"]:
             if tag not in imageLinks["tags"]:
@@ -163,16 +195,15 @@ def updateBlogLink(path):
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
                     },
                     '''
-    
+
             with open(os.path.join(path, file), "w", encoding="utf-8") as myfile:
                 myfile.writelines(org_content)
 
     str += "} \n export { blogs };"
-    
+
     with open('../src/utils/blogLink.js', "w", encoding="utf-8") as myfile:
         myfile.write(str)
 
-        
     print("blogLink.js Updated!")
 
 
@@ -187,6 +218,8 @@ while True:
             print("all: executes all update commands")
             print("help: help screen")
             print("q: quit")
+        case "old_image":
+            updateImageLink('../src/images', True)
         case "image":
             updateImageLink('../src/images')
         case "blog":
