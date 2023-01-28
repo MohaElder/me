@@ -9,7 +9,7 @@ jobs:
     - name: Use Node.js '16.x'
       uses: actions/setup-node@v2
       with:
-        node-version: "16.x"
+        node-version: "19.x"
         cache: "npm"
     - id: Build-Vue
       uses: SerhiiKa/VuePagesAction@1.0.4
