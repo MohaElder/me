@@ -22,7 +22,7 @@
             ? '10%;'
             : '10.5%;')
         " cols="12">
-          <v-img src="../assets/bak.png" class="bak"></v-img>
+          <v-img src="../assets/bak.png" class="bak" :width="isPortrait() ? '100%':'62.5%'"></v-img>
           <h3 class="intro-text" :style="
             'font-size: ' +
             (this.isPortrait()
@@ -139,7 +139,7 @@ export default {
     },
     calcSize() {
       return this.isPortrait()
-        ? this.$vuetify.breakpoint.width * 0.075
+        ? this.$vuetify.breakpoint.width * 0.14
         : this.$vuetify.breakpoint.width * 0.05;
     },
     loadImages() {
@@ -167,6 +167,7 @@ export default {
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 100%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
@@ -180,7 +181,7 @@ export default {
 }
 
 .each-image {
-  height: 100%;
+  height: 100%; 
   object-fit: cover;
 }
 
@@ -206,7 +207,6 @@ export default {
 }
 
 .bak {
-  width: 62.5%;
   display: block;
   margin-left: auto;
   margin-right: auto;
