@@ -1,13 +1,19 @@
 <template>
   <v-container>
-    <v-overlay :value="previewPic">
-      <v-img :src="activeImage['url']" :max-width="$vuetify.breakpoint.width * 0.8"
-        :max-height="$vuetify.breakpoint.height * 0.8" contain @click="previewPic = false"></v-img>
+    <v-overlay class="overlay" :value="previewPic">
+      <v-img :src="activeImage['url']" :lazy-src="activeImage['thumbnail']" :max-width="$vuetify.breakpoint.width * 0.8"
+        :max-height="$vuetify.breakpoint.height * 0.8" contain @click="previewPic = false">
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular indeterminate color="grey lighten-2"></v-progress-circular>
+          </v-row>
+        </template>
+      </v-img>
       <div class="image-info-box">
         <v-btn style="margin-top: 10px" @click="download">download</v-btn>
-        <p style="margin-top:5px">Camera: {{activeImage['Camera']}}</p>
+        <p style="margin-top:5px">Camera: {{ activeImage['Camera']}}</p>
       </div>
-      
+
     </v-overlay>
     <v-row justify="center" style="padding: 30px">
       <p style="width: 100%; text-align: start">
@@ -59,14 +65,17 @@
 </template>
 
 <style>
-.image-info-box{
+.image-info-box {
   display: flex;
   justify-content: space-between;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 </style>
 
 <script>
 import { images as images_imported, tags } from "../utils/imageLink.json"
+import 'animate.css';
 
 var images_sorted = []
 
@@ -97,8 +106,8 @@ export default {
     getDate(timestamp) {
       let date = new Date(timestamp)
       return date.getFullYear() +
-          "/"+(date.getMonth()+1)+
-          "/"+ date.getDate()
+        "/" + (date.getMonth() + 1) +
+        "/" + date.getDate()
     },
     download() {
       window.open(this.activeImage['url'])
