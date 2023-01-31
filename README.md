@@ -18,7 +18,7 @@ The wave animation on the homepage is inspired by [Apple's Airpods Pro Ad](https
 ## "Backend"
 There is no backend for this site for the sake of being a simple personal website. However, to support my my blog and images' content creation on the site. I wrote a python script that kind of serves as a "backend" of the site.
 
-The python script that I wrote helps me to generate two `.js` files to serve as config files for blogs and photos. 
+The python script that I wrote helps me to generate two `.json` files to serve as config files for blogs and photos. 
 
 It has a TUI which provides easy access to its functions.
 
