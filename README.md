@@ -1,11 +1,32 @@
 # me
-This is the source code repository of my personal website
+> This repository contains the source code of my personal website
 
-It's a purely static website powered by Vue. I use Github Action + Github Pages + a Python script to perform content update for my blogs and photos.
+## Tech Stack
 
-The website uses [Vuetify](https://vuetifyjs.com/en/) for UI support. I added my own designs and some gentle touches based on some primitive Vuetify demos in its documentation to form the UI of the website. The wave animation on the homepage is inspired by [Apple's Airpods Pro Ad](https://www.apple.com/airpods-pro/).
+The website is static and is powered by [Vue](https://vuejs.org/). I use [Github Action](https://github.com/features/actions) + [Github Pages](https://pages.github.com/) + [a Python script](https://github.com/MohaElder/me/blob/main/helpers/init.py) to perform content update for my blogs and photos.
 
-The python script that I wrote helps me to generate two `.js` files to serve as config files for blogs and photos. It has a TUI which provides easy access to its functions.
+## UI
+The website uses [Vuetify](https://vuetifyjs.com/en/) for UI support. I added my own designs and some gentle touches based on some demos in their documentation to create the UI of the website.
+
+The animation uses [Animate.css](https://animate.style/)
+
+*The site is using Vuetify2. I am planning to update it to Vuetify3 in the future together with an update to Vue3*
+
+### Homepage animation
+The wave animation on the homepage is inspired by [Apple's Airpods Pro Ad](https://www.apple.com/airpods-pro/).
+
+## "Backend"
+There is no backend for this site for the sake of being a simple personal website. However, to support my my blog and images' content creation on the site. I wrote a python script that kind of serves as a "backend" of the site.
+
+The python script that I wrote helps me to generate two `.js` files to serve as config files for blogs and photos. 
+
+It has a TUI which provides easy access to its functions.
+
+For images: The python script compresses files, extracts exif, and generates thumbnail
+
+For blog: The python script reads metadata based on predefined template pattern for each markdown file
+
+## Updates
 
 Update: 2022/8/16
 
@@ -34,3 +55,11 @@ Trip should feature all trips that I have been to
 Reviews should feature all things that I tried and wanted to comment on
 
 Add sorting features and tags for images
+
+Update: 2023/2/1
+
+Formatted the Readme file into a more organized matter. I optimized Photo page. It is now considerably faster than before thanks to thumbnails and this solves the bug on Photo page when viewing it on phones.
+
+Roadmap for future:
+
+Guide section
