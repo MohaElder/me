@@ -170,10 +170,10 @@ export default {
   name: "App",
   data: () => ({
     statement: {
-      longName: "不做奴才做公民",
-      shortName: "不做奴才做公民",
-      hashtag: "#不自由，毋宁死",
-      link: "https://en.wikipedia.org/wiki/Beijing_Sitong_Bridge_protest"
+      longName: "Human Needs Rights",
+      shortName: "Human Needs Rights",
+      hashtag: "#Human Right for Everyone",
+      link: "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
     },
     icons: ["mdi-github", "mdi-linkedin", "$eroducate"],
     drawer: false,
