@@ -62,7 +62,6 @@ export default {
   },
   methods: {
     rendered(e) {
-      console.log(e)
       let lines = e.split("\n");
       for (let i = 0; i < lines.length; i++) {
         let element = lines[i];
@@ -74,7 +73,6 @@ export default {
           //we find the first occurance of " after startPos to locate the end of the link
           let src = element.slice(startPos, endPos);
           let lst = element.split("");
-          console.log(src)
           lst[idx + 3] += " onclick= 'view(" + '"' + src + '"' +  ")'"; //+3 because '<img' where idx is at the position of '<'
           lines[i] = lst.join("");
         }
