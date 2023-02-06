@@ -46,5 +46,13 @@ const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
                     date: "2022/4/12",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/respect_women.md",
                     },
+                    "31ab9b67a63811ed8cc568545a57002a": {
+                    color:"#64b5f6",
+                    img: "https://picx.zhimg.com/80/v2-c37946c017304c3e7a9c2576744ac501_1440w.webp?source=1940ef5c",
+                    title: "我有一台专业微单和九支镜头，我最喜欢用手机摄影",
+                    brief: "作者在这篇文章当中聊了聊自己对手机摄影的理解，并分享了自己深度使用手机摄影软件Varlens的体验",
+                    date: "2023/2/6",
+                    article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/varlens.md",
+                    },
                     } 
  export { blogs };

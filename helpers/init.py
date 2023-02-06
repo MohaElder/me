@@ -138,7 +138,7 @@ def updateBlogLink(path):
             published = True
 
             with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
-                print("Reading markdown file to get all data")
+                print("Reading markdown file" + myfile.name + " to get all data")
                 org_content = myfile.readlines()
 
             with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
@@ -147,7 +147,7 @@ def updateBlogLink(path):
                     if "-->" in content:
                         print("End of header")
                         break
-                    lst = content.split(": ")
+                    lst = content.split(":")
                     if "<!--" in content:
                         print("Start of header:")
                     else:

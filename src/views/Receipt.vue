@@ -101,7 +101,7 @@ export default {
         at Black's Beach.",
       },
       {
-        name: "respect women",
+        name: "Johnny Silverhand",
         link: "https://mohaelder.github.io/me/#/blog?id=d6ffad89baf711eca94e68545a57002a",
         ingredients: [
           "Tequila 20ml",
@@ -113,7 +113,7 @@ export default {
         desc: "A sweet yet strong drink with radically spicy first few sips",
       },
       {
-        name: "lychirui",
+        name: "Lychirui",
         link: "baidu.com",
         ingredients: [
           "Fresh Lychi 3-5",
