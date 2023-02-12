@@ -10,6 +10,7 @@ import json
 
 # compressing image, getting exif information, tagging the image
 
+
 def updateImageData(image_data, file):
     # Get the path of the file
     filepath = os.path.join("../src/images",
@@ -22,8 +23,9 @@ def updateImageData(image_data, file):
 
     image_data["thumbnail"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + \
         file + thumbnail_extension + ".jpg"
-        
+
     return image_data
+
 
 def getImageData(file, verbose=False):
 
@@ -75,13 +77,15 @@ def getImageData(file, verbose=False):
     # your desired level, The more
     # the value of quality  variable
     # and lesser the compression
+
+
 def compress(filepath, thumbnail_extension, picture, thumbnail_only=False):
     try:
         if not thumbnail_only:
             picture.save(filepath,
-                        "JPEG",
-                        optimize=True,
-                        quality=80)
+                         "JPEG",
+                         optimize=True,
+                         quality=80)
 
         size = 512, 512
         thumbnail_extension = "_thumbnail"
@@ -92,18 +96,15 @@ def compress(filepath, thumbnail_extension, picture, thumbnail_only=False):
         print("there's something wrong when saving the image")
 
 
-def updateImageLink(path, updateOldLink = False):
+def updateImageLink(path):
     files = os.listdir(path)
 
     with open('../src/utils/imageLink.json', "r") as file:
         imageLinks = json.load(file)
     for file in files:
-        if updateOldLink:
-            imageLinks["images"][file] = updateImageData(imageLinks["images"][file], file)
-        elif file not in imageLinks["images"]:
+        if file not in imageLinks["images"] and "thumbnail" not in file:
             if os.path.isfile(os.path.join(path, file)):
                 imageLinks["images"][file] = getImageData(file)
-                
         else:
             print("already processed before")
     print("All Images processed!")
@@ -138,7 +139,8 @@ def updateBlogLink(path):
             published = True
 
             with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
-                print("Reading markdown file" + myfile.name + " to get all data")
+                print("Reading markdown file" +
+                      myfile.name + " to get all data")
                 org_content = myfile.readlines()
 
             with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
@@ -218,8 +220,6 @@ while True:
             print("all: executes all update commands")
             print("help: help screen")
             print("q: quit")
-        case "old_image":
-            updateImageLink('../src/images', True)
         case "image":
             updateImageLink('../src/images')
         case "blog":
