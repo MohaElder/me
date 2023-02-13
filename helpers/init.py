@@ -149,7 +149,7 @@ def updateBlogLink(path):
                     if "-->" in content:
                         print("End of header")
                         break
-                    lst = content.split(":")
+                    lst = content.split(": ")
                     if "<!--" in content:
                         print("Start of header:")
                     else:

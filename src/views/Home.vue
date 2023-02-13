@@ -22,7 +22,7 @@
             ? '10%;'
             : '10.5%;')
         " cols="12">
-          <v-img src="../assets/bak.png" class="bak" :width="isPortrait() ? '100%':'62.5%'"></v-img>
+          <v-img src="../assets/bak.png" class="bak" :width="isPortrait() ? '100%' : '62.5%'"></v-img>
           <h3 class="intro-text" :style="
             'font-size: ' +
             (this.isPortrait()
@@ -42,7 +42,11 @@
         </v-col>
       </v-row>
 
-      <v-row class="below">{{ quote }} <br />--- {{ quoteAuthor }}</v-row>
+
+      <v-row class="below"> 32.9911101, -117.2737427
+        <br>
+        {{ $t("message.wave_location") }}
+      </v-row>
     </div>
   </div>
 </template>
@@ -87,29 +91,7 @@ export default {
   }),
   created() {
     window.addEventListener("scroll", this.handleScroll);
-    this.$http.get("https://zenquotes.io/api/random").then(
-      (response) => {
-        //replace the link to let it read image properly, then assign to source variable for rendering
-        this.quote = this.text2Hex(response.body[0].q);
-        this.quoteAuthor = response.body[0].a.includes("Dalai")
-          ? "A 404 quote has been generated"
-          : response.body[0].a;
-      },
-      (response) => {
-        // error callback
-        let quotes = [
-          ["Don't regret, because it's useless", "MohaElder"],
-          ["It's a-me, Mario!", "Mario Auditore"],
-          ["War…war never changes", "Fallout"],
-          ["Nothing is true, everything is permitted.", "Assassin's Creed"],
-          ["Snake? Snake? SNAKE!", "Metal Gear Solid"],
-        ];
-        let quote = quotes[Math.floor(Math.random() * quotes.length)];
-        this.quote = this.text2Hex(quote[0])
-        this.quoteAuthor = quote[1]
-        console.warn(response);
-      }
-    );
+    window.scrollTo(0, 0);
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
@@ -181,7 +163,7 @@ export default {
 }
 
 .each-image {
-  height: 100%; 
+  height: 100%;
   object-fit: cover;
 }
 
@@ -217,6 +199,11 @@ export default {
   text-align: center;
   text-indent: 2%;
   line-height: 2;
+}
+
+.wave-location {
+  position: absolute;
+  bottom: 2%;
 }
 
 .below {

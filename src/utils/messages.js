@@ -1,7 +1,8 @@
 const messages = {
     en: {
         message: {
-            hello: "Hi, I'm glad that you are here :) Feel free to scroll down and feel some beautiful waves🌊",
+            hello: "Hi! Nice to meet you:) Scroll down for 🌊",
+            wave_location: "Fletcher Cove Beach Park, CA, USA",
             nav_hi: "Hi",
             nav_work: "Work",
             nav_open_source: "Open Source",
@@ -109,14 +110,18 @@ const messages = {
                 Trip\'s goal is to really help you plan a trip by providing you \
                 a variety of handy tools that I the author use to plan my \
                 trips in a elegant and neat format. and it\'s free~',
-                
+
             },
             wait: "Construction going on 🏗️",
+            share: "SHARE",
+            life: "LIFE",
+            comments: "COMMENTS"
         }
     },
     zh: {
         message: {
-            hello: "你好！欢迎来到我的网站:) 请向下滑动感受海浪🌊",
+            hello: "嗨！很高兴见到你:) 下滑感受🌊",
+            wave_location: "Fletcher Cove Beach Park, 美国, 加利福尼亚州",
             nav_hi: "嗨",
             nav_work: "工作",
             nav_open_source: "开源",
@@ -214,6 +219,9 @@ const messages = {
 
             },
             wait: "敬请期待",
+            share: "分享",
+            life: "生活",
+            comments: "评论"
         }
     },
 }

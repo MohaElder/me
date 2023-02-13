@@ -4,7 +4,7 @@ published: true
 type: life
 title: 在靠近北极的镇上住一天是什么样的体验
 brief: 我“被迫“体验的三天隐居生活
-cover: https://raw.githubusercontent.com/MohaElder/me/main/src/images/20220701-_DSF5495.jpg
+cover: https://raw.githubusercontent.com/MohaElder/me/main/src/images/20220701-_DSF5492.jpg
 date: 2022/7/3
 -->
 

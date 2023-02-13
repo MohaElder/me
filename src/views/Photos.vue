@@ -38,7 +38,7 @@
             {{ tag }}
           </v-chip>
         </div>
-        <v-btn @click="sortImages(order)" icon color="white">
+        <v-btn @click="sortImages(false, order)" icon color="white">
           <v-icon>mdi-swap-vertical</v-icon>
         </v-btn>
       </v-row>
@@ -68,8 +68,10 @@
 .image-info-box {
   display: flex;
   justify-content: space-between;
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s; /* don't forget to set a duration! */
+  animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s;
+  /* don't forget to set a duration! */
 }
 </style>
 
@@ -82,8 +84,10 @@ var images_sorted = []
 export default {
   name: "Photos",
   mounted() {
-    this.tags = tags
-    this.sortImages("latest", Object.values(images_imported))
+    window.scrollTo(0, 0);
+    this.tags = tags;
+    this.images = Object.values(images_imported);
+    this.sortImages(true, this.images)
 
   },
   data: () => ({
@@ -112,8 +116,8 @@ export default {
     download() {
       window.open(this.activeImage['url'])
     },
-    sortImages(method, images = []) {
-      if (images_sorted.length == 0) {
+    sortImages(AlwaysNewToOld = false, images = []) {
+      if (images_sorted.length == 0 || AlwaysNewToOld) {
         images_sorted = images.sort(function (a, b) { return a["DateTime"] - b["DateTime"] })
         this.images = images_sorted
       }

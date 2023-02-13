@@ -1,11 +1,11 @@
 
 <template >
   <v-container>
-    <h1 class="big-title">{{ $t("message.resume")}}</h1>
+    <h1 class="big-title">{{ $t("message.resume") }}</h1>
     <v-btn x-large outlined color="#ffd738" href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
-      style="margin-left: 5px">{{ $t("message.download")}}</v-btn>
-    <v-btn v-if="$i18n.locale == 'zh'" x-large outlined color="#ffd738" href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf"
-      style="margin-left: 5px" >中文简历</v-btn>
+      style="margin-left: 5px">{{ $t("message.download") }}</v-btn>
+    <v-btn v-if="$i18n.locale == 'zh'" x-large outlined color="#ffd738"
+      href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" style="margin-left: 5px">中文简历</v-btn>
     <v-row style="padding-left: 15px" justify="space-between">
       <v-col>
         <v-row style="margin-top: 50px">
@@ -99,7 +99,9 @@
         <v-row>
           <h4>
             {{ $t("message.great_stuff_desc.tedx_before") }}
-            <a href="https://www.youtube.com/watch?v=tM800TIQeIs" style="color: white">{{ $t("message.great_stuff_desc.tedx_link") }}</a>
+            <a href="https://www.youtube.com/watch?v=tM800TIQeIs" style="color: white">{{
+              $t("message.great_stuff_desc.tedx_link")
+            }}</a>
             {{ $t("message.great_stuff_desc.tedx_after") }}
           </h4>
         </v-row>
@@ -139,7 +141,9 @@
         </v-row>
         <v-row>
           <h4>
-            <a href="https://news.cgtn.com/news/3d3d674d7851544f33457a6333566d54/index.html">{{ $t("message.honors_and_news_desc.cgtn_link") }}</a>
+            <a href="https://news.cgtn.com/news/3d3d674d7851544f33457a6333566d54/index.html">{{
+              $t("message.honors_and_news_desc.cgtn_link")
+            }}</a>
             - {{ $t("message.honors_and_news_desc.cgtn_source") }}
           </h4>
         </v-row>
@@ -159,34 +163,35 @@
           <h1>{{ $t("message.published_projects") }}</h1>
         </v-row>
         <v-row>
-          <h4>{{ $t("message.published_projects_desc.trip_planning_before") }} 
+          <h4>{{ $t("message.published_projects_desc.trip_planning_before") }}
             <a href="https://lpat.netlify.app/">
-              {{ $t("message.published_projects_desc.trip_planning_link") }} </a></h4>
+              {{ $t("message.published_projects_desc.trip_planning_link") }} </a>
+          </h4>
         </v-row>
         <v-row>
           <h4>{{ $t("message.published_projects_desc.voting_app") }} </h4>
         </v-row>
         <v-row>
           <h4>
-            {{ $t("message.published_projects_desc.ocr") }} 
+            {{ $t("message.published_projects_desc.ocr") }}
           </h4>
         </v-row>
         <v-row>
           <h4>
-            {{ $t("message.published_projects_desc.self_reliance_before") }} 
+            {{ $t("message.published_projects_desc.self_reliance_before") }}
             <a href="https://www.eroducate.xyz/games/">
-              {{ $t("message.published_projects_desc.self_reliance_link") }} 
+              {{ $t("message.published_projects_desc.self_reliance_link") }}
             </a>
-            {{ $t("message.published_projects_desc.self_reliance_after") }} 
+            {{ $t("message.published_projects_desc.self_reliance_after") }}
           </h4>
         </v-row>
         <v-row>
           <h4>
-            {{ $t("message.published_projects_desc.sperm_dash_before") }} 
+            {{ $t("message.published_projects_desc.sperm_dash_before") }}
             <a href="https://www.eroducate.xyz/spermdash/">
-              {{ $t("message.published_projects_desc.sperm_dash_link") }} 
+              {{ $t("message.published_projects_desc.sperm_dash_link") }}
             </a>
-            {{ $t("message.published_projects_desc.sperm_dash_after") }} 
+            {{ $t("message.published_projects_desc.sperm_dash_after") }}
           </h4>
         </v-row>
       </v-col>
@@ -196,7 +201,6 @@
 </template>
 
 <style scoped>
-
 .big-title {
   font-size: 100px;
 }
@@ -217,6 +221,9 @@ h1 {
 <script>
 export default {
   data: () => ({}),
+  created() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 

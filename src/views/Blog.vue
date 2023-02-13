@@ -52,6 +52,7 @@ export default {
   },
   beforeMount() {
     {
+      window.scrollTo(0, 0);
       if (blogs[this.$route.query.id] != null) {
         this.blog = blogs[this.$route.query.id];
         this.getContent();

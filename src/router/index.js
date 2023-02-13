@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Work from '../views/Work.vue'
-import Receipt from '../views/Receipt.vue'
+import Recipe from '../views/Recipe.vue'
 import Photos from '../views/Photos.vue'
 import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
@@ -29,9 +29,9 @@ const routes = [
     component: OpenSource
   },
   {
-    path: '/Receipt',
-    name: 'Receipt',
-    component: Receipt
+    path: '/Recipe',
+    name: 'Recipe',
+    component: Recipe
   },
   {
     path: '/photos',

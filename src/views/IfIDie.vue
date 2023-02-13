@@ -81,7 +81,9 @@ export default {
     data: "",
   }),
   components: {},
-  beforeMount() { },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     encrypt() {
       var ciphertext = CryptoJS.AES.encrypt(

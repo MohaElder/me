@@ -16,7 +16,7 @@ const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
                     },
                     "2d3b5e70faf311ec9fe5acde48001122": {
                     color:"#ffee58",
-                    img: "https://raw.githubusercontent.com/MohaElder/me/main/src/images/20220701-_DSF5495.jpg",
+                    img: "https://raw.githubusercontent.com/MohaElder/me/main/src/images/20220701-_DSF5492.jpg",
                     title: "在靠近北极的镇上住一天是什么样的体验",
                     brief: "我“被迫“体验的三天隐居生活",
                     date: "2022/7/3",

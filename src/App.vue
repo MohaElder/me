@@ -1,107 +1,84 @@
 <template>
   <v-app>
     <v-app-bar app color="#121212" flat dark>
-      <v-app-bar-nav-icon
-        v-if="$vuetify.breakpoint.width < $vuetify.breakpoint.height"
-        @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-if="$vuetify.breakpoint.width < $vuetify.breakpoint.height"
+        @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <div class="d-flex align-center" v-else>
-        <v-btn @click="$router.push({ name: 'Hi' }).catch(() => {})" text>
+        <v-btn @click="$router.push({ name: 'Hi' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_hi") }}</span>
         </v-btn>
-        <v-btn @click="$router.push({ name: 'Work' }).catch(() => {})" text>
+        <v-btn @click="$router.push({ name: 'Work' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_work") }}</span>
         </v-btn>
-        <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => {})" text>
-          <span class="mr-2">{{ $t("message.nav_open_source") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'Receipt' }).catch(() => {})" text>
-          <span class="mr-2">{{ $t("message.nav_cocktail") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'Photos' }).catch(() => {})" text>
+        <v-btn @click="$router.push({ name: 'Photos' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_photos") }}</span>
         </v-btn>
-        <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => {})" text>
+        <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => { })" text>
+          <span class="mr-2">{{ $t("message.nav_open_source") }}</span>
+        </v-btn>
+        <v-btn @click="$router.push({ name: 'Recipe' }).catch(() => { })" text>
+          <span class="mr-2">{{ $t("message.nav_cocktail") }}</span>
+        </v-btn>
+        <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_blogs") }}</span>
         </v-btn>
         <!-- <v-btn @click="$router.push({ name: 'Guide' }).catch(() => {})" text>
           <span class="mr-2">{{ $t("message.nav_guide") }}</span>
         </v-btn> -->
-        <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => {})" text>
+        <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_if_i_die") }}</span>
         </v-btn>
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        @click="changeLanguage()"
-        text
-      >
+      <v-btn @click="changeLanguage()" text>
         中/EN
       </v-btn>
 
-      <v-btn
-        :href="statement.link"
-        target="_blank"
-        text
-      >
+      <v-btn :href="statement.link" target="_blank" text>
         <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
-           {{statement.longName}}
+          {{ statement.longName }}
         </span>
-        <span v-else>  {{statement.shortName}} </span>
+        <span v-else> {{ statement.shortName }} </span>
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      bottom
-      temporary
-      style="background-color: #121212"
-    >
+    <v-navigation-drawer v-model="drawer" app bottom temporary style="background-color: #121212">
       <v-list nav dense>
         <v-list-item-group v-model="group">
           <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'Hi' }).catch(() => {})"
-              >{{ $t("message.nav_hi") }}</v-list-item-title
-            >
+            <v-list-item-title @click="$router.push({ name: 'Hi' }).catch(() => { })">{{
+              $t("message.nav_hi")
+            }}</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'Work' }).catch(() => {})"
-              > {{ $t("message.nav_work") }}</v-list-item-title
-            >
+            <v-list-item-title @click="$router.push({ name: 'Work' }).catch(() => { })"> {{
+              $t("message.nav_work")
+            }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$router.push({ name: 'Photos' }).catch(() => { })">{{
+              $t("message.nav_photos")
+            }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{
+              $t("message.nav_open_source")
+            }}</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'OpenSource' }).catch(() => {})"
-              >{{ $t("message.nav_open_source") }}</v-list-item-title
-            >
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'Receipt' }).catch(() => {})"
-              >{{ $t("message.nav_cocktail") }}</v-list-item-title
-            >
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'Photos' }).catch(() => {})"
-              >{{ $t("message.nav_photos") }}</v-list-item-title
-            >
+            <v-list-item-title @click="$router.push({ name: 'Recipe' }).catch(() => { })">{{
+              $t("message.nav_cocktail")
+            }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'Blogs' }).catch(() => {})"
-              >{{ $t("message.nav_blogs") }}</v-list-item-title
-            >
+            <v-list-item-title @click="$router.push({ name: 'Blogs' }).catch(() => { })">{{
+              $t("message.nav_blogs")
+            }}</v-list-item-title>
           </v-list-item>
           <!-- <v-list-item>
             <v-list-item-title
@@ -110,10 +87,9 @@
             >
           </v-list-item> -->
           <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'IfIDie' }).catch(() => {})"
-              >{{ $t("message.nav_if_i_die") }}</v-list-item-title
-            >
+            <v-list-item-title @click="$router.push({ name: 'IfIDie' }).catch(() => { })">{{
+              $t("message.nav_if_i_die")
+            }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -124,20 +100,9 @@
     </v-main>
 
     <v-footer dark padless>
-      <v-card
-        flat
-        tile
-        class="white--text text-center"
-        style="background-color: #121212; width: 100%"
-      >
+      <v-card flat tile class="white--text text-center" style="background-color: #121212; width: 100%">
         <v-card-text>
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4 white--text"
-            @click="goTo(icon.substring(4))"
-            icon
-          >
+          <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" @click="goTo(icon.substring(4))" icon>
             <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
             <v-icon size="24px">
               {{ icon }}
@@ -155,9 +120,8 @@
         <v-divider></v-divider>
         <v-card-text class="white--text">
           {{ new Date().getFullYear() }} —
-          <strong
-            >MOHAELDER
-            <span> {{statement.hashtag}} </span>
+          <strong>MOHAELDER
+            <span> {{ statement.hashtag }} </span>
           </strong>
         </v-card-text>
       </v-card>

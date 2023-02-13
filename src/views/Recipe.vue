@@ -1,39 +1,28 @@
 <template>
   <v-container>
-    <v-img
-      :class="
+    <v-img :class="
+      $vuetify.breakpoint.width < $vuetify.breakpoint.height
+        ? 'bannerImageMobile'
+        : 'bannerImage'
+    " src="../assets/drink_lab.png"></v-img>
+    <v-row :class="
+      $vuetify.breakpoint.width < $vuetify.breakpoint.height
+        ? 'bannerRowMobile'
+        : 'bannerRow'
+    ">
+      <p :classstyle="
         $vuetify.breakpoint.width < $vuetify.breakpoint.height
-          ? 'bannerImageMobile'
-          : 'bannerImage'
-      "
-      src="../assets/drink_lab.png"
-    ></v-img>
-    <v-row
-      :class="
-        $vuetify.breakpoint.width < $vuetify.breakpoint.height
-          ? 'bannerRowMobile'
-          : 'bannerRow'
-      "
-    >
-      <p
-        :classstyle="
-          $vuetify.breakpoint.width < $vuetify.breakpoint.height
-            ? 'bannerTextMobile'
-            : 'bannerText'
-        "
-      >
-      {{ $t("message.cocktail_desc_before") }}
+          ? 'bannerTextMobile'
+          : 'bannerText'
+      ">
+        {{ $t("message.cocktail_desc_before") }}
         <a href="mailto:calen0909@Hotmail.com" style="color: #ffd738">
           {{ $t("message.cocktail_desc_link") }}
-        </a>  {{ $t("message.cocktail_desc_after") }}
+        </a> {{ $t("message.cocktail_desc_after") }}
       </p>
     </v-row>
     <div class="menu">
-      <div
-        style="margin-bottom: 25px"
-        v-for="item in menu"
-        v-bind:key="item.name"
-      >
+      <div style="margin-bottom: 25px" v-for="item in menu" v-bind:key="item.name">
         <h3 style="text-align: center; margin-bottom: 10px">
           ~
           <a :href="item.link" style="color: white">{{
@@ -41,20 +30,14 @@
           }}</a>
           ~
         </h3>
-        <p
-          class="menuItemText"
-          v-for="(ingredient, index) in item.ingredients"
-          v-bind:key="index"
-        >
+        <p class="menuItemText" v-for="(ingredient, index) in item.ingredients" v-bind:key="index">
           <span>{{ ingredient }}</span>
         </p>
-        <p
-          :class="
-            $vuetify.breakpoint.width < $vuetify.breakpoint.height
-              ? 'menuDescMobile'
-              : 'menuDesc'
-          "
-        >
+        <p :class="
+          $vuetify.breakpoint.width < $vuetify.breakpoint.height
+            ? 'menuDescMobile'
+            : 'menuDesc'
+        ">
           <i>{{ item.desc }}</i>
         </p>
       </div>
@@ -136,6 +119,9 @@ export default {
       },
     ],
   }),
+  mounted() {
+    window.scrollTo(0, 0);
+  }
 };
 </script>
 
