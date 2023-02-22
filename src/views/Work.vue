@@ -12,7 +12,7 @@
           <h1> {{ $t("message.skills") }} </h1>
         </v-row>
         <v-row>
-          <h4>English, Mandarin, Spanish,</h4>
+          <h4>English, Mandarin, Thai</h4>
         </v-row>
         <v-row>
           <h4>Shanghainese, Asian Sign Language;</h4>
