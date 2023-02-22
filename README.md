@@ -63,3 +63,8 @@ Formatted the Readme file into a more organized matter. I optimized Photo page. 
 Roadmap for future:
 
 Guide section
+
+Update: 2023/2/22
+
+The migration to Vue3 and Vuetify3 has officially started. It is a bit more work than I thought, but it will work out :)
+A branch with Vue3 will be uploaded soon. This major update will also bring in vite, a considerably faster bundler for building the app.
