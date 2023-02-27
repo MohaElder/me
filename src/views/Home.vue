@@ -18,7 +18,7 @@
       <v-row align="center" justify="center" :style="opacity">
         <v-col class="text-center second intro" :style="
           'top: ' +
-          ($vuetify.breakpoint.width < $vuetify.breakpoint.height
+          (this.isPortrait()
             ? '10%;'
             : '10.5%;')
         " cols="12">
