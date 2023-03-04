@@ -7,7 +7,7 @@
 </script> -->
 
 <template>
-  <v-app>
+  <v-app style="overflow: hidden">
     <v-app-bar app flat dark>
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 

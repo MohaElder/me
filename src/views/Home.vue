@@ -19,7 +19,7 @@
         <v-col class="text-center second intro" :style="
           'top: ' +
           (this.isPortrait()
-            ? '10%;'
+            ? '11%;'
             : '10.5%;')
         " cols="12">
           <v-img src="../assets/bak.png" class="bak" :width="isPortrait() ? '100%' : '62.5%'"></v-img>

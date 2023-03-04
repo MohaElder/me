@@ -1,9 +1,10 @@
 
 <template >
   <v-container>
-    <h3 class="headline text-left">{{ $t("message.work.a") }} <a href="https://ucsd.edu/"><i>UCSD</i></a>{{
+    <h3 class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh' ">{{ $t("message.work.a") }} <a href="https://ucsd.edu/"><i>UCSD</i></a>{{
       $t("message.work.b") }}<a href="https://www.unops.org/"><i>UNOPS</i></a>{{ $t("message.work.c") }}</h3>
-    <v-img style="margin-top: 5%; padding: 20%; width: 35%; box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;"
+    <v-img style="margin-top: 5%; padding: 20%; box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;"
+    :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'"
       src="../assets/profile_pic.jpg" cover></v-img>
     <h1 class="big-title">{{ $t("message.resume") }}</h1>
     <v-btn size="x-large" variant="outlined" color="#ffd738"
@@ -25,7 +26,7 @@
             <v-row>
               <h4>Shanghainese, ASL</h4>
             </v-row>
-            <v-row style="margin-top: 5%">
+            <v-row :style="$vuetify.display.mobile ? 'margin-top: 15%' : 'margin-top: 5%'">
               <h4>JavaScript, TypeScript, C#</h4>
             </v-row>
             <v-row>
@@ -34,8 +35,24 @@
             <v-row>
               <h4>C++, C, ARM</h4>
             </v-row>
+            <span v-if="$vuetify.display.mobile"><v-row style="margin-top: 15%">
+                <h4>Web, SQL, Container, CI/CD,</h4>
+              </v-row>
+              <v-row>
+                <h4>Unity3D, Wwise</h4>
+              </v-row>
+              <v-row style="margin-top: 15%">
+                <h4>
+                  XD, Figma, Abstract
+                </h4>
+              </v-row>
+              <v-row>
+                <h4>
+                  Ps, Pr, Ai, Ae, Lr, Id
+                </h4>
+              </v-row></span>
           </v-col>
-          <v-col>
+          <v-col v-if="!$vuetify.display.mobile">
             <v-row>
               <h4>Web, SQL, Container, CI/CD,</h4>
             </v-row>
@@ -220,9 +237,6 @@
 </template>
 
 <style scoped>
-.headline {
-  font-size: 5vh;
-}
 
 .big-title {
   padding-top: 5%;
