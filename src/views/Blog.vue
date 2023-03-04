@@ -13,8 +13,8 @@
         </v-btn>
       </v-col>
     </v-row>
-    <div v-html="fileContent"></div>
-    
+    <div class="blog-render" v-html="fileContent"></div>
+
   </v-container>
 </template>
 
@@ -62,7 +62,7 @@ export default {
           //we find the first occurance of " after startPos to locate the end of the link
           let src = element.slice(startPos, endPos);
           let lst = element.split("");
-          lst[idx + 3] += " onclick= 'view(" + '"' + src + '"' + ")'"; //+3 because '<img' where idx is at the position of '<'
+          lst[idx + 3] += " class='md-img' onclick= 'view(" + '"' + src + '"' + ")'"; //+3 because '<img' where idx is at the position of '<'
           lines[i] = lst.join("");
         }
       }
@@ -78,7 +78,7 @@ export default {
             let ret = data
               .split("../assets")
               .join(
-                "https://raw.githubusercontent.com/MohaElder/me/main/src/assets"
+                "https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets"
               );
             let md = new MarkdownIt('commonmark');;
             this.fileContent = this.rendered(md.render(ret))
@@ -111,7 +111,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .middle {
   /* Center child horizontally*/
   display: flex;
@@ -147,7 +147,7 @@ blockquote {
   /* padding: 5px; */
 }
 
-img {
+.md-img {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;

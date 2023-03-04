@@ -1,6 +1,10 @@
 
 <template >
   <v-container>
+    <h3 class="headline text-left">{{ $t("message.work.a") }} <a href="https://ucsd.edu/"><i>UCSD</i></a>{{
+      $t("message.work.b") }}<a href="https://www.unops.org/"><i>UNOPS</i></a>{{ $t("message.work.c") }}</h3>
+    <v-img style="margin-top: 5%; padding: 20%; width: 35%; box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;"
+      src="../assets/profile_pic.jpg" cover></v-img>
     <h1 class="big-title">{{ $t("message.resume") }}</h1>
     <v-btn size="x-large" variant="outlined" color="#ffd738"
       href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf" style="margin-left: 5px">{{
@@ -13,36 +17,44 @@
           <h1> {{ $t("message.skills") }} </h1>
         </v-row>
         <v-row>
-          <h4>English, Mandarin, Thai</h4>
+
+          <v-col style="margin-right: -50%;">
+            <v-row>
+              <h4>English, Mandarin, Thai</h4>
+            </v-row>
+            <v-row>
+              <h4>Shanghainese, ASL</h4>
+            </v-row>
+            <v-row style="margin-top: 5%">
+              <h4>JavaScript, TypeScript, C#</h4>
+            </v-row>
+            <v-row>
+              <h4>Python, Java, Lua,</h4>
+            </v-row>
+            <v-row>
+              <h4>C++, C, ARM</h4>
+            </v-row>
+          </v-col>
+          <v-col>
+            <v-row>
+              <h4>Web, SQL, Container, CI/CD,</h4>
+            </v-row>
+            <v-row>
+              <h4>Unity3D, Wwise</h4>
+            </v-row>
+            <v-row style="margin-top: 5%">
+              <h4>
+                XD, Figma, Abstract
+              </h4>
+            </v-row>
+            <v-row>
+              <h4>
+                Ps, Pr, Ai, Ae, Lr, Id
+              </h4>
+            </v-row>
+          </v-col>
         </v-row>
-        <v-row>
-          <h4>Shanghainese, Asian Sign Language;</h4>
-        </v-row>
-        <v-row style="margin-top: 30px">
-          <h4>JavaScript, TypeScript,</h4>
-        </v-row>
-        <v-row>
-          <h4>Java, C, C++, C#,</h4>
-        </v-row>
-        <v-row>
-          <h4>Python, Lua, ARM, Latex;</h4>
-        </v-row>
-        <v-row style="margin-top: 30px">
-          <h4>Web, SQL, Container, CI/CD, Unix;</h4>
-        </v-row>
-        <v-row style="margin-top: 30px">
-          <h4>Unity3D, Wwise, C4D;</h4>
-        </v-row>
-        <v-row style="margin-top: 30px">
-          <h4>
-            Adobe XD, Figma, Abstract;
-          </h4>
-        </v-row>
-        <v-row style="margin-top: 30px">
-          <h4>
-            Ps, Pr, Ai, Ae, Lr, Id
-          </h4>
-        </v-row>
+
       </v-col>
       <v-col style="padding-left: 35px" md="5">
         <v-row style="margin-top: 50px">
@@ -115,19 +127,25 @@
           <h1>{{ $t("message.work_experience") }}</h1>
         </v-row>
         <v-row>
-          <h4>{{ $t("message.work_experience_desc.unops") }} 🇺🇳</h4>
+          <h4>{{ $t("message.work_experience_desc.unops_left") }} <a href="https://www.unops.org/">{{
+            $t("message.work_experience_desc.unops") }}</a> {{ $t("message.work_experience_desc.unops_right") }}🇺🇳
+          </h4>
         </v-row>
         <v-row>
-          <h4>{{ $t("message.work_experience_desc.ucsd") }}</h4>
+          <h4>{{ $t("message.work_experience_desc.ucsd_left") }} <a href="https://ucsd.edu/">{{
+            $t("message.work_experience_desc.ucsd") }}</a> {{ $t("message.work_experience_desc.ucsd_right") }}</h4>
         </v-row>
         <v-row>
-          <h4>{{ $t("message.work_experience_desc.nvidia") }}</h4>
+          <h4>{{ $t("message.work_experience_desc.nvidia_left") }} <a href="https://www.nvidia.com/en-us/">{{
+            $t("message.work_experience_desc.nvidia") }}</a> {{ $t("message.work_experience_desc.nvidia_right") }}</h4>
         </v-row>
         <v-row>
-          <h4>{{ $t("message.work_experience_desc.axiom") }}</h4>
+          <h4>{{ $t("message.work_experience_desc.axiom_left") }} {{ $t("message.work_experience_desc.axiom") }} {{
+            $t("message.work_experience_desc.axiom_right") }}</h4>
         </v-row>
         <v-row>
-          <h4>{{ $t("message.work_experience_desc.sdll") }}</h4>
+          <h4>{{ $t("message.work_experience_desc.sdll_left") }} <a href="http://vttocamp.com/">{{
+            $t("message.work_experience_desc.sdll") }}</a> {{ $t("message.work_experience_desc.sdll_right") }}</h4>
         </v-row>
       </v-col>
       <v-col style="padding-left: 35px" md="5">
@@ -202,8 +220,13 @@
 </template>
 
 <style scoped>
+.headline {
+  font-size: 5vh;
+}
+
 .big-title {
-  font-size: 100px;
+  padding-top: 5%;
+  font-size: 5vh;
 }
 
 h4 {
