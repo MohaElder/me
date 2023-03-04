@@ -89,6 +89,7 @@ export default {
     opacity: "opacity: 1",
     quote: "",
     quoteAuthor: "MohaElder",
+    scroll_position: 0,
   }),
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -128,14 +129,18 @@ export default {
         : width.value * 0.05;
     },
     loadImages() {
-      for (let i = 1; i < 108; i++) {
+      for (let i = this.scroll_position; i < this.scroll_position + 10 && i < 108; i++) {
         let img = new Image();
-        img.src = `https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(${i}).jpg`;
+        img.src = `https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(${i + 1}).jpg`;
         images.push(img);
       }
     },
     handleScroll() {
       var index = Math.floor(window.scrollY / 72) % 108;
+      if (index >= this.scroll_position + 5){
+        this.scroll_position = index + 5;
+        this.loadImages();
+      }
       var father = document.querySelector("#father");
       father.children[0].replaceWith(images[index]);
       images[index].classList.add("each-image");
