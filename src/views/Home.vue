@@ -128,9 +128,9 @@ export default {
         : width.value * 0.05;
     },
     loadImages() {
-      for (let i = 2; i < 108; i++) {
+      for (let i = 1; i < 108; i++) {
         let img = new Image();
-        import(`../assets/beachFrame/frame (${i}).jpg`).then((src) => {
+        import(`../assets/beachFrame/frame(${i}).jpg`).then((src) => {
           img.src = src.default;
           images.push(img);
         });
