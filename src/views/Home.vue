@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <div id="father" class="animated-image" :style="blur">
-      <img src="../assets/beachFrame/frame(1).jpg" alt="" class="each-image" style="opacity: 0" />
+      <img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(1).jpg" alt="" class="each-image" style="opacity: 0" />
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
@@ -130,10 +130,8 @@ export default {
     loadImages() {
       for (let i = 1; i < 108; i++) {
         let img = new Image();
-        import(`../assets/beachFrame/frame(${i}).jpg`).then((src) => {
-          img.src = src.default;
-          images.push(img);
-        });
+        img.src = `https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(${i}).jpg`;
+        images.push(img);
       }
     },
     handleScroll() {
