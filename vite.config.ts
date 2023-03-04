@@ -8,6 +8,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/me/' : '/',
   plugins: [
     vue({ 
       template: { transformAssetUrls }
@@ -36,7 +37,6 @@ export default defineConfig({
     ],
   },
   server: {
-    base: process.env.NODE_ENV === 'production' ? '/me/' : '/',
     port: 3000,
   },
 })
