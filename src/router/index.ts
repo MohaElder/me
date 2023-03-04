@@ -11,45 +11,46 @@ import IfIDie from '../views/IfIDie.vue'
 import OpenSource from '../views/OpenSource.vue'
 import Guide from '../views/Guide.vue'
 
+const appRoot = '/me';
 
 const routes = [
   {
-    path: '/',
+    path: appRoot + '/',
     name: 'Hi',
     component: Home
   },
   {
-    path: '/work',
+    path: appRoot + '/work',
     name: 'Work',
     component: Work
   },
   {
-    path: '/opensource',
+    path: appRoot + '/opensource',
     name: 'OpenSource',
     component: OpenSource
   },
   {
-    path: '/Recipe',
+    path: appRoot + '/Recipe',
     name: 'Recipe',
     component: Recipe
   },
   {
-    path: '/photos',
+    path: appRoot + '/photos',
     name: 'Photos',
     component: Photos
   },
   {
-    path: '/blogs',
+    path: appRoot + '/blogs',
     name: 'Blogs',
     component: Blogs
   },
   {
-    path: '/blog',
+    path: appRoot + '/blog',
     name: 'Blog',
     component: Blog
   },
   {
-    path: '/final_words',
+    path: appRoot + '/final_words',
     name: 'IfIDie',
     component: IfIDie
   },
