@@ -1,17 +1,17 @@
 <template>
   <v-container>
     <v-img :class="
-      $vuetify.breakpoint.width < $vuetify.breakpoint.height
+      $vuetify.display.mobile
         ? 'bannerImageMobile'
         : 'bannerImage'
     " src="../assets/drink_lab.png"></v-img>
     <v-row :class="
-      $vuetify.breakpoint.width < $vuetify.breakpoint.height
+       $vuetify.display.mobile
         ? 'bannerRowMobile'
         : 'bannerRow'
     ">
       <p :classstyle="
-        $vuetify.breakpoint.width < $vuetify.breakpoint.height
+        $vuetify.display.mobile
           ? 'bannerTextMobile'
           : 'bannerText'
       ">
@@ -34,7 +34,7 @@
           <span>{{ ingredient }}</span>
         </p>
         <p :class="
-          $vuetify.breakpoint.width < $vuetify.breakpoint.height
+           $vuetify.display.mobile
             ? 'menuDescMobile'
             : 'menuDesc'
         ">

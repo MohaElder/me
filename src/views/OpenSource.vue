@@ -24,7 +24,7 @@
                 nav('https://github.com/MohaElder/Trip');
               }
             " style="margin-bottom: 50px">
-              <v-img class="white--text align-end" height="200px" src="../assets/osp/Banner.jpg">
+              <v-img class="white--text align-end" src="../assets/osp/Banner.jpg">
                 <v-card-title>Let's Plan A Trip</v-card-title>
               </v-img>
               <v-card-text class="text--primary">
@@ -38,7 +38,7 @@
                 nav('https://github.com/MohaElder/gpa-c');
               }
             " style="margin-bottom: 50px">
-              <v-img class="white--text align-end" height="200px" src="../assets/osp/gpac.png">
+              <v-img class="white--text align-end" src="../assets/osp/gpac.png">
                 <v-card-title>gpa-c</v-card-title>
               </v-img>
               <v-card-text class="text--primary">
@@ -58,7 +58,7 @@
                 );
               }
             " style="margin-bottom: 50px">
-              <v-img class="white--text align-end" height="200px" src="../assets/osp/eroducate.png">
+              <v-img class="white--text align-end" src="../assets/osp/eroducate.png">
                 <v-card-title style="color: black">Eroducate</v-card-title>
               </v-img>
               <v-card-text class="text--primary">
@@ -75,7 +75,7 @@
                 nav('https://github.com/MohaElder/AnnoWikiTool');
               }
             " style="margin-bottom: 50px">
-              <v-img class="white--text align-end" height="200px" src="../assets/osp/anno.png">
+              <v-img class="white--text align-end" src="../assets/osp/anno.png">
                 <v-card-title>Anno Wiki Tool</v-card-title>
               </v-img>
               <v-card-text class="text--primary">
@@ -97,7 +97,7 @@
                 nav('https://github.com/Eroducate/project-megabunus-portal');
               }
             " style="margin-bottom: 50px">
-              <v-img class="white--text align-end" height="200px" src="../assets/osp/megabunus.png">
+              <v-img class="white--text align-end" src="../assets/osp/megabunus.png">
                 <v-card-title style="color: black">Project Megabunus</v-card-title>
               </v-img>
               <v-card-text class="text--primary">

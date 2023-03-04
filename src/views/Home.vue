@@ -1,15 +1,15 @@
 <template>
   <div class="home-container">
     <div id="father" class="animated-image" :style="blur">
-      <img src="../assets/beachFrame/frame (1).jpg" alt="" class="each-image" style="opacity: 0" />
+      <img src="../assets/beachFrame/frame(1).jpg" alt="" class="each-image" style="opacity: 0" />
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
         <h1 id="name" class="foreground" :style="'font-size:' + calcSize() + 'px;' +
-      'padding-top: ' +
-      (this.isPortrait()
-        ? '15%;'
-        : '0px;')">
+          'padding-top: ' +
+          (this.isPortrait()
+            ? '15%;'
+            : '0px;')">
           {{ activeName }}
         </h1>
       </v-col>
@@ -53,6 +53,7 @@
 
 <script>
 import "animate.css";
+import { useDisplay } from 'vuetify'
 
 var images = [];
 const names = ["翁安志", "お やすし", "Yasushi Oh"];
@@ -117,18 +118,22 @@ export default {
         .join(" ");
     },
     isPortrait() {
-      return this.$vuetify.breakpoint.width < this.$vuetify.breakpoint.height
+      return this.$vuetify.display.mobile
     },
     calcSize() {
+      const { width } = useDisplay()
+
       return this.isPortrait()
-        ? this.$vuetify.breakpoint.width * 0.14
-        : this.$vuetify.breakpoint.width * 0.05;
+        ? width.value * 0.14
+        : width.value * 0.05;
     },
     loadImages() {
-      for (let i = 1; i < 108; i++) {
+      for (let i = 2; i < 108; i++) {
         let img = new Image();
-        img.src = require("../assets/beachFrame/frame (" + i + ").jpg");
-        images.push(img);
+        import(`../assets/beachFrame/frame (${i}).jpg`).then((src) => {
+          img.src = src.default;
+          images.push(img);
+        });
       }
     },
     handleScroll() {
@@ -163,6 +168,7 @@ export default {
 }
 
 .each-image {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -212,7 +218,7 @@ export default {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  bottom: 1%;
+  bottom: 3%;
   font-size: 70%;
   font-weight: 300;
   width: 50%;

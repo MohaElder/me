@@ -7,30 +7,19 @@
     </h1>
     <v-container style="margin-top: 20px">
       <v-row>
-        <v-col
-          v-for="(item, key) in items"
-          :key="key"
-          :cols="$vuetify.breakpoint.width < $vuetify.breakpoint.height ? 12 : 6"
-          :style="$vuetify.breakpoint.width < $vuetify.breakpoint.height ? 'padding-left: 10%; padding-right: 10%;':''"
-        >
-          <v-card
-            class="mx-auto"
-            max-width="600"
-            :color="item.color"
-            @click="travel(key)"
-          >
-            <v-img class="white--text align-end" height="300px" :src="item.img">
-              <v-card-title>{{ item.title }}</v-card-title>
+        <v-col v-for="(item, key) in items" :key="key" :cols="$vuetify.display.mobile ? 12 : 6"
+          :style="$vuetify.display.mobile ? 'padding-left: 10%; padding-right: 10%;' : ''">
+          <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(key)">
+            <v-img class="align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="300px" cover :src="item.img">
+              <v-card-title class="text-white">{{ item.title }}</v-card-title>
             </v-img>
 
             <v-card-text class="text--primary">
-              <span
-                :style="
-                  'color: ' + (item.color == '#ffee58' ? 'black;' : 'white;')
-                "
-              >
-                {{ item.brief }}</span
-              >
+              <span :style="
+                'color: ' + (item.color == '#ffee58' ? 'black;' : 'white;')
+              ">
+                {{ item.brief }}</span>
             </v-card-text>
           </v-card>
         </v-col>

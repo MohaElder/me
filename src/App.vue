@@ -1,8 +1,15 @@
+<!-- <template>
+  <router-view />
+</template>
+
+<script lang="ts" setup>
+  //
+</script> -->
+
 <template>
   <v-app>
-    <v-app-bar app color="#121212" flat dark>
-      <v-app-bar-nav-icon v-if="$vuetify.breakpoint.width < $vuetify.breakpoint.height"
-        @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar app flat dark>
+      <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <div class="d-flex align-center" v-else>
         <v-btn @click="$router.push({ name: 'Hi' }).catch(() => { })" text>
@@ -16,16 +23,16 @@
         </v-btn>
         <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_open_source") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'Recipe' }).catch(() => { })" text>
+      </v-btn>
+      <v-btn @click="$router.push({ name: 'Recipe' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_cocktail") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_blogs") }}</span>
         </v-btn>
         <!-- <v-btn @click="$router.push({ name: 'Guide' }).catch(() => {})" text>
-          <span class="mr-2">{{ $t("message.nav_guide") }}</span>
-        </v-btn> -->
+                  <span class="mr-2">{{ $t("message.nav_guide") }}</span>
+                </v-btn> -->
         <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => { })" text>
           <span class="mr-2">{{ $t("message.nav_if_i_die") }}</span>
         </v-btn>
@@ -37,8 +44,8 @@
         中/EN
       </v-btn>
 
-      <v-btn :href="statement.link" target="_blank" text>
-        <span v-if="$vuetify.breakpoint.width > $vuetify.breakpoint.height">
+      <v-btn :href="statement.link" target="_blank">
+        <span v-if="$vuetify.display.mobile">
           {{ statement.longName }}
         </span>
         <span v-else> {{ statement.shortName }} </span>
@@ -74,18 +81,18 @@
             <v-list-item-title @click="$router.push({ name: 'Recipe' }).catch(() => { })">{{
               $t("message.nav_cocktail")
             }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Blogs' }).catch(() => { })">{{
-              $t("message.nav_blogs")
-            }}</v-list-item-title>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-title @click="$router.push({ name: 'Blogs' }).catch(() => { })">{{
+            $t("message.nav_blogs")
+          }}</v-list-item-title>
           </v-list-item>
           <!-- <v-list-item>
-            <v-list-item-title
-              @click="$router.push({ name: 'Guide' }).catch(() => {})"
-              >{{ $t("message.nav_guide") }}</v-list-item-title
-            >
-          </v-list-item> -->
+                    <v-list-item-title
+                      @click="$router.push({ name: 'Guide' }).catch(() => {})"
+                      >{{ $t("message.nav_guide") }}</v-list-item-title
+                    >
+                  </v-list-item> -->
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'IfIDie' }).catch(() => { })">{{
               $t("message.nav_if_i_die")
@@ -99,25 +106,15 @@
       <router-view />
     </v-main>
 
-    <v-footer dark padless>
-      <v-card flat tile class="white--text text-center" style="background-color: #121212; width: 100%">
-        <v-card-text>
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" @click="goTo(icon.substring(4))" icon>
-            <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
-            <v-icon size="24px">
-              {{ icon }}
-            </v-icon>
-          </v-btn>
-        </v-card-text>
-
+    <v-footer dark padless style="padding-top: 1%;">
+      <v-card flat tile class="white--text text-center">
         <v-card-text class="white--text pt-0">
-          Made with <v-icon size="14px"> $vueIcon </v-icon>, 🧠, and ❤️.
+          Made with
+          <vueIcon />, 🧠, and ❤️.
           <a style="color: white" href="https://github.com/MohaElder/me">
             source code
           </a>
         </v-card-text>
-
-        <v-divider></v-divider>
         <v-card-text class="white--text">
           {{ new Date().getFullYear() }} —
           <strong>MOHAELDER
@@ -129,7 +126,11 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+
+import vueIcon from './components/vue-icon.vue'
+import eroducate from './components/eroducate.vue';
+
 export default {
   name: "App",
   data: () => ({
@@ -139,7 +140,7 @@ export default {
       hashtag: "#Human Right for Everyone",
       link: "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
     },
-    icons: ["mdi-github", "mdi-linkedin", "$eroducate"],
+    icons: ["mdi-github", "mdi-linkedin",],
     drawer: false,
     group: null,
   }),
@@ -148,33 +149,16 @@ export default {
       this.drawer = false;
     },
   },
-  mounted() {
-    this.$vuetify.theme.dark = true;
-  },
   methods: {
-    goTo(dest) {
-      console.log(dest);
-      switch (dest) {
-        case "github":
-          window.open("https://github.com/mohaelder");
-          break;
-        case "linkedin":
-          window.open("https://linkedin.com/in/mohaelder");
-          break;
-        case "ducate": //ducate because it is not mdi- prefix
-          window.open("https://eroducate.xyz");
-          break;
-      }
-    },
-
     changeLanguage() {
-      this.$i18n.locale = this.$i18n.locale == 'en' ? 'zh' : 'en'
+      this.$i18n.locale = this.$i18n.locale == "en" ? "zh" : "en";
     }
   },
+  components: { vueIcon, eroducate }
 };
 </script>
 
-<style>
+<style scoped>
 p {
   font-size: 100%;
 }
