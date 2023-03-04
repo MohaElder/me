@@ -1,10 +1,10 @@
 <template>
   <v-container style="
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-bottom: 7%;
-      padding-top: 2%;
-    ">
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 7%;
+        padding-top: 2%;
+      ">
     <v-row style="text-align: start; margin-bottom: 30px">
       <p>
         {{ $t("message.if_i_die_brief") }}
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-var CryptoJS = require("crypto-js");
+import CryptoJS from "crypto-js";
 
 export default {
   data: () => ({
@@ -112,7 +112,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 h1 {
   font-weight: 400;
 }

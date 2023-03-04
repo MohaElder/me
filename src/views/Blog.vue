@@ -1,19 +1,11 @@
 <template>
-  <v-container
-    style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%"
-  >
+  <v-container style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%">
     <v-row style="margin-bottom: 40px">
       <v-col class="text-center head-section" cols="12">
         <h1 class="blog-title">{{ blog.title }}</h1>
         <h2 style="width: 100%" class="blog-date">Author: MohaElder</h2>
         <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="white--text"
-          @click="share(icon.substring(4))"
-          icon
-        >
+        <v-btn v-for="icon in icons" :key="icon" class="white--text" @click="share(icon.substring(4))" icon>
           <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
           <v-icon size="24px">
             {{ icon }}
@@ -21,15 +13,14 @@
         </v-btn>
       </v-col>
     </v-row>
-    <vue-markdown :postrender="rendered" :source="fileContent">{{
-      blog.article
-    }}</vue-markdown>
+    <div v-html="fileContent"></div>
+    
   </v-container>
 </template>
 
 <script>
 import { blogs } from "../utils/blogLink.js";
-import VueMarkdown from "@adapttive/vue-markdown";
+import MarkdownIt from 'markdown-it'
 
 export default {
   data: () => ({
@@ -47,9 +38,6 @@ export default {
     },
     fileContent: null,
   }),
-  components: {
-    VueMarkdown,
-  },
   beforeMount() {
     {
       window.scrollTo(0, 0);
@@ -74,33 +62,28 @@ export default {
           //we find the first occurance of " after startPos to locate the end of the link
           let src = element.slice(startPos, endPos);
           let lst = element.split("");
-          lst[idx + 3] += " onclick= 'view(" + '"' + src + '"' +  ")'"; //+3 because '<img' where idx is at the position of '<'
+          lst[idx + 3] += " onclick= 'view(" + '"' + src + '"' + ")'"; //+3 because '<img' where idx is at the position of '<'
           lines[i] = lst.join("");
         }
       }
-      //console.log(lines.join("\n"));
       return lines.join("\n");
-      //return e;
     },
 
     getContent() {
       this.fileContent = "rendering ";
-      this.$http.get(this.blog.article).then(
-        (response) => {
-          //replace the link to let it read image properly, then assign to source variable for rendering
-          this.fileContent = response.body
-            .split("../assets")
-            .join(
-              "https://raw.githubusercontent.com/MohaElder/me/main/src/assets"
-            );
-        },
-        (response) => {
-          // error callback
-          this.fileContent =
-            "An error ocurred, this is probably an internet issue";
-          console.log(response);
-        }
-      );
+      fetch(this.blog.article).then((response) => response.text())
+        .then(
+          (data) => {
+            //replace the link to let it read image properly, then assign to source variable for rendering
+            let ret = data
+              .split("../assets")
+              .join(
+                "https://raw.githubusercontent.com/MohaElder/me/main/src/assets"
+              );
+            let md = new MarkdownIt('commonmark');;
+            this.fileContent = this.rendered(md.render(ret))
+            console.log(this.fileContent)
+          });
     },
     share(name) {
       var link = window.location.href;
@@ -128,7 +111,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .middle {
   /* Center child horizontally*/
   display: flex;

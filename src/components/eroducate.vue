@@ -1,3 +1,3 @@
 <template>
-  <img src="../assets/eroducate-logo-white.png">
+  <img class="icon" src="../assets/eroducate-logo-white.png">
 </template>

@@ -2,9 +2,10 @@
 <template >
   <v-container>
     <h1 class="big-title">{{ $t("message.resume") }}</h1>
-    <v-btn x-large outlined color="#ffd738" href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
-      style="margin-left: 5px">{{ $t("message.download") }}</v-btn>
-    <v-btn v-if="$i18n.locale == 'zh'" x-large outlined color="#ffd738"
+    <v-btn size="x-large" variant="outlined" color="#ffd738"
+      href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf" style="margin-left: 5px">{{
+        $t("message.download") }}</v-btn>
+    <v-btn v-if="$i18n.locale == 'zh'" size="x-large" variant="outlined" color="#ffd738"
       href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" style="margin-left: 5px">中文简历</v-btn>
     <v-row style="padding-left: 15px" justify="space-between">
       <v-col>

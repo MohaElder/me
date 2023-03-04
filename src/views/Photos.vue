@@ -1,17 +1,17 @@
 <template>
   <v-container>
-    <v-overlay class="overlay" :value="previewPic">
-      <v-img :src="activeImage['url']" :lazy-src="activeImage['thumbnail']" :max-width="$vuetify.breakpoint.width * 0.8"
-        :max-height="$vuetify.breakpoint.height * 0.8" contain @click="previewPic = false">
+    <v-overlay class="align-center justify-center" v-model="previewPic">
+      <v-img class="mx-auto" :src="activeImage['url']" :lazy-src="activeImage['thumbnail']"
+        :width="$vuetify.display.width * 0.8" :height="$vuetify.display.height * 0.8" contain @click="previewPic = false">
         <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular indeterminate color="grey lighten-2"></v-progress-circular>
-          </v-row>
+          <div class="d-flex align-center justify-center fill-height">
+            <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
+          </div>
         </template>
       </v-img>
       <div class="image-info-box">
-        <v-btn style="margin-top: 10px" @click="download">download</v-btn>
-        <p style="margin-top:5px">Camera: {{ activeImage['Camera']}}</p>
+        <v-btn style="margin-top: 10px" color="primary" variant="outlined" @click="download">download</v-btn>
+        <p style="margin-top:5px; color: #ffffff;">Camera: {{ activeImage['Camera'] }}</p>
       </div>
 
     </v-overlay>
@@ -38,14 +38,13 @@
             {{ tag }}
           </v-chip>
         </div>
-        <v-btn @click="sortImages(false, order)" icon color="white">
-          <v-icon>mdi-swap-vertical</v-icon>
+        <v-btn @click="sortImages(false, order)" icon="mdi-swap-vertical">
         </v-btn>
       </v-row>
 
       <v-row justify="start" style="padding-left: 30px">
         <div v-for="tag in activeTags" v-bind:key="tag" style="margin-right: 10px;">
-          <v-chip @click:close="removeTag(tag)" color="#ffd738" dark close style="color: black">
+          <v-chip @click:close="removeTag(tag)" color="primary" closable>
             {{ tag }}
           </v-chip>
         </div>
@@ -59,12 +58,12 @@
     </span>
     <span v-else>
       <iframe mozallowfullscreen="true" src="https://mohaelder.github.io/Gallery/" scrolling="no" frameborder="0"
-        :width="$vuetify.breakpoint.width * 0.8 + 'px'" :height="$vuetify.breakpoint.height * 0.8 + 'px'"></iframe>
+        :width="$vuetify.display.width * 0.8 + 'px'" :height="$vuetify.display.height * 0.8 + 'px'"></iframe>
     </span>
   </v-container>
 </template>
 
-<style>
+<style scoped>
 .image-info-box {
   display: flex;
   justify-content: space-between;
@@ -101,7 +100,7 @@ export default {
   }),
   methods: {
     isPortrait() {
-      return this.$vuetify.breakpoint.width < this.$vuetify.breakpoint.height
+      return this.$vuetify.display.mobile
     },
     showPic(img) {
       this.activeImage = img
