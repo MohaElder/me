@@ -22,7 +22,7 @@
             ? '11%;'
             : '10.5%;')
         " cols="12">
-          <v-img src="../assets/bak.png" class="bak" :width="isPortrait() ? '100%' : '62.5%'"></v-img>
+          <v-img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/bak.png" class="bak" :width="isPortrait() ? '100%' : '62.5%'"></v-img>
           <h3 class="intro-text" :style="
             'font-size: ' +
             (this.isPortrait()
@@ -108,16 +108,6 @@ export default {
     this.loadImages();
   },
   methods: {
-
-    //modified from https://stackoverflow.com/questions/14430633/how-to-convert-text-to-binary-code-in-javascript
-    text2Hex(string) {
-      return string
-        .split("")
-        .map(function (char) {
-          return char.charCodeAt(0).toString(16);
-        })
-        .join(" ");
-    },
     isPortrait() {
       return this.$vuetify.display.mobile
     },
