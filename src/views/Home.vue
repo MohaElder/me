@@ -137,6 +137,9 @@ export default {
     },
     handleScroll() {
       var index = Math.floor(window.scrollY / 72) % 108;
+      if (index < 0) {
+        return;
+      }
       if (index >= this.scroll_position + 5){
         this.scroll_position = index + 5;
         this.loadImages();
