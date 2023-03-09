@@ -21,6 +21,27 @@
           <v-col>
             <v-card max-width="700" @click="
               () => {
+                nav('https://github.com/MohaElder/SvelteComponents');
+              }
+            " style="margin-bottom: 50px">
+              <v-img class="white--text align-end" src="../assets/osp/svelte.png">
+                <v-card-title>use-svelte-anywhere</v-card-title>
+              </v-img>
+              <v-card-text class="text--primary">
+                <div>
+                  use-svelte-anywhere is a project that started from a story I was working on during work. We want to
+                  slowly transition the project from Angular js to svelte, and we decided to do that with creating web
+                  components with svelte and use them in Angular js. The project includes a workflow that we are using to
+                  build web components and bundle them into the larger project. It contains configuration files and
+                  templates that allows you to easily build upon and create your own web component for any frameworks.
+                  <br>
+                  In a short, this project shows you how to build universal web components with svelte using its client
+                  side component api.
+                </div>
+              </v-card-text>
+            </v-card>
+            <v-card max-width="700" @click="
+              () => {
                 nav('https://github.com/MohaElder/Trip');
               }
             " style="margin-bottom: 50px">
