@@ -44,11 +44,11 @@
         中/EN
       </v-btn>
 
-      <v-btn :href="statement.link" target="_blank">
+      <v-btn :href="$t('message.statement.link')" target="_blank">
         <span v-if="$vuetify.display.mobile">
-          {{ statement.longName }}
+          {{ $t("message.statement.longName") }}
         </span>
-        <span v-else> {{ statement.shortName }} </span>
+        <span v-else> {{ $t("message.statement.shortName") }} </span>
       </v-btn>
     </v-app-bar>
 
@@ -118,7 +118,7 @@
         <v-card-text class="white--text">
           {{ new Date().getFullYear() }} —
           <strong>MOHAELDER
-            <span> {{ statement.hashtag }} </span>
+            <span> {{ $t("message.statement.hashtag") }} </span>
           </strong>
         </v-card-text>
       </v-card>
@@ -134,12 +134,6 @@ import eroducate from './components/eroducate.vue';
 export default {
   name: "App",
   data: () => ({
-    statement: {
-      longName: "Human Needs Rights",
-      shortName: "Human Needs Rights",
-      hashtag: "#Human Right for Everyone",
-      link: "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
-    },
     icons: ["mdi-github", "mdi-linkedin",],
     drawer: false,
     group: null,
