@@ -3,7 +3,7 @@ id: 1d0e79fdcbe211ed9db368545a57002a
 published: true
 type: comment
 title: 简评美剧最后生还者 - 史上最优秀的游戏改编影视作品
-brief: 通过我和曼谷的故事寻找你需要知道的关于曼谷的一切
+brief: 作者在影视评论行业的又一部力作
 cover: https://3.bp.blogspot.com/-4x8cvvXQ8sE/WBEUGkpSRlI/AAAAAAAACJ0/z4KqUuQovyoPENSS8eYKi2lf0x_wQzwdQCLcB/s1600/The%2BLast%2BOf%2BUs%2B2.png
 date: 2022/7/8
 -->
