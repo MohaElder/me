@@ -46,6 +46,14 @@ const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
                     date: "2022/4/12",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/respect_women.md",
                     },
+                    "1d0e79fdcbe211ed9db368545a57002a": {
+                    color:"#ff8a65",
+                    img: "https://3.bp.blogspot.com/-4x8cvvXQ8sE/WBEUGkpSRlI/AAAAAAAACJ0/z4KqUuQovyoPENSS8eYKi2lf0x_wQzwdQCLcB/s1600/The%2BLast%2BOf%2BUs%2B2.png",
+                    title: "简评美剧最后生还者 - 史上最优秀的游戏改编影视作品",
+                    brief: "通过我和曼谷的故事寻找你需要知道的关于曼谷的一切",
+                    date: "2022/7/8",
+                    article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/tlou_hbo.md",
+                    },
                     "31ab9b67a63811ed8cc568545a57002a": {
                     color:"#64b5f6",
                     img: "https://picx.zhimg.com/80/v2-c37946c017304c3e7a9c2576744ac501_1440w.webp?source=1940ef5c",
