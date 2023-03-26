@@ -17,7 +17,7 @@ const messages = {
                 c: " because he wants to code for the good side, and to learn from a top global organization operating in the most challenging regions."
             },
             statement: {
-                longName: "China Does Not Need Dictatorship",
+                longName: "China Needs No Dictator",
                 shortName: "China Needs No Dictator",
                 hashtag: "#NoDictatorInChina",
                 link: "https://www.bbc.com/news/world-asia-china-64911512"
@@ -157,8 +157,8 @@ const messages = {
                 c: " 担任软件工程实习生。他在这里面向正义编程，并且在这个世界顶尖，运营于最不稳定地区的组织学到了很多"
             },
             statement: {
-                longName: "中国不应该由独裁者统治",
-                shortName: "中国不要独裁",
+                longName: "中国不需要独裁者",
+                shortName: "中国不需要独裁者",
                 hashtag: "#中国不要独裁",
                 link: "https://www.dw.com/zh/%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%BF%9E%E4%BB%BB%E6%80%BB%E4%B9%A6%E8%AE%B0-%E4%B9%A0%E5%AE%B6%E5%86%9B%E5%8C%85%E6%8F%BD%E6%94%BF%E6%B2%BB%E5%B1%80%E5%B8%B8%E5%A7%94/a-63530743"
             },
