@@ -98,6 +98,4 @@ The project has officially been upgraded from Vue2 to Vue3. This is the first lo
 
 ### Known Issues:
 
-Apple Music's iframe not showing up: I think this is an Apple Music bug, I will see if there's an alternative that works properly
-
 Open Source page is not fully localized: I will translate it in the near future
