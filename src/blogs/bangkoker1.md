@@ -8,7 +8,7 @@ cover: https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF1151.jpg
 date: 2023/6/6
 -->
 
-![](../images/DSCF1151.jpg)
+![](https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF1151.jpg)
 
 **注意：这篇文章不能让你真正成为一个泰国人，融入当地文化需要很长时间，但是你可以靠阅读这篇文章变成一个“看上去”很土著的泰国居民**
 
@@ -53,8 +53,8 @@ date: 2023/6/6
 
 如上文所述，大多泰国人民族主义情结很重。你和泰国人聊天，直接说你爱泰国就ok了（like伏拉夫）。你可以说你自己很喜欢泰国的文化，喜欢佛教，喜欢泰式建筑。如果你想装作一个对泰国文化略知一二的人，你可以和他们说你很想去Sukothai和Ayutthaya看古代泰国的遗址。90%的泰国人听到这两个地名就知道你真的是懂泰国历史的。
 
-![](../images/DSCF1183.jpg)
-![](../images/DSCF2164.jpg)
+![](https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF1183.jpg)
+![](https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF2164.jpg)
 
 <p style="text-align: center"> Sukothai 和 Ayyutahya真的很漂亮 </p>
 
@@ -70,7 +70,7 @@ date: 2023/6/6
 
 怎么和泰国人搭讪呢？很简单，如果是劳动人民（保安，司机等）直接递根烟给他们，然后和他们聊两句你们就是兄弟姐妹了。如果是同行的乘客，请放心和他们问候。你可以说Sawa Dee Ka，Sa baai dee mai？意思是你好，今天过得咋样。一般的路人都会和你聊两句，非常有意思。我会建议大家开头聊天气，因为泰国永远太热了。你直接和他们说wa nee roeng maak maak。他们就会感同身受并和你开始吐槽泰国的气温是有多糟糕。
 
-![](../images/DSCF1311.jpg)
+![](https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF1311.jpg)
 <p style="text-align: center"> 泰国热到狗都不想动 </p>
 
 ## 第四课：泰语101
@@ -182,4 +182,4 @@ Hello Ka! how's everything going ka? Oyiii, today I have final with the professo
 ## 总结
 希望大家在阅读这篇以娱乐为主的文章后，会对泰国有一些基本的了解。泰国真的是我去过最有意思的国家了。这个国家的文化非常多彩且多元。泰国人也是世界上最友善的一群人。希望大家以后有机会能来泰国看看，或者和你在路上遇到的泰国人攀谈两句。你会瞬间被这个国家的魅力所征服。
 
-![](../images/DSCF1755.jpg)
+![](https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF1755.jpg)
