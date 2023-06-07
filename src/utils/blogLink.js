@@ -1,4 +1,12 @@
-const blogs = {"b33c27e1a98011ecbeb368545a57002a": {
+const blogs = {"86a0ab94050011eeb8d368545a57002a": {
+                    color:"#64b5f6",
+                    img: "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/DSCF1151.jpg",
+                    title: "看上去像泰国人101",
+                    brief: "如何看上去像一个泰国人，看这篇文章就够了",
+                    date: "2023/6/6",
+                    article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/bangkoker1.md",
+                    },
+                    "b33c27e1a98011ecbeb368545a57002a": {
                     color:"#ffee58",
                     img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.47784.69945075044825416.99d4e5d8-fac1-421b-8986-d0fed49db992.3cffda34-9da3-4a35-a94e-da061aa0ce7f%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920&f=1&nofb=1",
                     title: "新冠轻症是什么体验？",
