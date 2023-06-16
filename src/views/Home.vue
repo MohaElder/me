@@ -1,7 +1,8 @@
 <template>
   <div class="home-container">
     <div id="father" class="animated-image" :style="blur">
-      <img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(1).jpg" alt="" class="each-image" style="opacity: 0" />
+      <img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(1).jpg" alt="" class="each-image"
+        style="opacity: 0" />
     </div>
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
@@ -22,7 +23,8 @@
             ? '11%;'
             : '10.5%;')
         " cols="12">
-          <v-img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/bak.png" class="bak" :width="isPortrait() ? '100%' : '62.5%'"></v-img>
+          <v-img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/bak.png" class="bak"
+            :width="isPortrait() ? '100%' : '62.5%'"></v-img>
           <h3 class="intro-text" :style="
             'font-size: ' +
             (this.isPortrait()
@@ -43,9 +45,10 @@
       </v-row>
 
 
-      <v-row class="below"> 32.9911101, -117.2737427
-        <br>
-        {{ $t("message.wave_location") }}
+      <v-row class="below">
+        <a style="color: white" class="" href="https://goo.gl/maps/SCj6miJhsSpwkiVA9">32.9911101, -117.2737427<br>
+          {{ $t("message.wave_location") }}</a>
+
       </v-row>
     </div>
   </div>
@@ -130,7 +133,7 @@ export default {
       if (index < 0) {
         return;
       }
-      if (index >= this.scroll_position + 5){
+      if (index >= this.scroll_position + 5) {
         this.scroll_position = index + 5;
         this.loadImages();
       }
