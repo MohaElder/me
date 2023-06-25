@@ -241,8 +241,19 @@
           </h4>
         </v-row>
       </v-col>
-      <v-col style="padding-left: 35px" md="5"> </v-col>
+      <v-col style="padding-left: 20px" md="5">
+        <v-row style="margin-top: 50px; padding-left: 15px">
+          <h1>{{ $t("message.podcast") }}</h1>
+        </v-row>
+        <iframe id="embedPlayer"
+          src="https://embed.podcasts.apple.com/us/podcast/randoms-hit-radio-vol-0-tgif%E7%89%B9%E8%BE%91-%E8%8A%82%E5%BA%86%E6%96%87%E5%8C%96-%E7%AC%A6%E5%8F%B7%E5%AD%A6-%E9%9F%B3%E4%B9%90%E9%89%B4%E8%B5%8F-%E5%93%B2%E5%AD%A6-%E9%9A%8F%E4%BE%BF%E8%81%8A/id1694128032?i=1000618220058&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto"
+          height="175px" frameborder="0"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+          allow="autoplay *; encrypted-media *; clipboard-write"
+          style="margin-top: 25px; width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+      </v-col>
     </v-row>
+
   </v-container>
 </template>
 
