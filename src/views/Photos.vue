@@ -117,7 +117,7 @@ export default {
     },
     sortImages(AlwaysNewToOld = false, images = []) {
       if (images_sorted.length == 0 || AlwaysNewToOld) {
-        images_sorted = images.sort(function (a, b) { return a["DateTime"] - b["DateTime"] })
+        images_sorted = images.sort(function (a, b) { return b["DateTime"] - a["DateTime"] })
         this.images = images_sorted
       }
       else {
