@@ -1,11 +1,11 @@
 
 <template >
   <v-container>
-    <h3 class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh' ">{{ $t("message.work.a") }} <a href="https://ucsd.edu/"><i>UCSD</i></a>{{
-      $t("message.work.b") }}<a href="https://www.unops.org/"><i>UNOPS</i></a>{{ $t("message.work.c") }}</h3>
+    <h3 class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh'">{{
+      $t("message.work.a") }} <a href="https://ucsd.edu/"><i>UCSD</i></a>{{
+    $t("message.work.b") }}<a href="https://www.unops.org/"><i>UNOPS</i></a>{{ $t("message.work.c") }}</h3>
     <v-img style="margin-top: 5%; padding: 20%; box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;"
-    :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'"
-      src="../assets/profile_pic.jpg" cover></v-img>
+      :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'" src="../assets/profile_pic.jpg" cover></v-img>
     <h1 class="big-title">{{ $t("message.resume") }}</h1>
     <v-btn size="x-large" variant="outlined" color="#ffd738"
       href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf" style="margin-left: 5px">{{
@@ -19,7 +19,7 @@
         </v-row>
         <v-row>
 
-          <v-col style="margin-right: -50%;">
+          <v-col style="margin-right: -30%;">
             <v-row>
               <h4>English, Mandarin, Thai</h4>
             </v-row>
@@ -27,7 +27,7 @@
               <h4>Shanghainese, ASL</h4>
             </v-row>
             <v-row :style="$vuetify.display.mobile ? 'margin-top: 15%' : 'margin-top: 5%'">
-              <h4>JavaScript, TypeScript, C#</h4>
+              <h4>TypeScript, C#,</h4>
             </v-row>
             <v-row>
               <h4>Python, Java, Lua,</h4>
@@ -36,14 +36,19 @@
               <h4>C++, C, ARM</h4>
             </v-row>
             <span v-if="$vuetify.display.mobile"><v-row style="margin-top: 15%">
-                <h4>Web, SQL, Container, CI/CD,</h4>
+                <h4>SQL, STL, DevOps, Unit Testing,</h4>
               </v-row>
               <v-row>
-                <h4>Unity3D, Wwise</h4>
+                <h4>Domain-Driven Design, Model-View-ViewModel,</h4>
               </v-row>
               <v-row style="margin-top: 15%">
                 <h4>
-                  XD, Figma, Abstract
+                  User Research, UI
+                </h4>
+              </v-row>
+              <v-row>
+                <h4>
+                  Unity3D, Wwise
                 </h4>
               </v-row>
               <v-row>
@@ -54,14 +59,19 @@
           </v-col>
           <v-col v-if="!$vuetify.display.mobile">
             <v-row>
-              <h4>Web, SQL, Container, CI/CD,</h4>
+              <h4>SQL, STL, DevOps, Unit Testing,</h4>
             </v-row>
             <v-row>
-              <h4>Unity3D, Wwise</h4>
+              <h4>Domain-Driven Design, Model-View-ViewModel,</h4>
             </v-row>
             <v-row style="margin-top: 5%">
               <h4>
-                XD, Figma, Abstract
+                User Research, UI
+              </h4>
+            </v-row>
+            <v-row>
+              <h4>
+                Unity3D, Wwise
               </h4>
             </v-row>
             <v-row>
@@ -231,13 +241,23 @@
           </h4>
         </v-row>
       </v-col>
-      <v-col style="padding-left: 35px" md="5"> </v-col>
+      <v-col style="padding-left: 20px" md="5">
+        <v-row style="margin-top: 50px; padding-left: 15px">
+          <h1>{{ $t("message.podcast") }}</h1>
+        </v-row>
+        <iframe id="embedPlayer"
+          src="https://embed.podcasts.apple.com/us/podcast/randoms-hit-radio-vol-0-tgif%E7%89%B9%E8%BE%91-%E8%8A%82%E5%BA%86%E6%96%87%E5%8C%96-%E7%AC%A6%E5%8F%B7%E5%AD%A6-%E9%9F%B3%E4%B9%90%E9%89%B4%E8%B5%8F-%E5%93%B2%E5%AD%A6-%E9%9A%8F%E4%BE%BF%E8%81%8A/id1694128032?i=1000618220058&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto"
+          height="175px" frameborder="0"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+          allow="autoplay *; encrypted-media *; clipboard-write"
+          style="margin-top: 25px; width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+      </v-col>
     </v-row>
+
   </v-container>
 </template>
 
 <style scoped>
-
 .big-title {
   padding-top: 5%;
   font-size: 5vh;
