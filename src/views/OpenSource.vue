@@ -19,11 +19,27 @@
       <v-col>
         <v-row style="margin-top: 50px">
           <v-col>
-            <v-card max-width="700" @click="
-              () => {
-                nav('https://github.com/MohaElder/SvelteComponents');
-              }
-            " style="margin-bottom: 50px">
+            <v-card max-width="700" @click="() => {
+              nav('https://github.com/UNOPS/uimf-svelte');
+            }
+              " style="margin-bottom: 50px">
+              <v-img class="white--text align-end" src="../assets/osp/uimf-svelte.png">
+                <v-card-title>uimf-svelte</v-card-title>
+              </v-img>
+              <v-card-text class="text--primary">
+                <div>
+                  uimf-svelte is a svelte implementation of uimf components that can be created by metadata configs from
+                  the backend service. All components are created by svelte and using Bootstrap for styles. This
+                  combination granted this project small size and great compatibility with any environments(thanks to
+                  svelte and vite), and Bootstrap gives it a clean and modern look(with full bootstrap customization
+                  ability).
+                </div>
+              </v-card-text>
+            </v-card>
+            <v-card max-width="700" @click="() => {
+              nav('https://github.com/MohaElder/SvelteComponents');
+            }
+              " style="margin-bottom: 50px">
               <v-img class="white--text align-end" src="../assets/osp/svelte.png">
                 <v-card-title>use-svelte-anywhere</v-card-title>
               </v-img>
@@ -40,11 +56,10 @@
                 </div>
               </v-card-text>
             </v-card>
-            <v-card max-width="700" @click="
-              () => {
-                nav('https://github.com/MohaElder/Trip');
-              }
-            " style="margin-bottom: 50px">
+            <v-card max-width="700" @click="() => {
+              nav('https://github.com/MohaElder/Trip');
+            }
+              " style="margin-bottom: 50px">
               <v-img class="white--text align-end" src="../assets/osp/Banner.jpg">
                 <v-card-title>Let's Plan A Trip</v-card-title>
               </v-img>
@@ -54,11 +69,10 @@
                 </div>
               </v-card-text>
             </v-card>
-            <v-card max-width="700" @click="
-              () => {
-                nav('https://github.com/MohaElder/gpa-c');
-              }
-            " style="margin-bottom: 50px">
+            <v-card max-width="700" @click="() => {
+              nav('https://github.com/MohaElder/gpa-c');
+            }
+              " style="margin-bottom: 50px">
               <v-img class="white--text align-end" src="../assets/osp/gpac.png">
                 <v-card-title>gpa-c</v-card-title>
               </v-img>
@@ -72,13 +86,12 @@
                 </div>
               </v-card-text>
             </v-card>
-            <v-card max-width="700" @click="
-              () => {
-                nav(
-                  'https://github.com/MohaElder/Eroducate/blob/master/README.md'
-                );
-              }
-            " style="margin-bottom: 50px">
+            <v-card max-width="700" @click="() => {
+              nav(
+                'https://github.com/MohaElder/Eroducate/blob/master/README.md'
+              );
+            }
+              " style="margin-bottom: 50px">
               <v-img class="white--text align-end" src="../assets/osp/eroducate.png">
                 <v-card-title style="color: black">Eroducate</v-card-title>
               </v-img>
@@ -91,11 +104,10 @@
                 </div>
               </v-card-text>
             </v-card>
-            <v-card max-width="700" @click="
-              () => {
-                nav('https://github.com/MohaElder/AnnoWikiTool');
-              }
-            " style="margin-bottom: 50px">
+            <v-card max-width="700" @click="() => {
+              nav('https://github.com/MohaElder/AnnoWikiTool');
+            }
+              " style="margin-bottom: 50px">
               <v-img class="white--text align-end" src="../assets/osp/anno.png">
                 <v-card-title>Anno Wiki Tool</v-card-title>
               </v-img>
@@ -113,11 +125,10 @@
                 </div>
               </v-card-text>
             </v-card>
-            <v-card max-width="700" @click="
-              () => {
-                nav('https://github.com/Eroducate/project-megabunus-portal');
-              }
-            " style="margin-bottom: 50px">
+            <v-card max-width="700" @click="() => {
+              nav('https://github.com/Eroducate/project-megabunus-portal');
+            }
+              " style="margin-bottom: 50px">
               <v-img class="white--text align-end" src="../assets/osp/megabunus.png">
                 <v-card-title style="color: black">Project Megabunus</v-card-title>
               </v-img>
