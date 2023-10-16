@@ -54,14 +54,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import "animate.css";
 import { useDisplay } from 'vuetify'
 
-let images: HTMLImageElement[] = [];
+let images = [];
 const names = ["翁安志", "お やすし", "Yasushi Oh"];
 
-const animateCSS = (element: any, animation: any, time_interval: any, prefix = "animate__") =>
+const animateCSS = (element, animation, time_interval, prefix = "animate__") =>
   // We create a Promise and return it
   // eslint-disable-next-line no-unused-vars
   new Promise((resolve, reject) => {
@@ -74,7 +74,7 @@ const animateCSS = (element: any, animation: any, time_interval: any, prefix = "
     node.classList.add(`${prefix}animated`, animationName);
 
     // When the animation ends, we clean the classes and resolve the Promise
-    function handleAnimationEnd(event: AnimationEvent) {
+    function handleAnimationEnd(event) {
       event.stopPropagation();
       node.classList.remove(`${prefix}animated`, animationName);
       resolve("Animation ended");
