@@ -13,9 +13,10 @@ const messages = {
             nav_guide: "Guide",
             work: {
                 a: "Oh Yasushi is a ",
-                b: " student. He is currently a software engineer intern with ",
-                c: " because he wants to code for the good side, and to learn from a top global organization operating in the most challenging regions."
+                b: " student. He worked in ",
+                c: " to meaningfully code for a better world"
             },
+            and: " & ",
             statement: {
                 longName: "China Needs No Dictator",
                 shortName: "China Needs No Dictator",
@@ -154,9 +155,10 @@ const messages = {
             nav_guide: "指南",
             work: {
                 a: "翁安志是",
-                b: " 的一名学生。他目前在 ",
-                c: " 担任软件工程实习生。他在这里面向正义编程，并且在这个世界顶尖，运营于最不稳定地区的组织学到了很多"
+                b: " 的一名学生。他曾工作于 ",
+                c: " ，并通过这些经历面向更好的世界编程"
             },
+            and: "和",
             statement: {
                 longName: "中国不需要独裁者",
                 shortName: "中国不需要独裁者",

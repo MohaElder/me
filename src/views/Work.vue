@@ -1,32 +1,64 @@
 
 <template >
   <v-container>
-    <h3 class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh'">{{
-      $t("message.work.a") }} <a href="https://ucsd.edu/"><i>UCSD</i></a>{{
-    $t("message.work.b") }}<a href="https://www.unops.org/"><i>UNOPS</i></a>{{ $t("message.work.c") }}</h3>
-    <v-img style="margin-top: 5%; padding: 20%; box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;"
-      :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'" src="../assets/profile_pic.jpg" cover></v-img>
+    <h3
+      class="text-left"
+      :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh'"
+    >
+      {{ $t("message.work.a") }}
+      <a href="https://ucsd.edu/" target="_blank"><i>UCSD</i></a
+      >{{ $t("message.work.b")
+      }}<a href="https://www.unops.org/" target="_blank"><i>UNOPS</i></a
+      >{{ $t("message.and")
+      }}<a href="https://www.nvidia.com/" target="_blank"><i>NVIDIA</i></a
+      >{{ $t("message.work.c") }}
+    </h3>
+    <v-img
+      style="
+        margin-top: 5%;
+        padding: 20%;
+        box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
+      "
+      :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'"
+      src="../assets/profile_pic.jpg"
+      cover
+    ></v-img>
     <h1 class="big-title">{{ $t("message.resume") }}</h1>
-    <v-btn size="x-large" variant="outlined" color="#ffd738"
-      href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf" style="margin-left: 5px">{{
-        $t("message.download") }}</v-btn>
-    <v-btn v-if="$i18n.locale == 'zh'" size="x-large" variant="outlined" color="#ffd738"
-      href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" style="margin-left: 5px">中文简历</v-btn>
+    <v-btn
+      size="x-large"
+      variant="outlined"
+      color="#ffd738"
+      href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf"
+      style="margin-left: 5px"
+      >{{ $t("message.download") }}</v-btn
+    >
+    <v-btn
+      v-if="$i18n.locale == 'zh'"
+      size="x-large"
+      variant="outlined"
+      color="#ffd738"
+      href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf"
+      style="margin-left: 5px"
+      >中文简历</v-btn
+    >
     <v-row style="padding-left: 15px" justify="space-between">
       <v-col>
         <v-row style="margin-top: 50px">
-          <h1> {{ $t("message.skills") }} </h1>
+          <h1>{{ $t("message.skills") }}</h1>
         </v-row>
         <v-row>
-
-          <v-col style="margin-right: -30%;">
+          <v-col style="margin-right: -30%">
             <v-row>
               <h4>English, Mandarin, Thai</h4>
             </v-row>
             <v-row>
               <h4>Shanghainese, ASL</h4>
             </v-row>
-            <v-row :style="$vuetify.display.mobile ? 'margin-top: 15%' : 'margin-top: 5%'">
+            <v-row
+              :style="
+                $vuetify.display.mobile ? 'margin-top: 15%' : 'margin-top: 5%'
+              "
+            >
               <h4>TypeScript, C#,</h4>
             </v-row>
             <v-row>
@@ -35,27 +67,23 @@
             <v-row>
               <h4>C++, C, ARM</h4>
             </v-row>
-            <span v-if="$vuetify.display.mobile"><v-row style="margin-top: 15%">
+            <span v-if="$vuetify.display.mobile"
+              ><v-row style="margin-top: 15%">
                 <h4>SQL, STL, DevOps, Unit Testing,</h4>
               </v-row>
               <v-row>
                 <h4>Domain-Driven Design, Model-View-ViewModel,</h4>
               </v-row>
               <v-row style="margin-top: 15%">
-                <h4>
-                  User Research, UI
-                </h4>
+                <h4>User Research, UI</h4>
               </v-row>
               <v-row>
-                <h4>
-                  Unity3D, Wwise
-                </h4>
+                <h4>Unity3D, Wwise</h4>
               </v-row>
               <v-row>
-                <h4>
-                  Ps, Pr, Ai, Ae, Lr, Id
-                </h4>
-              </v-row></span>
+                <h4>Ps, Pr, Ai, Ae, Lr, Id</h4>
+              </v-row></span
+            >
           </v-col>
           <v-col v-if="!$vuetify.display.mobile">
             <v-row>
@@ -65,23 +93,16 @@
               <h4>Domain-Driven Design, Model-View-ViewModel,</h4>
             </v-row>
             <v-row style="margin-top: 5%">
-              <h4>
-                User Research, UI
-              </h4>
+              <h4>User Research, UI</h4>
             </v-row>
             <v-row>
-              <h4>
-                Unity3D, Wwise
-              </h4>
+              <h4>Unity3D, Wwise</h4>
             </v-row>
             <v-row>
-              <h4>
-                Ps, Pr, Ai, Ae, Lr, Id
-              </h4>
+              <h4>Ps, Pr, Ai, Ae, Lr, Id</h4>
             </v-row>
           </v-col>
         </v-row>
-
       </v-col>
       <v-col style="padding-left: 35px" md="5">
         <v-row style="margin-top: 50px">
