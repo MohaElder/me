@@ -18,10 +18,10 @@ const messages = {
             },
             and: " & ",
             statement: {
-                longName: "China Needs No Dictator",
-                shortName: "China Needs No Dictator",
-                hashtag: "#NoDictatorInChina",
-                link: "https://www.bbc.com/news/world-asia-china-64911512"
+                longName: "Make Love, Not War",
+                shortName: "🇵🇸❤️🇮🇱❤️🌍",
+                hashtag: "#NoMoreWar",
+                link: "https://news.un.org/en/story/2023/10/1142432"
             },
             podcast: "Podcast",
             resume: "Resume",
