@@ -111,7 +111,7 @@
         <v-card-text class="white--text pt-0">
           Made with
           <vueIcon />, 🧠, and ❤️.
-          <a style="color: white" href="https://github.com/MohaElder/me">
+          <a style="color: white" href="https://github.com/MohaElder/me" target="_blank">
             source code
           </a>
         </v-card-text>
