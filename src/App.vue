@@ -46,9 +46,9 @@
 
       <v-btn :href="$t('message.statement.link')" target="_blank">
         <span v-if="$vuetify.display.mobile">
-          {{ $t("message.statement.longName") }}
+          {{ $t("message.statement.shortName") }}
         </span>
-        <span v-else> {{ $t("message.statement.shortName") }} </span>
+        <span v-else> {{ $t("message.statement.longName") }} </span>
       </v-btn>
     </v-app-bar>
 
