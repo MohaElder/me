@@ -1,11 +1,19 @@
 <template>
-  <v-container style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%">
+  <v-container
+    style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%"
+  >
     <v-row style="margin-bottom: 40px">
       <v-col class="text-center head-section" cols="12">
         <h1 class="blog-title">{{ blog.title }}</h1>
         <h2 style="width: 100%" class="blog-date">Author: MohaElder</h2>
         <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
-        <v-btn v-for="icon in icons" :key="icon" class="white--text" @click="share(icon.substring(4))" icon>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="white--text"
+          @click="share(icon.substring(4))"
+          icon
+        >
           <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
           <v-icon size="24px">
             {{ icon }}
@@ -13,14 +21,13 @@
         </v-btn>
       </v-col>
     </v-row>
-    <div class="blog-render" v-html="fileContent"></div>
-
+    <div class="blog-renderer" v-html="fileContent"></div>
   </v-container>
 </template>
 
 <script>
 import { blogs } from "../utils/blogLink.js";
-import MarkdownIt from 'markdown-it'
+import MarkdownIt from "markdown-it";
 
 export default {
   data: () => ({
@@ -62,7 +69,8 @@ export default {
           //we find the first occurance of " after startPos to locate the end of the link
           let src = element.slice(startPos, endPos);
           let lst = element.split("");
-          lst[idx + 3] += " class='md-img' onclick= 'view(" + '"' + src + '"' + ")'"; //+3 because '<img' where idx is at the position of '<'
+          lst[idx + 3] +=
+            " class='md-img' onclick= 'view(" + '"' + src + '"' + ")'"; //+3 because '<img' where idx is at the position of '<'
           lines[i] = lst.join("");
         }
       }
@@ -71,19 +79,17 @@ export default {
 
     getContent() {
       this.fileContent = "rendering ";
-      fetch(this.blog.article).then((response) => response.text())
-        .then(
-          (data) => {
-            //replace the link to let it read image properly, then assign to source variable for rendering
-            let ret = data
-              .split("../assets")
-              .join(
-                "https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets"
-              );
-            let md = new MarkdownIt('commonmark');;
-            this.fileContent = this.rendered(md.render(ret))
-            console.log(this.fileContent)
-          });
+      fetch(this.blog.article)
+        .then((response) => response.text())
+        .then((data) => {
+          //replace the link to let it read image properly, then assign to source variable for rendering
+          let ret = data
+            .split("../assets")
+            .join("https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets");
+          let md = new MarkdownIt("commonmark");
+          this.fileContent = this.rendered(md.render(ret));
+          console.log(this.fileContent);
+        });
     },
     share(name) {
       var link = window.location.href;
@@ -112,32 +118,60 @@ export default {
 </script>
 
 <style>
+.blog-renderer::first-letter {
+  initial-letter: 2 1;
+}
+
+.blog-renderer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
 .middle {
   /* Center child horizontally*/
   display: flex;
   justify-content: center;
 }
 
+a{
+  color: rgb(170, 218, 250);
+}
+
 code {
-  background-color: rgba(0, 158, 206, 0.856) !important;
+  background-color: #313131 !important;
+  color: rgb(170, 218, 250);
   font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 p {
   /* text-indent: 2%; */
-  line-height: 1.5;
-  font-size: 90%;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
+  margin-bottom: 0.9375rem;
+}
+
+ol {
+  padding: 0.9375rem;
+}
+
+li {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.6375rem;
 }
 
 h1 {
   padding-top: 20px;
   font-weight: 500;
   font-size: 180%;
-}
-
-h2 {
-  font-weight: 400;
 }
 
 blockquote {

@@ -8,8 +8,6 @@ cover: https://raw.githubusercontent.com/MohaElder/me/main/src/assets/blogPics/o
 date: 2023/10/19
 -->
 
-# Why don't I like OAs & how to design a good OA
-
 OA is an abbreviation for Online Assessments. It has been broadly used by companies to test out job candidates' coding skills on tech positions. 
 
 Normally, an OA is being done on a website involving one or several coding questions, the candidate sometimes have an online ide within that website to complete it while some might submit the result afterwards. Most OAs are timed, and candidates can choose their preferred programming language to complete the questions. 
