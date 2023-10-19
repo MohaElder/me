@@ -4,7 +4,7 @@ published: true
 type: comment
 title: Why don't I like OAs & how to design a good OA
 brief: My thoughts and comments on tech job market these days
-cover: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.47784.69945075044825416.99d4e5d8-fac1-421b-8986-d0fed49db992.3cffda34-9da3-4a35-a94e-da061aa0ce7f%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920&f=1&nofb=1
+cover: https://raw.githubusercontent.com/MohaElder/me/main/src/assets/blogPics/oa/max-howell-tweet-3657821630.jpg
 date: 2023/10/19
 -->
 
