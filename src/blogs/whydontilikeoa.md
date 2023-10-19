@@ -8,112 +8,126 @@ cover: https://raw.githubusercontent.com/MohaElder/me/main/src/assets/blogPics/o
 date: 2023/10/19
 -->
 
-OA is an abbreviation for Online Assessments. It has been broadly used by companies to test out job candidates' coding skills on tech positions. 
+OA is an abbreviation for Online Assessments. They are broadly used by companies to test job candidates' coding skills for tech positions.
 
-Normally, an OA is being done on a website involving one or several coding questions, the candidate sometimes have an online ide within that website to complete it while some might submit the result afterwards. Most OAs are timed, and candidates can choose their preferred programming language to complete the questions. 
+Normally, an OA is conducted on a website that presents one or several coding questions. The candidate sometimes has an online IDE within that website to complete it, while others might submit their results afterward. Most OAs are timed, and candidates can choose their preferred programming language to answer the questions.
 
-OAs are often the second barrier of a hiring process. The process normally includes the following steps:
+OAs often represent the second stage in the hiring process. Typically, the process unfolds as follows:
 
-1. You apply
-2. The HR sorts(sometimes randomly selects) your portfolio **Note: sometimes OA are also given this time to expedite the hiring process**
-3. Gives you an OA and evaluate your performance on that
-4. First vibe check from the HR and also make sure you can meet up with the start time and visa stuff if you work abraod
-5. One or more technical interviews from the HR and/or the hiring manager and/or some staff
-6. Second vibe check interview from the hiring manager and sometimes including the HR or some higher level people
-7. Background check
+1. Submission of application.
+2. HR reviews applications, sometimes making selections at random. Note: Occasionally, OAs are administered at this stage to expedite the hiring process.
+3. Candidates are provided with an OA, and their performance is evaluated.
+4. Initial interview with HR to gauge cultural fit ("vibe check") and to discuss logistical details like starting dates and visa requirements, especially for candidates applying from abroad.
+5. One or more technical interviews conducted by HR, the hiring manager, or other relevant staff members.
+6. Secondary "vibe check" interview, primarily with the hiring manager, and occasionally with HR or senior leadership.
+7. Background Check.
 
-In a short, OA is believed to be one of the most efficient and scientific way to evaluate if the candidate's programming skills meets the job's requirements.
+In summary, OAs are considered a highly effective and methodical approach to ascertain whether a candidate's programming skills align with the job's specifications.
 
-But as you can see from the title, I am gonna talk about why I don't like OAs and think that it could be an invalid evaluation of one's actual skills.
+From the title, you can probably guess I'm not a big fan of Online Assessments (OAs). I don't think they always show what someone can really do.
 
-Before I start "bashing" OA, I would like to make the following claims to make me feel less like some guy who just got fucked by an OA and decided to write this blog.
+Before I dive in, I want to make something clear: I'm not just writing this because I had one bad experience with an OA.
 
-### Claims
+### My Situash
+1. I just took an OA and it didn't go well, which led me to write this blog.
+2. Math and algorithms aren't my strong suits.
+3. I'm job hunting, and OAs are making it tougher for me.
 
-1. I just took an OA and kinda fucked it up before writing this blog
-2. I am not good at math and algorithm stuff
-3. I am currently looking for a job and OA is kinda fucking me up
+Knowing where I'm coming from, you can tell I have some strong feelings about OAs. However, I promise I've tried to write this blog as fairly as I can. To show that I'm being open about it, here are some HeadsUps:
 
-With these claims in mind, I would like to advise you that I definitely have bias towards OAs. **But I would assure you that I am writing this blog with arguments and evidence as neutral as possible. To prove that, here's a list of disclaimers**
-
-### Disclaimers
-
-1. Not all OAs are bad, I will explain it later. But most OAs suck.
-2. I did manage to pass some OAs, both good ones and bad ones
-3. This article is aimed only for engineering jobs, Algorithm and Science job posts are not targetted
-4. I am sober right now
+### Heads Up!
+1. Not all OAs are the worst - I'll get into that. But, let's be honest, many of them are a pain.
+2. I've cleared some OAs, the cool ones and the not-so-cool ones.
+3. Just to be clear, I'm talking about engineering jobs here. If you're into Algorithms or Science roles, this isn't about those.
+4. And yep, I'm sober writing this.
 
 Ok, let's start ;)
 
-## I don't like most OAs because they do not accurately represent the JD(Job Description)
+## I don't like most OAs because they don't really match the JD(Job Description)
+
 If you have ever done OA, you definitely encountered the following situation:
 
 You are applying for a Frontend Engineer Internship from some company you never know but it's on Linkedin job board. The JD says you should have good knowledge of React, JavaScript, and Webpack. It is preferred that if you have knowledge on Python(Pandas, Pydantic, Django), Docker and Postman.
 
-So, you think that the team uses React for frontend and Django for backend. Your main job is to work on React, but sometimes you need to do some QA, DevOps, and Backend with Django. That's pretty cool! You were planning to improve your Docker skill from StackOverflow commands to Kubernates Master anyways. 
+So, you guess they're using React for the front end and Django for the back end. Your main role would be with React, but sometimes you'd chip in with QA, DevOps, and some backend work using Django. Sounds awesome, right? You've been wanting to level up your Docker game from just copying commands from StackOverflow to mastering Kubernetes anyway.
 
-As a third year Computer Science student, you learned about Red Black Trees, Huffman Encoding, and etc. Hell, you even learned how to design, prove, and analyze dynamic programming. Aside from school, you taught yourself React and got a personal project built with that. You also did some Full Stack project with React + Django for a school club. You feel qualified for this job, so you applied.
+Being in your third year of a Computer Science program, you've studied stuff like Red Black Trees and Huffman Encoding. Heck, you've even dived deep into dynamic programming, learning to design and analyze it. On your own time, you picked up React and even built a project with it. Plus, you've done a full-stack project combining React and Django for a school activity. Feeling pretty good about your skills, you decide to apply for the job.
 
-Luckily, this application didn't get a rejection but a "rare" OA invitation. So, you opened up the OA and is ready to do some React. AND THEN, you see some crazy question about reversing nodes in a tree with some requirements that took you 30 minutes to understand. At last, the system automatically submitted your broken in progress code with a bunch of log functions. Congratulation, now you feel as fucked up as me just now :)
+Luckily, instead of a rejection, you received a "rare" OA invitation. So, you opened up the OA, ready to tackle some React questions. BUT THEN, there was this intricate question about reversing nodes in a tree, with requirements that took you 30 minutes just to grasp. In the end, the system automatically submitted your in-progress code, littered with log functions. Congratulations, you probably feel just as frustrated as I did back then. :)
 
-This story is a bit long, but the main take over is that: Many OAs out on the job market are **not** accurate representation of what you are expected to do in your job. It is common that companies assign candidates OAs much harder/out of the scope than what they are expected to do. Many of my friends told me that their hardest coding challenge during their job was the OA when they apply for that job.
+This story might be a bit lengthy, but the key takeaway is this: Many OAs in the job market do **not** accurately represent the tasks you'd be expected to perform in the actual job.
 
-If you are also familiar with the tech job market, you probably noticed that I did not mention websites like LeetCode or CodeSignal. It is true that people are aware that OAs are often super challenging and they would go to these websites to practice OAs before they got one. It is cool that you practice some OAs on these websites, most of them are actually interesting and can both increase your chance to get hired and also your personal programming skills. **But, if you are overdoing it. I think it is stupid and bad, and it's the companies' fault**.
+It's not uncommon for companies to assign candidates OAs that are much more challenging or out of scope compared to the daily responsibilities of the role. Several of my friends have shared that the most difficult coding challenge they faced in their job was the OA they took during the application process.
 
-The main reason that overdoing OA is stupid is because it does not reflect your actually programming skill. When you practive a lot of OAs before doing the actual OA, it is like cramming for an exam. People often hope to practice enough questions so that the actual OA is something they have done before. So, all they did is to write what they had in memory quickly to get a full score in a short time. This is exactly how a over-challenging OA fucks up both the candidate and the company itself. The candidates have little idea of what they were writing, the company did not get a truthful evaluation of the candidates' programming skill. In the end, the companies just hire people who are good at cramming OAs.
+If you're familiar with the tech job market, you might notice I haven't mentioned websites like LeetCode or CodeSignal. While it's true many recognize the demanding nature of OAs and turn to these platforms to practice, it's a double-edged sword. Practicing on these sites can be beneficial; many of the challenges are intriguing, enhancing both your chances of landing a job and your coding abilities. **However, overdoing it is stupid, and I believe the blame lies with the companies.**
 
-This argument also successfully refutes a potential rebuttal: If someone can do an OA harder than what they are expected to work on, they can do the actual job better. When a company hires someone who passed an extremely out of the JD scope OA, it is highly possible that the candidate spend considerate amount of time on their OA skills. In general, if you are not someone super smart, the ability to pass challenging OAs is gained from sacrificing your time practicing on your actual Software Engineering Skills. If you spend most of your time on LeetCode, how could you have time to work on improving your software engineering skills and to do meaningful projects? 
+The primary reason that excessively practicing OAs is misguided is because it doesn't genuinely reflect one's actual programming skills. Practicing numerous OAs before taking the real assessment is analogous to cramming for an exam. Many hope to practice enough problems so that the real OA mirrors something they've encountered previously. In such scenarios, all they end up doing is regurgitating what they've memorized to achieve a high score quickly. This approach is how an overly challenging OA can mislead both the applicant and the hiring company. The candidates often lack a comprehensive understanding of what they're coding, and the company doesn't receive an honest evaluation of the applicant's abilities. Consequently, companies might end up hiring individuals who excel at rote learning OAs rather than genuine problem-solving.
 
-Also, it is trivially known that good at algorithms and math does not mean that you are good at software engineering. These are actually two realms. Many "hacks" to improve the runtime and space of a solution are bad practices in Software Engineering. Most of the hacks has trade-offs that lose the readibility and robustness of the code. For example, if you implement a hash table with Array. The way to expand it when needed is to build an array larger than the previoud Array, and then move all the values in the previous Array into this new Array. A general good solution would be to double the Hash Table size when we need to expand it. This gives us a average-case performance. One common "hack" people do in OA is that instead of doubling the size, they 10 times the size. This seems to cost less runtime since much less times are needed to expand the array. It would perfectly on some OAs as the tests won't cover that much use cases. But, in the reality, when you do this on an actual product. It is almost guaranteed to take huge amounts of space in one day, and the growth would be huge. Just imagine an array that is 10,000 big needs to expand, now we have generated an array 100,000 big. This is a huge waste of storage. This is also why many of the IOI(International Olympiad in Informatics) people are bad in Software Engineering, because they like these hacks. These hacks are eventually products of a prime solution under controlled circumstances(test case, guaranteed conditions, etc), and they are not applicable in real life Software Engineering.
+This perspective also counters a possible counterargument: if someone can ace a challenging OA, they'd excel at the actual job. When a company selects someone who has passed an OA that greatly diverges from the JD, it's likely that the individual devoted a significant amount of time perfecting their OA technique. Typically, unless you're extraordinarily gifted, the proficiency to clear demanding OAs comes at the cost of neglecting genuine software engineering skills. If you invest most of your time on platforms like LeetCode, how can you find the time to refine your software engineering capabilities or undertake impactful projects?
 
-In a total, an OA that does not accurately represent the JD has the following down sides:
+Furthermore, it's widely acknowledged that excelling in algorithms and mathematics doesn't automatically translate to expertise in software engineering. These are distinct domains. Many "hacks" devised to optimize runtime and memory utilization of a solution are, in fact, antithetical to sound software engineering practices.
 
-1. Candidates who nail these OAs are not guaranteed to be good at their jobs
-2. People tend to cram OAs before doing the actual OA, wasting time and energy to actually improve skills that matter
-3. This practice has become a phenomenon which creates a bad cycle for point 1 and point 2 to occur infinitely, and it just gets worse
+A lot of these hacks compromise code readability and robustness. Consider the implementation of a hash table with an array. A conventional method to scale it involves creating a new array larger than the current one and transferring all the elements. A standard approach might double the hash table's size during expansion, ensuring average-case performance. However, a frequently seen "shortcut" in OAs is to increase the size tenfold rather than doubling it. While this might seem to offer runtime benefits due to fewer expansions, it's a flawed approach.
+
+Such a technique might perform well in OA settings where test coverage is limited, but in real-world applications, this would likely result in colossal memory consumption. Imagine the implications of an array of size 10,000 being expanded to 100,000. This leads to a significant waste of storage space. This tendency to rely on hacks is also evident among many IOI (International Olympiad in Informatics) participants, often leading to subpar software engineering practices. These shortcuts, derived from optimized solutions in controlled environments (specific test cases and assured conditions), don't typically align with real-world software engineering challenges.
+
+In summary, OAs that don't align with the job description (JD) present several issues:
+
+1. Excelling in these OAs doesn't ensure a candidate's competence in the actual job.
+2. Individuals often resort to cramming for OAs, diverting time and effort away from genuinely honing relevant skills.
+3. This trend perpetuates a vicious cycle, reinforcing the problems outlined in points 1 and 2, and exacerbating the situation over time.
 
 ## Ok, so how to design a good OA?
 
 Based on my personal experience with OAs and works, I think a good OA should meet the following criterias:
 
-1. Accurate with what you are expected to work on
-2. Evaluated within the Software Engineering scope
-3. Designed to be Open Internet friendly
+1. Align with what you are expected to work on
+2. Evaluation Within the Software Engineering Context
+3. Embracing Open Internet Access in Assessments
 
-#### Accurate with what you are expected to work on
-This is trivial. If you apply for a React position that requires you to make React components, you should be tested on making React components. It should be a bit challenging because since it is about the actual job, the challenge effectively ranks candidates' performances. The following would be a good example to test one's React skills on making React components:
+### Align with what you are expected to work on
 
-Time: 1 hour
+This point is straightforward. If you're applying for a React position centered around creating React components, your assessment should be based on that very skill. The challenge should be moderately tough, as it directly pertains to the job role, helping to rank candidates based on performance effectively. A suitable test to gauge one's proficiency in crafting React components might look like this:
 
-Here's a broken Checkout page made with React. Please identify the breaking behavior and fix it. Once you fixed it, please add the following features
+Duration: 1 hour
 
-1. Make a component to allow the customers to select different currency units, the default currency unit should be the customer's location(a fake location has been set in your workspace, no browser permission is needed). Once the customer changes the currency unit, all the prices should be converted. Please use `https://some_api.com/api/country` when making the component.
+You're provided with a malfunctioning Checkout page developed using React. Your task is to identify and rectify its flaws. Once that's done, kindly integrate the following enhancements:
 
-2. Please make the code as clean and robust as possible. We value readibility and extensibility a lot. Comments are also preferred if possible.
+1. Develop a component that enables customers to pick from various currency denominations. The initial currency should correspond to the customer's location. Note: a mock location has been pre-configured in your workspace, so there's no need to request browser permissions. When a user alters the currency type, all listed prices should adjust accordingly. For this task, utilize the API: `https://some_api.com/api/country`.
 
-3. If you still have time, please make a cache feature such that once the customer chooses a currency unit option, the currency unit will not be set to their default one when they revisit the site.
+2. Prioritize writing clean, robust code. We highly regard both readability and scalability. Where necessary, please add comments to elucidate your code.
 
-We will use this example in the next criteria explanation.
+3. Should time permit, incorporate a caching mechanism. This ensures that when a customer selects a currency preference, it's remembered and presented as their default during subsequent visits.
 
-#### Evaluated within the Software Engineering scope
+We will reference this example when discussing the next set of criteria.
 
-When we evaluate an OA, we should not only evaluate based on its runtime and space consumption. In Software Engineering, many of the hard performance rules or ideal OOP practices are being omitted based on many Software Engineering Principle like [SOLID](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) or [KISS](https://en.wikipedia.org/wiki/KISS_principle).
+### Evaluation Within the Software Engineering Context
 
-Some points we should evaluate could be:
-1. Readibility
+In assessing an OA, it's crucial to look beyond just runtime and space utilization. In the realm of Software Engineering, stringent performance metrics and idealized OOP practices are sometimes bypassed in favor of established software design principles, such as  [SOLID](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) and [KISS](https://en.wikipedia.org/wiki/KISS_principle).
+
+Key evaluation criteria include:
+
+1. Readability
 2. Robustness
-3. Reasonable Runtime
-4. Reasonable Space Consumption
-5. Extensiveness
+3. Optimal Runtime
+4. Efficient Space Utilization
+5. Scalability
 
-Now, let's try to evaluate the previous example OA on making React components:
+Consider our previous React components OA example:
 
-We should first run some test cases to see if everything works properly and to see if it's reasonably optimized. Next, we should delve into the code, check for magic variable names, goofy algorithms. It is important to see if the candidate writes any methods where built-in solutions exist. Most cases the built-in solutions are better than what we try to write by ourselves, and we should usually use stuff that are already they instead of trying to write our own ones. It is a waste of time unless you are someone like Rich Harris or You Yu Xi. Finally, we should check if this code can affect other code or can be affected if we modify the other parts of the code. The last thing you would want to see during work is that your changes on a country code in the country api breaks up the currency unit component because it "wisely" stores the api result into `localStorage` and never checks for updates.
+The first step is to conduct tests to ascertain functionality and optimization levels. Diving deeper into the code, it's essential to identify ambiguous variable names or unconventional algorithms. We should note if the candidate employs custom methods when pre-existing solutions might suffice. More often than not, built-in solutions surpass custom iterations, and leveraging what's readily available saves time and effort. Exceptions exist, of course, when dealing with innovators like Rich Harris or You Yu Xi. Lastly, we must examine the code's interdependencies. It's undesirable for a modification in one area, say a country code within an API, to inadvertently disrupt another component. For instance, encountering a scenario where adjusting the country API disrupts the currency unit component—because it stored API results in `localStorage` without periodic updates—would be far from ideal.
 
-#### Designed to be Open Internet friendly
+### Embracing Open Internet Access in Assessments
 
-As software engineers, we definitely browse the internet everyday to search for a syntax or some methods. This is not harmful at all to the OA as long as you design the OA to be an open ended mini project. It is true that internet can provide you the best solution to solve the ["reversing nodes in k-group"](https://leetcode.com/problems/reverse-nodes-in-k-group/) question I mentioned earlier in the article. But if you are working on an open-ended project like the example I provided above, the most you can do is to ask ChatGPT how to do it, and we all know that ChatGPT cannot do everything for you unless you have a super good prompt. And here's the dillema: if you can come up with a good enough prompt to have ChatGPT write a solution for that project meeting all criterias mentioned above, you probably have solid understanding on what's needed for the job. If that's the case, you are naturally qualified. So, I would say that we should allow people to use any helps during an OA if they can use that help during work. Search Engines and AI are already part of Software Engineering workflow, and we should include them in OAs to accurately represent the actual job expectations.
+For software engineers, consulting the internet for syntax or method clarifications is a routine part of the job. Incorporating this reality into the OA process is entirely feasible, especially when the assessment is structured as an open-ended mini-project. While the internet might offer an optimal solution for challenges like ["reversing nodes in k-group"](https://leetcode.com/problems/reverse-nodes-in-k-group/), mentioned earlier, in a broader, project-based assessment, the best one might get is seeking guidance from tools like ChatGPT. But, as many are aware, ChatGPT can't provide complete solutions without a detailed prompt.
+
+This leads to an interesting consideration: if a candidate can craft a prompt precise enough for ChatGPT to deliver a solution meeting all outlined criteria, it's indicative of their robust understanding of the project's requirements. Such a candidate is naturally suited for the role. Hence, it seems reasonable to permit candidates to access all available resources during an OA—resources they would typically use in their daily work. After all, search engines and AI tools are already integral to the software engineering workflow. Incorporating them into OAs provides a more authentic representation of job expectations.
 
 ### Conclusion
 
-I'm sorry if reading this makes you feel my anger and depression on OAs I did before, but I hope this blog helps you. If you are also looking for jobs, I hope you understand that failing to pass these over-challenging OAs are not your fault and you should not feel bad about it. They don't accurately reflect your software engineering skills and you will eventually find a company who finds you talented. In fact, Among the companies that I have worked with, 1 of them did not give me an OA, and 2 of them have pretty good OAs that has the qualities of what I believe a good OA should have. If you are a recruiter or hiring manager giving our inaccurate OAs, I hope that this blog provides you a logical explantions on why you should not give these OAs out. Good OAs not only helps the candidates, but also the companies. This job market is not fair, and let's try to make it more fair by accurately evaluting candidates for both sides' good.
+I apologize if my sentiments about past OAs come across as frustrated or disheartened, but I hope this blog offers some valuable insights.
+
+If you're on the job hunt, please realize that struggling with excessively challenging OAs isn't a reflection of your competence. They often don't provide an accurate measure of your software engineering abilities, and rest assured, you will find a company that recognizes your talent. In my experience, among the companies I've collaborated with, one did not require an OA, while two others provided well-constructed OAs embodying the attributes I've discussed above.
+
+For recruiters and hiring managers who distribute misrepresentative OAs, I hope this blog sheds light on the importance of tailoring assessments to truly gauge a candidate's abilities. Constructive OAs are beneficial for both candidates and companies alike. The job market has its disparities, but by assessing candidates judiciously, we can work towards a more equitable recruitment landscape for the betterment of all parties involved.
+
