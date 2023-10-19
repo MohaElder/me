@@ -5,20 +5,23 @@
     <v-row style="margin-bottom: 40px">
       <v-col class="text-center head-section" cols="12">
         <h1 class="blog-title">{{ blog.title }}</h1>
-        <h2 style="width: 100%" class="blog-date">Author: MohaElder</h2>
-        <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="white--text"
-          @click="share(icon.substring(4))"
-          icon
-        >
-          <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
-        </v-btn>
+        <div class="sub-header">
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="white--text"
+            @click="share(icon.substring(4))"
+            icon
+          >
+            <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+          <v-img style="width:100%;" :src="blog.img"></v-img>
+          <h2 style="width: 100%; margin-top:1rem;" class="blog-date">By MohaElder</h2>
+          <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
+        </div>
       </v-col>
     </v-row>
     <div class="blog-renderer" v-html="fileContent"></div>
@@ -118,6 +121,15 @@ export default {
 </script>
 
 <style>
+.sub-header {
+  width: 100%;
+  border-top: 1px solid #9d9d9d;
+  padding-top: 20px;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
 .blog-renderer::first-letter {
   initial-letter: 2 1;
 }
@@ -134,7 +146,7 @@ export default {
   justify-content: center;
 }
 
-a{
+a {
   color: rgb(170, 218, 250);
 }
 
@@ -170,6 +182,7 @@ li {
 
 h1 {
   padding-top: 20px;
+  margin-bottom: 1.875rem;
   font-weight: 500;
   font-size: 180%;
 }
@@ -195,7 +208,7 @@ blockquote {
 
 .blog-date {
   font-size: 100%;
-  font-weight: 300;
+  font-style: normal;
   text-align: start;
 }
 
