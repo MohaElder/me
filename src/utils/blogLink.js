@@ -70,5 +70,13 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     date: "2023/2/6",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/varlens.md",
                     },
+                    "7457e2c96e5711ee8ab068545a57002a": {
+                    color:"#ff8a65",
+                    img: "https://raw.githubusercontent.com/MohaElder/me/main/src/assets/blogPics/oa/max-howell-tweet-3657821630.jpg",
+                    title: "Why don't I like OAs & how to design a good OA",
+                    brief: "My thoughts and comments on tech job market these days",
+                    date: "2023/10/19",
+                    article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/whydontilikeoa.md",
+                    },
                     } 
  export { blogs };
