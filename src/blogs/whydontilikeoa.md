@@ -5,6 +5,7 @@ type: comment
 title: Why don't I like OAs & how to design a good OA
 brief: My thoughts and comments on tech job market these days
 cover: https://raw.githubusercontent.com/MohaElder/me/main/src/assets/blogPics/oa/max-howell-tweet-3657821630.jpg
+cover-caption: The creator of HomeBrew, Max Howell, tweeted this after he has been struggling with a technical assessment with Google
 date: 2023/10/19
 -->
 
@@ -23,6 +24,9 @@ OAs often represent the second stage in the hiring process. Typically, the proce
 7. Background Check.
 
 In summary, OAs are considered a highly effective and methodical approach to ascertain whether a candidate's programming skills align with the job's specifications.
+
+![leetcode](../assets/blogPics/oa/a.png)
+<figcaption>an example of an OA from leetcode</figcaption>
 
 From the title, you can probably guess I'm not a big fan of Online Assessments (OAs). I don't think they always show what someone can really do.
 

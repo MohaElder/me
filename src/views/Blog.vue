@@ -1,24 +1,19 @@
 <template>
-  <v-container
-    style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%"
-  >
+  <v-container style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%">
     <v-row style="margin-bottom: 40px">
       <v-col class="text-center head-section" cols="12">
         <h1 class="blog-title">{{ blog.title }}</h1>
         <div class="sub-header">
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="white--text"
-            @click="share(icon.substring(4))"
-            icon
-          >
+          <v-btn v-for="icon in icons" :key="icon" class="white--text" @click="share(icon.substring(4))" icon>
             <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
             <v-icon size="24px">
               {{ icon }}
             </v-icon>
           </v-btn>
-          <v-img style="width:100%;" :src="blog.img"></v-img>
+          <figure>
+            <v-img style="width:100%;" :src="blog.img"></v-img>
+            <figcaption>{{ blog.img_caption }}</figcaption>
+          </figure>
           <h2 style="width: 100%; margin-top:1rem;" class="blog-date">By MohaElder</h2>
           <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
         </div>
@@ -45,6 +40,7 @@ export default {
       title: "42",
       article: "# Whoops! Seems like you have reached a nonexisting article ;)",
       img: "",
+      img_caption: "",
     },
     fileContent: null,
   }),
@@ -121,6 +117,13 @@ export default {
 </script>
 
 <style>
+figcaption {
+  color: var(--color-content-quaternary, #b7b7b7);
+  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+  margin: 10px 20px 0;
+  text-align: left; 
+}
+
 .sub-header {
   width: 100%;
   border-top: 1px solid #9d9d9d;

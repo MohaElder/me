@@ -133,6 +133,7 @@ def updateBlogLink(path):
             id = ""
             color = ""
             img = ""
+            img_caption = ""
             title = ""
             brief = ""
             date = ""
@@ -182,6 +183,9 @@ def updateBlogLink(path):
                             case "date":
                                 print("date: " + res)
                                 date = res
+                            case "cover-caption":
+                                print("cover-caption: " + res)
+                                img_caption = res
                             case _:
                                 print(
                                     "warning: possible syntax error at md file heading")
@@ -194,6 +198,7 @@ def updateBlogLink(path):
                     title: "''' + title + '''",
                     brief: "''' + brief + '''",
                     date: "''' + date + '''",
+                    img_caption: "''' + img_caption + '''",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/''' + file + '''",
                     },
                     '''

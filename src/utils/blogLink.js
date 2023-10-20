@@ -4,6 +4,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "看上去像泰国人101",
                     brief: "如何看上去像一个泰国人，看这篇文章就够了",
                     date: "2023/6/6",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/bangkoker1.md",
                     },
                     "b33c27e1a98011ecbeb368545a57002a": {
@@ -12,6 +13,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "新冠轻症是什么体验？",
                     brief: "作者在这篇文章当中回忆了新冠期间的生活及感受，并聊了聊新冠对自己的影响。",
                     date: "2022/3/21",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/covid.md",
                     },
                     "e62d9cc3a94a11ecaf6e68545a57002a": {
@@ -20,6 +22,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "Development Log of this website",
                     brief: "This blog notes the development progress of this website, including why this website exists and how does it become what you see today.",
                     date: "2022/3/19",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/DevLog.md",
                     },
                     "2d3b5e70faf311ec9fe5acde48001122": {
@@ -28,6 +31,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "在靠近北极的镇上住一天是什么样的体验",
                     brief: "我“被迫“体验的三天隐居生活",
                     date: "2022/7/3",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/fortnelson.md",
                     },
                     "bb309f2fb17011ecbef668545a57002a": {
@@ -36,6 +40,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "[鸡酒分享] 玉光葡汁",
                     brief: "分享一款之前有一天喝酒即兴调的还不错的配方，自由度较高。",
                     date: "2022/3/31",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/jade_grape_juice.md",
                     },
                     "2d3a604cfaf311ec9fe5acde48001122": {
@@ -44,6 +49,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "[鸡酒分享] 巴波亚奶茶",
                     brief: "分享一款奶茶酒",
                     date: "2022/4/18",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/milktea.md",
                     },
                     "d6ffad89baf711eca94e68545a57002a": {
@@ -52,6 +58,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "[鸡酒分享] 尊重女性",
                     brief: "分享一款作者在深夜EMO的时候即兴制作的烈酒",
                     date: "2022/4/12",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/respect_women.md",
                     },
                     "1d0e79fdcbe211ed9db368545a57002a": {
@@ -60,6 +67,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "简评美剧最后生还者 - 史上最优秀的游戏改编影视作品",
                     brief: "作者在影视评论行业的又一部力作",
                     date: "2022/7/8",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/tlou_hbo.md",
                     },
                     "31ab9b67a63811ed8cc568545a57002a": {
@@ -68,6 +76,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "我有一台专业微单和九支镜头，我最喜欢用手机摄影",
                     brief: "作者在这篇文章当中聊了聊自己对手机摄影的理解，并分享了自己深度使用手机摄影软件Varlens的体验",
                     date: "2023/2/6",
+                    img_caption: "",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/varlens.md",
                     },
                     "7457e2c96e5711ee8ab068545a57002a": {
@@ -76,6 +85,7 @@ const blogs = {"86a0ab94050011eeb8d368545a57002a": {
                     title: "Why don't I like OAs & how to design a good OA",
                     brief: "My thoughts and comments on tech job market these days",
                     date: "2023/10/19",
+                    img_caption: "The creator of HomeBrew, Max Howell, tweeted this after he has been struggling with a technical assessment with Google",
                     article: "https://raw.githubusercontent.com/MohaElder/me/main/src/blogs/whydontilikeoa.md",
                     },
                     } 
