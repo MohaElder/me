@@ -26,7 +26,7 @@ OAs often represent the second stage in the hiring process. Typically, the proce
 In summary, OAs are considered a highly effective and methodical approach to ascertain whether a candidate's programming skills align with the job's specifications.
 
 ![leetcode](../assets/blogPics/oa/a.png)
-<figcaption>an example of an OA from leetcode</figcaption>
+<figcaption>An example of an OA from leetcode</figcaption>
 
 From the title, you can probably guess I'm not a big fan of Online Assessments (OAs). I don't think they always show what someone can really do.
 
@@ -53,11 +53,15 @@ If you have ever done OA, you definitely encountered the following situation:
 
 You are applying for a Frontend Engineer Internship from some company you never know but it's on Linkedin job board. The JD says you should have good knowledge of React, JavaScript, and Webpack. It is preferred that if you have knowledge on Python(Pandas, Pydantic, Django), Docker and Postman.
 
+![docker](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F02%2FDocker-Symbol.png&f=1&nofb=1&ipt=490508996492fca4c4293f8652154ad31787ea3e11cb6b5d622997e74f8c21c5&ipo=images)
+
 So, you guess they're using React for the front end and Django for the back end. Your main role would be with React, but sometimes you'd chip in with QA, DevOps, and some backend work using Django. Sounds awesome, right? You've been wanting to level up your Docker game from just copying commands from StackOverflow to mastering Kubernetes anyway.
 
 Being in your third year of a Computer Science program, you've studied stuff like Red Black Trees and Huffman Encoding. Heck, you've even dived deep into dynamic programming, learning to design and analyze it. On your own time, you picked up React and even built a project with it. Plus, you've done a full-stack project combining React and Django for a school activity. Feeling pretty good about your skills, you decide to apply for the job.
 
 Luckily, instead of a rejection, you received a "rare" OA invitation. So, you opened up the OA, ready to tackle some React questions. BUT THEN, there was this intricate question about reversing nodes in a tree, with requirements that took you 30 minutes just to grasp. In the end, the system automatically submitted your in-progress code, littered with log functions. Congratulations, you probably feel just as frustrated as I did back then. :)
+
+![memeA](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmemeguy.com%2Fphotos%2Fimages%2Fhardest-part-of-applying-for-a-job-is-filling-out-the-online-application-265289.jpg&f=1&nofb=1&ipt=8044c5a1a02993a1076063bd3c46f6b88c42119ff2d99a023610778c8c244fda&ipo=images)
 
 This story might be a bit lengthy, but the key takeaway is this: Many OAs in the job market do **not** accurately represent the tasks you'd be expected to perform in the actual job.
 
@@ -67,6 +71,10 @@ If you're familiar with the tech job market, you might notice I haven't mentione
 
 The primary reason that excessively practicing OAs is misguided is because it doesn't genuinely reflect one's actual programming skills. Practicing numerous OAs before taking the real assessment is analogous to cramming for an exam. Many hope to practice enough problems so that the real OA mirrors something they've encountered previously. In such scenarios, all they end up doing is regurgitating what they've memorized to achieve a high score quickly. This approach is how an overly challenging OA can mislead both the applicant and the hiring company. The candidates often lack a comprehensive understanding of what they're coding, and the company doesn't receive an honest evaluation of the applicant's abilities. Consequently, companies might end up hiring individuals who excel at rote learning OAs rather than genuine problem-solving.
 
+![leetcodeB](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.leetcode.com%2Fusers%2Fimages%2Faec82c5a-8297-4e80-b76f-f91dde8a70f6_1611349669.0451963.png&f=1&nofb=1&ipt=676c54ac4f1a12c254b24155c62ac9b006a46b8efc1110f5e2ed1b6dd1612f0f&ipo=images)
+
+<figcaption>A leetcode statistics board from an user online</figcaption>
+
 This perspective also counters a possible counterargument: if someone can ace a challenging OA, they'd excel at the actual job. When a company selects someone who has passed an OA that greatly diverges from the JD, it's likely that the individual devoted a significant amount of time perfecting their OA technique. Typically, unless you're extraordinarily gifted, the proficiency to clear demanding OAs comes at the cost of neglecting genuine software engineering skills. If you invest most of your time on platforms like LeetCode, how can you find the time to refine your software engineering capabilities or undertake impactful projects?
 
 Furthermore, it's widely acknowledged that excelling in algorithms and mathematics doesn't automatically translate to expertise in software engineering. These are distinct domains. Many "hacks" devised to optimize runtime and memory utilization of a solution are, in fact, antithetical to sound software engineering practices.
@@ -74,6 +82,10 @@ Furthermore, it's widely acknowledged that excelling in algorithms and mathemati
 A lot of these hacks compromise code readability and robustness. Consider the implementation of a hash table with an array. A conventional method to scale it involves creating a new array larger than the current one and transferring all the elements. A standard approach might double the hash table's size during expansion, ensuring average-case performance. However, a frequently seen "shortcut" in OAs is to increase the size tenfold rather than doubling it. While this might seem to offer runtime benefits due to fewer expansions, it's a flawed approach.
 
 Such a technique might perform well in OA settings where test coverage is limited, but in real-world applications, this would likely result in colossal memory consumption. Imagine the implications of an array of size 10,000 being expanded to 100,000. This leads to a significant waste of storage space. This tendency to rely on hacks is also evident among many IOI (International Olympiad in Informatics) participants, often leading to subpar software engineering practices. These shortcuts, derived from optimized solutions in controlled environments (specific test cases and assured conditions), don't typically align with real-world software engineering challenges.
+
+![ioi](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Folympiad.org.uk%2Fimages%2Fioi-logo-colour.png&f=1&nofb=1&ipt=ccf3ce298a07aa703296d9fcda177ed1953c7255742571d8624e771fe51a49ec&ipo=images)
+
+<figcaption>logo of International Olympiad in Informatics</figcaption>
 
 In summary, OAs that don't align with the job description (JD) present several issues:
 
@@ -120,6 +132,8 @@ Key evaluation criteria include:
 Consider our previous React components OA example:
 
 The first step is to conduct tests to ascertain functionality and optimization levels. Diving deeper into the code, it's essential to identify ambiguous variable names or unconventional algorithms. We should note if the candidate employs custom methods when pre-existing solutions might suffice. More often than not, built-in solutions surpass custom iterations, and leveraging what's readily available saves time and effort. Exceptions exist, of course, when dealing with innovators like Rich Harris or You Yu Xi. Lastly, we must examine the code's interdependencies. It's undesirable for a modification in one area, say a country code within an API, to inadvertently disrupt another component. For instance, encountering a scenario where adjusting the country API disrupts the currency unit component—because it stored API results in `localStorage` without periodic updates—would be far from ideal.
+
+![memeB](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6b%2Fa8%2Fd9%2F6ba8d9ff752c3aa6dce4a74154c2633c.png&f=1&nofb=1&ipt=e7284162dfec30cc247d9b5ed804cb665dcc509b108aeb2ccda2b25e170032a9&ipo=images)
 
 ### Embracing Open Internet Access in Assessments
 

@@ -120,7 +120,7 @@ export default {
 figcaption {
   color: var(--color-content-quaternary, #b7b7b7);
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
-  margin: 10px 20px 0;
+  margin: 10px 0px 10px;
   text-align: left; 
 }
 
@@ -199,7 +199,6 @@ blockquote {
 
 .md-img {
   margin-top: 20px;
-  margin-bottom: 20px;
   width: 100%;
 }
 
