@@ -84,7 +84,7 @@ export default {
   name: "Photos",
   mounted() {
     window.scrollTo(0, 0);
-    this.tags = tags;
+    this.tags = tags.sort();
     this.images = Object.values(images_imported);
     this.sortImages(true, this.images)
 
