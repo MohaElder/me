@@ -26,9 +26,10 @@ const messages = {
             podcast: "Podcast",
             resume: "Resume",
             download: "Download",
+            download_picture: "Download for noncommercial use",
             using_my_photo: "USING MY PHOTO",
-            commercial: "commercial",
-            photo_usage_note: "non-commercial: Please give credit to the name 'Yasushi Oh' or \
+            commercial: "For commercial please click here",
+            photo_usage_note: "Non-commercial: Please give credit to the name 'Yasushi Oh' or \
             'Anzhi Weng' or '翁安志' or 'お やすし' (your choice :))",
             web_gl_gallery_note: "Note: Gallery Mode is a new way to view my pictures via a three dimensional interactive interface. It's like a little 'game' embed inside this web page. It only supports \
             Desktop users for now(and Pad users too), but there will be a mobile version in the near future.Gallery \
@@ -169,8 +170,9 @@ const messages = {
             podcast: "播客",
             resume: "简历",
             download: "英文简历",
+            download_picture: "下载非商业使用照片",
             using_my_photo: "使用我的照片",
-            commercial: "商业",
+            commercial: "商业使用请点击此处",
             photo_usage_note: "非商业: 请标注下列任意名字为作者： 'Yasushi Oh' 或 \
             'Anzhi Weng' 或 '翁安志' 或 'お やすし' (你的选择 :))",
             web_gl_gallery_note: "注意: Gallery Mode 是一个全新的通过3D立体可交互界面浏览我的照片的方式。如果您想称它为Web3.0, 请便;) \
