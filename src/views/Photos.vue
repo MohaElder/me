@@ -55,7 +55,7 @@
 
     <transition name="fade">
       <span v-if="!unity">
-        <v-row justify="start" class="chip-wrapper">
+        <v-row justify="start" class="chip-wrapper" :style="isPortrait()? 'width:100%' : 'width: 50%;'">
           <div v-for="tag in tags" v-bind:key="tag" class="chip">
             <v-chip @click="appendTag(tag)">
               {{ tag }}
@@ -64,7 +64,7 @@
           <v-btn @click="sortImages(false, order)" icon="mdi-swap-vertical">
           </v-btn>
         </v-row>
-        <v-row justify="start" class="chip-wrapper">
+        <v-row justify="start" class="chip-wrapper" :style="isPortrait()? 'width:100%' : 'width: 50%;'">
           <div v-for="tag in activeTags" v-bind:key="tag" class="chip">
             <v-chip @click:close="removeTag(tag)" color="primary" closable>
               {{ tag }}
@@ -321,7 +321,6 @@ input:checked {
 .chip-wrapper {
   padding-left: 30px;
   flex-wrap: wrap;
-  width: 50%;
 }
 
 .chip {
