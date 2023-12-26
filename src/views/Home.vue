@@ -46,7 +46,7 @@
 
 
       <v-row class="below">
-        <a style="color: white" class="" href="https://goo.gl/maps/SCj6miJhsSpwkiVA9">32.9911101, -117.2737427<br>
+        <a style="color: white" class="" href="https://maps.app.goo.gl/f1iggnxxYjswtCLUA">N 36°14.845', W 117°21.295'<br>
           {{ $t("message.wave_location") }}</a>
 
       </v-row>

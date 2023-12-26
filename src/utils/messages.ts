@@ -2,7 +2,7 @@ const messages = {
     en: {
         message: {
             hello: "Hi! Nice to meet you:) Scroll down for ✨",
-            wave_location: "Fletcher Cove Beach Park, CA, USA",
+            wave_location: "Minieta Rd, Death Valley, CA, USA",
             nav_hi: "Hi",
             nav_work: "Me",
             nav_open_source: "Open Source",
@@ -146,7 +146,7 @@ const messages = {
     zh: {
         message: {
             hello: "嗨！很高兴见到你:) 下滑感受✨",
-            wave_location: "Fletcher Cove Beach Park, 美国, 加利福尼亚州",
+            wave_location: "Minieta Rd, 美国, 加利福尼亚州，死亡谷",
             nav_hi: "嗨",
             nav_work: "我",
             nav_open_source: "开源",
