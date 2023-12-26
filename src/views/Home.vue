@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <div id="father" class="animated-image" :style="blur">
+    <div id="father" class="animated-image"> <!-- :style:"blur" use this if you need blur effect in the future -->
       <img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(1).jpg" alt="" class="each-image"
         style="opacity: 0" />
     </div>
@@ -122,21 +122,22 @@ export default {
         : width.value * 0.05;
     },
     loadImages() {
-      for (let i = this.scroll_position; i < this.scroll_position + 10 && i < 108; i++) {
+      for (let i = this.scroll_position; i < 50; i++) {
         let img = new Image();
-        img.src = `https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(${i + 1}).jpg`;
+        //img.src = `https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(${i + 1}).jpg`;
+        img.src = `https://raw.githubusercontent.com/MohaElder/me/main/src/assets/skyFrame/Frame(${i+1}).jpeg`;
         images.push(img);
       }
     },
     handleScroll() {
-      var index = Math.floor(window.scrollY / 72) % 108;
+      var index = Math.floor(window.scrollY / 72) % 50;
       if (index < 0) {
         return;
       }
-      if (index >= this.scroll_position + 5) {
-        this.scroll_position = index + 5;
-        this.loadImages();
-      }
+      // if (index >= this.scroll_position + 5) {
+      //   this.scroll_position = index + 5;
+      //   this.loadImages();
+      // }
       var father = document.querySelector("#father");
       father?.children[0].replaceWith(images[index]);
       images[index].classList.add("each-image");
@@ -170,6 +171,7 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1.5);
 }
 
 .second {

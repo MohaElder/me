@@ -1,7 +1,7 @@
 const messages = {
     en: {
         message: {
-            hello: "Hi! Nice to meet you:) Scroll down for 🌊",
+            hello: "Hi! Nice to meet you:) Scroll down for ✨",
             wave_location: "Fletcher Cove Beach Park, CA, USA",
             nav_hi: "Hi",
             nav_work: "Me",
@@ -145,7 +145,7 @@ const messages = {
     },
     zh: {
         message: {
-            hello: "嗨！很高兴见到你:) 下滑感受🌊",
+            hello: "嗨！很高兴见到你:) 下滑感受✨",
             wave_location: "Fletcher Cove Beach Park, 美国, 加利福尼亚州",
             nav_hi: "嗨",
             nav_work: "我",
