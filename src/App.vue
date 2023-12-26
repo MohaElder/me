@@ -13,28 +13,28 @@
 
       <div class="d-flex align-center" v-else>
         <v-btn @click="$router.push({ name: 'Hi' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_hi") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'Hi' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_hi") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Work' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_work") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'Work' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_work") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Photos' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_photos") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_photos") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_open_source") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_open_source") }}</span>
       </v-btn>
       <v-btn @click="$router.push({ name: 'Recipe' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_cocktail") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'Recipe' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_cocktail") }}</span>
         </v-btn>
         <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_blogs") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'Blogs' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_blogs") }}</span>
         </v-btn>
         <!-- <v-btn @click="$router.push({ name: 'Guide' }).catch(() => {})" text>
                   <span class="mr-2">{{ $t("message.nav_guide") }}</span>
                 </v-btn> -->
         <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => { })" text>
-          <span class="mr-2">{{ $t("message.nav_if_i_die") }}</span>
+          <span class="mr-2" :style="$router.currentRoute.value.name == 'IfIDie' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_if_i_die") }}</span>
         </v-btn>
       </div>
 
