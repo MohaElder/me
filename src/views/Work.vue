@@ -4,8 +4,9 @@
     <h3 class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh'">
       {{ $t("message.work.a") }}
       <a href="https://ucsd.edu/" target="_blank"><i>UCSD</i></a>{{ $t("message.work.b")
+      }}<a href="https://aako.world/" target="_blank"><i>aako</i></a>{{ $t("message.work.c")
       }}<a href="https://www.unops.org/" target="_blank"><i>UNOPS</i></a>{{ $t("message.and")
-}}<a href="https://www.nvidia.com/" target="_blank"><i>NVIDIA</i></a>{{ $t("message.work.c") }}
+}}<a href="https://www.nvidia.com/" target="_blank"><i>NVIDIA</i></a>{{ $t("message.work.d") }}
     </h3>
     <v-img style="
         margin-top: 5%;
@@ -37,10 +38,10 @@
               <h4>TypeScript, C#,</h4>
             </v-row>
             <v-row>
-              <h4>Python, Java, Lua,</h4>
+              <h4>Python, Swift, Java</h4>
             </v-row>
             <v-row>
-              <h4>C++, C, ARM</h4>
+              <h4>Lua, C++, C, ARM</h4>
             </v-row>
             <span v-if="$vuetify.display.mobile"><v-row style="margin-top: 15%">
                 <h4>SQL, STL, DevOps, Unit Testing,</h4>
@@ -156,6 +157,15 @@
       <v-col>
         <v-row style="margin-top: 50px">
           <h1>{{ $t("message.work_experience") }}</h1>
+        </v-row>
+        <v-row>
+          <h4>
+            {{ $t("message.work_experience_desc.aako_left") }}
+            <a href="https://aako.world/" target="_blank">{{
+              $t("message.work_experience_desc.aako")
+            }}</a>
+            {{ $t("message.work_experience_desc.aako_right") }}🚀
+          </h4>
         </v-row>
         <v-row>
           <h4>

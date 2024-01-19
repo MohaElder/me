@@ -13,8 +13,9 @@ const messages = {
             nav_guide: "Guide",
             work: {
                 a: "Oh Yasushi is a ",
-                b: " student. He worked in ",
-                c: " to meaningfully code for a better world"
+                b: " student and the founder of ",
+                c: ". He worked in ",
+                d: " to meaningfully code for a better world"
             },
             and: " & ",
             statement: {
@@ -58,6 +59,9 @@ const messages = {
             wfl: "Shanghai WFL",
             ucsd: "University of California, San Diego(UCSD)",
             work_experience_desc: {
+                aako_left: "Founder | Tech Lead",
+                aako: "{'@'} aako",
+                aako_right: "",
                 unops_left: "Software Engineer Intern",
                 unops: "{'@'} UNOPS",
                 unops_right: "",
@@ -157,8 +161,9 @@ const messages = {
             nav_guide: "指南",
             work: {
                 a: "翁安志是",
-                b: " 的一名学生。他曾工作于 ",
-                c: " ，并通过这些经历面向更好的世界编程"
+                b: " 的一名学生以及初创公司",
+                c: "的创始人。他曾工作于 ",
+                d: " ，并通过这些经历面向更好的世界编程"
             },
             and: "和",
             statement: {
@@ -200,6 +205,9 @@ const messages = {
             wfl: "上海市世界外国语小学",
             ucsd: "加州大学圣迭戈分校(UCSD)",
             work_experience_desc: {
+                aako_left: "",
+                aako: "aako",
+                aako_right: "创始人 | 技术主管",
                 unops_left: "联合国项目事务厅",
                 unops: "(UNOPS)",
                 unops_right: "软件工程实习生",
