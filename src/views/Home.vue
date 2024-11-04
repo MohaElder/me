@@ -59,7 +59,7 @@ import "animate.css";
 import { useDisplay } from 'vuetify'
 
 let images = [];
-const names = ["翁安志", "お やすし", "Yasushi Oh"];
+const names = ["翁安志", "お やすし", "Oh Yasushi"];
 
 const animateCSS = (element, animation, time_interval, prefix = "animate__") =>
   // We create a Promise and return it
