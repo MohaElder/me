@@ -78,12 +78,6 @@
               $t("message.nav_blogs")
               }}</v-list-item-title>
           </v-list-item>
-          <!-- <v-list-item>
-                    <v-list-item-title
-                      @click="$router.push({ name: 'Guide' }).catch(() => {})"
-                      >{{ $t("message.nav_guide") }}</v-list-item-title
-                    >
-                  </v-list-item> -->
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'IfIDie' }).catch(() => { })">{{
               $t("message.nav_if_i_die")
