@@ -109,7 +109,7 @@
   </v-app>
 </template>
 
-<script lang="ts">
+<script>
 
 import vueIcon from './components/vue-icon.vue'
 import eroducate from './components/eroducate.vue';
