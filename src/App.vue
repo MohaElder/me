@@ -8,9 +8,8 @@
 
 <template>
   <v-app style="overflow: hidden">
-    <v-app-bar app flat dark>
+    <v-app-bar color="rgba(71, 71, 71, 0.063)" class="glassy lower-rounded">
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-
       <div class="d-flex align-center" v-else>
         <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
           :style="$router.currentRoute.value.name == 'Hi' ? 'color: #FDDA3A' : ''">{{
@@ -91,22 +90,21 @@
       <router-view />
     </v-main>
 
-    <v-footer dark padless style="padding-top: 1%;">
-      <v-card flat tile class="white--text text-center">
-        <v-card-text class="white--text pt-0">
+    <v-footer class="glassy upper-rounded" style="padding-top: 15px" padless>
+      <div tile class="white--text text-center">
+        <p class="white--text pt-0" style="font-size: 12px;">
           Made with
           <vueIcon />, 🧠, and ❤️.
           <a style="color: white" href="https://github.com/MohaElder/me" target="_blank">
             source code
           </a>
-        </v-card-text>
-        <v-card-text class="white--text">
+        <br>
           {{ new Date().getFullYear() }} —
           <strong>MOHAELDER
             <span> {{ $t("message.statement.hashtag") }} </span>
           </strong>
-        </v-card-text>
-      </v-card>
+        </p>
+      </div>
     </v-footer>
   </v-app>
 </template>
@@ -148,6 +146,21 @@ export default {
 .app-bar-item:hover {
   transform: scale(1.05); /* Slightly enlarge */
   font-size: 1.1em; /* Increase font size to mimic bold */
+}
+
+.glassy {
+  background-color: rgba(71, 71, 71, 0.063);
+  backdrop-filter: blur(10px);
+}
+
+.upper-rounded {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.lower-rounded {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 p {
