@@ -2,7 +2,7 @@
   <div>
     <h1 style="padding: 30px; text-align: center">
       <span style="color: #64b5f6"> {{ $t("message.share") }} </span> /
-      <span style="color: #ffee58"> {{ $t("message.life") }} </span>/
+      <span style="color: #ffee58"> {{ $t("message.life") }} </span> /
       <span style="color: #ff8a65"> {{ $t("message.comments") }} </span>
     </h1>
     <v-container style="margin-top: 20px">
