@@ -11,7 +11,7 @@ jobs:
       with:
         version: 9
     - id: Build-Vue
-      uses: MohaElder/VuePagesAction@1.0.1
+      uses: MohaElder/VuePagesAction@1.0.2
       with:
         username: 'MohaElder'
         reponame: 'me'
