@@ -131,13 +131,9 @@ export default {
     },
     handleScroll() {
       var index = Math.floor(window.scrollY / 72) % 50;
-      if (index < 0) {
-        return;
+      if (index <= 0 && window.scrollY > 1000) {
+        index = images.length - 1;
       }
-      // if (index >= this.scroll_position + 5) {
-      //   this.scroll_position = index + 5;
-      //   this.loadImages();
-      // }
       var father = document.querySelector("#father");
       father?.children[0].replaceWith(images[index]);
       images[index].classList.add("each-image");
