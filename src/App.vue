@@ -12,30 +12,21 @@
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <div class="d-flex align-center" v-else>
-        <v-btn @click="$router.push({ name: 'Hi' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'Hi' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_hi") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'Work' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'Work' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_work") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'Photos' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_photos") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'OpenSource' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_open_source") }}</span>
-      </v-btn>
-      <v-btn @click="$router.push({ name: 'Recipe' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'Recipe' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_cocktail") }}</span>
-        </v-btn>
-        <v-btn @click="$router.push({ name: 'Blogs' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'Blogs' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_blogs") }}</span>
-        </v-btn>
-        <!-- <v-btn @click="$router.push({ name: 'Guide' }).catch(() => {})" text>
-                  <span class="mr-2">{{ $t("message.nav_guide") }}</span>
-                </v-btn> -->
-        <v-btn @click="$router.push({ name: 'IfIDie' }).catch(() => { })" text>
-          <span class="mr-2" :style="$router.currentRoute.value.name == 'IfIDie' ? 'color: #FDDA3A' : '' " >{{ $t("message.nav_if_i_die") }}</span>
-        </v-btn>
+        <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
+          :style="$router.currentRoute.value.name == 'Hi' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_hi") }}</span>
+          <span class="app-bar-item" @click="$router.push({ name: 'Work' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Work' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_work") }}</span>
+          <span class="app-bar-item" @click="$router.push({ name: 'Photos' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_photos") }}</span>
+          <span class="app-bar-item" @click="$router.push({ name: 'OpenSource' }).catch(() => { })" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_open_source") }}</span>
+          <span class="app-bar-item" @click="$router.push({ name: 'Recipe' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Recipe' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_cocktail") }}</span>
+          <span class="app-bar-item" @click="$router.push({ name: 'Blogs' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Blogs' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_blogs") }}</span>
+          <span class="app-bar-item" @click="$router.push({ name: 'IfIDie' }).catch(() => { })" :style="$router.currentRoute.value.name == 'IfIDie' ? 'color: #FDDA3A' : ''">{{
+            $t("message.nav_if_i_die") }}</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -58,34 +49,34 @@
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'Hi' }).catch(() => { })">{{
               $t("message.nav_hi")
-            }}</v-list-item-title>
+              }}</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'Work' }).catch(() => { })"> {{
               $t("message.nav_work")
-            }}</v-list-item-title>
+              }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'Photos' }).catch(() => { })">{{
               $t("message.nav_photos")
-            }}</v-list-item-title>
+              }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{
               $t("message.nav_open_source")
-            }}</v-list-item-title>
+              }}</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'Recipe' }).catch(() => { })">{{
               $t("message.nav_cocktail")
-            }}</v-list-item-title>
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title @click="$router.push({ name: 'Blogs' }).catch(() => { })">{{
-            $t("message.nav_blogs")
-          }}</v-list-item-title>
+              }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$router.push({ name: 'Blogs' }).catch(() => { })">{{
+              $t("message.nav_blogs")
+              }}</v-list-item-title>
           </v-list-item>
           <!-- <v-list-item>
                     <v-list-item-title
@@ -96,7 +87,7 @@
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'IfIDie' }).catch(() => { })">{{
               $t("message.nav_if_i_die")
-            }}</v-list-item-title>
+              }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -153,6 +144,18 @@ export default {
 </script>
 
 <style scoped>
+
+.app-bar-item {
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.5s, font-size 0.5s;
+}
+
+.app-bar-item:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+  font-size: 1.1em; /* Increase font size to mimic bold */
+}
+
 p {
   font-size: 100%;
 }
