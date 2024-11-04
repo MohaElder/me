@@ -124,6 +124,7 @@ export default {
     loadImages() {
       for (let i = this.scroll_position; i < 50; i++) {
         let img = new Image();
+        // beach theme
         //img.src = `https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(${i + 1}).jpg`;
         img.src = `https://raw.githubusercontent.com/MohaElder/me/main/src/assets/skyFrame/Frame(${i+1}).jpeg`;
         images.push(img);
