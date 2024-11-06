@@ -110,9 +110,9 @@ const messages = {
                 sperm_dash_after: "that not many people play, but I personally like it better",
             },
             cocktail_desc_before: " Alcoholic lab is a place where I take notes of \
-            the drinks that I developed for fun. All the drinks below are not \
+            the drinks that I developed for fun or ones I found interesting. All the drinks below are not \
             guaranteed to be legit nor safe. They are just for hobby purposes. \
-            If you have some suggestions, please send me an",
+            If you have any suggestions, please send me an",
             cocktail_desc_link: "email",
             cocktail_desc_after: " and we can talk!",
             open_source_desc: "I believe that Open Source is a \
@@ -253,7 +253,7 @@ const messages = {
                 sperm_dash_link: "性教育游戏",
                 sperm_dash_after: "",
             },
-            cocktail_desc_before: "酒鬼实验室是一个记录我瞎琢磨的鸡尾酒配发的地方。\
+            cocktail_desc_before: "酒鬼实验室是一个记录我瞎琢磨的鸡尾酒配方的地方。\
             以下所有饮料不保证好喝，不保证安全，仅供参考。欢迎发送",
             cocktail_desc_link: "邮件",
             cocktail_desc_after: "讨论。",
