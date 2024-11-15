@@ -14,8 +14,8 @@ const messages = {
             work: {
                 a: "Oh Yasushi is a ",
                 b: " student and the founder of ",
-                c: ". He worked in ",
-                d: " to meaningfully code for a better world"
+                c: ". He worked in the ",
+                d: " to code for a better world."
             },
             and: " & ",
             statement: {
@@ -60,7 +60,7 @@ const messages = {
             ucsd: "University of California, San Diego(UCSD)",
             work_experience_desc: {
                 aako_left: "Founder | Tech Lead",
-                aako: "{'@'} aako",
+                aako: "{'@'} Aako",
                 aako_right: "",
                 unops_left: "Software Engineer Intern",
                 unops: "{'@'} UNOPS",
@@ -206,7 +206,7 @@ const messages = {
             ucsd: "加州大学圣迭戈分校(UCSD)",
             work_experience_desc: {
                 aako_left: "",
-                aako: "aako",
+                aako: "Aako",
                 aako_right: "创始人 | 技术主管",
                 unops_left: "联合国项目事务厅",
                 unops: "(UNOPS)",
