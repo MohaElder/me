@@ -6,6 +6,7 @@
       }}<a href="https://aako.world/" target="_blank"><i>Aako</i></a>{{ $t("message.work.c")
       }}<a href="https://www.unops.org/" target="_blank"><i>UN</i></a>{{ $t("message.and")
       }}<a href="https://www.nvidia.com/" target="_blank"><i>NVIDIA</i></a>{{ $t("message.work.d") }}
+      <a href="https://mohaelder.github.io/me/photos" target="_blank"><i>{{ $t("message.pictures") }}</i></a>{{ $t("message.work.e") }}
     </h3>
     <v-img style="
         margin-top: 5%;
@@ -246,6 +247,20 @@
       <v-col style="padding-left: 35px" md="5">
         <v-row style="margin-top: 50px">
           <h1>{{ $t("message.honors_and_news") }}</h1>
+        </v-row>
+        <v-row>
+          <h4>
+            <a href="https://ndawards.net/winners-gallery/nd-awards-2024/non-professional/photojournalism-story/hm/22290/" target="_blank">
+              ND Awards 2024 Non-Professional Winner Honorable Mention in Photojournalism No.1
+            </a>
+          </h4>
+        </v-row>
+        <v-row>
+          <h4>
+            <a href="https://ndawards.net/winners-gallery/nd-awards-2024/non-professional/photojournalism-story/hm/22289/" target="_blank">
+              ND Awards 2024 Non-Professional Winner Honorable Mention in Photojournalism No.2
+            </a>
+          </h4>
         </v-row>
         <v-row>
           <h4>
