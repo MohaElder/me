@@ -18,6 +18,8 @@
             $t("message.nav_work") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'Photos' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_photos") }}</span>
+            <span class="app-bar-item" @click="$router.push({ name: 'NothingToLose' }).catch(() => { })" :style="$router.currentRoute.value.name == 'NothingToLose' ? 'color: #FDDA3A' : ''">
+           Nothing to Lose</span>
           <span class="app-bar-item" @click="$router.push({ name: 'OpenSource' }).catch(() => { })" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_open_source") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'Recipe' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Recipe' ? 'color: #FDDA3A' : ''">{{
@@ -60,6 +62,9 @@
             <v-list-item-title @click="$router.push({ name: 'Photos' }).catch(() => { })">{{
               $t("message.nav_photos")
               }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$router.push({ name: 'NothingToLose' }).catch(() => { })">Nothing to Lose</v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{

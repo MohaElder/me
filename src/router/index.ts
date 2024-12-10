@@ -9,7 +9,8 @@ import Blogs from '../views/Blogs.vue'
 import Blog from '../views/Blog.vue'
 import IfIDie from '../views/IfIDie.vue'
 import OpenSource from '../views/OpenSource.vue'
-import Guide from '../views/Guide.vue'
+// import Guide from '../views/Guide.vue'
+import NothingToLose from '../views/NothingToLose.vue'
 
 const appRoot = '/me';
 
@@ -53,6 +54,11 @@ const routes = [
     path: appRoot + '/final_words',
     name: 'IfIDie',
     component: IfIDie
+  },
+  {
+    path: appRoot + '/nothing-to-lose',
+    name: 'NothingToLose',
+    component: NothingToLose
   },
   // {
   //   path: '/guide',
