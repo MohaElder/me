@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>NOTHING TO LOSE <span style="font-size: 16px">presented by Commons Gallery</span></h1>
+    <h1>NOTHING TO LOSE <br> <span style="font-size: 16px">presented by Commons Gallery</span></h1>
     <div style="padding-top: 10px; padding-bottom: 10px"> <p>
       <i>This work is presented to you by Dmitri Zurita’s students. He has encouraged us, inspired us, and supported
         us every step of the way.</i>
@@ -51,6 +51,8 @@
       <li>Kenny Qiu <a href="https://www.instagram.com/kennykenny0524/">@kennykenny0524</a></li>
       <li>Aimee Zhang <a href="https://www.instagram.com/azllluv/">@azllluv</a></li>
       <li>Farhang Dadfar <a href="https://www.instagram.com/farhangdadfar/">@farhangdadfar</a></li>
+      <li>Anthony Keegan <a href="https://www.instagram.com/me.when.im.anthony.keegan./">@me.when.im.anthony.keegan.</a></li>
+      <li>Ashley Wu <a href="https://www.instagram.com/ashleywu_photography/">@ashleywu_photography</a></li>
       <li>Brooklyn Lee</li>
       <li>Soodabeh Saghravanian</li>
     </ul>
@@ -169,7 +171,7 @@
       </v-row>
 
       <v-row>
-        <v-col><v-img src="../assets/nothingToLose/corner.png"></v-img></v-col>
+        <v-col><v-img src="../assets/nothingToLose/cornered.png"></v-img></v-col>
         <v-col>
           <h3>Cornered</h3>
           <p>By Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></p>
@@ -245,6 +247,7 @@
         <v-col>
           <h3>Fire Hydrants</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
+          <p>The project fire hydrants was initially created for a course project. As much of the work, I explore it aims to capture an investigation and presentation of industrial items that are commonly considered ugly to look at or unsatisfying or even unpleasing or unwanted. Through intentional focus on these typically undesired subjects I try to explore both the things that I find personally intriguingor  beautiful, and also the beauty in its intended utility. The first part of a larger series fire hydrants is a set of 12 images, capturing several different fire hydrants from various different angles. Although at first many, interpret this to be a series of a single fire hydrant this is not in fact the case, and the series is actually comprised of several different fire hydrants.</p>
         </v-col>
       </v-row>
 
@@ -309,7 +312,7 @@
       </v-row>
 
       <v-row>
-        <v-col><v-img src="../assets/nothingToLose/lovehate.png"></v-img></v-col>
+        <v-col><v-img src="../assets/nothingToLose/love_fear.png"></v-img></v-col>
         <v-col>
           <h3>Love, Fear</h3>
           <p>By Tyee Arey <a href="https://www.instagram.com/tyee_akee/">@tyee_akee</a></p>
@@ -329,6 +332,69 @@
         <v-col>
           <h3>Figures</h3>
           <p>By Kenny Qiu <a href="https://www.instagram.com/kennykenny0524/">@kennykenny0524</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/toilet.png"></v-img></v-col>
+        <v-col>
+          <h3>Hollywood toilet</h3>
+          <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
+          <p>Hollywood toilet is intended to be a comedic analysis and play with the idea of the glamour of Hollywood contrasted with much of the messy disgusting parts of the industry that are often hidden behind curtains from the public. Famed for its beauty and elegance behind the large walls of posters and slogans there’s the shit piles people try to hide. From eating disorders and stolen work to grimy disgusting habits like the countless sexual assault charges of producers and actors alike and bribery and payoffs—-the glamorous Hollywood is really just not oh so glamorous.</p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/solo.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/ashley.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Ashley Wu <a href="https://www.instagram.com/ashleywu_photography/">@ashleywu_photography</a></p>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/mom.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/k1.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/k2.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/k3.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/shovel.png"></v-img></v-col>
+        <v-col>
+          <h3>7x10, 11</h3>
+          <p>By Anthony Keegan <br> <a href="https://www.instagram.com/me.when.im.anthony.keegan./">@me.when.im.anthony.keegan.</a></p>
         </v-col>
       </v-row>
     </div>
