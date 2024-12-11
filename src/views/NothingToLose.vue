@@ -362,7 +362,7 @@
       <v-row>
         <v-col><v-img src="../assets/nothingToLose/mom.png"></v-img></v-col>
         <v-col>
-          <h3>Untitled</h3>
+          <h3>Mi Mami</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
         </v-col>
       </v-row>
@@ -386,6 +386,22 @@
         <v-col><v-img src="../assets/nothingToLose/k3.png"></v-img></v-col>
         <v-col>
           <h3>Untitled</h3>
+          <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/cynotype.png"></v-img></v-col>
+        <v-col>
+          <h3>Untitled</h3>
+          <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col><v-img src="../assets/nothingToLose/books.png"></v-img></v-col>
+        <v-col>
+          <h3>Books I made throughout this quarter.</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
         </v-col>
       </v-row>
