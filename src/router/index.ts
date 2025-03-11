@@ -11,7 +11,7 @@ import IfIDie from '../views/IfIDie.vue'
 import OpenSource from '../views/OpenSource.vue'
 // import Guide from '../views/Guide.vue'
 import NothingToLose from '../views/NothingToLose.vue'
-
+import LandEmbodied from '../views/LandEmbodied.vue'
 const appRoot = '/me';
 
 const routes = [
@@ -59,6 +59,11 @@ const routes = [
     path: appRoot + '/nothing-to-lose',
     name: 'NothingToLose',
     component: NothingToLose
+  },
+  {
+    path: appRoot + '/land-embodied',
+    name: 'LandEmbodied',
+    component: LandEmbodied
   },
   // {
   //   path: '/guide',
