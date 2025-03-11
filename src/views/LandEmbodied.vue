@@ -120,7 +120,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col><v-img class="square-img" cover src="../assets/landEmbodied/IMG_8287.JPG"></v-img></v-col>
+        <v-col><v-img class="square-img" cover src="../assets/landEmbodied/IMG_8287.jpeg"></v-img></v-col>
         <v-col>
           <h3>OVERTIME HOURS</h3>
           <p>By Eric Cai</p>
