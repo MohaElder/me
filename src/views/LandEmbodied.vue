@@ -217,7 +217,7 @@
       </v-row>
 
       <v-row>
-        <v-col><v-img class="square-img" cover src="../assets/landEmbodied/IMG_2522 - Gabriella Crisa.PNG"></v-img></v-col>
+        <v-col><v-img class="square-img" cover src="../assets/landEmbodied/IMG_2522 - Gabriella Crisa.jpeg"></v-img></v-col>
         <v-col>
           <h3>The kiss of life</h3>
           <p>By Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></p>
