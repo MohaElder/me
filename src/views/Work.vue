@@ -2,8 +2,7 @@
   <v-container>
     <h3 style="padding-top: 7%;" class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh'">
       {{ $t("message.work.a") }}
-      <a href="https://ucsd.edu/" target="_blank"><i>UCSD</i></a>{{ $t("message.work.b")
-      }}<a href="https://aako.world/" target="_blank"><i>Aako</i></a>{{ $t("message.work.c")
+     <a href="https://aako.world/" target="_blank"><i>{{ $t("message.work.b") }}</i></a>{{ $t("message.work.c")
       }}<a href="https://www.unops.org/" target="_blank"><i>UN</i></a>{{ $t("message.and")
       }}<a href="https://www.nvidia.com/" target="_blank"><i>NVIDIA</i></a>{{ $t("message.work.d") }}
       <a href="https://mohaelder.github.io/me/photos" target="_blank"><i>{{ $t("message.pictures") }}</i></a>{{ $t("message.work.e") }}

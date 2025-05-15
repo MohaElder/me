@@ -13,8 +13,8 @@ const messages = {
             nav_guide: "Guide",
             pictures: "pictures",
             work: {
-                a: "Oh Yasushi is a ",
-                b: " student and the founder of ",
+                a: "Oh Yasushi is working on an",
+                b: "AR Social App",
                 c: ". He worked in the ",
                 d: " to code for a better world, and he takes",
                 e: " for fun."
@@ -176,7 +176,7 @@ const messages = {
             pictures: "照片",
             work: {
                 a: "翁安志是",
-                b: " 的一名学生以及初创公司",
+                b: "Aako",
                 c: "的创始人。他曾工作于 ",
                 d: " ，并通过这些经历面向更好的世界编程，同时他为了好玩拍",
                 e: "。"
