@@ -110,7 +110,8 @@
           </a>
         <br>
           {{ new Date().getFullYear() }} —
-          <strong>MOHAELDER
+          <strong class="footer-brand">
+            MOHAELDER
             <span> {{ $t("message.statement.hashtag") }} </span>
           </strong>
         </p>
@@ -166,5 +167,9 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.footer-brand {
+  font-size: 0.9em;
 }
 </style>
