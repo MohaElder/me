@@ -15,7 +15,7 @@
       cover></v-img>
     <div style="padding-top: 5%;">
       <v-btn size="x-large" variant="outlined" color="#ffd738"
-        href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf" style="margin-left: 5px">{{
+        href="https://github.com/MohaElder/me/raw/main/src/assets/yasushi_resume.pdf" style="margin-left: 5px">{{
           $t("message.download") }}</v-btn>
       <v-btn v-if="$i18n.locale == 'zh'" size="x-large" variant="outlined" color="#ffd738"
         href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" style="margin-left: 5px">中文简历</v-btn>
