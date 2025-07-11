@@ -16,7 +16,7 @@
         </h3>
         <div class="resume-buttons">
           <v-btn rounded="xl" size="x-large" variant="outlined" color="#ffd738"
-            href="https://github.com/MohaElder/me/raw/main/src/assets/resume.pdf" class="ml-sm">{{
+            href="https://github.com/MohaElder/me/raw/main/src/assets/yasushi_resume.pdf" class="ml-sm">{{
               $t("message.download") }}</v-btn>
           <v-btn rounded="xl" v-if="$i18n.locale == 'zh'" size="x-large" variant="outlined" color="#ffd738"
             href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" class="ml-sm">中文简历</v-btn>
