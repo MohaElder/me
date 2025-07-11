@@ -9,6 +9,490 @@
 //   $color-pack: false
 // );
 
+// Design Tokens
+$primary-color: #FDDA3A;
+$secondary-color: #64b5f6;
+$accent-color: #ff8a65;
+$text-primary: #ffffff;
+$text-secondary: #b7b7b7;
+$background-dark: #121212;
+$background-glass: rgba(71, 71, 71, 0.063);
+
+// Typography
+$font-family-primary: 'La Belle Aurore', serif;
+$font-family-secondary: 'nyt-imperial', georgia, 'times new roman', times, serif;
+$font-family-code: 'Courier New', Courier, monospace;
+
+// Spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 50px;
+
+// Border radius
+$border-radius-sm: 10px;
+$border-radius-md: 15px;
+$border-radius-lg: 25px;
+
+// Transitions
+$transition-fast: 0.25s ease;
+$transition-medium: 0.4s ease;
+$transition-slow: 0.5s ease;
+
+// Global Utility Classes
 .icon {
   width: 1%;
+}
+
+// Typography Utilities
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-white {
+  color: $text-primary;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-accent {
+  color: $accent-color;
+}
+
+// Font weights
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 900;
+}
+
+// Font sizes
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+// Spacing Utilities
+.m-0 { margin: 0; }
+.m-xs { margin: $spacing-xs; }
+.m-sm { margin: $spacing-sm; }
+.m-md { margin: $spacing-md; }
+.m-lg { margin: $spacing-lg; }
+.m-xl { margin: $spacing-xl; }
+
+.mt-0 { margin-top: 0; }
+.mt-xs { margin-top: $spacing-xs; }
+.mt-sm { margin-top: $spacing-sm; }
+.mt-md { margin-top: $spacing-md; }
+.mt-lg { margin-top: $spacing-lg; }
+.mt-xl { margin-top: $spacing-xl; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-xs { margin-bottom: $spacing-xs; }
+.mb-sm { margin-bottom: $spacing-sm; }
+.mb-md { margin-bottom: $spacing-md; }
+.mb-lg { margin-bottom: $spacing-lg; }
+.mb-xl { margin-bottom: $spacing-xl; }
+
+.p-0 { padding: 0; }
+.p-xs { padding: $spacing-xs; }
+.p-sm { padding: $spacing-sm; }
+.p-md { padding: $spacing-md; }
+.p-lg { padding: $spacing-lg; }
+.p-xl { padding: $spacing-xl; }
+
+.pt-0 { padding-top: 0; }
+.pt-xs { padding-top: $spacing-xs; }
+.pt-sm { padding-top: $spacing-sm; }
+.pt-md { padding-top: $spacing-md; }
+.pt-lg { padding-top: $spacing-lg; }
+.pt-xl { padding-top: $spacing-xl; }
+
+.pb-0 { padding-bottom: 0; }
+.pb-xs { padding-bottom: $spacing-xs; }
+.pb-sm { padding-bottom: $spacing-sm; }
+.pb-md { padding-bottom: $spacing-md; }
+.pb-lg { padding-bottom: $spacing-lg; }
+.pb-xl { padding-bottom: $spacing-xl; }
+
+.pl-0 { padding-left: 0; }
+.pl-xs { padding-left: $spacing-xs; }
+.pl-sm { padding-left: $spacing-sm; }
+.pl-md { padding-left: $spacing-md; }
+.pl-lg { padding-left: $spacing-lg; }
+.pl-xl { padding-left: $spacing-xl; }
+
+.pr-0 { padding-right: 0; }
+.pr-xs { padding-right: $spacing-xs; }
+.pr-sm { padding-right: $spacing-sm; }
+.pr-md { padding-right: $spacing-md; }
+.pr-lg { padding-right: $spacing-lg; }
+.pr-xl { padding-right: $spacing-xl; }
+
+// Layout Utilities
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+// Position Utilities
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+// Width/Height Utilities
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.h-auto {
+  height: auto;
+}
+
+// Border Radius Utilities
+.rounded-sm {
+  border-radius: $border-radius-sm;
+}
+
+.rounded-md {
+  border-radius: $border-radius-md;
+}
+
+.rounded-lg {
+  border-radius: $border-radius-lg;
+}
+
+// Background Utilities
+.bg-glass {
+  background-color: $background-glass;
+  backdrop-filter: blur(10px);
+}
+
+.bg-dark {
+  background-color: $background-dark;
+}
+
+// Transition Utilities
+.transition-fast {
+  transition: all $transition-fast;
+}
+
+.transition-medium {
+  transition: all $transition-medium;
+}
+
+.transition-slow {
+  transition: all $transition-slow;
+}
+
+// Common Component Styles
+.banner-image {
+  width: 42.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.banner-image-mobile {
+  width: 82.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.banner-text {
+  text-align: justify;
+  width: 100%;
+  text-indent: 4%;
+}
+
+.banner-text-mobile {
+  text-align: justify;
+  width: 100%;
+  font-size: 2%;
+}
+
+.banner-row {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.banner-row-mobile {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+// Gallery Styles
+.gallery-container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+// Work Grid Styles
+.works-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.works-item {
+  text-align: center;
+}
+
+.works-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.works-text {
+  margin: 5px 0;
+}
+
+// Blog Styles
+.blog-renderer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.blog-title {
+  font-size: 300%;
+  font-weight: 500;
+  text-align: start;
+}
+
+.blog-date {
+  font-size: 100%;
+  font-style: normal;
+  text-align: start;
+}
+
+// Link Styles
+.link-white {
+  color: $text-primary;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link-primary {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Animation Utilities
+.fade-enter-active, .fade-leave-active {
+  transition: opacity $transition-fast;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+// Glass Effect
+.glass {
+  background-color: $background-glass;
+  backdrop-filter: blur(10px);
+}
+
+.upper-rounded {
+  border-top-left-radius: $border-radius-md;
+  border-top-right-radius: $border-radius-md;
+}
+
+.lower-rounded {
+  border-bottom-left-radius: $border-radius-md;
+  border-bottom-right-radius: $border-radius-md;
+}
+
+// First Letter Drop Cap
+.first-letter::first-letter {
+  initial-letter: 2 1;
+}
+
+// Code Block Styles
+.code-block {
+  background-color: #313131 !important;
+  color: rgb(170, 218, 250);
+  font-family: $font-family-code;
+}
+
+// Image Styles
+.square-img {
+  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Iframe Styles
+.fullscreen-iframe {
+  width: 80vw;
+  height: 100vh;
+  border-radius: $border-radius-lg;
+  border: none;
+  background: transparent;
+}
+
+// Chip Styles
+.chip-wrapper {
+  padding-left: 30px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+// Responsive Utilities
+.text-responsive {
+  font-size: 1rem;
+  margin: 0;
+}
+
+// Responsive Design - Mobile First
+@media (max-width: 768px) {
+  .banner-image {
+    width: 82.5%;
+    margin-bottom: 10%;
+  }
+  
+  .banner-text {
+    font-size: 2%;
+  }
+  
+  .banner-row {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .text-responsive {
+    font-size: 14px;
+    margin: 10px 0;
+  }
 }

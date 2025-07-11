@@ -8,7 +8,7 @@
 
 <template>
   <v-app style="overflow: hidden">
-    <v-app-bar color="rgba(71, 71, 71, 0.063)" class="glassy lower-rounded">
+    <v-app-bar color="rgba(71, 71, 71, 0.063)" class="glass lower-rounded">
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <div class="d-flex align-center" v-else>
         <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
@@ -46,7 +46,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app bottom temporary style="background-color: #121212">
+    <v-navigation-drawer v-model="drawer" app bottom temporary class="bg-dark">
       <v-list nav dense>
         <v-list-item-group v-model="group">
           <v-list-item>
@@ -100,12 +100,12 @@
       <router-view />
     </v-main>
 
-    <v-footer class="glassy upper-rounded" style="padding-top: 15px" padless>
-      <div tile class="white--text text-center">
-        <p class="white--text pt-0" style="font-size: 12px;">
+    <v-footer class="glass upper-rounded pt-md" padless>
+      <div tile class="text-white text-center">
+        <p class="text-white pt-0 text-xs">
           Made with
           <vueIcon />, 🧠, and ❤️.
-          <a style="color: white" href="https://github.com/MohaElder/me" target="_blank">
+          <a class="link-white" href="https://github.com/MohaElder/me" target="_blank">
             source code
           </a>
         <br>
@@ -156,21 +156,6 @@ export default {
 .app-bar-item:hover {
   transform: scale(1.05); /* Slightly enlarge */
   font-size: 1.1em; /* Increase font size to mimic bold */
-}
-
-.glassy {
-  background-color: rgba(71, 71, 71, 0.063);
-  backdrop-filter: blur(10px);
-}
-
-.upper-rounded {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.lower-rounded {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 p {

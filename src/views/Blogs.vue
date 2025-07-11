@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h1 style="padding: 30px; text-align: center">
-      <span style="color: #64b5f6"> {{ $t("message.share") }} </span> /
-      <span style="color: #ffee58"> {{ $t("message.life") }} </span> /
-      <span style="color: #ff8a65"> {{ $t("message.comments") }} </span>
+    <h1 class="p-lg text-center">
+      <span class="text-secondary"> {{ $t("message.share") }} </span> /
+      <span class="text-primary"> {{ $t("message.life") }} </span> /
+      <span class="text-accent"> {{ $t("message.comments") }} </span>
     </h1>
-    <v-container style="margin-top: 20px">
+    <v-container class="mt-md">
       <v-row>
         <v-col v-for="(item, key) in items" :key="key" :cols="$vuetify.display.mobile ? 12 : 6"
-          :style="$vuetify.display.mobile ? 'padding-left: 10%; padding-right: 10%;' : ''">
+          :class="$vuetify.display.mobile ? 'pl-lg pr-lg' : ''">
           <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(key)">
             <v-img class="align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="300px" cover :src="item.img">

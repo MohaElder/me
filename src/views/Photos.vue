@@ -14,7 +14,7 @@
         <v-btn color="primary" @click="downloadDialog = true">download</v-btn>
       </div>
     </v-overlay>
-    <v-row v-if="!isPortrait()" justify="start" style="padding: 30px">
+    <v-row v-if="!isPortrait()" justify="start" class="p-lg">
       <div class="galleryModeWrapper">
         <span class="aSkyFullOfStars">A <span
             :style="unity ? 'transition: color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);' : 'color:#6987B2; transition: color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);'">SKY</span>
@@ -43,7 +43,7 @@
         <v-card-text>
           {{ $t("message.photo_usage_note") }}
           <br>
-          <a style="color: white"
+          <a class="link-white"
             href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)">
             {{ $t("message.commercial") }}</a>
         </v-card-text>
@@ -55,7 +55,7 @@
 
     <transition name="fade">
       <span v-if="!unity">
-        <v-row justify="start" class="chip-wrapper" :style="isPortrait()? 'width:100%' : 'width: 50%;'">
+        <v-row justify="start" class="chip-wrapper" :class="isPortrait()? 'w-full' : 'w-auto'">
           <div v-for="tag in tags" v-bind:key="tag" class="chip">
             <v-chip @click="appendTag(tag)">
               {{ tag }}
@@ -64,7 +64,7 @@
           <v-btn @click="sortImages(false, order)" icon="mdi-swap-vertical">
           </v-btn>
         </v-row>
-        <v-row justify="start" class="chip-wrapper" :style="isPortrait()? 'width:100%' : 'width: 50%;'">
+        <v-row justify="start" class="chip-wrapper" :class="isPortrait()? 'w-full' : 'w-auto'">
           <div v-for="tag in activeTags" v-bind:key="tag" class="chip">
             <v-chip @click:close="removeTag(tag)" color="primary" closable>
               {{ tag }}
@@ -72,8 +72,8 @@
           </div>
         </v-row>
 
-        <div class="image-gallery">
-          <div v-for="img in images" v-bind:key="img['url']" class="image-container">
+        <div class="gallery-container">
+          <div v-for="img in images" v-bind:key="img['url']" class="gallery-item">
             <img v-lazy="img['thumbnail']" @click="showPic(img)" class="gallery-image" />
           </div>
         </div>
@@ -318,48 +318,6 @@ input:checked {
   gap: 23px;
 }
 
-.chip-wrapper {
-  padding-left: 30px;
-  flex-wrap: wrap;
-}
-
-.chip {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-#fullscreen-iframe {
-  width: 80vw;
-  /* 100% of the viewport width */
-  height: 100vh;
-  /* 100% of the viewport height */
-  border-radius: 25px;
-  /* Adjust the px value to increase or decrease the roundness */
-  border: none;
-  /* This should be at least as large as the largest blur radius of the shadow. */
-  background: transparent;
-}
-
-.image-gallery {
-  padding-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.image-container {
-  margin: 5px;
-  flex-grow: 1;
-}
-
-.gallery-image {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  object-fit: cover;
-  /* Optional: if you want images to cover the area */
-}
-
 .camera-text {
   margin-top: 5px;
   color: #ffffff;
@@ -367,13 +325,4 @@ input:checked {
   text-align: end;
   font-size: 1.1rem;
 }
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .25s ease;
-}
-
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
-
 </style>

@@ -1,85 +1,25 @@
 <template>
   <v-container>
-    <h3 style="padding-top: 7%;" class="text-left" :style="$vuetify.display.mobile ? 'font-size: 7.8vw;' : 'font-size: 5vh'">
+    <h3 class="pt-xl text-left" :class="$vuetify.display.mobile ? 'text-4xl' : 'text-2xl'">
       {{ $t("message.work.a") }}
      <a href="https://aako.world/" target="_blank"><i>{{ $t("message.work.b") }}</i></a>{{ $t("message.work.c")
       }}<a href="https://www.unops.org/" target="_blank"><i>UN</i></a>{{ $t("message.and")
       }}<a href="https://www.nvidia.com/" target="_blank"><i>NVIDIA</i></a>{{ $t("message.work.d") }}
       <a href="https://mohaelder.github.io/me/photos" target="_blank"><i>{{ $t("message.pictures") }}</i></a>{{ $t("message.work.e") }}
     </h3>
-    <v-img style="
-        margin-top: 5%;
-        padding: 20%;
-        box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
-      " :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'" src="../assets/profile_pic.jpg"
-      cover></v-img>
-    <div style="padding-top: 5%;">
+    <v-img class="mt-lg p-xl" :class="$vuetify.display.mobile ? 'w-full' : 'w-auto'" 
+      :style="$vuetify.display.mobile ? 'width: 100%;' : 'width: 35%;'" 
+      src="../assets/profile_pic.jpg" cover></v-img>
+    <div class="pt-lg">
       <v-btn size="x-large" variant="outlined" color="#ffd738"
         href="https://github.com/MohaElder/me/raw/main/src/assets/yasushi_resume.pdf" style="margin-left: 5px">{{
           $t("message.download") }}</v-btn>
       <v-btn v-if="$i18n.locale == 'zh'" size="x-large" variant="outlined" color="#ffd738"
-        href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" style="margin-left: 5px">中文简历</v-btn>
+        href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf" class="ml-sm">中文简历</v-btn>
     </div>
-    <v-row style="padding-left: 15px" justify="space-between">
-      <v-col>
-        <v-row style="margin-top: 50px">
-          <h1>{{ $t("message.skills") }}</h1>
-        </v-row>
-        <v-row>
-          <v-col style="margin-right: -30%">
-            <v-row>
-              <h4>English, Mandarin, Thai</h4>
-            </v-row>
-            <v-row>
-              <h4>Shanghainese, ASL</h4>
-            </v-row>
-            <v-row :style="$vuetify.display.mobile ? 'margin-top: 15%' : 'margin-top: 5%'
-              ">
-              <h4>C#, TypeScript</h4>
-            </v-row>
-            <v-row>
-              <h4>Swift, Python, Java</h4>
-            </v-row>
-            <v-row>
-              <h4>Lua, C++</h4>
-            </v-row>
-            <span v-if="$vuetify.display.mobile"><v-row style="margin-top: 15%">
-                <h4>DevOps, Database, Design Pattern, Testing</h4>
-              </v-row>
-              <v-row>
-                <h4>Entrepreneurship, Project Management</h4>
-              </v-row>
-              <v-row style="margin-top: 15%">
-                <h4>User Research, UI/UX</h4>
-              </v-row>
-              <v-row>
-                <h4>Video Game Production</h4>
-              </v-row>
-              <v-row>
-                <h4>Photography, Cinematography</h4>
-              </v-row></span>
-          </v-col>
-          <v-col v-if="!$vuetify.display.mobile">
-            <v-row>
-              <h4>DevOps, Database, Design Pattern, Testing</h4>
-            </v-row>
-            <v-row>
-              <h4>Entrepreneurship, Project Management</h4>
-            </v-row>
-            <v-row style="margin-top: 5%">
-              <h4>User Research, UI/UX</h4>
-            </v-row>
-            <v-row>
-              <h4>Video Game Production</h4>
-            </v-row>
-            <v-row>
-              <h4>Photography, Cinematography</h4>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-col>
-      <v-col style="padding-left: 35px" md="5">
-        <v-row style="margin-top: 50px">
+    <v-row class="pl-sm" justify="space-between">
+      <v-col class="pl-lg" md="5">
+        <v-row class="mt-xl">
           <h1>{{ $t("message.contact") }}</h1>
         </v-row>
         <v-row>
@@ -109,9 +49,9 @@
       </v-col>
     </v-row>
 
-    <v-row style="padding-left: 15px">
+    <v-row class="pl-sm">
       <v-col>
-        <v-row style="margin-top: 50px">
+        <v-row class="mt-xl">
           <h1>{{ $t("message.education") }}</h1>
         </v-row>
         <v-row>
@@ -124,8 +64,8 @@
           <h4>{{ $t("message.wfl") }}</h4>
         </v-row>
       </v-col>
-      <v-col style="padding-left: 35px" md="5">
-        <v-row style="margin-top: 50px">
+      <v-col class="pl-lg" md="5">
+        <v-row class="mt-xl">
           <h1>{{ $t("message.great_stuff") }}</h1>
         </v-row>
         <v-row>
@@ -161,7 +101,7 @@
         <v-row>
           <h4>
             {{ $t("message.great_stuff_desc.tedx_before") }}
-            <a href="https://www.youtube.com/watch?v=tM800TIQeIs" target="_blank" style="color: white">{{
+            <a href="https://www.youtube.com/watch?v=tM800TIQeIs" target="_blank" class="text-white">{{
               $t("message.great_stuff_desc.tedx_link") }}</a>
             {{ $t("message.great_stuff_desc.tedx_after") }}
           </h4>
@@ -169,9 +109,9 @@
       </v-col>
     </v-row>
 
-    <v-row style="padding-left: 15px">
+    <v-row class="pl-sm">
       <v-col>
-        <v-row style="margin-top: 50px">
+        <v-row class="mt-xl">
           <h1>{{ $t("message.work_experience") }}</h1>
         </v-row>
         <v-row>
@@ -243,8 +183,8 @@
           </h4>
         </v-row>
       </v-col>
-      <v-col style="padding-left: 35px" md="5">
-        <v-row style="margin-top: 50px">
+      <v-col class="pl-lg" md="5">
+        <v-row class="mt-xl">
           <h1>{{ $t("message.honors_and_news") }}</h1>
         </v-row>
         <v-row>
@@ -286,9 +226,9 @@
       </v-col>
     </v-row>
 
-    <v-row style="margin-bottom: 50px; padding-left: 15px">
+    <v-row class="mb-xl pl-sm">
       <v-col>
-        <v-row style="margin-top: 50px">
+        <v-row class="mt-xl">
           <h1>{{ $t("message.published_projects") }}</h1>
         </v-row>
         <v-row>
@@ -326,11 +266,11 @@
           </h4>
         </v-row>
       </v-col>
-      <v-col style="padding-left: 20px" md="5">
-        <v-row style="margin-top: 50px; padding-left: 15px">
+      <v-col class="pl-md" md="5">
+        <v-row class="mt-xl pl-sm">
           <h1>{{ $t("message.podcast") }}</h1>
         </v-row>
-        <v-row style="padding-left: 15px">
+        <v-row class="pl-sm">
           <h4><a
               href="https://medium.com/@calen0909/implementing-semantic-search-with-openai-postgres-and-entity-framework-4414cf516b48"
               target="_blank">Implementing Semantic Search with OpenAI, Postgres, and Entity Framework</a></h4>
@@ -341,12 +281,10 @@
           src="https://embed.podcasts.apple.com/us/podcast/randoms-hit-radio-vol-0-tgif%E7%89%B9%E8%BE%91-%E8%8A%82%E5%BA%86%E6%96%87%E5%8C%96-%E7%AC%A6%E5%8F%B7%E5%AD%A6-%E9%9F%B3%E4%B9%90%E9%89%B4%E8%B5%8F-%E5%93%B2%E5%AD%A6-%E9%9A%8F%E4%BE%BF%E8%81%8A/id1694128032?i=1000618220058&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto"
           height="175px" frameborder="0"
           sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-          allow="autoplay *; encrypted-media *; clipboard-write" style="
-            margin-top: 25px;
-            width: 100%;
+          allow="autoplay *; encrypted-media *; clipboard-write" class="mt-lg w-full rounded-md"
+          style="
             max-width: 660px;
             overflow: hidden;
-            border-radius: 10px;
             transform: translateZ(0px);
             animation: 2s ease 0s 6 normal none running loading-indicator;
             background-color: rgb(228, 228, 228);

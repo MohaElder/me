@@ -1,21 +1,21 @@
 <template>
-  <v-container style="padding-left: 10%; padding-right: 10%; padding-bottom: 7%">
-    <v-row style="margin-bottom: 40px">
+  <v-container class="pl-lg pr-lg pb-lg">
+    <v-row class="mb-lg">
       <v-col class="text-center head-section" cols="12">
         <h1 class="blog-title">{{ blog.title }}</h1>
         <div class="sub-header">
-          <v-btn v-for="icon in icons" :key="icon" class="white--text" @click="share(icon.substring(4))" icon>
+          <v-btn v-for="icon in icons" :key="icon" class="text-white" @click="share(icon.substring(4))" icon>
             <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
             <v-icon size="24px">
               {{ icon }}
             </v-icon>
           </v-btn>
           <figure>
-            <v-img style="width:100%;" :src="blog.img"></v-img>
+            <v-img class="w-full" :src="blog.img"></v-img>
             <figcaption>{{ blog.img_caption }}</figcaption>
           </figure>
-          <h2 style="width: 100%; margin-top:1rem;" class="blog-date">By MohaElder</h2>
-          <h2 style="width: 100%" class="blog-date">{{ blog.date }}</h2>
+          <h2 class="w-full mt-sm blog-date">By MohaElder</h2>
+          <h2 class="w-full blog-date">{{ blog.date }}</h2>
         </div>
       </v-col>
     </v-row>
@@ -133,16 +133,6 @@ figcaption {
   flex-wrap: wrap;
 }
 
-.blog-renderer::first-letter {
-  initial-letter: 2 1;
-}
-
-.blog-renderer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-}
-
 .middle {
   /* Center child horizontally*/
   display: flex;
@@ -200,18 +190,6 @@ blockquote {
 .md-img {
   margin-top: 20px;
   width: 100%;
-}
-
-.blog-title {
-  font-size: 300%;
-  font-weight: 500;
-  text-align: start;
-}
-
-.blog-date {
-  font-size: 100%;
-  font-style: normal;
-  text-align: start;
 }
 
 .head-section {

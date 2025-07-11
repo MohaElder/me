@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <h1>LAND EMBODIED <br> <span style="font-size: 16px">presented by SME Gallery</span></h1>
-    <div style="padding-top: 10px; padding-bottom: 10px"> <p>
+    <h1>LAND EMBODIED <br> <span class="text-sm">presented by SME Gallery</span></h1>
+    <div class="pt-sm pb-sm"> <p>
       <i>This work is presented to you by Lorena Mostajo students. She has encouraged us, inspired us, and supported us every step of the way.</i>
     </p>
     </div>
 
     <h2>Featured Artists</h2>
-    <ul style="padding-left: 20px;">
+    <ul class="pl-md">
       <li>Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></li>
       <li>Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></li>
       <li>Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></li>
@@ -25,7 +25,7 @@
       <li>Kirsten Yen <a href="https://www.instagram.com/kirsten_makes_stuff/">@kirsten_makes_stuff</a></li>
     </ul>
 
-    <div style="padding-top: 10px; padding-bottom: 10px"><h2>Special Thanks to</h2>
+    <div class="pt-sm pb-sm"><h2>Special Thanks to</h2>
     <p>Justin Tuerk for dedicating his time and effort into re-building the Darkroom and supporting the students
       throughout the quarter.</p>
     <p>Dmitri Zurita for reserving the Commons Gallery and helping us to curate the show.</p>
@@ -221,11 +221,6 @@ export default {
 
 
 <style scoped>
-
-.first-letter::first-letter {
-  initial-letter: 2 1;
-}
-
 p {
   line-height: 2;
 }
@@ -272,43 +267,4 @@ a {
   margin-bottom: 10px;
   /* Add some space below the heading */
 }
-
-.bannerItem {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
-.bannerText {
-  text-align: justify;
-  width: 100%;
-  text-indent: 4%;
-}
-
-.bannerTextMobile {
-  text-align: justify;
-  width: 100%;
-  font-size: 2%;
-}
-
-.bannerRow {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.bannerRowMobile {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.square-img {
-  aspect-ratio: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 </style>

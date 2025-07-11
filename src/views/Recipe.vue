@@ -2,31 +2,31 @@
   <v-container>
     <v-img :class="
       $vuetify.display.mobile
-        ? 'bannerImageMobile'
-        : 'bannerImage'
+        ? 'banner-image-mobile'
+        : 'banner-image'
     " src="../assets/drink_lab.png"></v-img>
     <v-row :class="
        $vuetify.display.mobile
-        ? 'bannerRowMobile'
-        : 'bannerRow'
+        ? 'banner-row-mobile'
+        : 'banner-row'
     ">
-      <p :classstyle="
+      <p :class="
         $vuetify.display.mobile
-          ? 'bannerTextMobile'
-          : 'bannerText'
+          ? 'banner-text-mobile'
+          : 'banner-text'
       ">
         {{ $t("message.cocktail_desc_before") }}
-        <a href="mailto:calen0909@Hotmail.com" style="color: #ffd738">
+        <a href="mailto:calen0909@Hotmail.com" class="text-primary">
           {{ $t("message.cocktail_desc_link") }}
         </a> {{ $t("message.cocktail_desc_after") }}
       </p>
       <p>Note: all drinks can be made alcohol-free</p>
     </v-row>
     <div class="menu">
-      <div style="margin-bottom: 25px" v-for="item in menu" v-bind:key="item.name">
-        <h3 style="text-align: center; margin-bottom: 10px">
+      <div class="mb-lg" v-for="item in menu" v-bind:key="item.name">
+        <h3 class="text-center mb-sm">
           ~
-          <a :href="item.link" style="color: white">{{
+          <a :href="item.link" class="link-white">{{
             item.name.toUpperCase()
           }}</a>
           ~
@@ -60,7 +60,7 @@ export default {
           "Simple Syrup 30ml",
           "Boba",
         ],
-        desc: "A bold reinvention of the classic milk tea, infused with the elegance of earl gray vodka for a deeper, richer flavor. Enhanced with the aromatic touch of Kahlua Coffee Liqueur, this cocktail brings a perfect balance of creamy sweetness and a warm, subtle kick. Named after San Diego's historic Balboa Park, it evokes a sense of exploration and sophistication, with a playful nod to the beloved “boba”.",
+        desc: "A bold reinvention of the classic milk tea, infused with the elegance of earl gray vodka for a deeper, richer flavor. Enhanced with the aromatic touch of Kahlua Coffee Liqueur, this cocktail brings a perfect balance of creamy sweetness and a warm, subtle kick. Named after San Diego's historic Balboa Park, it evokes a sense of exploration and sophistication, with a playful nod to the beloved \"boba\".",
       },
       {
         name: "Earl Grey Sour (Daiquiri Twist)",
@@ -70,7 +70,7 @@ export default {
           "Lime Juice 25ml",
           "Simple Syrup 15ml",
         ],
-        desc: "Born at the acclaimed Sober Company, once a jewel among Asia’s Best 50 Bars, this cocktail experienced its prime before fading from the limelight. We’ve meticulously reverse-engineered this classic to revive one of our all-time favorites. Experience a harmonious blend of sweet and sour, accented with refreshing notes of lime and the deeply infused elegance of Earl Grey tea. A timeless toast to the past, reborn for your enjoyment.",
+        desc: "Born at the acclaimed Sober Company, once a jewel among Asia's Best 50 Bars, this cocktail experienced its prime before fading from the limelight. We've meticulously reverse-engineered this classic to revive one of our all-time favorites. Experience a harmonious blend of sweet and sour, accented with refreshing notes of lime and the deeply infused elegance of Earl Grey tea. A timeless toast to the past, reborn for your enjoyment.",
       },
       {
         name: "black's beach iced tea (Long Island Iced Tea Twist)",
@@ -144,45 +144,6 @@ export default {
 
 
 <style scoped>
-.bannerImage {
-  width: 42.5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
-.bannerImageMobile {
-  width: 82.5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 10%;
-}
-
-.bannerItem {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
-.bannerText {
-  text-align: justify;
-  width: 100%;
-  text-indent: 4%;
-}
-
-.bannerTextMobile {
-  text-align: justify;
-  width: 100%;
-  font-size: 2%;
-}
-
 .menu {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -191,16 +152,6 @@ export default {
 .menuItemText {
   margin-bottom: 0px;
   text-align: center;
-}
-
-.bannerRow {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.bannerRowMobile {
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .menuDesc {

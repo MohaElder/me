@@ -1,23 +1,23 @@
 <template>
   <v-container>
-    <h1>NOTHING TO LOSE <br> <span style="font-size: 16px">presented by Commons Gallery</span></h1>
-    <div style="padding-top: 10px; padding-bottom: 10px"> <p>
-      <i>This work is presented to you by Dmitri Zurita’s students. He has encouraged us, inspired us, and supported
+    <h1>NOTHING TO LOSE <br> <span class="text-sm">presented by Commons Gallery</span></h1>
+    <div class="pt-sm pb-sm"> <p>
+      <i>This work is presented to you by Dmitri Zurita's students. He has encouraged us, inspired us, and supported
         us every step of the way.</i>
     </p>
-    <p>“I’m deeply moved by the work produced by these young artists. They’ve shed their self imposed limitations and
-      in that process found the voice and a beautiful community.” - Dmitri Zurita</p></div>
+    <p>"I'm deeply moved by the work produced by these young artists. They've shed their self imposed limitations and
+      in that process found the voice and a beautiful community." - Dmitri Zurita</p></div>
    
     <h2>Epilogue</h2>
     <p class="first-letter"> People love to gamble — whether it's in casinos, betting with friends, or even making a personal wager on
       whether the traffic light will turn green at the next beat drop of the song you're listening to. The reason?
       People thrive on the thrill of winning. That feeling is magnified when you go all in, when you have nothing left
       to lose. We often suppress this desire, but deep down, we all wish to be that protagonist in the movies who bets
-      everything they have and emerges victorious. Even if we don’t win, the rush, the surge of adrenaline, is
+      everything they have and emerges victorious. Even if we don't win, the rush, the surge of adrenaline, is
       intoxicating—like a wild mustang running naked through the Mojave Desert.</p>
-    <p>In this show, we present you a series of works that expresses this “all or nothing” feeling originating from the
+    <p>In this show, we present you a series of works that expresses this "all or nothing" feeling originating from the
       artists' most vulnerable parts. You will see violence in action, naked bodies, and all the other explicit content
-      that one might interpret as an R-rated movie. If you see it that way, it’s ok. Because that is the way many of the
+      that one might interpret as an R-rated movie. If you see it that way, it's ok. Because that is the way many of the
       artists in this exhibition might have seen these works at the start of this school year. People create art for
       reasons, even when it comes to an art with no reasons, that is also a reason. The artists of this exhibition have
       all gone through an inspiring and explicit journey that prompts each to discover and challenge one's most
@@ -28,14 +28,14 @@
       echoes of your own vulnerabilities within them. It is a treacherous and uncomfortable trip to delve into these
       deepest scars of your life. Yet, if you dare to face those scars and express them, you may find yourself
       omniscient about your own existence and even omnipotent in other aspects of your life—or this world. As an old
-      Chinese quote says, “知人者智，自知者明 (A truly strong person has no fear of exposing their weakest points)”. It is our
+      Chinese quote says, "知人者智，自知者明 (A truly strong person has no fear of exposing their weakest points)". It is our
       hope that everyone who visits this exhibition will emerge as a better version of themselves, evolving through this
       experience. In the end, self-hatred and nihilism cage us, but only love sets us free and carries us above and
       beyond. We are young, and we have nothing to lose. Even if you're old, you still have nothing to lose when you're
       ready to take your emotions on an adrenaline trip that gives you a head rush via a journey into vulnerability.</p>
 
     <h2>Featured Artists</h2>
-    <ul style="padding-left: 20px;">
+    <ul class="pl-md">
       <li>Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></li>
       <li>Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></li>
       <li>Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></li>
@@ -57,7 +57,7 @@
       <li>Soodabeh Saghravanian</li>
     </ul>
 
-    <div style="padding-top: 10px; padding-bottom: 10px"><h2>Special Thanks to</h2>
+    <div class="pt-sm pb-sm"><h2>Special Thanks to</h2>
     <p>Justin Tuerk for dedicating his time and effort into re-building the Darkroom and supporting the students
       throughout the quarter.</p>
     <p>Dmitri Zurita for reserving the Commons Gallery and helping us to curate the show.</p>
@@ -119,7 +119,7 @@
             The images explore vulnerability, joy, and acceptance, as the subjects embrace their bodies and freedom
             without shame. Through this work artists celebrate personal growth, the breaking of internal barriers, and
             the
-            beauty of life’s fleeting, candid moments.</p>
+            beauty of life's fleeting, candid moments.</p>
         </v-col>
       </v-row>
 
@@ -132,7 +132,7 @@
           <p>Directions: Walk around the corner of Commons Gallery; in front of the side entrance of the Epstein
             Theater.
           </p>
-          <p>“If you are naked in the forest covered in pigs blood you will be the scariest thing out there” For this
+          <p>"If you are naked in the forest covered in pigs blood you will be the scariest thing out there" For this
             piece viewers are invited to both look and interact. The text surrounding the tent is words said by men,
             painted on the cloth with pigs blood. Outside sits a table with markers, allowing viewers to interact and
             write down their own experiences with painful words onto the cloth. Near the entrance of the tent you will
@@ -181,7 +181,7 @@
       <v-row>
         <v-col><v-img src="../assets/nothingToLose/women.png"></v-img></v-col>
         <v-col>
-          <h3>The Promiscuous Nature of Women’s Youth</h3>
+          <h3>The Promiscuous Nature of Women's Youth</h3>
           <p>By Vanessa Mirez <a href="https://www.instagram.com/galeria.de.vanessa/">@galeria.de.vanessa</a></p>
           <p>This series aims to visualize the lives of young women living their lives fearlessly, through photography.
             The work captures moments of adventure, challenges, triumphs, and quiet moments of self-reflection.</p>
@@ -193,7 +193,7 @@
         <v-col>
           <h3>見證 COME AND SEE</h3>
           <p>By Yasushi Oh <a href="https://www.instagram.com/anzhi.weng/">@anzhi.weng</a></p>
-          <p>Growing up without my father, I was shaped by the love of my mom and her family, yet I couldn’t ignore the
+          <p>Growing up without my father, I was shaped by the love of my mom and her family, yet I couldn't ignore the
             absence of a father figure, especially as a child. Inspired by the film Come and See, which confronts
             reality
             through raw observation, I chose to revisit key moments tied to my father to seek resolution. This VR photo
@@ -212,7 +212,7 @@
           </p>
           <p>Breath Before Death Awakes captures our reckless youth, smoking not just for stress or focus, but for the
             raw
-            headrush that makes us feel alive. It’s a trade—health for fleeting highs—that mirrors how we chase
+            headrush that makes us feel alive. It's a trade—health for fleeting highs—that mirrors how we chase
             intensity
             in work, love, or faith. This project immortalizes those dumb yet deeply emotional moments that fuel our
             art.
@@ -223,7 +223,7 @@
       <v-row>
         <v-col><v-img src="../assets/nothingToLose/poker.png"></v-img></v-col>
         <v-col>
-          <h3>I’m a Fool!</h3>
+          <h3>I'm a Fool!</h3>
           <p>By Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></p>
           <p>This work shows the lives of four clowns, each representing a different suite of a card deck.</p>
         </v-col>
@@ -340,7 +340,7 @@
         <v-col>
           <h3>Hollywood toilet</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
-          <p>Hollywood toilet is intended to be a comedic analysis and play with the idea of the glamour of Hollywood contrasted with much of the messy disgusting parts of the industry that are often hidden behind curtains from the public. Famed for its beauty and elegance behind the large walls of posters and slogans there’s the shit piles people try to hide. From eating disorders and stolen work to grimy disgusting habits like the countless sexual assault charges of producers and actors alike and bribery and payoffs—-the glamorous Hollywood is really just not oh so glamorous.</p>
+          <p>Hollywood toilet is intended to be a comedic analysis and play with the idea of the glamour of Hollywood contrasted with much of the messy disgusting parts of the industry that are often hidden behind curtains from the public. Famed for its beauty and elegance behind the large walls of posters and slogans there's the shit piles people try to hide. From eating disorders and stolen work to grimy disgusting habits like the countless sexual assault charges of producers and actors alike and bribery and payoffs—-the glamorous Hollywood is really just not oh so glamorous.</p>
         </v-col>
       </v-row>
 
@@ -428,11 +428,6 @@ export default {
 
 
 <style scoped>
-
-.first-letter::first-letter {
-  initial-letter: 2 1;
-}
-
 p {
   line-height: 2;
 }
@@ -478,36 +473,5 @@ a {
 .works h3 {
   margin-bottom: 10px;
   /* Add some space below the heading */
-}
-
-.bannerItem {
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
-.bannerText {
-  text-align: justify;
-  width: 100%;
-  text-indent: 4%;
-}
-
-.bannerTextMobile {
-  text-align: justify;
-  width: 100%;
-  font-size: 2%;
-}
-
-.bannerRow {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.bannerRowMobile {
-  padding-left: 5%;
-  padding-right: 5%;
 }
 </style>
