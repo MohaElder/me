@@ -1,60 +1,46 @@
 <template>
-  <v-container style="
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 7%;
-        padding-top: 2%;
-      ">
-    <v-row style="text-align: start; margin-bottom: 30px">
-      <p>
-        {{ $t("message.if_i_die_brief") }}
-      </p>
-    </v-row>
-    <v-row>
-      <p>
-
-        {{ $t("message.if_i_die_music") }}
-
-      </p>
-    </v-row>
-    <v-row style="margin-bottom: 30px">
+  <div class="ifidie-container">
+    <h1 class="ifidie-title">My Last Words, for now</h1>
+    <div class="ifidie-section">
+      <p class="ifidie-subtitle">{{ $t("message.if_i_die_brief") }}</p>
+    </div>
+    <div class="ifidie-section">
+      <p>{{ $t("message.if_i_die_music") }}</p>
+    </div>
+    <div class="ifidie-section">
       <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450"
         style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
         src="https://embed.music.apple.com/us/playlist/play-when-im-dead/pl.u-vxy6kEjtym8Y9v"></iframe>
-    </v-row>
-    <v-row>
+    </div>
+    <div class="ifidie-section">
+      <p>{{ $t("message.if_i_die_encryption_note") }}</p>
+    </div>
+    <div class="ifidie-section">
       <p>
-
-        {{ $t("message.if_i_die_encryption_note") }}
-
-      </p>
-    </v-row>
-    <v-row>
-      <p>
-        {{ $t("message.if_i_die_encryption_instructions") }}
-        <br />
+        {{ $t("message.if_i_die_encryption_instructions") }}<br />
         <span style="color: #ffd738">{{ $t("message.if_i_die_encryption_dev_note") }}</span>
       </p>
-    </v-row>
-
-    <v-row>
-      <v-col><v-text-field v-model="data" label="Paste Message here" color="#ffd738"></v-text-field></v-col>
-      <v-col><v-text-field v-model="key" label="Paste key here" color="#ffd738"></v-text-field></v-col>
-    </v-row>
-    <v-row>
-      <v-btn @click="encrypt" style="margin-right: 10px">Encrypt</v-btn><v-btn color="#ffd738" style="color: black"
-        @click="decrypt">Decrypt</v-btn>
-    </v-row>
-    <v-row>
-      <div style="margin-top: 20px; overflow: hidden" v-for="data in eulogies" v-bind:key="data">
-        <p v-if="data.includes('DECRYPTED')"><span v-html="data"></span></p>
-        <p v-else style="overflow: hidden; text-overflow: ellipsis">
-          {{ data }}
-        </p>
-      </div>
-    </v-row>
-  </v-container>
+    </div>
+    <div class="ifidie-section ifidie-inputs">
+      <v-row>
+        <v-col><v-text-field v-model="data" label="Paste Message here" color="#ffd738"></v-text-field></v-col>
+        <v-col><v-text-field v-model="key" label="Paste key here" color="#ffd738"></v-text-field></v-col>
+      </v-row>
+      <v-row>
+        <v-btn @click="encrypt" style="margin-right: 10px">Encrypt</v-btn><v-btn color="#ffd738" style="color: black"
+          @click="decrypt">Decrypt</v-btn>
+      </v-row>
+      <v-row>
+        <div style="margin-top: 20px; overflow: hidden" v-for="data in eulogies" v-bind:key="data">
+          <p v-if="data.includes('DECRYPTED')"><span v-html="data"></span></p>
+          <p v-else style="overflow: hidden; text-overflow: ellipsis">
+            {{ data }}
+          </p>
+        </div>
+      </v-row>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -113,7 +99,77 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+.ifidie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 2% 10% 7% 10%;
+}
+
+.ifidie-title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.8px;
+  margin-bottom: 10px;
+}
+
+.ifidie-section {
+  width: 100%;
+  max-width: 900px;
+  color: #FFF;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.ifidie-section p {
+  font-weight: 500;
+}
+
+.ifidie-subtitle {
+  color: #FFF;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 30px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 12px;
+}
+
+.ifidie-inputs {
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .ifidie-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  .ifidie-title {
+    font-size: 36px;
+    letter-spacing: -1.2px;
+  }
+  .ifidie-section {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .ifidie-section p {
+    font-weight: 500;
+  }
 }
 </style>
