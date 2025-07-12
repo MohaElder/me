@@ -224,7 +224,6 @@
           target="_blank">Implementing Semantic Search with OpenAI, Postgres, and Entity Framework</a></h4>
       <h4><a href="https://medium.com/@calen0909/why-dont-i-like-oas-how-to-design-a-good-oa-ac2716a71682"
           target="_blank">Why don't I like OAs & how to design a good OA</a></h4>
-      <h4>{{ $t("message.podcast") }}</h4>
       <iframe id="embedPlayer"
         src="https://embed.podcasts.apple.com/us/podcast/randoms-hit-radio-vol-0-tgif%E7%89%B9%E8%BE%91-%E8%8A%82%E5%BA%86%E6%96%87%E5%8C%96-%E7%AC%A6%E5%8F%B7%E5%AD%A6-%E9%9F%B3%E4%B9%90%E9%89%B4%E8%B5%8F-%E5%93%B2%E5%AD%A6-%E9%9A%8F%E4%BE%BF%E8%81%8A/id1694128032?i=1000618220058&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto"
         height="175px" frameborder="0"
@@ -305,7 +304,7 @@
 .experience-greatstuff-row {
   display: flex;
   gap: 80px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .experience-column,
