@@ -18,14 +18,11 @@
             $t("message.nav_work") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'Photos' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_photos") }}</span>
-            <span class="app-bar-item" @click="$router.push({ name: 'NothingToLose' }).catch(() => { })" :style="$router.currentRoute.value.name == 'NothingToLose' ? 'color: #FDDA3A' : ''">
-           Nothing to Lose</span>
-           <span class="app-bar-item" @click="$router.push({ name: 'LandEmbodied' }).catch(() => { })" :style="$router.currentRoute.value.name == 'LandEmbodied' ? 'color: #FDDA3A' : ''">
-           Land Embodied</span>
+        <span class="app-bar-item" @click="$router.push({ name: 'Exhibitions' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Exhibitions' ? 'color: #FDDA3A' : ''">
+          Exhibitions
+        </span>
           <span class="app-bar-item" @click="$router.push({ name: 'OpenSource' }).catch(() => { })" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_open_source") }}</span>
-          <span class="app-bar-item" @click="$router.push({ name: 'Recipe' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Recipe' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_cocktail") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'Blogs' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Blogs' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_blogs") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'IfIDie' }).catch(() => { })" :style="$router.currentRoute.value.name == 'IfIDie' ? 'color: #FDDA3A' : ''">{{
@@ -66,20 +63,11 @@
               }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'NothingToLose' }).catch(() => { })">Nothing to Lose</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'LandEmbodied' }).catch(() => { })">Land Embodied</v-list-item-title>
+            <v-list-item-title @click="$router.push({ name: 'Exhibitions' }).catch(() => { })">Exhibitions</v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{
               $t("message.nav_open_source")
-              }}</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Recipe' }).catch(() => { })">{{
-              $t("message.nav_cocktail")
               }}</v-list-item-title>
           </v-list-item>
           <v-list-item>

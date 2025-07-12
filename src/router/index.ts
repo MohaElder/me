@@ -12,6 +12,7 @@ import OpenSource from '../views/OpenSource.vue'
 // import Guide from '../views/Guide.vue'
 import NothingToLose from '../views/NothingToLose.vue'
 import LandEmbodied from '../views/LandEmbodied.vue'
+import Art from '../views/Art.vue'
 const appRoot = '/me';
 
 const routes = [
@@ -64,6 +65,11 @@ const routes = [
     path: appRoot + '/land-embodied',
     name: 'LandEmbodied',
     component: LandEmbodied
+  },
+  {
+    path: appRoot + '/art',
+    name: 'Exhibitions',
+    component: Art
   },
   // {
   //   path: '/guide',

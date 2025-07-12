@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1 class="p-lg text-center">
-      <span class="text-secondary"> {{ $t("message.share") }} </span> /
-      <span class="text-primary"> {{ $t("message.life") }} </span> /
-      <span class="text-accent"> {{ $t("message.comments") }} </span>
+    <h1 class="blogs-title">
+      <span class="text-secondary">{{ $t("message.share") }}</span> /
+      <span class="text-primary">{{ $t("message.life") }}</span> /
+      <span class="text-accent">{{ $t("message.comments") }}</span>
     </h1>
     <v-container class="mt-md">
       <v-row>
@@ -54,3 +54,21 @@ export default {
   },
 };
 </script>
+
+<style>
+.blogs-title {
+  font-family: "Helvetica Neue";
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .blogs-title {
+    font-size: 24px;
+    letter-spacing: -0.8px;
+  }
+}
+</style>

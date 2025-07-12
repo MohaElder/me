@@ -1,172 +1,87 @@
 
-<template >
-  <v-container>
-    <h1 class="big-title">{{ $t("message.open_source") }}</h1>
-    <p class="text-justify w-auto" style="width: 70%">
-      {{ $t("message.open_source_desc") }}
-    </p>
-
-    <p class="text-justify w-auto" style="width: 70%">
-      {{ $t("message.open_source_desc_2") }}
-    </p>
-
-    <p class="text-justify w-auto" style="width: 70%">
-      {{ $t("message.open_source_desc_3") }}
-      <a href="https://github.com/MohaElder?tab=repositories">{{ $t("message.open_source_desc_3_link") }}</a>.
-    </p>
-
-    <v-row justify="start">
-      <v-col>
-        <v-row class="mt-xl">
-          <v-col>
-            <v-card max-width="700" @click="() => {
-              nav('https://github.com/UNOPS/uimf-svelte');
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/uimf-svelte.png">
-                <v-card-title>uimf-svelte</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  uimf-svelte is a svelte implementation of uimf components that can be created by metadata configs from
-                  the backend service. All components are created by svelte and using Bootstrap for styles. This
-                  combination granted this project small size and great compatibility with any environments(thanks to
-                  svelte and vite), and Bootstrap gives it a clean and modern look(with full bootstrap customization
-                  ability).
-                </div>
-              </v-card-text>
-            </v-card>
-            <v-card max-width="700" @click="() => {
-              nav('https://github.com/MohaElder/SvelteComponents');
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/svelte.png">
-                <v-card-title>use-svelte-anywhere</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  use-svelte-anywhere is a project that started from a story I was working on during work. We want to
-                  slowly transition the project from Angular js to svelte, and we decided to do that with creating web
-                  components with svelte and use them in Angular js. The project includes a workflow that we are using to
-                  build web components and bundle them into the larger project. It contains configuration files and
-                  templates that allows you to easily build upon and create your own web component for any frameworks.
-                  <br>
-                  In a short, this project shows you how to build universal web components with svelte using its client
-                  side component api.
-                </div>
-              </v-card-text>
-            </v-card>
-            <v-card max-width="700" @click="() => {
-              nav('https://github.com/MohaElder/Trip');
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/Banner.jpg">
-                <v-card-title>Let's Plan A Trip</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  {{ $t("message.open_source_projects.lpat") }}
-                </div>
-              </v-card-text>
-            </v-card>
-            <v-card max-width="700" @click="() => {
-              nav('https://github.com/MohaElder/gpa-c');
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/gpac.png">
-                <v-card-title>gpa-c</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  gpa-c is a light weight GPA calculator framework based on
-                  JavaScript(ES6) gpa-c works for all popular frontend framworks
-                  like React, Vue, Wechat Miniapp, and etc. Feel free to visit
-                  other branches where you can see the author's previous version
-                  of the code.
-                </div>
-              </v-card-text>
-            </v-card>
-            <v-card max-width="700" @click="() => {
-              nav(
-                'https://github.com/MohaElder/Eroducate/blob/master/README.md'
-              );
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/eroducate.png">
-                <v-card-title class="text-black">Eroducate</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  This is a guideline document that offers suggestions on
-                  creating a multi-ended visual novel. It introduces an
-                  innovative rename method named FASMEC that can be used in
-                  professional film making.
-                </div>
-              </v-card-text>
-            </v-card>
-            <v-card max-width="700" @click="() => {
-              nav('https://github.com/MohaElder/AnnoWikiTool');
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/anno.png">
-                <v-card-title>Anno Wiki Tool</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  Anno Wiki Tool is a python script that is used to boost the
-                  efficiency on cloning Anno Fandom to Anno Huiji. Technically
-                  it can also be used for all the Fandom sites. It currently has
-                  the following features: Convert Fandom Templates into Huiji
-                  Format(Anno 1800 Building Construction Template Specific)
-                  Downloading Pictures from specific sites Downloading Pictures
-                  from icon site(Anno 1800 Specific) Theoretically the second
-                  feature could be applied to all Fandom sites as long as they
-                  all have the same class attribute and element arrangements.
-                </div>
-              </v-card-text>
-            </v-card>
-            <v-card max-width="700" @click="() => {
-              nav('https://github.com/Eroducate/project-megabunus-portal');
-            }
-              " class="mb-xl">
-              <v-img class="text-white align-end" src="../assets/osp/megabunus.png">
-                <v-card-title class="text-black">Project Megabunus</v-card-title>
-              </v-img>
-              <v-card-text class="text--primary">
-                <div>
-                  Project Megabunus's goal
-                  is to build an easy-to-use web service for visual novel games
-                  (like Self-Reliance). The service allows visualized codeless
-                  level editing, live level loading from the game, live
-                  translation, statistics, and etc. This service will include three parts:
-                  frontend portal, backend server, and the game client. We hope
-                  to create a complete production cycle for visual novel that
-                  enable us to quickly deploy and manage contents of the game.
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+<template>
+  <div class="opensource-container">
+    <div class="opensource-header">
+      <h1 class="opensource-title">Open Source</h1>
+      <div class="opensource-subtitle">
+        I believe Open Source is key to a fair and open internet. It powers much of our world, and I hope to contribute meaningfully to it. Below are some of my projects—feel free to explore, star, or contribute. I also have other public repos that might interest you!
+ You may find them on my <a class="opensource-link" href="https://github.com/MohaElder">GitHub</a>.
+      </div>
+    </div>
+    <div class="opensource-cards">
+      <v-card max-width="700" @click="() => { nav('https://github.com/UNOPS/uimf-svelte'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/uimf-svelte.png">
+          <v-card-title>uimf-svelte</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            Svelte implementation of UIMF components, created by backend metadata configs. Small, fast, and compatible with any environment. Uses Bootstrap for a clean, modern look.
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/SvelteComponents'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/svelte.png">
+          <v-card-title>use-svelte-anywhere</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            Universal web components with Svelte. Build and bundle for any framework. Includes workflow and templates for easy integration.
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/Trip'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/Banner.jpg">
+          <v-card-title>Let's Plan A Trip</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            A collaborative trip planning tool. Plan, organize, and share your travel adventures with friends.
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/gpa-c'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/gpac.png">
+          <v-card-title>gpa-c</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            Lightweight GPA calculator framework for JavaScript. Works with React, Vue, WeChat Miniapp, and more.
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/Eroducate/blob/master/README.md'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/eroducate.png">
+          <v-card-title class="text-black">Eroducate</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            Guide to creating multi-ended visual novels. Introduces the FASMEC method for professional filmmaking.
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/AnnoWikiTool'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/anno.png">
+          <v-card-title>Anno Wiki Tool</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            Python script to boost efficiency cloning Fandom wikis. Converts templates, downloads images, and more.
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card max-width="700" @click="() => { nav('https://github.com/Eroducate/project-megabunus-portal'); }" class="mb-xl">
+        <v-img class="text-white align-end" src="../assets/osp/megabunus.png">
+          <v-card-title class="text-black">Project Megabunus</v-card-title>
+        </v-img>
+        <v-card-text class="text--primary">
+          <div>
+            Web service for visual novel games. Portal, backend, and game client for codeless editing, live loading, translation, and more.
+          </div>
+        </v-card-text>
+      </v-card>
+    </div>
+  </div>
 </template>
-
-<style scoped>
-@import "https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.4.0/css/zocial.min.css";
-
-.big-title {
-  font-size: 50px;
-}
-
-h4 {
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 150%;
-}
-</style>
 
 <script>
 export default {
@@ -179,4 +94,65 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.opensource-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding-bottom: 60px;
+}
+
+.opensource-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.opensource-title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.8px;
+  margin: 0;
+}
+
+.opensource-subtitle {
+  color: #FFF;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.4px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.opensource-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .opensource-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.v-application a {
+  color: white;
+}
+</style>
 
