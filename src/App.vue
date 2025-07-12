@@ -8,7 +8,7 @@
 
 <template>
   <v-app style="overflow: hidden">
-    <v-app-bar class="liquid-glass-app-bar">
+    <v-app-bar class="liquid-glass-app-bar" @mousemove="handleAppBarMouseMove" @mouseleave="handleAppBarMouseLeave">
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <div class="d-flex align-center" v-else>
         <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
@@ -88,7 +88,7 @@
       <router-view />
     </v-main>
 
-    <v-footer class="liquid-glass-footer" padless>
+    <v-footer class="liquid-glass-footer" padless @mousemove="handleFooterMouseMove" @mouseleave="handleFooterMouseLeave">
       <div tile class="text-white text-center">
         <p class="text-white pt-0 text-xs">
           Made with
@@ -119,6 +119,10 @@ export default {
     icons: ["mdi-github", "mdi-linkedin",],
     drawer: false,
     group: null,
+    appBarMouseX: 0,
+    appBarMouseY: 0,
+    footerMouseX: 0,
+    footerMouseY: 0,
   }),
   watch: {
     group() {
@@ -128,6 +132,24 @@ export default {
   methods: {
     changeLanguage() {
       this.$i18n.locale = this.$i18n.locale == "en" ? "zh" : "en";
+    },
+    handleAppBarMouseMove(event) {
+      const rect = event.currentTarget.getBoundingClientRect();
+      this.appBarMouseX = event.clientX - rect.left;
+      this.appBarMouseY = event.clientY - rect.top;
+    },
+    handleAppBarMouseLeave() {
+      this.appBarMouseX = 0;
+      this.appBarMouseY = 0;
+    },
+    handleFooterMouseMove(event) {
+      const rect = event.currentTarget.getBoundingClientRect();
+      this.footerMouseX = event.clientX - rect.left;
+      this.footerMouseY = event.clientY - rect.top;
+    },
+    handleFooterMouseLeave() {
+      this.footerMouseX = 0;
+      this.footerMouseY = 0;
     }
   },
   components: { vueIcon, eroducate }
@@ -153,16 +175,24 @@ export default {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.08),
-    transparent
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at v-bind(appBarMouseX + 'px') v-bind(appBarMouseY + 'px'),
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 30%,
+    rgba(255, 255, 255, 0.03) 60%,
+    transparent 80%
   );
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: 1;
+  pointer-events: none;
+}
+
+.liquid-glass-app-bar:hover::before {
+  opacity: 1;
 }
 
 .liquid-glass-app-bar::after {
@@ -199,16 +229,24 @@ export default {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.08),
-    transparent
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at v-bind(footerMouseX + 'px') v-bind(footerMouseY + 'px'),
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 30%,
+    rgba(255, 255, 255, 0.03) 60%,
+    transparent 80%
   );
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: 1;
+  pointer-events: none;
+}
+
+.liquid-glass-footer:hover::before {
+  opacity: 1;
 }
 
 .liquid-glass-footer::after {
