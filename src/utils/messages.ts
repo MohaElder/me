@@ -1,7 +1,7 @@
 const messages = {
     en: {
         message: {
-            hello: "Hi! Nice to meet you:) Scroll down for ✨",
+            hello: "What will happen if I scroll down?",
             wave_location: "Minieta Rd, Death Valley, CA, USA",
             nav_hi: "Hi",
             nav_work: "Me",

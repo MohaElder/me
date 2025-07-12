@@ -23,7 +23,7 @@
             ? '11%;'
             : '10.5%;')
         " cols="12">
-          <v-img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/bak.png" class="bak"
+          <v-img src="@/assets/bak.png" class="bak"
             :width="isPortrait() ? '100%' : '62.5%'"></v-img>
           <h3 class="intro-text" :style="
             'font-size: ' +
