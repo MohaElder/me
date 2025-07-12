@@ -1,20 +1,20 @@
 <template>
   <div class="exhibitions-container">
     <div class="exhibitions-header">
-      <h1 class="exhibitions-title">Exhibitions</h1>
+      <h1 class="exhibitions-title">{{ $t("message.exhibitions_title") }}</h1>
       <div class="exhibitions-subtitle">
-        Press materials from past and online exhibitions are listed below.
+        {{ $t("message.exhibitions_subtitle") }}
       </div>
     </div>
     <div class="exhibitions-links">
-      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'LandEmbodied' })" href="#">Land Embodied</a>
-      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'NothingToLose' })" href="#">Nothing To Lose</a>
-      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'Recipe' })" href="#">Alcoholic Lab</a>
+      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'LandEmbodied' })" href="#">{{ $t("message.exhibitions_land_embodied") }}</a>
+      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'NothingToLose' })" href="#">{{ $t("message.exhibitions_nothing_to_lose") }}</a>
+      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'Recipe' })" href="#">{{ $t("message.exhibitions_alcoholic_lab") }}</a>
     </div>
     <div class="exhibitions-image-container">
       <img class="exhibitions-image" src="@/assets/18_hyperreality-china01.jpg" alt="Zeng Han, Hyperreality China01 Beijing Paused Bridge 2006" />
       <div class="exhibitions-caption">
-        Zeng Han, Hyperreality China01 Beijing Paused Bridge 2006
+        {{ $t("message.exhibitions_image_caption") }}
       </div>
     </div>
   </div>

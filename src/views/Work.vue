@@ -68,48 +68,51 @@
       <div class="experience-column">
         <h1>{{ $t("message.work_experience") }}</h1>
         <h4 class="bold-job-title">
-          {{ $t("message.work_experience_desc.aako_left") }}, 
+          <span v-if="$t('message.work_experience_desc.aako_left') !== ''">{{ $t("message.work_experience_desc.aako_left") }}, </span>
           <a href="https://aako.world/" target="_blank">{{
             $t("message.work_experience_desc.aako")
           }}</a>
           {{ $t("message.work_experience_desc.aako_right") }}
         </h4>
         <h4 class="bold-job-title">
-          Senior ICT Associate, UN Office for Project Services
+          {{ $t("message.work_experience_desc.unops_2_left") }}
+          {{ $t("message.work_experience_desc.unops_2") }}
+          {{ $t("message.work_experience_desc.unops_2_right") }}
         </h4>
         <h4>
-          {{ $t("message.work_experience_desc.unops_left") }}, 
+          <span v-if="$t('message.work_experience_desc.unops_left') !== ''">{{ $t("message.work_experience_desc.unops_left") }} </span>
           {{
             $t("message.work_experience_desc.unops")
           }}
           {{ $t("message.work_experience_desc.unops_right") }}
         </h4>
         <h4>
-          {{ $t("message.work_experience_desc.esailab_left") }}, 
+          <span v-if="$t('message.work_experience_desc.esailab_left') !== ''">{{ $t("message.work_experience_desc.esailab_left") }}, </span>
           {{ $t("message.work_experience_desc.esailab") }}
           {{ $t("message.work_experience_desc.esailab_right") }}
         </h4>
         <h4>
-          {{ $t("message.work_experience_desc.ucsd_left") }}, {{
+          <span v-if="$t('message.work_experience_desc.ucsd_left') !== ''">{{ $t("message.work_experience_desc.ucsd_left") }}, </span>
+          {{
             $t("message.work_experience_desc.ucsd")
           }}
           {{ $t("message.work_experience_desc.ucsd_right") }}
         </h4>
         
         <h4 class="bold-job-title">
-          {{ $t("message.work_experience_desc.nvidia_left") }}, 
+          <span v-if="$t('message.work_experience_desc.nvidia_left') !== ''">{{ $t("message.work_experience_desc.nvidia_left") }}, </span>
           {{
             $t("message.work_experience_desc.nvidia")
           }}
           {{ $t("message.work_experience_desc.nvidia_right") }}
         </h4>
         <h4>
-          {{ $t("message.work_experience_desc.axiom_left") }}, 
+          <span v-if="$t('message.work_experience_desc.axiom_left') !== ''">{{ $t("message.work_experience_desc.axiom_left") }}, </span>
           {{ $t("message.work_experience_desc.axiom") }}
           {{ $t("message.work_experience_desc.axiom_right") }}
         </h4>
         <h4>
-          {{ $t("message.work_experience_desc.sdll_left") }}, 
+          <span v-if="$t('message.work_experience_desc.sdll_left') !== ''">{{ $t("message.work_experience_desc.sdll_left") }}, </span>
           {{
             $t("message.work_experience_desc.sdll")
           }}
@@ -119,9 +122,9 @@
       
       <div class="greatstuff-column">
         <h1>{{ $t("message.great_stuff") }}</h1>
-        <h4>Curator, UncommonGallery</h4>
+        <h4>{{ $t("message.curator_uncommon_gallery") }}</h4>
         <h4>
-          Member, 
+          {{ $t("message.member_reporters_without_borders") }}, 
           <a href="https://rsf.org/en" target="_blank">Reporters Without Borders</a>
         </h4>
         <h4 class="bold-job-title">
@@ -149,7 +152,7 @@
 
     <div class="games-honors-row">
       <div class="games-column">
-        <h1>Games & Open Source</h1>
+        <h1>{{ $t("message.games_open_source") }}</h1>
         <h4 class="bold-job-title">
           {{ $t("message.work_experience_desc.avian_enigma_left") }}
           <a href="https://store.steampowered.com/app/2784960/_/" target="_blank">{{
@@ -158,11 +161,10 @@
           {{ $t("message.work_experience_desc.avian_enigma_right") }}
         </h4>
         <h4 class="bold-job-title">
-          Owner, 
+          {{ $t("message.owner_uimf_svelte") }}, 
           <a href="https://github.com/UNOPS/uimf-svelte" target="_blank">
             Uimf-svelte
           </a>
-          {{ $t("message.work_experience_desc.avian_enigma_right") }}
         </h4>
         <h4>
           {{ $t("message.published_projects_desc.self_reliance_before") }}
@@ -218,7 +220,7 @@
     </div>
 
     <div class="articles-podcast-section">
-      <h1>Articles & Podcast</h1>
+      <h1>{{ $t("message.articles_podcast") }}</h1>
       <h4><a
           href="https://medium.com/@calen0909/implementing-semantic-search-with-openai-postgres-and-entity-framework-4414cf516b48"
           target="_blank">Implementing Semantic Search with OpenAI, Postgres, and Entity Framework</a></h4>

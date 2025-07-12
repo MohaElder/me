@@ -2,10 +2,10 @@
 <template>
   <div class="opensource-container">
     <div class="opensource-header">
-      <h1 class="opensource-title">Open Source</h1>
+      <h1 class="opensource-title">{{ $t("message.open_source") }}</h1>
       <div class="opensource-subtitle">
-        I believe Open Source is key to a fair and open internet. It powers much of our world, and I hope to contribute meaningfully to it. Below are some of my projects—feel free to explore, star, or contribute. I also have other public repos that might interest you!
- You may find them on my <a class="opensource-link" target="_blank" href="https://github.com/MohaElder">GitHub</a>.
+        {{ $t("message.open_source_desc") }}
+        <a class="opensource-link" target="_blank" href="https://github.com/MohaElder">{{ $t("message.open_source_desc_3_link") }}</a>.
       </div>
     </div>
     <div class="opensource-cards">

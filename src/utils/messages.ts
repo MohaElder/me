@@ -5,12 +5,11 @@ const messages = {
             wave_location: "Minieta Rd, Death Valley, CA, USA",
             nav_hi: "Hi",
             nav_work: "Me",
-            nav_open_source: "Open Source",
-            nav_cocktail: "Cocktail",
+                        nav_open_source: "Open Source",
             nav_photos: "Photo",
             nav_blogs: "Blog",
-            nav_if_i_die: "If I Die",
-            nav_guide: "Guide",
+                        nav_if_i_die: "If I Die",
+            nav_exhibitions: "Exhibitions",
             pictures: "pictures",
             work: {
                 a: "Oh Yasushi is the founder of",
@@ -32,12 +31,12 @@ const messages = {
             download_picture: "Download for noncommercial use",
             using_my_photo: "USING MY PHOTO",
             commercial: "For commercial please click here",
-            photo_usage_note: "Non-commercial: Please give credit to the name 'Yasushi Oh' or \
+                        photo_usage_note: "Non-commercial: Please give credit to the name 'Yasushi Oh' or \
             'Anzhi Weng' or '翁安志' or 'お やすし' (your choice :))",
-            web_gl_gallery_note: "Note: Gallery Mode is a new way to view my pictures via a three dimensional interactive interface. It's like a little 'game' embed inside this web page. It only supports \
-            Desktop users for now(and Pad users too), but there will be a mobile version in the near future.Gallery \
-            Mode costs some data, so check it out with Wi-Fi!",
             open_source: "Open Source Projects",
+            open_source_desc: "I believe Open Source is key to a fair and open internet. It powers much of our world, and I hope to contribute meaningfully to it. Below are some of my projects—feel free to explore, star, or contribute. I also have other public repos that might interest you! You may find my other repos ",
+            open_source_desc_3_link: "here",
+
             if_i_die_brief: "Hello! Welcome to this page. This page hosts my final words. \
             The page would non-periodically update until the day finally comes",
             if_i_die_music: "Please play the following songs during my funeral:",
@@ -48,6 +47,12 @@ const messages = {
             be unlocked, otherwise no response. Example key: TEST{'@'}TEST",
             if_i_die_encryption_dev_note: "ENCRYPT and Paste Message Here are only used \
             for encrypting my messages, you won't need it for decryption.",
+            exhibitions_title: "Exhibitions",
+            exhibitions_subtitle: "Press materials from past and online exhibitions are listed below.",
+            exhibitions_land_embodied: "Land Embodied",
+            exhibitions_nothing_to_lose: "Nothing To Lose",
+            exhibitions_alcoholic_lab: "Alcoholic Lab",
+            exhibitions_image_caption: "Zeng Han, Hyperreality China01 Beijing Paused Bridge 2006",
             skills: "Skills",
             contact: "Contact & Social Media",
             education: "Education",
@@ -70,9 +75,12 @@ const messages = {
                 esailab_left: "Researcher",
                 esailab: "ESAI Lab",
                 esailab_right: "",
-                unops_left: "Software Engineer",
+                unops_left: "Fullstack Engineer, ",
                 unops: "UN Office for Project Services",
                 unops_right: "",
+                unops_2_left: "Senior ICT Associate, ",
+                unops_2: "UN Office for Project Services",
+                unops_2_right: "",
                 ucsd_left: "Instructional Assistant",
                 ucsd: "UC San Diego",
                 ucsd_right: "",
@@ -126,37 +134,15 @@ const messages = {
             guaranteed to be legit nor safe. They are just for hobby purposes. \
             If you have any suggestions, please send me an",
             cocktail_desc_link: "email",
-            cocktail_desc_after: " and we can talk!",
-            open_source_desc: "I believe that Open Source is a \
-            must to achieve Net Neutrality and Democracy. In addition \
-            to accomplishing those 'Big Word' milestones, Open Source \
-            communities have provided millions of excellent products that \
-            powered our world in a civilized fashion. Therefore, I wish to \
-            become an active participant in this community, and hope that \
-            I could become a notable contributor one day.",
-            open_source_desc_2: "Below are my active open source projects. \
-            If you like them, feel free to give them a star. If you would \
-            like to contribute, I am more than happy to accept issues and PRs!",
-            open_source_desc_3: "P.S: There are also some repositories that \
-            I did not list below. Most of my repositories are public, they \
-            are not shown below is likely becaue their scale or purpose are \
-            too specific thus may not be applicable to become a 'project'. \
-            But many of them are also interesting! Feel free to check them out",
-            open_source_desc_3_link: "here",
-            open_source_projects: {
-                lpat: '"Let\'s Plan A Trip" is a trip planner that focuses on planning \
-                the trip. Unlike most other trip planning apps that emphasizes \
-                on route planning, providing you a fancy map and charging you \
-                for exporting their route into Google Maps, Let\'s Plan A \
-                Trip\'s goal is to really help you plan a trip by providing you \
-                a variety of handy tools that I the author use to plan my \
-                trips in a elegant and neat format. and it\'s free~',
-
-            },
-            wait: "Construction going on 🏗️",
+                        cocktail_desc_after: " and we can talk!",
             share: "SHARE",
             life: "LIFE",
-            comments: "COMMENTS"
+            comments: "COMMENTS",
+            games_open_source: "Games & Open Source",
+            owner_uimf_svelte: "Owner",
+            articles_podcast: "Articles & Podcast",
+            curator_uncommon_gallery: "Curator, UncommonGallery",
+            member_reporters_without_borders: "Member, Reporters Without Borders"
         }
     },
     zh: {
@@ -165,12 +151,11 @@ const messages = {
             wave_location: "Minieta Rd, 美国, 加利福尼亚州，死亡谷",
             nav_hi: "嗨",
             nav_work: "我",
-            nav_open_source: "开源",
-            nav_cocktail: "调酒",
+                        nav_open_source: "开源",
             nav_photos: "摄影",
             nav_blogs: "博客",
-            nav_if_i_die: "假如我死了",
-            nav_guide: "指南",
+                        nav_if_i_die: "假如我死了",
+            nav_exhibitions: "展览",
             pictures: "照片",
             work: {
                 a: "翁安志是",
@@ -192,12 +177,11 @@ const messages = {
             download_picture: "下载非商业使用照片",
             using_my_photo: "使用我的照片",
             commercial: "商业使用请点击此处",
-            photo_usage_note: "非商业: 请标注下列任意名字为作者： 'Yasushi Oh' 或 \
+                        photo_usage_note: "非商业: 请标注下列任意名字为作者： 'Yasushi Oh' 或 \
             'Anzhi Weng' 或 '翁安志' 或 'お やすし' (你的选择 :))",
-            web_gl_gallery_note: "注意: Gallery Mode 是一个全新的通过3D立体可交互界面浏览我的照片的方式。如果您想称它为Web3.0, 请便;) \
-            它算是一个网页当中的“小游戏”。目前画廊模式只支持桌面端(和Pad端),移动端支持将在不久的将来发布。\
-            此模式将消耗一定流量, 请保证您在Wi-Fi下体验!",
             open_source: "开源项目",
+            open_source_desc: "我相信开源是实现公平开放互联网的关键。它支撑着我们的世界，而我希望能为其贡献一份力量。下面是我的一些项目，欢迎浏览、点星或参与贡献。还有其他公开的仓库也值得一看！",
+            open_source_desc_3_link: "其他Repo",
             if_i_die_brief: " 您好，欢迎访问这个页面。这个页面包含了我的遗言，以及遗嘱。本页面将会不定期更新，直至其正式生效。",
             if_i_die_music: "请在我的葬礼播放以下歌曲:",
             if_i_die_encryption_note: "以下数据为我的遗言，皆进行了AES-128加密，可通过相应的key解密",
@@ -206,11 +190,17 @@ const messages = {
             示例key: TEST{'@'}TEST",
             if_i_die_encryption_dev_note: "ENCRYPT和Paste Message \
             Here仅用于本人加密信息用，解密时不会用到。",
+            exhibitions_title: "展览",
+            exhibitions_subtitle: "以下列出了过去和在线展览的新闻材料。",
+            exhibitions_land_embodied: "大地具象",
+            exhibitions_nothing_to_lose: "无所失去",
+            exhibitions_alcoholic_lab: "酒精实验室",
+            exhibitions_image_caption: "曾翰，超现实中国01 北京 断桥 2006",
             skills: "技能",
             contact: "联系方式和社交媒体",
             education: "教育",
             great_stuff: "伟大的事情",
-            work_experience: "工作",
+            work_experience: "经历",
             published_projects: "已发布项目",
             honors_and_news: "新闻与荣誉",
             linkedin: "领英",
@@ -229,17 +219,20 @@ const messages = {
                 aako: "Aako",
                 aako_right: "创始人 | 技术主管",
                 unops_left: "联合国项目事务厅",
-                unops: "(UNOPS)",
-                unops_right: "软件工程实习生",
+                unops: "",
+                unops_right: "全栈工程师",
+                unops_2_left: "",
+                unops_2: "联合国项目事务厅",
+                unops_2_right: "高级ICT专员",
                 ucsd_left: "",
                 ucsd: "UCSD",
                 ucsd_right: "学生助教",
                 nvidia_left: "",
                 nvidia: "英伟达",
-                nvidia_right: "游戏性能分析实习生",
+                nvidia_right: "游戏性能分析员",
                 axiom_left: "",
                 axiom: "代码公理",
-                axiom_right: "软件工程实习生",
+                axiom_right: "前端工程师",
                 sdll_left: "",
                 sdll: "深度历炼青少年训练营",
                 sdll_right: "摄影助教",
@@ -282,30 +275,15 @@ const messages = {
             cocktail_desc_before: "酒鬼实验室是一个记录我瞎琢磨的鸡尾酒配方的地方。\
             以下所有饮料不保证好喝，不保证安全，仅供参考。欢迎发送",
             cocktail_desc_link: "邮件",
-            cocktail_desc_after: "讨论。",
-            open_source_desc: "我相信开源是通往网络中立以及民主的必要元素。\
-            除了达成那些伟大的里程碑外，开源社区提供了数以万计的优秀产品，\
-            驱动了全世界文明。我希望我能够成为这个社区的积极分子，并希望有\
-            一天我能够在此社区取得杰出成就。",
-            open_source_desc_2: "一下是我的一些开源项目。如果你喜欢他们，\
-            请不要吝啬你的星星:)。如果你希望加入其中的项目，我将举双手接受你\
-            提交的issue和PR！",
-            open_source_desc_3: "P.S: 我并没有在此列出我所有的Repo。\
-            我大部分的Repo都是公开的，他们不在此处的原因很可能是因为他们\
-            的规模或太过单一的特性，使他们暂时不具有成为”项目“的资格。\
-            不过他们也都挺有意思的！有兴趣可以在这里找到他们：",
-            open_source_desc_3_link: "我的其他开源Repo",
-            open_source_projects: {
-                lpat: '"Let\'s Plan A Trip" 是一个以规划为核心的旅行规划应用。\
-                和许多其他强调路线规划的旅行规划应用不同，这款应用的目标是真正帮\
-                助你规划旅行。你能够使用许多作者本人经常使用的便捷行程规划功能获\
-                得一个优雅简洁的行程规划体验！他还是免费的！',
-
-            },
-            wait: "敬请期待",
+                        cocktail_desc_after: "讨论。",
             share: "分享",
             life: "生活",
             comments: "评论",
+            games_open_source: "游戏与开源",
+            owner_uimf_svelte: "所有者",
+            articles_podcast: "文章与播客",
+            curator_uncommon_gallery: "策展人，UncommonGallery",
+            member_reporters_without_borders: "会员"
         }
     },
 }

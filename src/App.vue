@@ -19,7 +19,7 @@
           <span class="app-bar-item" @click="$router.push({ name: 'Photos' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_photos") }}</span>
         <span class="app-bar-item" @click="$router.push({ name: 'Exhibitions' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Exhibitions' ? 'color: #FDDA3A' : ''">
-          Exhibitions
+          {{ $t("message.nav_exhibitions") }}
         </span>
           <span class="app-bar-item" @click="$router.push({ name: 'OpenSource' }).catch(() => { })" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_open_source") }}</span>
@@ -63,7 +63,7 @@
               }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Exhibitions' }).catch(() => { })">Exhibitions</v-list-item-title>
+            <v-list-item-title @click="$router.push({ name: 'Exhibitions' }).catch(() => { })">{{ $t("message.nav_exhibitions") }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{
