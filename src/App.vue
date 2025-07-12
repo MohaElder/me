@@ -8,7 +8,7 @@
 
 <template>
   <v-app style="overflow: hidden">
-    <v-app-bar color="rgba(71, 71, 71, 0.063)" class="glass lower-rounded">
+    <v-app-bar class="liquid-glass-app-bar">
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <div class="d-flex align-center" v-else>
         <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
@@ -88,7 +88,7 @@
       <router-view />
     </v-main>
 
-    <v-footer class="glass upper-rounded pt-md" padless>
+    <v-footer class="liquid-glass-footer" padless>
       <div tile class="text-white text-center">
         <p class="text-white pt-0 text-xs">
           Made with
@@ -135,6 +135,116 @@ export default {
 </script>
 
 <style scoped>
+/* Liquid Glass Effect for AppBar */
+.liquid-glass-app-bar {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.liquid-glass-app-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+  z-index: 1;
+}
+
+.liquid-glass-app-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  z-index: 0;
+}
+
+/* Liquid Glass Effect for Footer */
+.liquid-glass-footer {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 -8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.liquid-glass-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+  z-index: 1;
+}
+
+.liquid-glass-footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  z-index: 0;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Ensure content stays above the effects */
+.liquid-glass-app-bar > *,
+.liquid-glass-footer > * {
+  position: relative;
+  z-index: 2;
+}
 
 .app-bar-item {
   padding: 20px;
