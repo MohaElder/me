@@ -9,7 +9,7 @@
       <v-row>
         <v-col v-for="(item, key) in items" :key="key" :cols="$vuetify.display.mobile ? 12 : 6"
           :class="$vuetify.display.mobile ? 'pl-lg pr-lg' : ''">
-          <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(key)">
+          <v-card class="mx-auto" max-width="600" :color="item.color" @click="travel(item.id)">
             <v-img class="align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)" height="300px" cover :src="item.img">
               <v-card-title class="text-white">{{ item.title }}</v-card-title>
