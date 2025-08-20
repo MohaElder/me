@@ -72,10 +72,10 @@ const quoteAuthor = ref("MohaElder")
 const scroll_position = ref(0)
 
 const animateCSS = (element: string, animation: string, time_interval: number, prefix = "animate__") =>
-  new Promise((resolve) => {
+  new Promise<string>((resolve) => {
     const animationName = `${prefix}${animation}`
-    const node = document.querySelector(element)
-    if (node == null) {
+    const node = document.querySelector(element) as HTMLElement | null
+    if (!node) {
       clearInterval(time_interval)
       resolve("Page not active")
       return
@@ -84,7 +84,9 @@ const animateCSS = (element: string, animation: string, time_interval: number, p
 
     function handleAnimationEnd(event: Event) {
       event.stopPropagation()
-      node.classList.remove(`${prefix}animated`, animationName)
+      if (node) {
+        node.classList.remove(`${prefix}animated`, animationName)
+      }
       resolve("Animation ended")
     }
 
@@ -135,8 +137,8 @@ onBeforeUnmount(() => {
 
 onBeforeMount(() => {
   let index = 0
-  const time = setInterval(() => {
-    animateCSS("#name", "fadeIn", time)
+  const time = window.setInterval(() => {
+    animateCSS("#name", "fadeIn", time as number)
     index = index + 1 === names.length ? 0 : index + 1
     activeName.value = names[index]
   }, 2500)

@@ -1,7 +1,7 @@
 <template>
   <v-container :class="{ 'pa-0': unity }">
     <v-overlay scrim="black" class="align-center justify-center black-overlay" v-model="previewPic">
-      <v-img class="mx-auto" :src="activeImage['url']" :lazy-src="activeImage['thumbnail']"
+      <v-img class="mx-auto" :src="activeImage?.url" :lazy-src="activeImage?.thumbnail"
         :width="$vuetify.display.width * 0.8" :height="$vuetify.display.height * 0.8" contain @click="previewPic = false">
         <template v-slot:placeholder>
           <div class="d-flex align-center justify-center fill-height">
@@ -10,7 +10,7 @@
         </template>
       </v-img>
       <div class="image-info-box">
-        <p class="camera-text">Camera: {{ activeImage['Camera'] }}</p>
+        <p class="camera-text">Camera: {{ activeImage?.Camera }}</p>
         <v-btn color="primary" @click="downloadDialog = true">download</v-btn>
       </div>
     </v-overlay>
@@ -61,7 +61,7 @@
               {{ tag }}
             </v-chip>
           </div>
-          <v-btn @click="sortImages(false, order)" icon="mdi-swap-vertical">
+          <v-btn @click="sortImages(false)" icon="mdi-swap-vertical">
           </v-btn>
         </v-row>
         <v-row justify="start" class="chip-wrapper" :class="isPortrait()? 'w-full' : 'w-auto'">
@@ -107,6 +107,14 @@
 import { ref, onMounted, onUnmounted, watch, defineOptions } from 'vue'
 import { useDisplay } from 'vuetify'
 import { images as images_imported, tags as importedTags } from "../utils/imageLink.json"
+
+interface ImportedImageData {
+  url: string
+  thumbnail: string
+  DateTime?: number
+  Tags?: string[]
+  Camera?: string
+}
 import 'animate.css'
 
 defineOptions({
@@ -153,9 +161,10 @@ const download = () => {
   }
 }
 
-const sortImages = (AlwaysNewToOld = false, imagesToSort: ImageData[] = []) => {
+const sortImages = (AlwaysNewToOld = false, imagesToSort?: ImageData[]) => {
   if (images_sorted.length === 0 || AlwaysNewToOld) {
-    images_sorted = imagesToSort.sort((a, b) => b.DateTime - a.DateTime)
+    const toSort = imagesToSort || images.value
+    images_sorted = [...toSort].sort((a, b) => b.DateTime - a.DateTime)
     images.value = images_sorted
   } else {
     images.value = [...images.value].reverse()
@@ -192,7 +201,13 @@ watch(unity, (newValue) => {
 onMounted(() => {
   window.scrollTo(0, 0)
   tags.value = [...importedTags].sort()
-  images.value = Object.values(images_imported)
+  images.value = Object.values(images_imported as Record<string, ImportedImageData>).map(img => ({
+    url: img.url,
+    thumbnail: img.thumbnail,
+    DateTime: img.DateTime || 0,
+    Tags: img.Tags || [],
+    Camera: img.Camera || 'Unknown'
+  } as ImageData))
   sortImages(true, images.value)
 })
 

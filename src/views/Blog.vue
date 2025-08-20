@@ -23,97 +23,110 @@
   </v-container>
 </template>
 
-<script>
-import { blogs } from "../utils/blogLink.js";
-import MarkdownIt from "markdown-it";
+<script setup lang="ts">
+import { ref, onBeforeMount, defineOptions } from 'vue'
+import { useRoute } from 'vue-router'
+import { blogs } from "../utils/blogLink.js"
+import MarkdownIt from "markdown-it"
 
-export default {
-  data: () => ({
-    icons: [
-      "mdi-link-box-variant-outline",
-      "mdi-twitter",
-      "mdi-linkedin",
-      "mdi-facebook",
-    ],
-    copied: false,
-    blog: {
-      title: "42",
-      article: "# Whoops! Seems like you have reached a nonexisting article ;)",
-      img: "",
-      img_caption: "",
-    },
-    fileContent: null,
-  }),
-  beforeMount() {
-    {
-      window.scrollTo(0, 0);
-      if (blogs[this.$route.query.id] != null) {
-        this.blog = blogs[this.$route.query.id];
-        this.getContent();
-      } else {
-        this.fileContent = this.blog.article;
-      }
+defineOptions({
+  name: 'Blog'
+})
+
+interface BlogData {
+  title: string
+  article: string
+  img: string
+  img_caption: string
+  date?: string
+  color?: string
+  brief?: string
+}
+
+// Type guard to check if a blog exists
+const isBlogValid = (id: string): id is keyof typeof blogs => {
+  return id in blogs
+}
+
+const route = useRoute()
+const icons = ref([
+  "mdi-link-box-variant-outline",
+  "mdi-twitter",
+  "mdi-linkedin",
+  "mdi-facebook",
+])
+const copied = ref(false)
+const blog = ref<BlogData>({
+  title: "42",
+  article: "# Whoops! Seems like you have reached a nonexisting article ;)",
+  img: "",
+  img_caption: "",
+})
+const fileContent = ref<string | null>(null)
+
+const rendered = (e: string): string => {
+  const lines = e.split("\n")
+  for (let i = 0; i < lines.length; i++) {
+    const element = lines[i]
+    if (element.includes("<img")) {
+      const idx = element.indexOf("<img")
+      const startPos = idx + 10
+      const endPos = element.indexOf('"', startPos)
+      const src = element.slice(startPos, endPos)
+      const lst = element.split("")
+      lst[idx + 3] += ` class='md-img' onclick='view("${src}")'`
+      lines[i] = lst.join("")
     }
-  },
-  methods: {
-    rendered(e) {
-      let lines = e.split("\n");
-      for (let i = 0; i < lines.length; i++) {
-        let element = lines[i];
-        if (element.includes("<img")) {
-          let idx = element.indexOf("<img");
-          let startPos = idx + 10;
-          //we find the start position of <img and treat that as idx(0th position), then we add 10 because it's set to be '<img src="'
-          let endPos = element.indexOf('"', startPos);
-          //we find the first occurance of " after startPos to locate the end of the link
-          let src = element.slice(startPos, endPos);
-          let lst = element.split("");
-          lst[idx + 3] +=
-            " class='md-img' onclick= 'view(" + '"' + src + '"' + ")'"; //+3 because '<img' where idx is at the position of '<'
-          lines[i] = lst.join("");
-        }
-      }
-      return lines.join("\n");
-    },
+  }
+  return lines.join("\n")
+}
 
-    getContent() {
-      this.fileContent = "rendering ";
-      fetch(this.blog.article)
-        .then((response) => response.text())
-        .then((data) => {
-          //replace the link to let it read image properly, then assign to source variable for rendering
-          let ret = data
-            .split("../assets")
-            .join("https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets");
-          let md = new MarkdownIt("commonmark");
-          this.fileContent = this.rendered(md.render(ret));
-          console.log(this.fileContent);
-        });
-    },
-    share(name) {
-      var link = window.location.href;
-      switch (name) {
-        case "link-box-variant-outline":
-          navigator.clipboard.writeText(link);
-          break;
-        case "twitter":
-          window.open(
-            "http://twitter.com/share?text=" + this.blog.title + "&url=" + link
-          );
-          break;
-        case "linkedin":
-          window.open(
-            "https://www.linkedin.com/sharing/share-offsite/?url=" + link
-          );
-          break;
-        case "facebook":
-          window.open("https://www.facebook.com/sharer/sharer.php?u=" + link);
-          break;
-      }
-      this.shared = true;
-    },
-  },
-};
+const getContent = () => {
+  fileContent.value = "rendering "
+  fetch(blog.value.article)
+    .then((response) => response.text())
+    .then((data) => {
+      const ret = data
+        .split("../assets")
+        .join("https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets")
+      const md = new MarkdownIt("commonmark")
+      fileContent.value = rendered(md.render(ret))
+    })
+}
+
+const share = (name: string) => {
+  const link = window.location.href
+  switch (name) {
+    case "link-box-variant-outline":
+      navigator.clipboard.writeText(link)
+      break
+    case "twitter":
+      window.open(
+        `http://twitter.com/share?text=${blog.value.title}&url=${link}`
+      )
+      break
+    case "linkedin":
+      window.open(
+        `https://www.linkedin.com/sharing/share-offsite/?url=${link}`
+      )
+      break
+    case "facebook":
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${link}`)
+      break
+  }
+  copied.value = true
+}
+
+onBeforeMount(() => {
+  window.scrollTo(0, 0)
+  const id = route.query.id as string
+  if (isBlogValid(id)) {
+    blog.value = blogs[id]
+    getContent()
+  } else {
+    fileContent.value = blog.value.article
+  }
+})
 </script>
 
 <style>

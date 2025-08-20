@@ -20,13 +20,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Exhibitions',
-  mounted() {
-    window.scrollTo(0, 0);
-  }
-};
+<script setup lang="ts">
+import { onMounted, defineOptions } from 'vue'
+
+defineOptions({
+  name: 'Exhibitions'
+})
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
 </script>
 
 <style scoped>

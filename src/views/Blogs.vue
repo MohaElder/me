@@ -28,31 +28,43 @@
   </div>
 </template>
 
-<script>
-import { blogs } from "../utils/blogLink.js";
+<script setup lang="ts">
+import { ref, onBeforeMount, defineOptions } from 'vue'
+import { useRouter } from 'vue-router'
+import { blogs } from "../utils/blogLink.js"
 
-export default {
-  data: () => ({
-    items: [
-      {
-        color: "#1F7087",
-        img: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
-        title: "Default Blog",
-        brief: "Default Blog",
-        id: "a3c8-8992",
-      },
-    ],
-  }),
-  beforeMount() {
-    window.scrollTo(0, 0);
-    this.items = blogs;
-  },
-  methods: {
-    travel: function (blogId) {
-      this.$router.push({ name: "Blog", query: { id: blogId } });
-    },
-  },
-};
+defineOptions({
+  name: 'Blogs'
+})
+
+interface BlogItem {
+  color: string
+  img: string
+  title: string
+  brief: string
+  id: string
+}
+
+const router = useRouter()
+const items = ref<BlogItem[]>([{
+  color: "#1F7087",
+  img: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+  title: "Default Blog",
+  brief: "Default Blog",
+  id: "a3c8-8992",
+}])
+
+const travel = (blogId: string) => {
+  router.push({ name: "Blog", query: { id: blogId } })
+}
+
+onBeforeMount(() => {
+  window.scrollTo(0, 0)
+  items.value = Object.entries(blogs).map(([id, blog]) => ({
+    ...blog,
+    id
+  }))
+})
 </script>
 
 <style>
