@@ -1,19 +1,6 @@
 # me
 ## This repository contains the source code of my personal website
 
-> note: 2023/3/4, the project has now been upgraded from Vue2 to Vue3 with a number of dependency updates, the major updates are:
-
-1. Vue2 -> Vue3
-2. Vue cli -> Vite
-3. Vuetify2 -> Vuetify3
-4. VueMarkdown -> Markdown It + Custom postprocess
-
-The project has also switched from JavaScript to TypeScript, but most of the code are still written in JavaScript, the migration process will take some time and finish page by page.
-
-The project running with Vue2 can be found in the [vue2](https://github.com/MohaElder/me/tree/vue2) branch.
-
-This Readme will **not** contain any information about the vue2 version website except for the development log. You may find the old read me in the [vue2](https://github.com/MohaElder/me/tree/vue2) branch
-
 ## Tech Stack
 
 The website is static and is powered by [Vue](https://vuejs.org/). I use [Github Action](https://github.com/features/actions) + [Github Pages](https://pages.github.com/) + [a Python script](https://github.com/MohaElder/me/blob/main/helpers/init.py) to perform content update for my blogs and photos.
@@ -40,6 +27,29 @@ For images: The python script compresses files, extracts exif, and generates thu
 For blog: The python script reads metadata based on predefined template pattern for each markdown file
 
 ## Updates
+
+Update: 2025/8/20
+
+There has been tons of updates made if you track the commit changes. The major updates include:
+
+1. Upgraded Vue3 to 3.5.18 which grants all the new speed optimizations without using a VirtualDOM
+2. UI Overhauls for a better layout and more OLED friendly look
+
+Update: 2023/3/4
+
+The project has now been upgraded from Vue2 to Vue3 with a number of dependency updates, the major updates are:
+
+1. Vue2 -> Vue3
+2. Vue cli -> Vite
+3. Vuetify2 -> Vuetify3
+4. VueMarkdown -> Markdown It + Custom postprocess
+
+The project has also switched from JavaScript to TypeScript, but most of the code are still written in JavaScript, the migration process will take some time and finish page by page.
+
+The project running with Vue2 can be found in the [vue2](https://github.com/MohaElder/me/tree/vue2) branch.
+
+This Readme will **not** contain any information about the vue2 version website except for the development log. You may find the old read me in the [vue2](https://github.com/MohaElder/me/tree/vue2) branch
+
 
 Update: 2022/8/16
 
