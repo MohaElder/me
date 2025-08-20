@@ -10,10 +10,8 @@ The website uses [Vuetify](https://next.vuetifyjs.com/en/) for UI support. I add
 
 The animation uses [Animate.css](https://animate.style/)
 
-*The site is using Vuetify2. I am planning to update it to Vuetify3 in the future together with an update to Vue3*
-
 ### Homepage animation
-The wave animation on the homepage is inspired by [Apple's Airpods Pro Ad](https://www.apple.com/airpods-pro/).
+The star animation on the homepage is inspired by [Apple's Airpods Pro Ad](https://www.apple.com/airpods-pro/).
 
 ## "Backend"
 There is no backend for this site for the sake of being a simple personal website. However, to support my my blog and images' content creation on the site. I wrote a python script that kind of serves as a "backend" of the site.
