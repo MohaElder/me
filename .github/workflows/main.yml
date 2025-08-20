@@ -1,5 +1,8 @@
 name: Build Vue
-on: [push]
+on: 
+  push:
+    branches:
+      - main
 jobs:
   build_vue:
     runs-on: ubuntu-latest
@@ -16,3 +19,4 @@ jobs:
         username: 'MohaElder'
         reponame: 'me'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+
