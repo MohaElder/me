@@ -17,6 +17,10 @@ const appRoot = '/me';
 
 const routes = [
   {
+    path: '/',
+    redirect: appRoot + '/'
+  },
+  {
     path: appRoot + '/',
     name: 'Hi',
     component: Home
@@ -76,6 +80,10 @@ const routes = [
   //   name: 'Guide',
   //   component: Guide
   // },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: appRoot + '/'
+  }
 ]
 
 const router = createRouter({

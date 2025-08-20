@@ -45,7 +45,7 @@
 
     <v-navigation-drawer v-model="drawer" app bottom temporary class="bg-dark">
       <v-list nav dense>
-        <v-list-item-group v-model="group">
+        <v-item-group v-model="group">
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'Hi' }).catch(() => { })">{{
               $t("message.nav_hi")
@@ -80,7 +80,7 @@
               $t("message.nav_if_i_die")
               }}</v-list-item-title>
           </v-list-item>
-        </v-list-item-group>
+        </v-item-group>
       </v-list>
     </v-navigation-drawer>
 
@@ -108,52 +108,61 @@
   </v-app>
 </template>
 
-<script>
-
+<script setup lang="ts">
+import { ref, watch, defineOptions } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { VList, VListItem, VListItemTitle, VItemGroup } from 'vuetify/components'
 import vueIcon from './components/vue-icon.vue'
-import eroducate from './components/eroducate.vue';
+import eroducate from './components/eroducate.vue'
 
-export default {
-  name: "App",
-  data: () => ({
-    icons: ["mdi-github", "mdi-linkedin",],
-    drawer: false,
-    group: null,
-    appBarMouseX: 0,
-    appBarMouseY: 0,
-    footerMouseX: 0,
-    footerMouseY: 0,
-  }),
-  watch: {
-    group() {
-      this.drawer = false;
-    },
-  },
-  methods: {
-    changeLanguage() {
-      this.$i18n.locale = this.$i18n.locale == "en" ? "zh" : "en";
-    },
-    handleAppBarMouseMove(event) {
-      const rect = event.currentTarget.getBoundingClientRect();
-      this.appBarMouseX = event.clientX - rect.left;
-      this.appBarMouseY = event.clientY - rect.top;
-    },
-    handleAppBarMouseLeave() {
-      this.appBarMouseX = 0;
-      this.appBarMouseY = 0;
-    },
-    handleFooterMouseMove(event) {
-      const rect = event.currentTarget.getBoundingClientRect();
-      this.footerMouseX = event.clientX - rect.left;
-      this.footerMouseY = event.clientY - rect.top;
-    },
-    handleFooterMouseLeave() {
-      this.footerMouseX = 0;
-      this.footerMouseY = 0;
-    }
-  },
-  components: { vueIcon, eroducate }
-};
+defineOptions({
+  components: {
+    VList,
+    VListItem,
+    VListItemTitle,
+    VItemGroup
+  }
+})
+
+const i18n = useI18n()
+
+const icons = ref(["mdi-github", "mdi-linkedin"])
+const drawer = ref(false)
+const group = ref(null)
+const appBarMouseX = ref(0)
+const appBarMouseY = ref(0)
+const footerMouseX = ref(0)
+const footerMouseY = ref(0)
+
+watch(group, () => {
+  drawer.value = false
+})
+
+const changeLanguage = () => {
+  i18n.locale.value = i18n.locale.value === "en" ? "zh" : "en"
+}
+
+const handleAppBarMouseMove = (event: MouseEvent) => {
+  const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
+  appBarMouseX.value = event.clientX - rect.left
+  appBarMouseY.value = event.clientY - rect.top
+}
+
+const handleAppBarMouseLeave = () => {
+  appBarMouseX.value = 0
+  appBarMouseY.value = 0
+}
+
+const handleFooterMouseMove = (event: MouseEvent) => {
+  const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
+  footerMouseX.value = event.clientX - rect.left
+  footerMouseY.value = event.clientY - rect.top
+}
+
+const handleFooterMouseLeave = () => {
+  footerMouseX.value = 0
+  footerMouseY.value = 0
+}
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container :class="{ 'pa-0': unity }">
     <v-overlay scrim="black" class="align-center justify-center black-overlay" v-model="previewPic">
       <v-img class="mx-auto" :src="activeImage['url']" :lazy-src="activeImage['thumbnail']"
         :width="$vuetify.display.width * 0.8" :height="$vuetify.display.height * 0.8" contain @click="previewPic = false">
@@ -103,96 +103,103 @@
 }
 </style>
 
-<script>
-import { images as images_imported, tags } from "../utils/imageLink.json"
-import 'animate.css';
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted, watch, defineOptions } from 'vue'
+import { useDisplay } from 'vuetify'
+import { images as images_imported, tags as importedTags } from "../utils/imageLink.json"
+import 'animate.css'
 
-var images_sorted = []
+defineOptions({
+  name: 'Photos'
+})
 
-export default {
-  name: "Photos",
-  mounted() {
-    window.scrollTo(0, 0);
-    this.tags = tags.sort();
-    this.images = Object.values(images_imported);
-    this.sortImages(true, this.images)
-  },
-  data: () => ({
-    order: "",
-    images: ["../images/_DSF4726.jpg"],
-    tags: [],
-    activeTags: [],
-    previewPic: false,
-    activeImage: "",
-    unity: false,
-    downloadDialog: false,
-    // showLoadingOverlay: false,
-  }),
-  // watch: {
-  //   unity(newVal, oldVal) {
-  //     // this.showLoadingOverlay = true;
-  //     // setTimeout(() => {
-  //     //   this.showLoadingOverlay = false;
-  //     // }, 2000);
-  //   }
-  // },
-  methods: {
-    isPortrait() {
-      return this.$vuetify.display.mobile
-    },
-    showPic(img) {
-      this.activeImage = img
-      this.previewPic = true
-    },
-    getDate(timestamp) {
-      let date = new Date(timestamp)
-      return date.getFullYear() +
-        "/" + (date.getMonth() + 1) +
-        "/" + date.getDate()
-    },
-    download() {
-      this.downloadDialog = false;
-      window.open(this.activeImage['url']);
-    },
-    sortImages(AlwaysNewToOld = false, images = []) {
-      if (images_sorted.length == 0 || AlwaysNewToOld) {
-        images_sorted = images.sort(function (a, b) { return b["DateTime"] - a["DateTime"] })
-        this.images = images_sorted
-      }
-      else {
-        this.images.reverse()
-      }
-    },
-    appendTag(name) {
-      if (!this.activeTags.includes(name)) {
-        this.activeTags = [
-          ...this.activeTags,
-          name
-        ]
-        this.filterImages()
-      }
-    },
+interface ImageData {
+  url: string
+  thumbnail: string
+  DateTime: number
+  Tags: string[]
+  Camera: string
+}
 
-    removeTag(name) {
-      let tags = this.activeTags
-      tags.splice(name, 1)
-      this.activeTags = [...tags]
-      this.filterImages()
-    },
+const { mobile } = useDisplay()
 
-    filterImages() {
-      let images = images_sorted.filter((img) => {
-        for (let i in this.activeTags) {
-          if (!img["Tags"].includes(this.activeTags[i])) {
-            return false
-          }
-        }
-        return true
-      })
-      this.images = images;
-    }
-  },
-};
+const order = ref("")
+const images = ref<ImageData[]>([])
+const tags = ref<string[]>([])
+const activeTags = ref<string[]>([])
+const previewPic = ref(false)
+const activeImage = ref<ImageData | null>(null)
+const unity = ref(false)
+const downloadDialog = ref(false)
+
+let images_sorted: ImageData[] = []
+
+const isPortrait = () => mobile.value
+
+const showPic = (img: ImageData) => {
+  activeImage.value = img
+  previewPic.value = true
+}
+
+const getDate = (timestamp: number) => {
+  const date = new Date(timestamp)
+  return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
+}
+
+const download = () => {
+  downloadDialog.value = false
+  if (activeImage.value) {
+    window.open(activeImage.value.url)
+  }
+}
+
+const sortImages = (AlwaysNewToOld = false, imagesToSort: ImageData[] = []) => {
+  if (images_sorted.length === 0 || AlwaysNewToOld) {
+    images_sorted = imagesToSort.sort((a, b) => b.DateTime - a.DateTime)
+    images.value = images_sorted
+  } else {
+    images.value = [...images.value].reverse()
+  }
+}
+
+const appendTag = (name: string) => {
+  if (!activeTags.value.includes(name)) {
+    activeTags.value = [...activeTags.value, name]
+    filterImages()
+  }
+}
+
+const removeTag = (name: string) => {
+  const index = activeTags.value.indexOf(name)
+  if (index > -1) {
+    activeTags.value = activeTags.value.filter((_, i) => i !== index)
+    filterImages()
+  }
+}
+
+const filterImages = () => {
+  const filteredImages = images_sorted.filter((img) => {
+    return activeTags.value.every(tag => img.Tags.includes(tag))
+  })
+  images.value = filteredImages
+}
+
+// Watch unity changes to toggle body class
+watch(unity, (newValue) => {
+  document.querySelector('.v-application')?.classList.toggle('unity-active', newValue)
+})
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+  tags.value = [...importedTags].sort()
+  images.value = Object.values(images_imported)
+  sortImages(true, images.value)
+})
+
+// Clean up class on component unmount
+onUnmounted(() => {
+  document.querySelector('.v-application')?.classList.remove('unity-active')
+})
 </script>
 
 <style lang="scss" >
@@ -324,5 +331,24 @@ input:checked {
   width: 100%;
   text-align: end;
   font-size: 1.1rem;
+}
+
+#fullscreen-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-width: 1920px;
+  margin: 24px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide footer when unity mode is active */
+:deep(.v-application) {
+  &.unity-active {
+    .v-footer {
+      display: none;
+    }
+  }
 }
 </style>

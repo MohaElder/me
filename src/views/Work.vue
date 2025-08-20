@@ -504,12 +504,10 @@ h1 {
 }
 </style>
 
-<script>
-export default {
-  data: () => ({}),
-  created() {
-    window.scrollTo(0, 0);
-  },
+<script setup lang="ts">
+import { onMounted } from 'vue'
 
-};
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
 </script>
