@@ -1,0 +1,12 @@
+<\!--
+id: 9e81228ab2d911f08393065d0a49a6f0
+title: We choose which language
+person: tyler
+published: true
+-->
+
+Sorry, I forgot Tyler's name and couldn't find it on Instagram, but he looks like Tyler.
+
+Tyler is a Chinese International Student who I met on one of my first writing class in UCSD. He's from Cheng Du, where Hot Pot and Panda are from. He knows Chinese but always speaks Chinese even with Chinese. I always assumed that he did it to be more foreign (which is cooler in many Chinese people's mind) so never asked why. But one day he told me why: "I just like English better, and who says that a Chinese guy must speak Chinese with Chinese? I just like speaking English."
+
+I think that's pretty cool.

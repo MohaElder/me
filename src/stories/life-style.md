@@ -1,0 +1,10 @@
+<\!--
+id: 9e80ea2cb2d911f08393065d0a49a6f0
+title: I am committed to this Life Style
+person: mars
+published: false
+-->
+
+I heard this from a mutual friend of us. There's one morning Mars got a job interview offer for an Executive Assistant job. She had a conflicting flight back home that day. So she cancelled the flight. When my friend asked her why. Mars said: "Cuz I'm committed to this Life Style."
+
+I said: "That's like a movie moment."

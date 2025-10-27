@@ -10,6 +10,7 @@
       <a class="exhibitions-link" @click.prevent="$router.push({ name: 'LandEmbodied' })" href="#">{{ $t("message.exhibitions_land_embodied") }}</a>
       <a class="exhibitions-link" @click.prevent="$router.push({ name: 'NothingToLose' })" href="#">{{ $t("message.exhibitions_nothing_to_lose") }}</a>
       <a class="exhibitions-link" @click.prevent="$router.push({ name: 'Recipe' })" href="#">{{ $t("message.exhibitions_alcoholic_lab") }}</a>
+      <a class="exhibitions-link" @click.prevent="$router.push({ name: 'InterestingPeople' })" href="#">Interesting People</a>
     </div>
     <div class="exhibitions-image-container">
       <img class="exhibitions-image" src="@/assets/18_hyperreality-china01.jpg" alt="Zeng Han, Hyperreality China01 Beijing Paused Bridge 2006" />

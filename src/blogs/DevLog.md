@@ -1,5 +1,4 @@
-<!-- 
-id: e62d9cc3a94a11ecaf6e68545a57002a
+<!--
 published: true
 type: share
 title: Development Log of this website

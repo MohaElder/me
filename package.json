@@ -6,7 +6,10 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "admin": "concurrently \"pnpm admin:server\" \"pnpm admin:client\"",
+    "admin:server": "cd admin-server && node server.js",
+    "admin:client": "cd admin && pnpm dev"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
@@ -28,9 +31,10 @@
     "@types/webfontloader": "^1.6.38",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/eslint-config-typescript": "^14.6.0",
+    "concurrently": "^8.2.2",
     "eslint": "^9.33.0",
     "eslint-plugin-vue": "^9.33.0",
-    "sass": "^1.90.0",
+    "sass-embedded": "^1.93.2",
     "typescript": "^5.9.2",
     "vite": "^5.4.19",
     "vite-plugin-vuetify": "^2.1.2",

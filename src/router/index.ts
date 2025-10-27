@@ -13,6 +13,7 @@ import OpenSource from '../views/OpenSource.vue'
 import NothingToLose from '../views/NothingToLose.vue'
 import LandEmbodied from '../views/LandEmbodied.vue'
 import Art from '../views/Art.vue'
+import InterestingPeople from '../views/InterestingPeople.vue'
 const appRoot = '/me';
 
 const routes = [
@@ -56,6 +57,11 @@ const routes = [
     component: Blog
   },
   {
+    path: appRoot + '/story',
+    name: 'Story',
+    component: Blog  // Reusing Blog component for stories
+  },
+  {
     path: appRoot + '/final_words',
     name: 'IfIDie',
     component: IfIDie
@@ -74,6 +80,11 @@ const routes = [
     path: appRoot + '/art',
     name: 'Exhibitions',
     component: Art
+  },
+  {
+    path: appRoot + '/interesting-people',
+    name: 'InterestingPeople',
+    component: InterestingPeople
   },
   // {
   //   path: '/guide',

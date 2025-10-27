@@ -27,6 +27,7 @@
 import { ref, onBeforeMount, defineOptions } from 'vue'
 import { useRoute } from 'vue-router'
 import { blogs } from "../utils/blogLink.js"
+import { stories } from "../utils/storyLink.js"
 import MarkdownIt from "markdown-it"
 
 defineOptions({
@@ -46,6 +47,11 @@ interface BlogData {
 // Type guard to check if a blog exists
 const isBlogValid = (id: string): id is keyof typeof blogs => {
   return id in blogs
+}
+
+// Type guard to check if a story exists
+const isStoryValid = (id: string): id is keyof typeof stories => {
+  return id in stories
 }
 
 const route = useRoute()
@@ -120,7 +126,21 @@ const share = (name: string) => {
 onBeforeMount(() => {
   window.scrollTo(0, 0)
   const id = route.query.id as string
-  if (isBlogValid(id)) {
+  const isStoryRoute = route.name === 'Story'
+  
+  if (isStoryRoute && isStoryValid(id)) {
+    // Loading a story
+    const story = stories[id]
+    blog.value = {
+      title: story.title,
+      article: story.article,
+      img: "",
+      img_caption: "",
+      date: "",
+    }
+    getContent()
+  } else if (isBlogValid(id)) {
+    // Loading a blog
     blog.value = blogs[id]
     getContent()
   } else {

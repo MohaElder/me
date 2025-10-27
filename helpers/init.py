@@ -4,9 +4,16 @@ import os
 from PIL import Image
 from PIL.ExifTags import TAGS
 from datetime import datetime
-import climage
 import uuid
 import json
+
+# Try to import climage, but make it optional
+try:
+    import climage
+    HAS_CLIMAGE = True
+except ImportError:
+    HAS_CLIMAGE = False
+    print("Warning: climage not available, thumbnail preview will be disabled")
 
 # compressing image, getting exif information, tagging the image
 
@@ -50,8 +57,11 @@ def getImageData(file, verbose=False):
     if "Make" in exif_data and "Model" in exif_data:
         image_data["Camera"] = exif_data["Make"] + " " + exif_data["Model"]
     # show a bit-format thumbnail of the picture we are tagging
-    print(climage.convert(filepath, is_unicode=True, is_truecolor=True,
-          is_256color=False, is_16color=False, is_8color=False))
+    if HAS_CLIMAGE:
+        print(climage.convert(filepath, is_unicode=True, is_truecolor=True,
+              is_256color=False, is_16color=False, is_8color=False))
+    else:
+        print(f"Preview for: {file}")
 
     # tag input and processing
     tags = input("input tags and seperate by <,>: ").split(",")
@@ -144,51 +154,55 @@ def updateBlogLink(path):
                       myfile.name + " to get all data")
                 org_content = myfile.readlines()
 
-            with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
-                print("Reading markdown file to get header")
-                while content := myfile.readline():
-                    if "-->" in content:
-                        print("End of header")
-                        break
-                    lst = content.split(": ")
-                    if "<!--" in content:
-                        print("Start of header:")
-                    else:
-                        res = lst[1].strip().replace("\n", "")
-                        match lst[0]:
-                            case "id":
-                                if (id := res) == "":
-                                    print("generating id")
-                                    id = uuid.uuid1().hex
-                                org_content[1] = "id: " + id + "\n"
-                                print("id: " + res)
-                            case "published":
-                                print("Published: " + res)
-                                published = True if res == "true" else False
-                            case "type":
-                                print("type: " + res)
-                                if not res in colors.keys():
-                                    print("key not found: " + res)
-                                else:
-                                    color = colors[res]
-                            case "cover":
-                                print("cover: " + res)
-                                img = res
-                            case "title":
-                                print("title: " + res)
-                                title = res
-                            case "brief":
-                                print("brief: " + res)
-                                brief = res
-                            case "date":
-                                print("date: " + res)
-                                date = res
-                            case "cover-caption":
-                                print("cover-caption: " + res)
-                                img_caption = res
-                            case _:
-                                print(
-                                    "warning: possible syntax error at md file heading")
+            # Parse header from org_content directly
+            print("Reading markdown file to get header")
+            for i, line in enumerate(org_content):
+                if "-->" in line:
+                    print("End of header")
+                    break
+                if "<!--" in line:
+                    print("Start of header:")
+                    continue
+
+                # Split on first colon only
+                if ":" in line:
+                    key, _, value = line.partition(":")
+                    key = key.strip()
+                    res = value.strip()
+                    match key:
+                        case "id":
+                            if (id := res) == "":
+                                print("generating id")
+                                id = uuid.uuid1().hex
+                                org_content[i] = "id: " + id + "\n"
+                            print("id: " + id)
+                        case "published":
+                            print("Published: " + res)
+                            published = True if res == "true" else False
+                        case "type":
+                            print("type: " + res)
+                            if not res in colors.keys():
+                                print("key not found: " + res)
+                            else:
+                                color = colors[res]
+                        case "cover":
+                            print("cover: " + res)
+                            img = res
+                        case "title":
+                            print("title: " + res)
+                            title = res
+                        case "brief":
+                            print("brief: " + res)
+                            brief = res
+                        case "date":
+                            print("date: " + res)
+                            date = res
+                        case "cover-caption":
+                            print("cover-caption: " + res)
+                            img_caption = res
+                        case _:
+                            print(
+                                "warning: possible syntax error at md file heading")
 
                 if published:
                     str += \
@@ -214,6 +228,78 @@ def updateBlogLink(path):
     print("blogLink.js Updated!")
 
 
+def updateStoryLink(path):
+    files = os.listdir(path)
+    org_content = ""
+    str = "const stories = {"
+    for file in files:
+        if os.path.isfile(os.path.join(path, file)):
+            id = ""
+            person_name = ""
+            title = ""
+            published = True
+
+            with open(os.path.join(path, file), "r", encoding="utf-8") as myfile:
+                print("Reading markdown file" +
+                      myfile.name + " to get all data")
+                org_content = myfile.readlines()
+
+            # Parse header from org_content directly
+            print("Reading markdown file to get header")
+            for i, line in enumerate(org_content):
+                if "-->" in line:
+                    print("End of header")
+                    break
+                if "<!--" in line:
+                    print("Start of header:")
+                    continue
+
+                # Split on first colon only
+                if ":" in line:
+                    key, _, value = line.partition(":")
+                    key = key.strip()
+                    res = value.strip()
+                    match key:
+                        case "id":
+                            if (id := res) == "":
+                                print("generating id")
+                                id = uuid.uuid1().hex
+                                org_content[i] = "id: " + id + "\n"
+                            print("id: " + id)
+                        case "published":
+                            print("Published: " + res)
+                            published = True if res == "true" else False
+                        case "person":
+                            print("person: " + res)
+                            person_name = res
+                        case "title":
+                            print("title: " + res)
+                            title = res
+                        case _:
+                            print(
+                                "warning: possible syntax error at md file heading")
+
+                if published:
+                    str += \
+                        '"' + id + '''": {
+                    person: "''' + person_name + '''",
+                    title: "''' + title + '''",
+                    article: "https://raw.githubusercontent.com/MohaElder/me/main/src/stories/''' + file + '''",
+                    published: "true",
+                    },
+                    '''
+
+            with open(os.path.join(path, file), "w", encoding="utf-8") as myfile:
+                myfile.writelines(org_content)
+
+    str += "} \n export { stories };"
+
+    with open('../src/utils/storyLink.js', "w", encoding="utf-8") as myfile:
+        myfile.write(str)
+
+    print("storyLink.js Updated!")
+
+
 while True:
     print("This is a helper that updates javascript files, enter 'h' for help")
     command = input("Enter your command: ")
@@ -222,6 +308,7 @@ while True:
         case "h":
             print("image: update images")
             print("blog: update blogs")
+            print("story: update stories")
             print("all: executes all update commands")
             print("help: help screen")
             print("q: quit")
@@ -229,9 +316,12 @@ while True:
             updateImageLink('../src/images')
         case "blog":
             updateBlogLink('../src/blogs')
+        case "story":
+            updateStoryLink('../src/stories')
         case "all":
             updateImageLink('../src/images')
             updateBlogLink('../src/blogs')
+            updateStoryLink('../src/stories')
         case "q":
             print("Exited gracefully")
             break
