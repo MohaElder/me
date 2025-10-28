@@ -1,18 +1,27 @@
 import express from 'express';
 import cors from 'cors';
-import chokidar from 'chokidar';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { dirname } from 'path';
 import storiesRouter from './routes/stories.js';
 import blogsRouter from './routes/blogs.js';
 import peopleRouter from './routes/people.js';
-import { rebuildJSON } from './utils/fileManager.js';
+import { getDatabase, closeDatabase } from './src/db/database.js';
+import { generateAllStaticFiles } from './src/generators/static-files.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
 const PORT = 3001;
+
+// Initialize database on startup
+try {
+  const db = getDatabase();
+  console.log('✅ Database initialized successfully');
+} catch (error) {
+  console.error('❌ Failed to initialize database:', error);
+  process.exit(1);
+}
 
 // Middleware
 app.use(cors({
@@ -32,13 +41,14 @@ app.use('/api/stories', storiesRouter);
 app.use('/api/blogs', blogsRouter);
 app.use('/api/people', peopleRouter);
 
-// Build endpoint
+// Build endpoint - manually trigger static file generation
 app.post('/api/build', async (req, res) => {
   try {
-    const { type = 'all' } = req.body;
-    const result = await rebuildJSON(type);
-    res.json({ success: true, ...result });
+    console.log('📝 Manual build triggered...');
+    await generateAllStaticFiles();
+    res.json({ success: true, message: 'Static files generated successfully' });
   } catch (error) {
+    console.error('❌ Build failed:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -46,35 +56,6 @@ app.post('/api/build', async (req, res) => {
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
-});
-
-// File watcher for auto-rebuild (optional, can be disabled if too aggressive)
-const STORIES_DIR = join(__dirname, '../src/stories');
-const BLOGS_DIR = join(__dirname, '../src/blogs');
-
-let rebuildTimeout;
-const watcherOptions = {
-  ignored: /(^|[\/\\])\../, // ignore dotfiles
-  persistent: true,
-  ignoreInitial: true
-};
-
-const watcher = chokidar.watch([STORIES_DIR, BLOGS_DIR], watcherOptions);
-
-watcher.on('change', (path) => {
-  console.log(`File changed: ${path}`);
-  
-  // Debounce rebuilds
-  clearTimeout(rebuildTimeout);
-  rebuildTimeout = setTimeout(async () => {
-    try {
-      console.log('Auto-rebuilding JSON files...');
-      await rebuildJSON('all');
-      console.log('JSON files rebuilt successfully');
-    } catch (error) {
-      console.error('Error auto-rebuilding:', error);
-    }
-  }, 1000);
 });
 
 // Error handling
@@ -86,7 +67,7 @@ app.use((err, req, res, next) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`\n🚀 Admin Server running on http://localhost:${PORT}`);
-  console.log(`📁 Watching for file changes...`);
+  console.log(`📦 SQLite database: content.db`);
   console.log(`\nAvailable endpoints:`);
   console.log(`  - GET    /api/stories`);
   console.log(`  - GET    /api/stories/:id`);
@@ -98,6 +79,11 @@ app.listen(PORT, () => {
   console.log(`  - POST   /api/blogs`);
   console.log(`  - PUT    /api/blogs/:id`);
   console.log(`  - DELETE /api/blogs/:id`);
+  console.log(`  - GET    /api/people`);
+  console.log(`  - GET    /api/people/:id`);
+  console.log(`  - POST   /api/people`);
+  console.log(`  - PUT    /api/people/:id`);
+  console.log(`  - DELETE /api/people/:id`);
   console.log(`  - POST   /api/build`);
   console.log(`  - GET    /api/health\n`);
 });
@@ -105,7 +91,12 @@ app.listen(PORT, () => {
 // Graceful shutdown
 process.on('SIGTERM', () => {
   console.log('SIGTERM received, closing server...');
-  watcher.close();
+  closeDatabase();
   process.exit(0);
 });
 
+process.on('SIGINT', () => {
+  console.log('\nSIGINT received, closing server...');
+  closeDatabase();
+  process.exit(0);
+});

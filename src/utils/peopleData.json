@@ -1,6 +1,16 @@
 {
   "people": [
     {
+      "id": "jerry",
+      "name": "Jerry",
+      "IMetThemAt": "Slab City"
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "IMetThemAt": "The Spot @UCSD"
+    },
+    {
       "id": "john-doe",
       "name": "Rapter",
       "IMetThemAt": "The Spot @UCSD"
@@ -9,16 +19,6 @@
       "id": "tyler",
       "name": "Tyler",
       "IMetThemAt": "A class in UCSD"
-    },
-    {
-      "id": "mars",
-      "name": "Mars",
-      "IMetThemAt": "The Spot @UCSD"
-    },
-    {
-      "id": "jerry",
-      "name": "Jerry",
-      "IMetThemAt": "Slab City"
     }
   ]
 }

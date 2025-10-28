@@ -1,35 +1,33 @@
 import express from 'express';
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { peopleRepo } from '../src/db/database.js';
+import { generateAllStaticFiles } from '../src/generators/static-files.js';
 
 const router = express.Router();
-const PEOPLE_FILE = path.join(__dirname, '../../src/utils/peopleData.json');
 
-// Helper to read people data
-async function readPeople() {
-  try {
-    const data = await fs.readFile(PEOPLE_FILE, 'utf-8');
-    return JSON.parse(data);
-  } catch (error) {
-    // If file doesn't exist, return empty structure
-    return { people: [] };
-  }
-}
-
-// Helper to write people data
-async function writePeople(data) {
-  await fs.writeFile(PEOPLE_FILE, JSON.stringify(data, null, 2), 'utf-8');
+/**
+ * Helper to trigger static file generation
+ */
+function triggerBuild() {
+  // Generate files asynchronously, don't block response
+  setImmediate(() => {
+    try {
+      generateAllStaticFiles();
+    } catch (err) {
+      console.error('Error generating static files:', err);
+    }
+  });
 }
 
 // Get all people
 router.get('/', async (req, res) => {
   try {
-    const data = await readPeople();
-    res.json(data.people);
+    const people = peopleRepo.getAll();
+    const formatted = people.map(person => ({
+      id: person.id,
+      name: person.name,
+      IMetThemAt: person.met_at
+    }));
+    res.json(formatted);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -38,14 +36,17 @@ router.get('/', async (req, res) => {
 // Get single person
 router.get('/:id', async (req, res) => {
   try {
-    const data = await readPeople();
-    const person = data.people.find(p => p.id === req.params.id);
-    
+    const person = peopleRepo.getById(req.params.id);
+
     if (!person) {
       return res.status(404).json({ error: 'Person not found' });
     }
-    
-    res.json(person);
+
+    res.json({
+      id: person.id,
+      name: person.name,
+      IMetThemAt: person.met_at
+    });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -55,25 +56,28 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const { id, name, IMetThemAt } = req.body;
-    
+
     if (!id || !name) {
-      return res.status(400).json({ error: 'Missing required fields' });
+      return res.status(400).json({ error: 'Missing required fields (id, name)' });
     }
-    
-    const data = await readPeople();
-    
-    // Check if person with this ID already exists
-    if (data.people.find(p => p.id === id)) {
+
+    const newPerson = {
+      id: id,
+      name: name,
+      met_at: IMetThemAt || ''
+    };
+
+    peopleRepo.create(newPerson);
+
+    // Trigger static file generation
+    triggerBuild();
+
+    res.json({ success: true, person: { id, name, IMetThemAt: IMetThemAt || '' } });
+  } catch (error) {
+    // Check if it's a unique constraint error
+    if (error.message.includes('UNIQUE constraint failed')) {
       return res.status(400).json({ error: 'Person with this ID already exists' });
     }
-    
-    const newPerson = { id, name, IMetThemAt: IMetThemAt || '' };
-    data.people.push(newPerson);
-    
-    await writePeople(data);
-    
-    res.json({ success: true, person: newPerson });
-  } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
@@ -82,27 +86,22 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     const { name, IMetThemAt } = req.body;
-    
+
     if (!name) {
-      return res.status(400).json({ error: 'Missing required fields' });
+      return res.status(400).json({ error: 'Missing required field: name' });
     }
-    
-    const data = await readPeople();
-    const personIndex = data.people.findIndex(p => p.id === req.params.id);
-    
-    if (personIndex === -1) {
-      return res.status(404).json({ error: 'Person not found' });
-    }
-    
-    data.people[personIndex] = {
-      ...data.people[personIndex],
-      name,
-      IMetThemAt: IMetThemAt || ''
+
+    const updates = {
+      name: name,
+      met_at: IMetThemAt || ''
     };
-    
-    await writePeople(data);
-    
-    res.json({ success: true, person: data.people[personIndex] });
+
+    peopleRepo.update(req.params.id, updates);
+
+    // Trigger static file generation
+    triggerBuild();
+
+    res.json({ success: true, person: { id: req.params.id, name, IMetThemAt: IMetThemAt || '' } });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -111,22 +110,21 @@ router.put('/:id', async (req, res) => {
 // Delete person
 router.delete('/:id', async (req, res) => {
   try {
-    const data = await readPeople();
-    const personIndex = data.people.findIndex(p => p.id === req.params.id);
-    
-    if (personIndex === -1) {
-      return res.status(404).json({ error: 'Person not found' });
-    }
-    
-    data.people.splice(personIndex, 1);
-    
-    await writePeople(data);
-    
+    peopleRepo.delete(req.params.id);
+
+    // Trigger static file generation
+    triggerBuild();
+
     res.json({ success: true, id: req.params.id });
   } catch (error) {
+    // Check if it's a foreign key constraint error
+    if (error.message.includes('FOREIGN KEY constraint failed')) {
+      return res.status(400).json({
+        error: 'Cannot delete person: they have associated stories. Delete the stories first.'
+      });
+    }
     res.status(500).json({ error: error.message });
   }
 });
 
 export default router;
-
