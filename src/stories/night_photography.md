@@ -12,3 +12,4 @@ At the photography workshop in La Jolla, Jane taught me a technique that revolut
 She showed me how to balance artificial lights with natural ambient light, creating layers of depth that made the night come alive. The key, she said, was to see the darkness not as an absence of light, but as a canvas where different light sources paint the scene.
 
 That night, we photographed the pier for hours, and I finally understood what she meant. Every shot was a carefully orchestrated dance between streetlights, moonlight, and the distant glow of the city.
+

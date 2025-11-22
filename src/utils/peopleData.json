@@ -1,6 +1,11 @@
 {
   "people": [
     {
+      "id": "cameron",
+      "name": "Cameron",
+      "IMetThemAt": "Fort Nelson, Canada"
+    },
+    {
       "id": "jerry",
       "name": "Jerry",
       "IMetThemAt": "Slab City"
@@ -22,3 +27,4 @@
     }
   ]
 }
+

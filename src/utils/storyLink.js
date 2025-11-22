@@ -1,4 +1,10 @@
 const stories = {
+          "cameron": {
+                    "person": "cameron",
+                    "title": "The Big Hole, Man with One Eye, and Comic Book",
+                    "article": "https://raw.githubusercontent.com/MohaElder/me/main/src/stories/cameron.md",
+                    "published": "true"
+          },
           "eec4e5e8b2e711f08e33065d0a49a6f0": {
                     "person": "jerry",
                     "title": "The Mist of War",
