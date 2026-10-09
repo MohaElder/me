@@ -57,7 +57,8 @@
       </button>
     </Transition>
 
-    <dialog ref="viewer" class="viewer" @close="current = null" @keydown.left="step(-1)" @keydown.right="step(1)">
+    <dialog ref="viewer" class="viewer" @close="current = null" @click.self="viewer?.close()"
+      @keydown.left="step(-1)" @keydown.right="step(1)">
       <template v-if="current">
         <!-- Darkroom: the thumbnail shows as a negative, the enlarger flashes, and the
              print develops from white paper; the full photo fades in once it arrives. -->
