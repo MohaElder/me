@@ -111,7 +111,6 @@ const changeLanguage = () => {
 .liquid-glass-app-bar {
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow:
@@ -139,7 +138,6 @@ const changeLanguage = () => {
   position: relative;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   overflow: hidden;
