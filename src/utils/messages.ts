@@ -20,12 +20,6 @@ const messages = {
                 e: " for fun."
             },
             and: " & ",
-            statement: {
-                longName: "Make Love, Not War",
-                shortName: "🇵🇸❤️🇮🇱❤️🌍",
-                hashtag: "#ForABetterWorld",
-                link: "https://news.un.org/en/story/2023/10/1142432"
-            },
             podcast: "Podcast",
             resume: "Resume",
             download: "Get Resume",
@@ -167,12 +161,6 @@ const messages = {
                 e: "。"
             },
             and: "和",
-            statement: {
-                longName: "中国不需要独裁者",
-                shortName: "中国不需要独裁者",
-                hashtag: "#中国不要独裁",
-                link: "https://www.dw.com/zh/%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%BF%9E%E4%BB%BB%E6%80%BB%E4%B9%A6%E8%AE%B0-%E4%B9%A0%E5%AE%B6%E5%86%9B%E5%8C%85%E6%8F%BD%E6%94%BF%E6%B2%BB%E5%B1%80%E5%B8%B8%E5%A7%94/a-63530743"
-            },
             podcast: "文章与播客",
             resume: "简历",
             download: "英文简历",

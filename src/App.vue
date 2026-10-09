@@ -36,13 +36,6 @@
       <v-btn @click="changeLanguage()" text>
         中/EN
       </v-btn>
-
-      <v-btn :href="$t('message.statement.link')" target="_blank">
-        <span v-if="$vuetify.display.mobile">
-          {{ $t("message.statement.shortName") }}
-        </span>
-        <span v-else> {{ $t("message.statement.longName") }} </span>
-      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" app bottom temporary class="bg-dark">
@@ -107,7 +100,6 @@
           {{ new Date().getFullYear() }} —
           <strong class="footer-brand">
             MOHAELDER
-            <span> {{ $t("message.statement.hashtag") }} </span>
           </strong>
         </p>
       </div>
