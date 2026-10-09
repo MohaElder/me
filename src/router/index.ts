@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '../views/Home.vue'
+import { titleOf } from '../seo'
 // import Guide from '../views/Guide.vue'
 const appRoot = '/me';
 
@@ -94,6 +95,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.afterEach(to => {
+  document.title = titleOf(to.path.slice(appRoot.length + 1).replace(/\/$/, ''))
 })
 
 export default router

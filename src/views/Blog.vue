@@ -137,7 +137,9 @@ onBeforeMount(() => {
     getContent()
   } else {
     fileContent.value = blog.value.article
+    return
   }
+  document.title = `${blog.value.title} · Yasushi Oh`
 })
 </script>
 
