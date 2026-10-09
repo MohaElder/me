@@ -307,15 +307,16 @@ onMounted(() => {
 
 .awards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .award {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  font-size: 14px;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.4;
   letter-spacing: 0;
   color: #CFCFCF;
 }
@@ -370,7 +371,7 @@ onMounted(() => {
   }
 
   .awards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 </style>
