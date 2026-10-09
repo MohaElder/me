@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build Vue
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
     - name: Use PNPM
       uses: pnpm/action-setup@v4
       with:

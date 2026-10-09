@@ -2,6 +2,7 @@
   "name": "me",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -16,23 +17,23 @@
     "@mdi/font": "7.4.47",
     "crypto-js": "^4.2.0",
     "markdown-it": "^14.1.0",
-    "vue": "^3.5.18",
+    "vue": "^3.5.43",
     "vue-i18n": "^10.0.8",
-    "vue-router": "^4.5.1",
+    "vue-router": "^5.4.0",
     "vuetify": "^3.9.5"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.17.2",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.9",
     "@vue/eslint-config-typescript": "^14.6.0",
     "concurrently": "^8.2.2",
     "eslint": "^9.33.0",
     "eslint-plugin-vue": "^9.33.0",
     "sass-embedded": "^1.93.2",
-    "typescript": "^5.9.2",
-    "vite": "^5.4.19",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.3",
     "vite-plugin-vuetify": "^2.1.2",
-    "vue-tsc": "^2.2.12"
+    "vue-tsc": "^3.3.12"
   }
 }

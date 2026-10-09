@@ -1,5 +1,4 @@
 # Dependencies allowed to run install scripts.
 allowBuilds:
-  esbuild: true          # installs Vite's platform binary
+  esbuild: true # installs Vite's platform binary
   '@parcel/watcher': false # ships prebuilt binaries
-
