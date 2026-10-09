@@ -23,8 +23,6 @@
         </span>
           <span class="app-bar-item" @click="$router.push({ name: 'OpenSource' }).catch(() => { })" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_open_source") }}</span>
-          <span class="app-bar-item" @click="$router.push({ name: 'Blogs' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Blogs' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_blogs") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'IfIDie' }).catch(() => { })" :style="$router.currentRoute.value.name == 'IfIDie' ? 'color: #FDDA3A' : ''">{{
             $t("message.nav_if_i_die") }}</span>
           <span class="app-bar-item" @click="$router.push({ name: 'LetterToFutureAI' }).catch(() => { })" :style="$router.currentRoute.value.name == 'LetterToFutureAI' ? 'color: #FDDA3A' : ''">{{
@@ -63,11 +61,6 @@
           <v-list-item>
             <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{
               $t("message.nav_open_source")
-              }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Blogs' }).catch(() => { })">{{
-              $t("message.nav_blogs")
               }}</v-list-item-title>
           </v-list-item>
           <v-list-item>
