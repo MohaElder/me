@@ -27,8 +27,8 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
   renderer.toneMapping = THREE.ACESFilmicToneMapping
   renderer.toneMappingExposure = 1
   renderer.shadowMap.enabled = true
-  // Filtered shadows with a soft kernel (shadow.radius below).
-  renderer.shadowMap.type = THREE.PCFShadowMap
+  // Variance shadow maps give the soft, blurred edge of real sunlight.
+  renderer.shadowMap.type = THREE.VSMShadowMap
   container.append(renderer.domElement)
 
   const scene = new THREE.Scene()
@@ -72,7 +72,8 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
   sun.shadow.camera.near = 8
   sun.shadow.camera.far = 22
   sun.shadow.bias = -0.0003
-  sun.shadow.radius = mobile ? 2 : 3
+  sun.shadow.radius = mobile ? 4 : 8
+  sun.shadow.blurSamples = mobile ? 12 : 24 // enough samples for the radius to avoid banding
   const fill = new THREE.DirectionalLight(0xfff6ec, 0.35)
   fill.position.set(-3, 4, 6)
   const sky = new THREE.HemisphereLight(0x3a3d42, 0x0c0b0a, 1)
@@ -222,7 +223,6 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
   labelCanvas.width = 720
   labelCanvas.height = 400
   const label = textPlane(labelCanvas, 0.34, 0.008)
-  label.mesh.castShadow = true
   let labelInfo: { photo: RoomPhoto, index: number, total: number } | null = null
   let labelProgress: number | null = null
   const drawLabel = () => {
