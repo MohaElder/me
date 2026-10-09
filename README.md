@@ -2,24 +2,9 @@
 
 The source of my personal website, [mohaelder.github.io/me](https://mohaelder.github.io/me/), in English and Chinese.
 
-## Pages
-
-- **Hi**: night sky frames that change as you scroll.
-- **Me**: who I am and what I've worked on, kept in step with my resume.
-- **Photo**: about a thousand of my photos, filterable by tag. Opening one plays a "darkroom" animation: the thumbnail shows as a film negative, then develops into the full-resolution print. **Room** shows the same photos one at a time, in a sunlit 3D gallery built with Three.js.
-- **Exhibitions**: write-ups of past shows.
-- **Open Source**: projects I've built in the open.
-- **If I Die**: letters sealed with AES that only their recipient's key can open.
-- **To AI**: a letter to future AI.
-
 ## Tech
 
-- [Vue 3](https://vuejs.org/) + [Vite](https://vite.dev/) + TypeScript. No UI framework: plain CSS on a 12-column grid.
-- [vue-router](https://router.vuejs.org/). Every page except Hi loads on demand.
-- [Three.js](https://threejs.org/) for the Room view. It only downloads when Room is opened.
-- [markdown-it](https://github.com/markdown-it/markdown-it) renders blog posts and letters. [crypto-js](https://github.com/brix/crypto-js) opens the sealed letters.
-- Translations come from a 15-line lookup (`src/i18n.ts`) over `src/utils/messages.ts`.
-- Helvetica Neue is a webfont, so the site looks the same on Windows.
+Vue 3, Vite and TypeScript with plain CSS, no UI framework. Three.js renders the 3D gallery.
 
 ## Development
 
@@ -32,15 +17,9 @@ pnpm build      # type-check + production build into dist/
 pnpm preview    # serve the production build
 ```
 
-## Content
-
-- **Photos and blog posts**: `helpers/init.py` (Python 3 with Pillow) runs a small terminal menu. For photos, it compresses the originals, makes thumbnails, reads the EXIF data, asks for tags, and updates `src/utils/imageLink.json`. That file records each thumbnail's size, so the grid can lay out tiles before they load. It also drops entries whose files are gone. For blog posts, it reads each Markdown file's metadata into `src/utils/blogLink.js`.
-- **Admin dashboard**: `pnpm admin` starts a local editor for stories and blog posts with a live Markdown preview. See [ADMIN_GUIDE.md](ADMIN_GUIDE.md).
-- **If I Die letters**: `pnpm encrypt "<message>" "<key>"` seals a letter (Markdown) and appends it to `src/utils/eulogies.json`. Then give the key to the person it's for. The page only stores encrypted text, with no recipient names.
-
 ## Deploy
 
-Pushing to `main` runs GitHub Actions (`.github/workflows/main.yml`). It builds the site and publishes `dist/` to the `gh-pages` branch for GitHub Pages.
+Pushing to `main` builds the site with GitHub Actions and publishes it to GitHub Pages.
 
 ## Credits
 
@@ -50,8 +29,46 @@ Pushing to `main` runs GitHub Actions (`.github/workflows/main.yml`). It builds 
 
 ## History
 
-- **2026/10**: Removed Vuetify, vue-i18n, animate.css and the other unused dependencies. First load went from 252 KB to 49 KB of compressed JavaScript and from 105 KB to 2.4 KB of CSS. Upgraded to Vite 8, vue-router 5 and TypeScript 6. Redesigned the Me, Open Source, If I Die and Photo pages. Rebuilt the 3D gallery in Three.js so it also runs on phones.
-- **2025/8**: Vue 3.5, UI overhaul.
-- **2023/3**: Moved from Vue 2 to Vue 3 and from Vue CLI to Vite. The Vue 2 site lives in the [vue2](https://github.com/MohaElder/me/tree/vue2) branch.
-- **2022/11**: English and Chinese translations.
-- **2022/8**: First 3D gallery, built with Unity WebGL.
+### 2022
+
+- **Jan 12**: Repository created.
+- **Mar 4**: First Vue site (Vue 2, Vue CLI, Vuetify): Hi, Work, Photos. A Python script (`helpers/init.py`) acts as the backend for photos and posts.
+- **Mar 9**: Hi page gets its scroll-driven frame animation.
+- **Mar 17**: Blog.
+- **Apr 2**: If I Die, a page of last words.
+- **Apr 16**: Recipe page.
+- **Apr 18**: If I Die letters sealed with AES.
+- **Jul 19**: Gallery mode: a 3D photo gallery built in Unity, running in WebGL.
+- **Jul 25**: Images move to a CDN.
+- **Aug 28**: Open Source page.
+- **Nov 7**: English and Chinese translations with vue-i18n, plus a Chinese resume.
+- **Nov 30**: Photo tag filters and sorting.
+
+### 2023
+
+- **Jan 28**: Photo thumbnails, which fixed loading on phones.
+- **Mar 4**: Vue 2 → Vue 3, Vue CLI → Vite, Vuetify 2 → Vuetify 3, Markdown through markdown-it. Work page becomes **Me**. The Vue 2 site lives in the [vue2](https://github.com/MohaElder/me/tree/vue2) branch.
+- **Oct 18**: New font, links open in new tabs, better blog typography.
+- **Dec 25**: Photos page rework (masonry layout, download dialog, grid/gallery switch), new sky frames on Hi.
+
+### 2024
+
+- **Jan 19**: Switched to pnpm.
+- **Nov 3**: Frosted-glass top bar and footer.
+- **Dec 10**: Exhibition write-up for *Nothing to Lose*.
+
+### 2025
+
+- **Mar 11**: Exhibition write-up for *Land Embodied*.
+- **Jul 11**: UI overhaul with an OLED-friendly black look, Exhibitions page.
+- **Aug 20**: Vue 3.5, performance pass, more TypeScript.
+- **Oct 27**: Stories and Interesting People pages, managed from a local admin dashboard backed by SQLite.
+
+### 2026
+
+- **Oct 8**: The big cleanup.
+  - Removed Vuetify, vue-i18n, animate.css and other unused packages. First-load JavaScript went from 252 KB to 49 KB compressed, and CSS from 105 KB to 2.4 KB.
+  - Upgraded to Vite 8, vue-router 5, TypeScript 6 and pnpm 11. Every page except Hi now loads on demand.
+  - Redesigned Me, Open Source, If I Die and Photos. Photos gets a darkroom viewer that develops each print from a negative.
+  - Rebuilt the 3D gallery in Three.js as Room, which also works on phones.
+  - Added a letter to future AI.
