@@ -20,3 +20,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Generated: the admin's local database (rebuild with `pnpm migrate` in admin-server) and Python caches
+content.db*
+__pycache__/
