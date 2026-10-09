@@ -4,12 +4,11 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { locale } from '../i18n'
 import MarkdownIt from 'markdown-it'
 import en from '../letters/future-ai.en.md?raw'
 import zh from '../letters/future-ai.zh.md?raw'
 
-const { locale } = useI18n()
 const md = new MarkdownIt()
 const letters = { en: md.render(en), zh: md.render(zh) }
 const html = computed(() => (locale.value === 'zh' ? letters.zh : letters.en))

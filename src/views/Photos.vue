@@ -110,7 +110,7 @@
 
 <script setup lang="ts">
 import { computed, nextTick, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { t } from '../i18n'
 import moon from '../assets/moon.svg'
 import pipe from '../assets/pipe.svg'
 
@@ -135,7 +135,6 @@ if (!document.getElementById('font-la-belle-aurore')) {
 
 const PAGE = 48
 const DEVELOP_MS = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 2600
-const { t } = useI18n()
 
 const photos = ref<Photo[]>([])
 const catalogLoaded = ref(false)

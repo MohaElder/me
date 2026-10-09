@@ -13,7 +13,7 @@
           <a class="resume-btn" href="https://github.com/MohaElder/me/raw/main/src/assets/yasushi_resume.pdf">
             {{ $t("message.download") }}<Icon name="arrow-down" :size="18" />
           </a>
-          <a v-if="$i18n.locale == 'zh'" class="resume-btn"
+          <a v-if="locale == 'zh'" class="resume-btn"
             href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf">
             中文简历<Icon name="arrow-down" :size="18" />
           </a>
@@ -85,6 +85,7 @@
 <script setup lang="ts">
 import Icon from '../components/Icon.vue'
 import { onMounted } from 'vue'
+import { locale } from '../i18n'
 import analogSparks2025 from '../assets/analog_sparks_2025.png'
 import ipa2026Selection from '../assets/ipa2026_selection.png'
 import ipa2025 from '../assets/ipa2025.png'

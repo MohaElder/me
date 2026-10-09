@@ -17,7 +17,6 @@
     "crypto-js": "^4.2.0",
     "markdown-it": "^14.1.0",
     "vue": "^3.5.43",
-    "vue-i18n": "^10.0.8",
     "vue-router": "^5.4.0"
   },
   "devDependencies": {

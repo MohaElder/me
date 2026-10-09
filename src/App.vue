@@ -43,7 +43,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { useI18n } from 'vue-i18n'
+import { locale } from './i18n'
 import vueIcon from './components/vue-icon.vue'
 import Icon from './components/Icon.vue'
 import { useDisplay } from './composables/useDisplay'
@@ -58,7 +58,6 @@ const nav = [
   { name: 'LetterToFutureAI', label: 'message.nav_to_ai' },
 ]
 
-const i18n = useI18n()
 const route = useRoute()
 const { mobile } = useDisplay()
 const drawer = ref(false)
@@ -66,7 +65,7 @@ const drawer = ref(false)
 watch(() => route.fullPath, () => (drawer.value = false))
 
 const changeLanguage = () => {
-  i18n.locale.value = i18n.locale.value === "en" ? "zh" : "en"
+  locale.value = locale.value === "en" ? "zh" : "en"
 }
 </script>
 
