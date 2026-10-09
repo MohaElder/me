@@ -28,9 +28,9 @@ const messages = {
             commercial: "For commercial please click here",
                         photo_usage_note: "Non-commercial: Please give credit to the name 'Yasushi Oh' or \
             'Anzhi Weng' or '翁安志' or 'お やすし' (your choice :))",
-            open_source: "Open Source Projects",
-            open_source_desc: "I believe Open Source is key to a fair and open internet. It powers much of our world, and I hope to contribute meaningfully to it. Below are some of my projects—feel free to explore, star, or contribute. I also have other public repos that might interest you! You may find my other repos ",
-            open_source_desc_3_link: "here",
+            open_source_desc: "Open source keeps the internet fair and open. Here's what I've built in the open.",
+            open_source_all: "All repos on GitHub",
+            open_source_view: "View repo",
 
             if_i_die_brief: "Hello! Welcome to this page. This page hosts my final words. \
             The page would non-periodically update until the day finally comes",
@@ -123,9 +123,9 @@ const messages = {
             commercial: "商业使用请点击此处",
                         photo_usage_note: "非商业: 请标注下列任意名字为作者： 'Yasushi Oh' 或 \
             'Anzhi Weng' 或 '翁安志' 或 'お やすし' (你的选择 :))",
-            open_source: "开源项目",
-            open_source_desc: "我相信开源是实现公平开放互联网的关键。它支撑着我们的世界，而我希望能为其贡献一份力量。下面是我的一些项目，欢迎浏览、点星或参与贡献。还有其他公开的仓库也值得一看！",
-            open_source_desc_3_link: "其他Repo",
+            open_source_desc: "开源让互联网保持公平与开放。这些是我公开构建的项目。",
+            open_source_all: "GitHub 上的全部仓库",
+            open_source_view: "查看仓库",
             if_i_die_brief: " 您好，欢迎访问这个页面。这个页面包含了我的遗言，以及遗嘱。本页面将会不定期更新，直至其正式生效。",
             if_i_die_music: "请在我的葬礼播放以下歌曲:",
             if_i_die_encryption_note: "以下数据为我的遗言，皆进行了AES-128加密，可通过相应的key解密",
