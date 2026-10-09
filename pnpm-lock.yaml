@@ -4,21 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  postcss@<8.4.31: '>=8.4.31'
-  vite@>=3.0.0 <=3.2.7: '>=3.2.8'
-  vite@>=3.0.0 <=3.2.8: '>=3.2.10'
-  word-wrap@<1.2.4: '>=1.2.4'
-  braces@<3.0.3: '>=3.0.3'
-  semver@>=7.0.0 <7.5.2: '>=7.5.2'
-  semver@>=6.0.0 <6.3.1: '>=6.3.1'
-  vite@>=3.0.2 <3.2.7: '>=3.2.7'
-  micromatch@<4.0.8: '>=4.0.8'
-  vue-template-compiler@>=2.0.0 <3.0.0: '>=3.0.0'
-  vite@<3.2.11: '>=3.2.11'
-  vite@<=3.2.10: '>=3.2.11'
-  rollup@<2.79.2: '>=2.79.2'
-
 importers:
 
   .:
@@ -26,21 +11,12 @@ importers:
       '@mdi/font':
         specifier: 7.4.47
         version: 7.4.47
-      animate.css:
-        specifier: ^4.1.1
-        version: 4.1.1
-      core-js:
-        specifier: ^3.45.1
-        version: 3.45.1
       crypto-js:
         specifier: ^4.2.0
         version: 4.2.0
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
-      roboto-fontface:
-        specifier: ^0.10.0
-        version: 0.10.0
       vue:
         specifier: ^3.5.18
         version: 3.5.18(typescript@5.9.2)
@@ -50,15 +26,9 @@ importers:
       vue-router:
         specifier: ^4.5.1
         version: 4.5.1(vue@3.5.18(typescript@5.9.2))
-      vue3-lazyload:
-        specifier: ^0.3.8
-        version: 0.3.8(vue@3.5.18(typescript@5.9.2))
       vuetify:
         specifier: ^3.9.5
         version: 3.9.5(typescript@5.9.2)(vite-plugin-vuetify@2.1.2)(vue@3.5.18(typescript@5.9.2))
-      webfontloader:
-        specifier: ^1.6.28
-        version: 1.6.28
     devDependencies:
       '@types/markdown-it':
         specifier: ^14.1.2
@@ -66,9 +36,6 @@ importers:
       '@types/node':
         specifier: ^22.17.2
         version: 22.17.2
-      '@types/webfontloader':
-        specifier: ^1.6.38
-        version: 1.6.38
       '@vitejs/plugin-vue':
         specifier: ^5.2.4
         version: 5.2.4(vite@5.4.19(@types/node@22.17.2)(sass-embedded@1.93.2)(sass@1.93.2))(vue@3.5.18(typescript@5.9.2))
@@ -569,9 +536,6 @@ packages:
   '@types/node@22.17.2':
     resolution: {integrity: sha512-gL6z5N9Jm9mhY+U2KXZpteb+09zyffliRkZyZOHODGATyC5B1Jt/7TzuuiLkFsSUMLbS1OLmlj/E+/3KF4Q/4w==}
 
-  '@types/webfontloader@1.6.38':
-    resolution: {integrity: sha512-kUaF72Fv202suFx6yBrwXqeVRMx7hGtJTesyESZgn9sEPCUeDXm2p0SiyS1MTqW74nQP4p7JyrOCwZ7pNFns4w==}
-
   '@typescript-eslint/eslint-plugin@8.40.0':
     resolution: {integrity: sha512-w/EboPlBwnmOBtRbiOvzjD+wdiZdgFeo17lkltrtn7X37vagKKWJABvyfsJXTlHe6XBzugmYgd4A4nW+k8Mixw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -723,9 +687,6 @@ packages:
   alien-signals@1.0.13:
     resolution: {integrity: sha512-OGj9yyTnJEttvzhTUWuscOvtqxq5vrhF7vL9oS0xJ2mK0ItPYP1/y+vCFebfxoEyAz0++1AIwJ5CMr+Fk3nDmg==}
 
-  animate.css@4.1.1:
-    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
-
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -789,9 +750,6 @@ packages:
     resolution: {integrity: sha512-1dP4gpXFhei8IOtlXRE/T/4H88ElHgTiUzh71YUmtjTEHMSRS2Z/fgOxHSxxusGHogsRfxNq1vyAwxSC+EVyDg==}
     engines: {node: ^14.13.0 || >=16.0.0}
     hasBin: true
-
-  core-js@3.45.1:
-    resolution: {integrity: sha512-L4NPsJlCfZsPeXukyzHFlg/i7IIVwHSItR0wg0FLNqYClJ4MQYTYLbC7EkjKYRLZF2iof2MUgN0EGy7MdQFChg==}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1173,9 +1131,6 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  roboto-fontface@0.10.0:
-    resolution: {integrity: sha512-OlwfYEgA2RdboZohpldlvJ1xngOins5d7ejqnIBWr9KaMxsnBqotpptRXTyfNRLnFpqzX6sTDt+X+a+6udnU8g==}
-
   rollup@4.46.4:
     resolution: {integrity: sha512-YbxoxvoqNg9zAmw4+vzh1FkGAiZRK+LhnSrbSrSXMdZYsRPDWoshcSd/pldKRO6lWzv/e9TiJAVQyirYIeSIPQ==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
@@ -1459,17 +1414,6 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
-  vue-demi@0.12.5:
-    resolution: {integrity: sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==}
-    engines: {node: '>=12'}
-    hasBin: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-
   vue-eslint-parser@10.2.0:
     resolution: {integrity: sha512-CydUvFOQKD928UzZhTp4pr2vWz1L+H99t7Pkln2QSPdvmURT0MoC4wUccfCnuEaihNsu9aYYyk+bep8rlfkUXw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1500,15 +1444,6 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
-  vue3-lazyload@0.3.8:
-    resolution: {integrity: sha512-UiJHRT7mzry102WbhtrRgJh+f8Z8u4Z+H1RU4dvPmQeq7wFSDFxZB9iJOWGihH2FscXN/8rMGLDOQJAmjwqpCg==}
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^2.0.0 || >=3.0.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-
   vue@3.5.18:
     resolution: {integrity: sha512-7W4Y4ZbMiQ3SEo+m9lnoNpV9xG7QVMLa+/0RFwwiAVkeYoyGXqWE85jabU4pllJNUzqfLShJ5YLptewhCWUgNA==}
     peerDependencies:
@@ -1532,9 +1467,6 @@ packages:
         optional: true
       webpack-plugin-vuetify:
         optional: true
-
-  webfontloader@1.6.28:
-    resolution: {integrity: sha512-Egb0oFEga6f+nSgasH3E0M405Pzn6y3/9tOVanv/DLfa1YBIgcv90L18YyWnvXkRbIM17v5Kv6IT2N6g1x5tvQ==}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -1880,8 +1812,6 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/webfontloader@1.6.38': {}
-
   '@typescript-eslint/eslint-plugin@8.40.0(@typescript-eslint/parser@8.40.0(eslint@9.33.0)(typescript@5.9.2))(eslint@9.33.0)(typescript@5.9.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
@@ -2100,8 +2030,6 @@ snapshots:
 
   alien-signals@1.0.13: {}
 
-  animate.css@4.1.1: {}
-
   ansi-regex@5.0.1: {}
 
   ansi-styles@4.3.0:
@@ -2168,8 +2096,6 @@ snapshots:
       supports-color: 8.1.1
       tree-kill: 1.2.2
       yargs: 17.7.2
-
-  core-js@3.45.1: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -2549,8 +2475,6 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  roboto-fontface@0.10.0: {}
-
   rollup@4.46.4:
     dependencies:
       '@types/estree': 1.0.8
@@ -2791,10 +2715,6 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
-  vue-demi@0.12.5(vue@3.5.18(typescript@5.9.2)):
-    dependencies:
-      vue: 3.5.18(typescript@5.9.2)
-
   vue-eslint-parser@10.2.0(eslint@9.33.0):
     dependencies:
       debug: 4.4.1
@@ -2838,11 +2758,6 @@ snapshots:
       '@vue/language-core': 2.2.12(typescript@5.9.2)
       typescript: 5.9.2
 
-  vue3-lazyload@0.3.8(vue@3.5.18(typescript@5.9.2)):
-    dependencies:
-      vue: 3.5.18(typescript@5.9.2)
-      vue-demi: 0.12.5(vue@3.5.18(typescript@5.9.2))
-
   vue@3.5.18(typescript@5.9.2):
     dependencies:
       '@vue/compiler-dom': 3.5.18
@@ -2859,8 +2774,6 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.2
       vite-plugin-vuetify: 2.1.2(vite@5.4.19(@types/node@22.17.2)(sass-embedded@1.93.2)(sass@1.93.2))(vue@3.5.18(typescript@5.9.2))(vuetify@3.9.5)
-
-  webfontloader@1.6.28: {}
 
   which@2.0.2:
     dependencies:

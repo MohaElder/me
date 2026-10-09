@@ -1,21 +1,5 @@
 # Dependencies allowed to run install scripts.
 allowBuilds:
   esbuild: true          # installs Vite's platform binary
-  vue-demi: true         # points itself at Vue 3
   '@parcel/watcher': false # ships prebuilt binaries
-  core-js: false         # only prints a funding notice
 
-overrides:
-  postcss@<8.4.31: '>=8.4.31'
-  vite@>=3.0.0 <=3.2.7: '>=3.2.8'
-  vite@>=3.0.0 <=3.2.8: '>=3.2.10'
-  word-wrap@<1.2.4: '>=1.2.4'
-  braces@<3.0.3: '>=3.0.3'
-  semver@>=7.0.0 <7.5.2: '>=7.5.2'
-  semver@>=6.0.0 <6.3.1: '>=6.3.1'
-  vite@>=3.0.2 <3.2.7: '>=3.2.7'
-  micromatch@<4.0.8: '>=4.0.8'
-  vue-template-compiler@>=2.0.0 <3.0.0: '>=3.0.0'
-  vite@<3.2.11: '>=3.2.11'
-  vite@<=3.2.10: '>=3.2.11'
-  rollup@<2.79.2: '>=2.79.2'

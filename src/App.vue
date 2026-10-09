@@ -105,7 +105,6 @@ import { ref, watch, defineOptions } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { VList, VListItem, VListItemTitle, VItemGroup } from 'vuetify/components'
 import vueIcon from './components/vue-icon.vue'
-import eroducate from './components/eroducate.vue'
 
 defineOptions({
   components: {
@@ -118,7 +117,6 @@ defineOptions({
 
 const i18n = useI18n()
 
-const icons = ref(["mdi-github", "mdi-linkedin"])
 const drawer = ref(false)
 const group = ref(null)
 

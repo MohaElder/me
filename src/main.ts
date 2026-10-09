@@ -16,7 +16,6 @@ import './styles/global.css'
 
 import { createI18n } from 'vue-i18n'
 import { messages } from './utils/messages'
-import VueLazyLoad from 'vue3-lazyload'
 
 const i18n = createI18n({
     locale: 'en',
@@ -27,5 +26,4 @@ const i18n = createI18n({
 const app = createApp(App)
 registerPlugins(app)
 app.use(i18n)
-app.use(VueLazyLoad, {})
 app.mount('#app')

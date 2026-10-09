@@ -74,7 +74,7 @@
 
         <div class="gallery-container">
           <div v-for="img in images" v-bind:key="img['url']" class="gallery-item">
-            <img v-lazy="img['thumbnail']" @click="showPic(img)" class="gallery-image" />
+            <img :src="img.thumbnail" loading="lazy" @click="showPic(img)" class="gallery-image" />
           </div>
         </div>
 
@@ -96,10 +96,13 @@
 <style scoped>
 .image-info-box {
   display: flex;
-  animation: fadeIn;
-  animation-duration: 3s;
+  animation: fade-in 3s;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
 }
 </style>
 
@@ -115,7 +118,6 @@ interface ImportedImageData {
   Tags?: string[]
   Camera?: string
 }
-import 'animate.css'
 
 defineOptions({
   name: 'Photos'
