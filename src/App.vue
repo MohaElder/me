@@ -276,12 +276,12 @@ const handleFooterMouseLeave = () => {
 .app-bar-item {
   padding: 20px;
   cursor: pointer;
-  transition: transform 0.5s, font-size 0.5s;
+  transition: color 0.3s;
 }
 
+/* A lighter tint of the active color (#FDDA3A) */
 .app-bar-item:hover {
-  transform: scale(1.05); /* Slightly enlarge */
-  font-size: 1.1em; /* Increase font size to mimic bold */
+  color: #FEE989;
 }
 
 p {
