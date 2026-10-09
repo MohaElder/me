@@ -5,12 +5,15 @@
       <p class="lede">{{ $t("message.if_i_die_brief") }}</p>
     </header>
 
+    <!-- Once the letter has slid out, the envelope fades away and the full letter takes its place. -->
+    <Transition name="fade" mode="out-in">
     <!-- Layers, back to front: envelope back, letter, front pocket, flap, seal. -->
-    <div class="stage" :class="{ shake, open: letter }" aria-hidden="true">
+    <div v-if="!unfolded" class="stage" :class="{ shake, open: letter }" aria-hidden="true">
       <div class="envelope">
         <div class="back"></div>
         <div class="paper" :class="{ open: letter }">
           <span class="paper-label">{{ $t("message.if_i_die_for_you") }}</span>
+          <p class="letter-text">{{ letter }}</p>
         </div>
         <div class="front"></div>
         <div class="flap" :class="{ open: letter }"></div>
@@ -18,13 +21,14 @@
       </div>
     </div>
 
-    <article v-if="letter" class="letter" aria-live="polite">
+    <article v-else class="letter" aria-live="polite">
       <span class="paper-label">{{ $t("message.if_i_die_for_you") }}</span>
       <p class="letter-text">{{ letter }}</p>
       <span class="paper-sign">{{ $t("message.if_i_die_sign") }}</span>
     </article>
+    </Transition>
 
-    <form v-else class="key-form" @submit.prevent="unlock">
+    <form v-if="!letter" class="key-form" @submit.prevent="unlock">
       <label for="key">{{ $t("message.if_i_die_key_label") }}</label>
       <div class="key-row">
         <input id="key" v-model="key" autocomplete="off" spellcheck="false" placeholder="TEST@TEST">
@@ -54,6 +58,7 @@ const MARKER = 'DECRYPTED '
 
 const key = ref('')
 const letter = ref(null)
+const unfolded = ref(false)
 const wrong = ref(false)
 const shake = ref(false)
 
@@ -69,7 +74,9 @@ const open = (cipher) => {
 const unlock = () => {
   letter.value = eulogies.map(open).find(Boolean) ?? null
   wrong.value = !letter.value
-  if (wrong.value) {
+  if (letter.value) {
+    setTimeout(() => (unfolded.value = true), 1500) // after seal, flap and slide finish
+  } else {
     shake.value = true
     setTimeout(() => (shake.value = false), 450)
   }
@@ -147,8 +154,13 @@ onMounted(() => window.scrollTo(0, 0))
   inset: auto 24px 16px;
   height: 260px;
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
   text-align: left;
   background: var(--paper);
+  color: #1A1A1A;
   z-index: 1;
   transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.35s;
 }
@@ -227,12 +239,10 @@ onMounted(() => window.scrollTo(0, 0))
   color: #5A5548;
 }
 
-/* The unfolded letter: real letters run long, so the full text lives here,
-   fading in once the paper has slid out of the envelope. */
+/* The unfolded letter: real letters run long, so the full text lives here. */
 .letter {
   width: 100%;
   max-width: 520px;
-  margin-top: -40px;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -240,11 +250,16 @@ onMounted(() => window.scrollTo(0, 0))
   text-align: left;
   background: var(--paper);
   color: #1A1A1A;
-  animation: unfold 0.6s ease 1.2s both;
 }
 
-@keyframes unfold {
-  from { opacity: 0; transform: translateY(12px); }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 .letter-text {
