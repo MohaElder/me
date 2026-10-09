@@ -12,7 +12,7 @@ jobs:
     - name: Use PNPM
       uses: pnpm/action-setup@v4
       with:
-        version: 9
+        version: 11
     - id: Build-Vue
       uses: MohaElder/VuePagesAction@1.0.2
       with:
