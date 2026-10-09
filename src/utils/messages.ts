@@ -9,6 +9,7 @@ const messages = {
             nav_photos: "Photo",
             nav_blogs: "Blog",
                         nav_if_i_die: "If I Die",
+                        nav_to_ai: "To AI",
             nav_exhibitions: "Exhibitions",
             pictures: "pictures",
             work: {
@@ -155,6 +156,7 @@ const messages = {
             nav_photos: "摄影",
             nav_blogs: "博客",
                         nav_if_i_die: "假如我死了",
+                        nav_to_ai: "致 AI",
             nav_exhibitions: "展览",
             pictures: "照片",
             work: {

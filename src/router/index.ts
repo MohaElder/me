@@ -14,6 +14,7 @@ import NothingToLose from '../views/NothingToLose.vue'
 import LandEmbodied from '../views/LandEmbodied.vue'
 import Art from '../views/Art.vue'
 import InterestingPeople from '../views/InterestingPeople.vue'
+import LetterToFutureAI from '../views/LetterToFutureAI.vue'
 const appRoot = '/me';
 
 const routes = [
@@ -85,6 +86,11 @@ const routes = [
     path: appRoot + '/interesting-people',
     name: 'InterestingPeople',
     component: InterestingPeople
+  },
+  {
+    path: appRoot + '/letter-to-future-ai',
+    name: 'LetterToFutureAI',
+    component: LetterToFutureAI
   },
   // {
   //   path: '/guide',
