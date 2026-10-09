@@ -1,128 +1,69 @@
-<!-- <template>
-  <router-view />
-</template>
-
-<script lang="ts" setup>
-  //
-</script> -->
-
 <template>
-  <v-app style="overflow: hidden">
-    <v-app-bar class="liquid-glass-app-bar">
-      <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <div class="d-flex align-center" v-else>
-        <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
-          :style="$router.currentRoute.value.name == 'Hi' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_hi") }}</span>
-          <span class="app-bar-item" @click="$router.push({ name: 'Work' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Work' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_work") }}</span>
-          <span class="app-bar-item" @click="$router.push({ name: 'Photos' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Photos' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_photos") }}</span>
-        <span class="app-bar-item" @click="$router.push({ name: 'Exhibitions' }).catch(() => { })" :style="$router.currentRoute.value.name == 'Exhibitions' ? 'color: #FDDA3A' : ''">
-          {{ $t("message.nav_exhibitions") }}
-        </span>
-          <span class="app-bar-item" @click="$router.push({ name: 'OpenSource' }).catch(() => { })" :style="$router.currentRoute.value.name == 'OpenSource' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_open_source") }}</span>
-          <span class="app-bar-item" @click="$router.push({ name: 'IfIDie' }).catch(() => { })" :style="$router.currentRoute.value.name == 'IfIDie' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_if_i_die") }}</span>
-          <span class="app-bar-item" @click="$router.push({ name: 'LetterToFutureAI' }).catch(() => { })" :style="$router.currentRoute.value.name == 'LetterToFutureAI' ? 'color: #FDDA3A' : ''">{{
-            $t("message.nav_to_ai") }}</span>
-      </div>
+  <div class="app">
+    <header class="app-bar liquid-glass-app-bar">
+      <button v-if="mobile" type="button" class="bar-btn" aria-label="Menu" @click="drawer = !drawer">
+        <Icon name="menu" />
+      </button>
+      <nav v-else class="nav">
+        <RouterLink v-for="item in nav" :key="item.name" :to="{ name: item.name }" class="app-bar-item"
+          :class="{ active: route.name === item.name }">{{ $t(item.label) }}</RouterLink>
+      </nav>
+      <button type="button" class="bar-btn lang" @click="changeLanguage">中/EN</button>
+    </header>
 
-      <v-spacer></v-spacer>
+    <Transition name="fade">
+      <div v-if="drawer" class="scrim" @click="drawer = false"></div>
+    </Transition>
+    <nav class="drawer" :class="{ open: drawer }" :inert="!drawer">
+      <RouterLink v-for="item in nav" :key="item.name" :to="{ name: item.name }" class="drawer-item"
+        :class="{ active: route.name === item.name }">{{ $t(item.label) }}</RouterLink>
+    </nav>
 
-      <v-btn @click="changeLanguage()" text>
-        中/EN
-      </v-btn>
-    </v-app-bar>
-
-    <v-navigation-drawer v-model="drawer" app bottom temporary class="bg-dark">
-      <v-list nav dense>
-        <v-item-group v-model="group">
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Hi' }).catch(() => { })">{{
-              $t("message.nav_hi")
-              }}</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Work' }).catch(() => { })"> {{
-              $t("message.nav_work")
-              }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Photos' }).catch(() => { })">{{
-              $t("message.nav_photos")
-              }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'Exhibitions' }).catch(() => { })">{{ $t("message.nav_exhibitions") }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'OpenSource' }).catch(() => { })">{{
-              $t("message.nav_open_source")
-              }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'IfIDie' }).catch(() => { })">{{
-              $t("message.nav_if_i_die")
-              }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-title @click="$router.push({ name: 'LetterToFutureAI' }).catch(() => { })">{{
-              $t("message.nav_to_ai")
-              }}</v-list-item-title>
-          </v-list-item>
-        </v-item-group>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-main>
+    <main class="app-main">
       <router-view />
-    </v-main>
+    </main>
 
-    <v-footer class="liquid-glass-footer" padless>
-      <div tile class="text-white text-center">
-        <p class="text-white pt-0 text-xs">
-          Made with
-          <vueIcon />, 🧠, and ❤️.
-          <a class="link-white" href="https://github.com/MohaElder/me" target="_blank">
-            source code
-          </a>
+    <footer class="site-footer liquid-glass-footer">
+      <p class="text-white pt-0 text-xs">
+        Made with
+        <vueIcon />, 🧠, and ❤️.
+        <a class="link-white" href="https://github.com/MohaElder/me" target="_blank">
+          source code
+        </a>
         <br>
-          {{ new Date().getFullYear() }} —
-          <strong class="footer-brand">
-            MOHAELDER
-          </strong>
-        </p>
-      </div>
-    </v-footer>
-  </v-app>
+        {{ new Date().getFullYear() }} —
+        <strong class="footer-brand">
+          MOHAELDER
+        </strong>
+      </p>
+    </footer>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch, defineOptions } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { VList, VListItem, VListItemTitle, VItemGroup } from 'vuetify/components'
 import vueIcon from './components/vue-icon.vue'
+import Icon from './components/Icon.vue'
+import { useDisplay } from './composables/useDisplay'
 
-defineOptions({
-  components: {
-    VList,
-    VListItem,
-    VListItemTitle,
-    VItemGroup
-  }
-})
+const nav = [
+  { name: 'Hi', label: 'message.nav_hi' },
+  { name: 'Work', label: 'message.nav_work' },
+  { name: 'Photos', label: 'message.nav_photos' },
+  { name: 'Exhibitions', label: 'message.nav_exhibitions' },
+  { name: 'OpenSource', label: 'message.nav_open_source' },
+  { name: 'IfIDie', label: 'message.nav_if_i_die' },
+  { name: 'LetterToFutureAI', label: 'message.nav_to_ai' },
+]
 
 const i18n = useI18n()
-
+const route = useRoute()
+const { mobile } = useDisplay()
 const drawer = ref(false)
-const group = ref(null)
 
-watch(group, () => {
-  drawer.value = false
-})
+watch(() => route.fullPath, () => (drawer.value = false))
 
 const changeLanguage = () => {
   i18n.locale.value = i18n.locale.value === "en" ? "zh" : "en"
@@ -130,15 +71,51 @@ const changeLanguage = () => {
 </script>
 
 <style scoped>
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.app-bar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1006;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Positioned, as Vuetify's v-main was: the Hi page places its intro relative to it. */
+.app-main {
+  position: relative;
+  flex: 1 0 auto;
+  padding-top: 64px;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px 16px;
+  text-align: center;
+}
+
 /* Liquid Glass Effect for AppBar */
 .liquid-glass-app-bar {
-  position: relative;
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 
+  box-shadow:
     0 8px 32px 0 rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   overflow: hidden;
@@ -151,24 +128,22 @@ const changeLanguage = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0.03) 50%,
-    rgba(255, 255, 255, 0.08) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.03) 50%,
+      rgba(255, 255, 255, 0.08) 100%);
   z-index: 0;
 }
 
 /* Liquid Glass Effect for Footer */
 .liquid-glass-footer {
   position: relative;
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 
+  box-shadow:
     0 -8px 32px 0 rgba(0, 0, 0, 0.4),
     inset 0 -1px 0 rgba(255, 255, 255, 0.05);
   overflow: hidden;
@@ -181,41 +156,97 @@ const changeLanguage = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0.03) 50%,
-    rgba(255, 255, 255, 0.08) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.03) 50%,
+      rgba(255, 255, 255, 0.08) 100%);
   z-index: 0;
 }
 
 /* Ensure content stays above the effects */
-.liquid-glass-app-bar > *,
-.liquid-glass-footer > * {
+.liquid-glass-app-bar>*,
+.liquid-glass-footer>* {
   position: relative;
   z-index: 2;
 }
 
 .app-bar-item {
   padding: 20px;
-  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
 /* A lighter tint of the active color (#FDDA3A) */
-.app-bar-item:hover {
+.app-bar-item:hover,
+.drawer-item:hover,
+.bar-btn:hover {
   color: #FEE989;
 }
 
-p {
-  font-size: 100%;
+.app-bar-item.active,
+.drawer-item.active {
+  color: #FDDA3A;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
+.bar-btn {
+  height: 36px;
+  margin: 0 8px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  transition: color 0.3s;
+}
+
+.lang {
+  margin-left: auto;
+}
+
+/* Mobile drawer */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 1004;
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.drawer {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  bottom: 0;
+  z-index: 1005;
+  width: 256px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
+}
+
+.drawer.open {
+  transform: none;
+}
+
+.drawer-item {
+  padding: 12px 16px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 .footer-brand {

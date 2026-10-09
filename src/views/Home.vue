@@ -5,7 +5,7 @@
     </div>
 
     <!-- :key re-mounts the heading on every name change, which replays the fade. -->
-    <h1 :key="activeName" class="foreground name"
+    <h1 :key="activeName" class="foreground home-name"
       :style="{ fontSize: `${width * (mobile ? 0.14 : 0.05)}px`, paddingTop: mobile ? '15%' : '0' }">
       {{ activeName }}
     </h1>
@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { useDisplay } from 'vuetify'
+import { useDisplay } from '../composables/useDisplay'
 import bak from '../assets/bak.webp'
 
 const { mobile, width } = useDisplay()
@@ -106,7 +106,7 @@ onBeforeUnmount(() => {
   transform: translate(-50%, -50%);
 }
 
-.name {
+.home-name {
   text-align: center;
   animation: name-fade-in 1s;
 }

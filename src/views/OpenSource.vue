@@ -3,7 +3,7 @@
     <header class="os-header">
       <h1 class="headline">{{ $t("message.open_source_desc") }}</h1>
       <a class="btn accent" href="https://github.com/MohaElder" target="_blank">
-        {{ $t("message.open_source_all") }}<v-icon size="18">mdi-arrow-top-right</v-icon>
+        {{ $t("message.open_source_all") }}<Icon name="arrow-top-right" :size="18" />
       </a>
     </header>
 
@@ -27,7 +27,7 @@
         <span class="kind">{{ $t(`message.projects.${current.id}.kind`) }}</span>
         <span class="desc">{{ $t(`message.projects.${current.id}.desc`) }}</span>
         <a class="btn" :href="current.href" target="_blank">
-          {{ $t("message.open_source_view") }}<v-icon size="18">mdi-arrow-top-right</v-icon>
+          {{ $t("message.open_source_view") }}<Icon name="arrow-top-right" :size="18" />
         </a>
       </aside>
     </div>
@@ -35,6 +35,7 @@
 </template>
 
 <script setup lang="ts">
+import Icon from '../components/Icon.vue'
 import { computed, onMounted, ref } from 'vue'
 import openenlarge from '../assets/osp/openenlarge.jpg'
 import karaAlwaysOk from '../assets/osp/karaalwaysok.png'

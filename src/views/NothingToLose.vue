@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div class="container">
     <h1>NOTHING TO LOSE <br> <span class="text-sm">presented by Commons Gallery</span></h1>
     <div class="pt-sm pb-sm"> <p>
       <i>This work is presented to you by Dmitri Zurita's students. He has encouraged us, inspired us, and supported
@@ -67,9 +67,9 @@
     <h2>List of Works</h2>
 
     <div class="works">
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/happy_accidents.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/happy_accidents.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Happy accidents</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
           <p>This 17 1/2-foot scroll was created from a series of experimental photographs. It captures a unique moment
@@ -79,12 +79,12 @@
             images
             a captivating and abstract narrative was revealed. The scroll combines organic textures and fluid patterns,
             inviting viewers to explore the beauty found in imperfection and the unexpected.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/never_again.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/never_again.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Never Again</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
           <p>This work tells the story of a painful experience, with each print depicting the events. The 4 smaller
@@ -92,12 +92,12 @@
             print has cum and spit on it, the second handprints, the third bite marks, and the 4th blood. All these
             photographs come together as the mattress rotates to reveal the bigger print displaying a bold and truthful
             statement.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/imprint.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/imprint.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Imprints</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a> & Vanessa Mirez <a
               href="https://www.instagram.com/galeria.de.vanessa/">@galeria.de.vanessa</a></p>
@@ -106,12 +106,12 @@
             For
             this piece, the two artists covered themselves in body oil and had sex on 45 sheets of darkroom paper taped
             together, leaving an imprint of the connection on each one.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/sand.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/sand.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Get Naked and Kiss Your Friends</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
           <p>These photographs capture the raw, unfiltered freedom of self-expression through moments shared with
@@ -120,12 +120,12 @@
             without shame. Through this work artists celebrate personal growth, the breaking of internal barriers, and
             the
             beauty of life's fleeting, candid moments.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/tent.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/tent.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>PigPen</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
           <p>Location: Darkroom, Room 401</p>
@@ -140,57 +140,57 @@
             asked to take off your shoes and enter. Inside you will be faced with life size photo prints, along with
             smaller ones and offered a lamp to illuminate the photographs. Come to see, reflect and interact with this
             work right around the corner.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/body.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/body.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Body of Art</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
           <p>A body of work depicting a powerful being at the center, reflecting the role as the painter and
             photographer
             of its subjects.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/blue.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/blue.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Myself, Submerged II</h3>
           <p>By Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/consoleme.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/consoleme.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Console Me</h3>
           <p>By Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/cornered.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cornered.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Cornered</h3>
           <p>By Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/women.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/women.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>The Promiscuous Nature of Women's Youth</h3>
           <p>By Vanessa Mirez <a href="https://www.instagram.com/galeria.de.vanessa/">@galeria.de.vanessa</a></p>
           <p>This series aims to visualize the lives of young women living their lives fearlessly, through photography.
             The work captures moments of adventure, challenges, triumphs, and quiet moments of self-reflection.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/vr.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/vr.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>見證 COME AND SEE</h3>
           <p>By Yasushi Oh <a href="https://www.instagram.com/anzhi.weng/">@anzhi.weng</a></p>
           <p>Growing up without my father, I was shaped by the love of my mom and her family, yet I couldn't ignore the
@@ -198,12 +198,12 @@
             reality
             through raw observation, I chose to revisit key moments tied to my father to seek resolution. This VR photo
             book invites you to step into that journey to come and see.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/cig.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cig.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>BREATH TIL DEATH AWAKES</h3>
           <p>By Yasushi Oh <a href="https://www.instagram.com/anzhi.weng/">@anzhi.weng</a> & Nataly Pastukhov <a
               href="https://www.instagram.com/nats.lenses/">@nats.lenses</a> & Kelly Tapia <a
@@ -217,21 +217,21 @@
             in work, love, or faith. This project immortalizes those dumb yet deeply emotional moments that fuel our
             art.
           </p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/poker.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/poker.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>I'm a Fool!</h3>
           <p>By Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></p>
           <p>This work shows the lives of four clowns, each representing a different suite of a card deck.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/la.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/la.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>LA</h3>
           <p>By Leo Noriega <a href="https://www.instagram.com/photo.book_1/">@photo.book_1</a></p>
           <p>The point of this piece is to show where I am from and how much I appreciate Los Angeles. I put many
@@ -239,183 +239,183 @@
             recently.
             LA is where I hold many memories (good and bad). I will always cherish the learning experiences and fun
             moments for the rest of my life.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/hydrants.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/hydrants.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Fire Hydrants</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
           <p>The project fire hydrants was initially created for a course project. As much of the work, I explore it aims to capture an investigation and presentation of industrial items that are commonly considered ugly to look at or unsatisfying or even unpleasing or unwanted. Through intentional focus on these typically undesired subjects I try to explore both the things that I find personally intriguingor  beautiful, and also the beauty in its intended utility. The first part of a larger series fire hydrants is a set of 12 images, capturing several different fire hydrants from various different angles. Although at first many, interpret this to be a series of a single fire hydrant this is not in fact the case, and the series is actually comprised of several different fire hydrants.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/ritual.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/ritual.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Ritual</h3>
           <p>By Paris Blanco <a href="https://www.instagram.com/parissblanco/">@parissblanco</a>
             </p>
               <p>An exploration of perception and insecurity through the lens of Khmer Buddhism and maternal
                 relationships.
               </p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/qrcode.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/qrcode.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>How Long This Takes</h3>
           <p>By Heath Rawers <a href="https://www.instagram.com/heath_the_mcgee/">@heath_the_mcgee</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/hair.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/hair.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Attalia Rogers <a href="https://www.instagram.com/talia_exists/">@talia_exists</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/door.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/door.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>DOOR</h3>
           <p>By Kenny Qiu <a href="https://www.instagram.com/kennykenny0524/">@kennykenny0524</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/cool_vid.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cool_vid.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Soodabeh Saghravanian</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/white_shirt.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/white_shirt.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>the show must go on</h3>
           <p>By Aimee Zhang <a href="https://www.instagram.com/azllluv/">@azllluv</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/raw.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/raw.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Is There A Way Out?</h3>
           <p>By Farhang Dadfar <a href="https://www.instagram.com/farhangdadfar/">@farhangdadfar</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/love_fear.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/love_fear.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Love, Fear</h3>
           <p>By Tyee Arey <a href="https://www.instagram.com/tyee_akee/">@tyee_akee</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/monitor.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/monitor.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Limit Your Gaze</h3>
           <p>By Brooklyn Lee</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/figures.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/figures.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Figures</h3>
           <p>By Kenny Qiu <a href="https://www.instagram.com/kennykenny0524/">@kennykenny0524</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/toilet.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/toilet.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Hollywood toilet</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
           <p>Hollywood toilet is intended to be a comedic analysis and play with the idea of the glamour of Hollywood contrasted with much of the messy disgusting parts of the industry that are often hidden behind curtains from the public. Famed for its beauty and elegance behind the large walls of posters and slogans there's the shit piles people try to hide. From eating disorders and stolen work to grimy disgusting habits like the countless sexual assault charges of producers and actors alike and bribery and payoffs—-the glamorous Hollywood is really just not oh so glamorous.</p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/solo.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/solo.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/ashley.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/ashley.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Ashley Wu <a href="https://www.instagram.com/ashleywu_photography/">@ashleywu_photography</a></p>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/mom.png"></v-img></v-col>
-        <v-col>
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/mom.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Mi Mami</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/k1.png"></v-img></v-col>
-        <v-col>
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k1.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/k2.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k2.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/k3.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k3.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/cynotype.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cynotype.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/books.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/books.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>Books I made throughout this quarter.</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
-      <v-row>
-        <v-col><v-img src="../assets/nothingToLose/shovel.png"></v-img></v-col>
-        <v-col>
+      <div class="grid-row">
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/shovel.png" alt="" loading="lazy"></div>
+        <div class="grid-col">
           <h3>7x10, 11</h3>
           <p>By Anthony Keegan <br> <a href="https://www.instagram.com/me.when.im.anthony.keegan./">@me.when.im.anthony.keegan.</a></p>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
     </div>
 
-  </v-container>
+  </div>
 </template>
 
 <script>

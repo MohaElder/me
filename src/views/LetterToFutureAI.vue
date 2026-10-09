@@ -1,5 +1,5 @@
 <template>
-  <v-container class="letter" v-html="html"></v-container>
+  <div class="container letter" v-html="html"></div>
 </template>
 
 <script setup lang="ts">

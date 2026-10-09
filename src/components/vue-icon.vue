@@ -11,6 +11,7 @@ defineOptions({
 <style scoped>
 .icon {
   display: inline-block;
+  height: 1.2em;
   vertical-align: middle;
 }
 </style>

@@ -1,27 +1,15 @@
 <template>
-  <v-container>
-    <v-img :class="
-      $vuetify.display.mobile
-        ? 'banner-image-mobile'
-        : 'banner-image'
-    " src="../assets/drink_lab.png"></v-img>
-    <v-row :class="
-       $vuetify.display.mobile
-        ? 'banner-row-mobile'
-        : 'banner-row'
-    ">
-      <p :class="
-        $vuetify.display.mobile
-          ? 'banner-text-mobile'
-          : 'banner-text'
-      ">
+  <div class="container">
+    <img :class="mobile ? 'banner-image-mobile' : 'banner-image'" src="../assets/drink_lab.png" alt="">
+    <div class="grid-row" :class="mobile ? 'banner-row-mobile' : 'banner-row'">
+      <p :class="mobile ? 'banner-text-mobile' : 'banner-text'">
         {{ $t("message.cocktail_desc_before") }}
         <a href="mailto:calen0909@Hotmail.com" class="text-primary">
           {{ $t("message.cocktail_desc_link") }}
         </a> {{ $t("message.cocktail_desc_after") }}
       </p>
       <p>Note: all drinks can be made alcohol-free</p>
-    </v-row>
+    </div>
     <div class="menu">
       <div class="mb-lg" v-for="item in menu" v-bind:key="item.name">
         <h3 class="text-center mb-sm">
@@ -34,20 +22,19 @@
         <p class="menuItemText" v-for="(ingredient, index) in item.ingredients" v-bind:key="index">
           <span>{{ ingredient }}</span>
         </p>
-        <p :class="
-           $vuetify.display.mobile
-            ? 'menuDescMobile'
-            : 'menuDesc'
-        ">
+        <p :class="mobile ? 'menuDescMobile' : 'menuDesc'">
           <i>{{ item.desc }}</i>
         </p>
       </div>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
+import { useDisplay } from '../composables/useDisplay'
+
 export default {
+  setup: () => ({ mobile: useDisplay().mobile }),
   data: () => ({
     menu: [
       {

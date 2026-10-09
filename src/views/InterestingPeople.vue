@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div class="container">
     <div class="interesting-people-header">
       <h1 class="interesting-people-title">Interesting People</h1>
       <div class="interesting-people-subtitle">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script setup lang="ts">

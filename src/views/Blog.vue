@@ -1,26 +1,22 @@
 <template>
-  <v-container class="pl-lg pr-lg pb-lg">
-    <v-row class="mb-lg">
-      <v-col class="text-center head-section" cols="12">
-        <h1 class="blog-title">{{ blog.title }}</h1>
-        <div class="sub-header">
-          <v-btn v-for="icon in icons" :key="icon" class="text-white" @click="share(icon.substring(4))" icon>
-            <!-- We use substring above because icons come with names of "mdi-name_of_website", by doing so, we just get the name of the link -->
-            <v-icon size="24px">
-              {{ icon }}
-            </v-icon>
-          </v-btn>
-          <figure>
-            <v-img class="w-full" :src="blog.img"></v-img>
-            <figcaption>{{ blog.img_caption }}</figcaption>
-          </figure>
-          <h2 class="w-full mt-sm blog-date">By MohaElder</h2>
-          <h2 class="w-full blog-date">{{ blog.date }}</h2>
-        </div>
-      </v-col>
-    </v-row>
+  <div class="container pl-lg pr-lg pb-lg">
+    <div class="mb-lg text-center head-section">
+      <h1 class="blog-title">{{ blog.title }}</h1>
+      <div class="sub-header">
+        <button v-for="icon in icons" :key="icon" type="button" class="share-btn" :aria-label="`Share: ${icon}`"
+          @click="share(icon)">
+          <Icon :name="icon" />
+        </button>
+        <figure>
+          <img class="w-full" :src="blog.img" alt="">
+          <figcaption>{{ blog.img_caption }}</figcaption>
+        </figure>
+        <h2 class="w-full mt-sm blog-date">By MohaElder</h2>
+        <h2 class="w-full blog-date">{{ blog.date }}</h2>
+      </div>
+    </div>
     <div class="blog-renderer" v-html="fileContent"></div>
-  </v-container>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -29,6 +25,7 @@ import { useRoute } from 'vue-router'
 import { blogs } from "../utils/blogLink.js"
 import { stories } from "../utils/storyLink.js"
 import MarkdownIt from "markdown-it"
+import Icon from '../components/Icon.vue'
 
 defineOptions({
   name: 'Blog'
@@ -55,12 +52,7 @@ const isStoryValid = (id: string): id is keyof typeof stories => {
 }
 
 const route = useRoute()
-const icons = ref([
-  "mdi-link-box-variant-outline",
-  "mdi-twitter",
-  "mdi-linkedin",
-  "mdi-facebook",
-])
+const icons = ["link-box-variant-outline", "twitter", "linkedin", "facebook"] as const
 const copied = ref(false)
 const blog = ref<BlogData>({
   title: "42",
@@ -100,7 +92,7 @@ const getContent = () => {
     })
 }
 
-const share = (name: string) => {
+const share = (name: typeof icons[number]) => {
   const link = window.location.href
   switch (name) {
     case "link-box-variant-outline":
@@ -148,3 +140,20 @@ onBeforeMount(() => {
   }
 })
 </script>
+
+<style scoped>
+.share-btn {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #FFF;
+  transition: background-color 0.2s;
+}
+
+.share-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+</style>

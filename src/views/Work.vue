@@ -11,11 +11,11 @@
         </h1>
         <div class="actions">
           <a class="resume-btn" href="https://github.com/MohaElder/me/raw/main/src/assets/yasushi_resume.pdf">
-            {{ $t("message.download") }}<v-icon size="18">mdi-arrow-down</v-icon>
+            {{ $t("message.download") }}<Icon name="arrow-down" :size="18" />
           </a>
           <a v-if="$i18n.locale == 'zh'" class="resume-btn"
             href="https://github.com/MohaElder/me/raw/main/src/assets/resume_cn.pdf">
-            中文简历<v-icon size="18">mdi-arrow-down</v-icon>
+            中文简历<Icon name="arrow-down" :size="18" />
           </a>
           <nav class="links">
             <a href="mailto:calen0909@hotmail.com">{{ $t("message.email") }}</a>
@@ -83,6 +83,7 @@
 </template>
 
 <script setup lang="ts">
+import Icon from '../components/Icon.vue'
 import { onMounted } from 'vue'
 import analogSparks2025 from '../assets/analog_sparks_2025.png'
 import ipa2026Selection from '../assets/ipa2026_selection.png'

@@ -1,6 +1,5 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -10,16 +9,7 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   base: '/me/',
   plugins: [
-    vue({ 
-      template: { transformAssetUrls }
-    }),
-    // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
-    vuetify({
-      autoImport: true,
-      styles: {
-        configFile: 'src/styles/settings.scss',
-      },
-    }),
+    vue(),
   ],
   resolve: {
     alias: {

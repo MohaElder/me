@@ -65,6 +65,299 @@
   src: url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueBlackItalic.woff') format('woff');
 }
 
+/* Base reset: the parts of ress.css (which Vuetify used to ship) the site relies
+   on, mainly zero default margins/padding and unstyled form controls. */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  line-height: 1.5;
+  font-size: 1rem;
+  word-break: normal;
+  tab-size: 4;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  background-color: transparent;
+  border-style: none;
+}
+
+input {
+  border-radius: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Layout helpers, sized like the Vuetify grid they replace. */
+.container {
+  width: 100%;
+  padding: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2400px;
+  }
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  margin: -12px;
+}
+
+.grid-col {
+  flex: 1 0 0;
+  max-width: 100%;
+  width: 100%;
+  padding: 12px;
+}
+
+.grid-img {
+  display: block;
+  width: 100%;
+}
+
+/* Utilities (formerly src/styles/settings.scss; only the ones in use). */
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-secondary {
+  color: #b7b7b7;
+}
+
+.text-primary {
+  color: #FDDA3A;
+}
+
+.text-accent {
+  color: #ff8a65;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.mt-sm {
+  margin-top: 10px;
+}
+
+.mt-md {
+  margin-top: 20px;
+}
+
+.mb-sm {
+  margin-bottom: 10px;
+}
+
+.mb-lg {
+  margin-bottom: 30px;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-sm {
+  padding-top: 10px;
+}
+
+.pb-sm {
+  padding-bottom: 10px;
+}
+
+.pb-lg {
+  padding-bottom: 30px;
+}
+
+.pl-md {
+  padding-left: 20px;
+}
+
+.pl-lg {
+  padding-left: 30px;
+}
+
+.pr-lg {
+  padding-right: 30px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.banner-image {
+  width: 42.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.banner-image-mobile {
+  width: 82.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.banner-text {
+  text-align: justify;
+  width: 100%;
+  text-indent: 4%;
+}
+
+.banner-text-mobile {
+  text-align: justify;
+  width: 100%;
+  font-size: 2%;
+}
+
+.banner-row {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.banner-row-mobile {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.blog-renderer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.blog-title {
+  font-size: 300%;
+  font-weight: 500;
+  text-align: start;
+}
+
+.blog-date {
+  font-size: 100%;
+  font-style: normal;
+  text-align: start;
+}
+
+.link-white {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link-white:hover {
+  text-decoration: underline;
+}
+
+.first-letter::first-letter {
+  initial-letter: 2 1;
+}
+
+.square-img {
+  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .banner-image {
+    width: 82.5%;
+    margin-bottom: 10%;
+  }
+  .banner-text {
+    font-size: 2%;
+  }
+  .banner-row {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 /* Site-wide typography and Markdown styles. These used to live unscoped in
    Blog.vue and leaked onto every page; they move here so pages keep the same
    look now that each view loads on demand. */

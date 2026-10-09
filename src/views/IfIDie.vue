@@ -17,7 +17,7 @@
         </div>
         <div class="front"></div>
         <div class="flap" :class="{ open: letter }"></div>
-        <div class="seal" :class="{ open: letter }"><v-icon size="26">mdi-lock-outline</v-icon></div>
+        <div class="seal" :class="{ open: letter }"><Icon name="lock-outline" :size="26" /></div>
       </div>
     </div>
 
@@ -29,7 +29,7 @@
     </Transition>
 
     <button v-if="unfolded" class="reseal" type="button" @click="reseal">
-      <v-icon size="18">mdi-email-lock-outline</v-icon>{{ $t("message.if_i_die_reseal") }}
+      <Icon name="email-lock-outline" :size="18" />{{ $t("message.if_i_die_reseal") }}
     </button>
 
     <form v-if="!letter" class="key-form" @submit.prevent="unlock">
@@ -52,6 +52,7 @@
 </template>
 
 <script setup>
+import Icon from '../components/Icon.vue'
 import { computed, onMounted, ref } from 'vue'
 import CryptoJS from 'crypto-js'
 import MarkdownIt from 'markdown-it'
