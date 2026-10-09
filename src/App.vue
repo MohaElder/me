@@ -134,32 +134,15 @@ const changeLanguage = () => {
   z-index: 0;
 }
 
-/* Liquid Glass Effect for Footer */
+/* Footer: dark glass, kept quiet so it doesn't glow under the page. */
 .liquid-glass-footer {
   position: relative;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow:
-    0 -8px 32px 0 rgba(0, 0, 0, 0.4),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
   overflow: hidden;
-}
-
-.liquid-glass-footer::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg,
-      rgba(255, 255, 255, 0.08) 0%,
-      rgba(255, 255, 255, 0.03) 50%,
-      rgba(255, 255, 255, 0.08) 100%);
-  z-index: 0;
 }
 
 /* Ensure content stays above the effects */

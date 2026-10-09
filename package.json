@@ -15,12 +15,14 @@
   "dependencies": {
     "crypto-js": "^4.2.0",
     "markdown-it": "^14.1.0",
+    "three": "^0.186.1",
     "vue": "^3.5.43",
     "vue-router": "^5.4.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.17.2",
+    "@types/three": "^0.186.0",
     "@vitejs/plugin-vue": "^6.0.9",
     "concurrently": "^8.2.2",
     "typescript": "^6.0.3",

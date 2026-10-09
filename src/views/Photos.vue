@@ -1,32 +1,27 @@
 <template>
-  <div class="photos">
+  <div class="photos" :class="{ 'room-mode': room }">
     <header class="photos-head">
-      <span class="sky">A <span :class="{ blue: !unity }">SKY</span> FULL OF <span :class="{ yellow: !unity }">STARS</span></span>
-      <label class="toggle">
-        <input v-model="unity" type="checkbox" aria-label="Show the 3D gallery">
-        <span class="toggle-handle">
-          <img :src="unity ? pipe : moon" alt="">
-        </span>
-      </label>
-      <span class="pipe">Ceci n'est pas une <span :class="{ yellow: unity }">galerie</span></span>
+      <div class="title">
+        <h1>{{ $t("message.photos_title") }}</h1>
+        <button class="sort" type="button" @click="newestFirst = !newestFirst">
+          {{ shown.length.toLocaleString() }} / {{ total.toLocaleString() }} ·
+          {{ $t(newestFirst ? "message.photos_newest" : "message.photos_oldest") }}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4" />
+          </svg>
+        </button>
+      </div>
+      <div class="view-switch" role="group" :aria-label="$t('message.photos_view')">
+        <button type="button" :aria-pressed="!room" @click="room = false">{{ $t("message.photos_grid") }}</button>
+        <button type="button" :aria-pressed="room" @click="room = true">{{ $t("message.photos_room") }}</button>
+      </div>
     </header>
 
-    <iframe v-if="unity" class="unity-frame" src="https://mohaelder.github.io/Gallery/" title="3D gallery"
-      allowfullscreen></iframe>
+    <PhotoRoom v-if="room" :photos="shown" />
 
     <div v-else class="layout">
       <aside class="side">
-        <div class="side-head">
-          <h1>{{ $t("message.photos_title") }}</h1>
-          <button class="sort" type="button" @click="newestFirst = !newestFirst">
-            {{ shown.length.toLocaleString() }} / {{ total.toLocaleString() }} ·
-            {{ $t(newestFirst ? "message.photos_newest" : "message.photos_oldest") }}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              aria-hidden="true">
-              <path d="M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4" />
-            </svg>
-          </button>
-        </div>
         <nav class="filters" aria-label="Filter photos">
           <button v-for="tag in tagList" :key="tag.name" type="button" :class="{ active: tag.name === activeTag }"
             @click="activeTag = tag.name">
@@ -109,10 +104,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, nextTick, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
 import { t } from '../i18n'
-import moon from '../assets/moon.svg'
-import pipe from '../assets/pipe.svg'
+
+// Three.js only loads when someone opens Room.
+const PhotoRoom = defineAsyncComponent(() => import('../components/room/PhotoRoom.vue'))
 
 interface Photo {
   url: string
@@ -122,15 +118,6 @@ interface Photo {
   DateTime?: number
   Tags: string[]
   Camera?: string
-}
-
-// Only this page uses La Belle Aurore, so it loads here instead of on every page.
-if (!document.getElementById('font-la-belle-aurore')) {
-  document.head.append(Object.assign(document.createElement('link'), {
-    id: 'font-la-belle-aurore',
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap',
-  }))
 }
 
 const PAGE = 48
@@ -143,7 +130,7 @@ const newestFirst = ref(true)
 const limit = ref(PAGE)
 const loaded = reactive(new Set<string>())
 const failed = reactive(new Set<string>())
-const unity = ref(false)
+const room = ref(false)
 
 const total = computed(() => photos.value.length)
 const shown = computed(() => {
@@ -228,8 +215,11 @@ const showTop = ref(false)
 const onScroll = () => (showTop.value = window.scrollY > window.innerHeight * 1.5)
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
-// The 3D gallery takes the whole page, footer included.
-watch(unity, on => document.body.classList.toggle('unity-active', on))
+// Room takes the whole page, footer included.
+watch(room, on => {
+  document.body.classList.toggle('room-active', on)
+  window.scrollTo({ top: 0 })
+})
 
 onMounted(async () => {
   window.scrollTo(0, 0)
@@ -244,7 +234,7 @@ onUnmounted(() => {
   observer.disconnect()
   window.removeEventListener('scroll', onScroll)
   clearTimeout(developTimer)
-  document.body.classList.remove('unity-active')
+  document.body.classList.remove('room-active')
 })
 </script>
 
@@ -271,88 +261,76 @@ button {
   color: inherit;
 }
 
-/* Header */
+/* Header: title, count/sort and the Grid | Room switch */
 .photos-head {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
 }
 
-.sky {
-  font-size: 18px;
-  letter-spacing: 2.5px;
+.title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 16px;
 }
 
-.sky span,
-.pipe span {
-  transition: color 0.2s ease;
+.title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
-.blue {
-  color: #6987B2;
+.view-switch {
+  display: flex;
 }
 
-.yellow {
-  color: var(--accent);
-}
-
-.pipe {
-  font-family: 'La Belle Aurore', cursive;
-  font-size: 28px;
-}
-
-.toggle {
-  position: relative;
-  width: 64px;
+.view-switch button {
   height: 36px;
-  flex-shrink: 0;
-  border-radius: 36px;
-  background: #385886;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
-.toggle:has(input:checked) {
-  background: #FEFEFE;
+.view-switch button + button {
+  border-left: none;
 }
 
-.toggle:has(input:focus-visible) {
-  outline: 2px solid #FEE989;
-  outline-offset: 2px;
+.view-switch button:hover {
+  color: #FEE989;
 }
 
-.toggle input {
+.view-switch button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0A0A0A;
+}
+
+/* Room fills the page under the site bar; the header floats over it. */
+.photos.room-mode {
+  max-width: none;
+  padding: 0;
+  gap: 0;
+  position: relative;
+}
+
+.room-mode .photos-head {
   position: absolute;
-  opacity: 0;
-  pointer-events: none;
+  inset: 0 0 auto;
+  z-index: 2;
+  padding: 14px 32px 32px;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), transparent);
 }
 
-.toggle-handle {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 28px;
-  height: 28px;
-  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.toggle:has(input:checked) .toggle-handle {
-  transform: translateX(28px);
-}
-
-.toggle-handle img {
-  width: 100%;
-  height: 100%;
-}
-
-.unity-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-}
-
-:global(body.unity-active .site-footer) {
+:global(body.room-active .site-footer) {
   display: none;
 }
 
@@ -371,21 +349,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.side-head {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.side-head h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
 }
 
 .sort {
