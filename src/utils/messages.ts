@@ -67,6 +67,7 @@ const messages = {
             present: "Present",
             email: "Email",
             awards: {
+                analog_sparks: "Analog Sparks 2025 · Winner",
                 ipa_2nd: "IPA 2025 · 2nd Prize",
                 ipa_hm: "IPA 2025 · Honorable Mention",
                 nd_hm: "ND Awards 2024 · Honorable Mention",
@@ -169,6 +170,7 @@ const messages = {
             present: "至今",
             email: "邮箱",
             awards: {
+                analog_sparks: "Analog Sparks 2025 · 获奖",
                 ipa_2nd: "IPA 2025 · 二等奖",
                 ipa_hm: "IPA 2025 · 荣誉提名",
                 nd_hm: "ND Awards 2024 · 荣誉提名",

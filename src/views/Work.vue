@@ -84,6 +84,7 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import analogSparks2025 from '../assets/analog_sparks_2025.png'
 import ipa2025 from '../assets/ipa2025.png'
 import ipa2025Mention from '../assets/ipa2025mention.png'
 import ndAwards2024 from '../assets/nd_awards_hm_2024.png'
@@ -115,6 +116,7 @@ const sections = [
 ]
 
 const awards = [
+  { caption: 'message.awards.analog_sparks', img: analogSparks2025, href: 'https://www.analogsparksawards.com' },
   { caption: 'message.awards.ipa_2nd', img: ipa2025, href: 'https://www.photoawards.com/winner/zoom.php?eid=8-1722599429-25' },
   { caption: 'message.awards.ipa_hm', img: ipa2025Mention, href: 'https://www.photoawards.com/winner/zoom.php?eid=8-1722610316-25' },
   { caption: 'message.awards.nd_hm', img: ndAwards2024, href: 'https://ndawards.net/winners-gallery/nd-awards-2024/non-professional/photojournalism-story/hm/22290/' },
@@ -303,7 +305,7 @@ onMounted(() => {
 
 .awards {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 24px;
 }
 
