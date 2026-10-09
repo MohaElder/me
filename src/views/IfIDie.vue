@@ -28,6 +28,10 @@
     </article>
     </Transition>
 
+    <button v-if="unfolded" class="reseal" type="button" @click="reseal">
+      <v-icon size="18">mdi-email-lock-outline</v-icon>{{ $t("message.if_i_die_reseal") }}
+    </button>
+
     <form v-if="!letter" class="key-form" @submit.prevent="unlock">
       <label for="key">{{ $t("message.if_i_die_key_label") }}</label>
       <div class="key-row">
@@ -84,6 +88,12 @@ const unlock = () => {
     shake.value = true
     setTimeout(() => (shake.value = false), 450)
   }
+}
+
+const reseal = () => {
+  key.value = ''
+  letter.value = null
+  unfolded.value = false
 }
 
 onMounted(() => window.scrollTo(0, 0))
@@ -303,6 +313,24 @@ onMounted(() => window.scrollTo(0, 0))
 .letter-text :deep(a) {
   color: inherit;
   text-decoration: underline;
+}
+
+.reseal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 1px solid currentColor;
+  color: #FEFEFE;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.reseal:hover {
+  color: #FEE989;
 }
 
 /* The key */
