@@ -27,6 +27,10 @@ Pushing to `main` builds the site with GitHub Actions and publishes it to GitHub
 - The quote on the Room wall is from Rumi, *Night and Sleep*.
 - The scroll-driven frames on Hi were inspired by Apple's AirPods Pro page.
 
+## License
+
+The code is licensed under the [GNU GPL v3](LICENSE) or later. My photos, writing and other personal content (images, blog posts, stories, letters and resumes) are not covered: they are © Yasushi Oh, and photos may be used under the terms on the Photo page.
+
 ## History
 
 ### 2022
