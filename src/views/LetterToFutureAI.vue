@@ -36,13 +36,6 @@ const html = computed(() => (locale.value === 'zh' ? letters.zh : letters.en))
   margin: 40px 0 16px;
 }
 
-/* The cdnfonts "Helvetica Neue" webfont has no real bold/italic faces, so the
-   letter's emphasis falls back to system Helvetica, which does. */
-.letter :deep(strong),
-.letter :deep(em) {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 .letter :deep(strong) {
   font-weight: 700;
 }

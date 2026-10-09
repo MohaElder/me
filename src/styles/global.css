@@ -1,3 +1,70 @@
+/* Helvetica Neue, one face per weight the site uses. cdnfonts' own stylesheet
+   lists local('Helvetica Neue') for every weight, so Macs rendered bold as
+   regular; naming each installed face fixes that, and Windows downloads it. */
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Helvetica Neue Light'), local('HelveticaNeue-Light'), url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Helvetica Neue'), local('HelveticaNeue'), url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueRoman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Helvetica Neue Italic'), local('HelveticaNeue-Italic'), url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Helvetica Neue Medium'), local('HelveticaNeue-Medium'), url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Helvetica Neue Bold'), local('HelveticaNeue-Bold'), url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Helvetica Neue Bold Italic'), local('HelveticaNeue-BoldItalic'), url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueBlack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://fonts.cdnfonts.com/s/62895/HelveticaNeueBlackItalic.woff') format('woff');
+}
+
 /* Site-wide typography and Markdown styles. These used to live unscoped in
    Blog.vue and leaked onto every page; they move here so pages keep the same
    look now that each view loads on demand. */

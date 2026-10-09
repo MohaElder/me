@@ -304,9 +304,7 @@ onMounted(() => window.scrollTo(0, 0))
   margin-bottom: 0;
 }
 
-/* The site's Helvetica Neue webfont has no real bold; fall back so emphasis shows. */
 .letter-text :deep(strong) {
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 

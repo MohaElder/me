@@ -109,6 +109,15 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch, defineOptions } from 'vue'
 import { useDisplay } from 'vuetify'
+
+// Only this page uses La Belle Aurore, so it loads here instead of on every page.
+if (!document.getElementById('font-la-belle-aurore')) {
+  document.head.append(Object.assign(document.createElement('link'), {
+    id: 'font-la-belle-aurore',
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap',
+  }))
+}
 import { images as images_imported, tags as importedTags } from "../utils/imageLink.json"
 
 interface ImportedImageData {
