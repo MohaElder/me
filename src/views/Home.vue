@@ -1,148 +1,98 @@
 <template>
   <div class="home-container">
-    <div id="father" class="animated-image"> <!-- :style:"blur" use this if you need blur effect in the future -->
-      <img src="https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets/beachFrame/frame(1).jpg" alt="" class="each-image"
-        style="opacity: 0" />
+    <div class="animated-image">
+      <img :src="frames[frame]" alt="" class="each-image" :style="{ opacity: frame / 30 }">
     </div>
-    <v-row align="center" justify="center">
-      <v-col class="text-center" cols="12">
-        <h1 id="name" class="foreground" :style="'font-size:' + calcSize() + 'px;' +
-          'padding-top: ' +
-          (isPortrait()
-            ? '15%;'
-            : '0px;')">
-          {{ activeName }}
-        </h1>
-      </v-col>
-    </v-row>
-    <div>
-      <v-row align="center" justify="center" :style="opacity">
-        <v-col class="text-center second intro" :style="
-          'top: ' +
-          (isPortrait()
-            ? '11%;'
-            : '10.5%;')
-        " cols="12">
-          <v-img src="@/assets/bak.png" class="bak"
-            :width="isPortrait() ? '100%' : '62.5%'"></v-img>
-          <h3 class="intro-text" :style="
-            'font-size: ' +
-            (isPortrait()
-              ? '50%;'
-              : '100%;') +
-            'padding-left: ' +
-            (isPortrait()
-              ? '0%;'
-              : '30%;') +
-            'padding-right: ' +
-            (isPortrait()
-              ? '0%;'
-              : '30%;')
-          ">
-            {{ $t("message.hello") }}
-          </h3>
-        </v-col>
-      </v-row>
 
+    <!-- :key re-mounts the heading on every name change, which replays the fade. -->
+    <h1 :key="activeName" class="foreground name"
+      :style="{ fontSize: `${width * (mobile ? 0.14 : 0.05)}px`, paddingTop: mobile ? '15%' : '0' }">
+      {{ activeName }}
+    </h1>
 
-      <v-row class="below">
-        <a style="color: white" class="" href="https://maps.app.goo.gl/f1iggnxxYjswtCLUA">N 36°14.845', W 117°21.295'<br>
-          {{ $t("message.wave_location") }}</a>
+    <div class="intro second text-center" :style="{ opacity: 1 - target / 7, top: mobile ? '11%' : '10.5%' }">
+      <img :src="bak" alt="" class="bak" :style="{ width: mobile ? '100%' : '62.5%' }">
+      <h3 class="intro-text"
+        :style="{ fontSize: mobile ? '50%' : '100%', paddingLeft: mobile ? '0' : '30%', paddingRight: mobile ? '0' : '30%' }">
+        {{ $t("message.hello") }}
+      </h3>
+    </div>
 
-      </v-row>
+    <div class="below">
+      <a style="color: white" href="https://maps.app.goo.gl/f1iggnxxYjswtCLUA">N 36°14.845', W 117°21.295'<br>
+        {{ $t("message.wave_location") }}</a>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeMount, onBeforeUnmount } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { useDisplay } from 'vuetify'
-import "animate.css"
+import bak from '../assets/bak.webp'
 
 const { mobile, width } = useDisplay()
 
-const images: HTMLImageElement[] = []
-const names = ["翁安志", "お やすし", "Oh Yasushi"]
+// The sky frames ship with the site, ordered by their zero-padded names.
+const frames = Object.entries(
+  import.meta.glob<string>('../assets/skyFrameWebp/*.webp', { eager: true, query: '?url', import: 'default' })
+).sort(([a], [b]) => a.localeCompare(b)).map(([, url]) => url)
 
-const activeName = ref("翁安志")
-const blur = ref("filter: blur(10px)")
-const opacity = ref("opacity: 1")
-const quote = ref("")
-const quoteAuthor = ref("MohaElder")
-const scroll_position = ref(0)
+const names = ['翁安志', 'お やすし', 'Oh Yasushi']
+const activeName = ref(names[0])
 
-const animateCSS = (element: string, animation: string, time_interval: number, prefix = "animate__") =>
-  new Promise<string>((resolve) => {
-    const animationName = `${prefix}${animation}`
-    const node = document.querySelector(element) as HTMLElement | null
-    if (!node) {
-      clearInterval(time_interval)
-      resolve("Page not active")
-      return
-    }
-    node.classList.add(`${prefix}animated`, animationName)
+// target: where the scroll position says we should be; frame: the closest
+// frame at or before it that has already loaded, so the sky never goes blank.
+const target = ref(0)
+const frame = ref(0)
+const loaded: boolean[] = []
 
-    function handleAnimationEnd(event: Event) {
-      event.stopPropagation()
-      if (node) {
-        node.classList.remove(`${prefix}animated`, animationName)
-      }
-      resolve("Animation ended")
-    }
+const update = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight
+  const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0
+  target.value = Math.round(progress * (frames.length - 1))
+  let i = target.value
+  while (i > 0 && !loaded[i]) i--
+  frame.value = i
+}
 
-    node.addEventListener("animationend", handleAnimationEnd, { once: true })
+let ticking = false
+const onScroll = () => {
+  if (ticking) return
+  ticking = true
+  requestAnimationFrame(() => {
+    update()
+    ticking = false
   })
-
-const isPortrait = () => {
-  return mobile.value
 }
 
-const calcSize = () => {
-  return isPortrait()
-    ? width.value * 0.14
-    : width.value * 0.05
-}
-
-const loadImages = () => {
-  for (let i = scroll_position.value; i < 50; i++) {
+// Load frames one at a time, in scroll order, after the page has rendered.
+let active = true
+const preload = async () => {
+  for (const [i, src] of frames.entries()) {
     const img = new Image()
-    img.src = `https://raw.githubusercontent.com/MohaElder/me/main/src/assets/skyFrame/Frame(${i+1}).jpeg`
-    images.push(img)
+    img.src = src
+    await img.decode().catch(() => {})
+    if (!active) return
+    loaded[i] = true
+    update()
   }
 }
 
-const handleScroll = () => {
-  let index = Math.floor(window.scrollY / 72) % 50
-  if (index <= 0 && window.scrollY > 1000) {
-    index = images.length - 1
-  }
-  const father = document.querySelector("#father")
-  if (father?.children[0]) {
-    father.children[0].replaceWith(images[index])
-    images[index].classList.add("each-image")
-    images[index].setAttribute("style", "opacity: " + index / 30)
-    blur.value = "filter: blur(" + (8 - index / 7) + "px)"
-    opacity.value = "opacity: " + (1 - index / 7) + ";"
-  }
-}
+let nameTimer = 0
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll)
   window.scrollTo(0, 0)
+  window.addEventListener('scroll', onScroll, { passive: true })
+  nameTimer = window.setInterval(() => {
+    activeName.value = names[(names.indexOf(activeName.value) + 1) % names.length]
+  }, 2500)
+  preload()
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", handleScroll)
-})
-
-onBeforeMount(() => {
-  let index = 0
-  const time = window.setInterval(() => {
-    animateCSS("#name", "fadeIn", time as number)
-    index = index + 1 === names.length ? 0 : index + 1
-    activeName.value = names[index]
-  }, 2500)
-  loadImages()
+  active = false
+  window.removeEventListener('scroll', onScroll)
+  clearInterval(nameTimer)
 })
 </script>
 
@@ -154,6 +104,15 @@ onBeforeMount(() => {
   width: 100%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+
+.name {
+  text-align: center;
+  animation: name-fade-in 1s;
+}
+
+@keyframes name-fade-in {
+  from { opacity: 0; }
 }
 
 .animated-image {
@@ -186,6 +145,7 @@ onBeforeMount(() => {
 .intro {
   width: 95%;
   margin: 0;
+  padding: 12px;
   position: absolute;
   left: 50.5%;
   margin-right: -50%;
@@ -203,11 +163,6 @@ onBeforeMount(() => {
   text-align: center;
   text-indent: 2%;
   line-height: 2;
-}
-
-.wave-location {
-  position: absolute;
-  bottom: 2%;
 }
 
 .below {
