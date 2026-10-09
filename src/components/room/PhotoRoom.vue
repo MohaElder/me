@@ -1,7 +1,7 @@
 <template>
   <div class="room">
     <div ref="stage" class="stage" @pointermove="move" @pointerdown="press" @pointerup="release"
-      @pointerleave="release" @dblclick="zoomed = !zoomed"></div>
+      @pointerleave="release"></div>
     <div class="vignette" aria-hidden="true"></div>
 
     <div class="hud">
@@ -24,7 +24,8 @@
         </svg>
       </button>
       <button type="button" class="hud-btn" :class="{ on: zoomed }" aria-label="Hold to zoom" :aria-pressed="zoomed"
-        @pointerdown="zoomed = true" @pointerup="zoomed = false" @pointerleave="zoomed = false">
+        @pointerdown="zoomed = true" @pointerup="zoomed = false" @pointerleave="zoomed = false"
+        @pointercancel="zoomed = false" @contextmenu.prevent>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           aria-hidden="true">
           <circle cx="11" cy="11" r="6" />
@@ -114,6 +115,9 @@ onUnmounted(() => {
   height: calc(100vh - 64px);
   overflow: hidden;
   background: #050403;
+  /* Nothing here to select or copy, and no long-press callout on phones. */
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .stage {
@@ -154,6 +158,7 @@ onUnmounted(() => {
   background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(8px);
   color: #FEFEFE;
+  touch-action: none;
   transition: color 0.3s, border-color 0.3s;
 }
 
