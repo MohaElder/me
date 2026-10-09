@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="800" viewBox="0 0 1240 800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#26241f" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1240" height="800" fill="#eae5d9"/>
+
+  <!-- ============ Screen A: Home ============ -->
+  <g filter="url(#soft)">
+    <rect x="40" y="40" width="520" height="720" rx="40" fill="#f4f1ea" stroke="#e4ded0"/>
+  </g>
+
+  <text x="76" y="106" font-size="15" font-weight="600" letter-spacing="3" fill="#938d80">STOCKA</text>
+
+  <text x="74" y="172" font-size="38" font-weight="700" letter-spacing="-1" fill="#26241f">148 items packed</text>
+  <text x="74" y="214" font-size="38" font-weight="700" letter-spacing="-1" fill="#26241f">across 12 boxes.</text>
+
+  <rect x="76" y="250" width="448" height="62" rx="22" fill="#5e6e58"/>
+  <text x="300" y="289" font-size="18" font-weight="600" fill="#fdfcf8" text-anchor="middle">+   Pack a box</text>
+
+  <rect x="76" y="330" width="448" height="56" rx="22" fill="#fffdf8" stroke="#d8d1c0"/>
+  <text x="100" y="364" font-size="15" fill="#938d80">Search items, or type a box number</text>
+
+  <text x="80" y="432" font-size="12" font-weight="600" letter-spacing="1.5" fill="#938d80">YOUR BOXES</text>
+
+  <!-- box cards 2x2 -->
+  <g>
+    <!-- card 1 -->
+    <rect x="76" y="448" width="216" height="124" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <text x="92" y="476" font-size="12" font-weight="600" fill="#938d80">#1</text>
+    <rect x="236" y="464" width="40" height="40" rx="10" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="92" y="540" font-size="18" font-weight="650" fill="#26241f">Kitchen</text>
+    <text x="92" y="560" font-size="12" fill="#938d80">3 items · Jul 12</text>
+    <!-- card 2 -->
+    <rect x="308" y="448" width="216" height="124" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <text x="324" y="476" font-size="12" font-weight="600" fill="#938d80">#2</text>
+    <rect x="468" y="464" width="40" height="40" rx="10" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="324" y="540" font-size="18" font-weight="650" fill="#26241f">Books</text>
+    <text x="324" y="560" font-size="12" fill="#938d80">8 items · Jul 10</text>
+    <!-- card 3 -->
+    <rect x="76" y="584" width="216" height="124" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <text x="92" y="612" font-size="12" font-weight="600" fill="#938d80">#3</text>
+    <rect x="236" y="600" width="40" height="40" rx="10" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="92" y="676" font-size="18" font-weight="650" fill="#26241f">Garage</text>
+    <text x="92" y="696" font-size="12" fill="#938d80">5 items · Jul 8</text>
+    <!-- card 4 -->
+    <rect x="308" y="584" width="216" height="124" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <text x="324" y="612" font-size="12" font-weight="600" fill="#938d80">#4</text>
+    <rect x="468" y="600" width="40" height="40" rx="10" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="324" y="676" font-size="18" font-weight="650" fill="#26241f">Winter</text>
+    <text x="324" y="696" font-size="12" fill="#938d80">4 items · Jul 5</text>
+  </g>
+
+  <!-- ============ Screen B: Box detail ============ -->
+  <g filter="url(#soft)">
+    <rect x="680" y="40" width="520" height="720" rx="40" fill="#f4f1ea" stroke="#e4ded0"/>
+  </g>
+
+  <text x="716" y="102" font-size="16" font-weight="600" fill="#5e6e58">‹ Home</text>
+  <text x="1164" y="102" font-size="16" font-weight="600" fill="#a9553f" text-anchor="end">Delete box</text>
+
+  <text x="940" y="162" font-size="22" font-weight="650" fill="#26241f" text-anchor="middle">Kitchen</text>
+  <text x="940" y="256" font-size="96" font-weight="700" letter-spacing="-4" fill="#26241f" text-anchor="middle">7</text>
+
+  <rect x="808" y="278" width="264" height="34" rx="17" fill="#efeadf" stroke="#e4ded0"/>
+  <text x="940" y="300" font-size="13" fill="#938d80" text-anchor="middle">✎  Write this number on the box</text>
+  <text x="940" y="338" font-size="13" fill="#938d80" text-anchor="middle">Packed Jul 12, 2026</text>
+
+  <rect x="716" y="364" width="448" height="60" rx="22" fill="#5e6e58"/>
+  <text x="940" y="401" font-size="18" font-weight="600" fill="#fdfcf8" text-anchor="middle">Add item</text>
+
+  <text x="720" y="464" font-size="12" font-weight="600" letter-spacing="1.5" fill="#938d80">IN THIS BOX</text>
+  <text x="1164" y="464" font-size="13" fill="#938d80" text-anchor="end">3 items</text>
+
+  <!-- item rows -->
+  <g>
+    <rect x="716" y="480" width="448" height="64" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <rect x="728" y="489" width="46" height="46" rx="11" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="790" y="518" font-size="17" fill="#26241f">Ceramic mug</text>
+
+    <rect x="716" y="556" width="448" height="64" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <rect x="728" y="565" width="46" height="46" rx="11" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="790" y="594" font-size="17" fill="#26241f">Chef's knife</text>
+
+    <rect x="716" y="632" width="448" height="64" rx="15" fill="#fffdf8" stroke="#e4ded0"/>
+    <rect x="728" y="641" width="46" height="46" rx="11" fill="#e7eae2" stroke="#e4ded0"/>
+    <text x="790" y="670" font-size="17" fill="#26241f">Tea kettle</text>
+  </g>
+</svg>

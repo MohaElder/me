@@ -9,90 +9,72 @@
       </div>
     </div>
     <div class="opensource-cards">
-      <v-card max-width="700" @click="() => { nav('https://github.com/UNOPS/uimf-svelte'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/uimf-svelte.png">
-          <v-card-title>uimf-svelte</v-card-title>
+      <v-card v-for="project in projects" :key="project.name" max-width="700" :href="project.href" class="mb-xl">
+        <v-img class="text-white align-end" :src="project.img" gradient="to top, rgba(0,0,0,.6), transparent 35%">
+          <v-card-title>{{ project.name }}</v-card-title>
         </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            Svelte implementation of UIMF components, created by backend metadata configs. Small, fast, and compatible with any environment. Uses Bootstrap for a clean, modern look.
-          </div>
-        </v-card-text>
-      </v-card>
-      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/SvelteComponents'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/svelte.png">
-          <v-card-title>use-svelte-anywhere</v-card-title>
-        </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            Universal web components with Svelte. Build and bundle for any framework. Includes workflow and templates for easy integration.
-          </div>
-        </v-card-text>
-      </v-card>
-      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/Trip'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/Banner.jpg">
-          <v-card-title>Let's Plan A Trip</v-card-title>
-        </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            A collaborative trip planning tool. Plan, organize, and share your travel adventures with friends.
-          </div>
-        </v-card-text>
-      </v-card>
-      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/gpa-c'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/gpac.png">
-          <v-card-title>gpa-c</v-card-title>
-        </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            Lightweight GPA calculator framework for JavaScript. Works with React, Vue, WeChat Miniapp, and more.
-          </div>
-        </v-card-text>
-      </v-card>
-      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/Eroducate/blob/master/README.md'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/eroducate.png">
-          <v-card-title class="text-black">Eroducate</v-card-title>
-        </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            Guide to creating multi-ended visual novels. Introduces the FASMEC method for professional filmmaking.
-          </div>
-        </v-card-text>
-      </v-card>
-      <v-card max-width="700" @click="() => { nav('https://github.com/MohaElder/AnnoWikiTool'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/anno.png">
-          <v-card-title>Anno Wiki Tool</v-card-title>
-        </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            Python script to boost efficiency cloning Fandom wikis. Converts templates, downloads images, and more.
-          </div>
-        </v-card-text>
-      </v-card>
-      <v-card max-width="700" @click="() => { nav('https://github.com/Eroducate/project-megabunus-portal'); }" class="mb-xl">
-        <v-img class="text-white align-end" src="../assets/osp/megabunus.png">
-          <v-card-title class="text-black">Project Megabunus</v-card-title>
-        </v-img>
-        <v-card-text class="text--primary">
-          <div>
-            Web service for visual novel games. Portal, backend, and game client for codeless editing, live loading, translation, and more.
-          </div>
-        </v-card-text>
+        <v-card-text class="text--primary">{{ project.desc }}</v-card-text>
       </v-card>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({}),
-  mounted() { window.scrollTo(0, 0); },
-  methods: {
-    nav(str) {
-      window.location.href = str;
-    },
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import openenlarge from '../assets/osp/openenlarge.jpg'
+import uimfSvelte from '../assets/osp/uimf-svelte.png'
+import karaAlwaysOk from '../assets/osp/karaalwaysok.png'
+import stocka from '../assets/osp/stocka.svg'
+import trip from '../assets/osp/Banner.jpg'
+import svelte from '../assets/osp/svelte.png'
+import gpac from '../assets/osp/gpac.png'
+
+const projects = [
+  {
+    name: 'OpenEnlarge',
+    href: 'https://github.com/MohaElder/openenlarge',
+    img: openenlarge,
+    desc: 'Professional-grade film scan editor that inverts negatives through real film-and-paper chemistry. Free for macOS, Windows, and Linux.',
   },
-};
+  {
+    name: 'uimf-svelte',
+    href: 'https://github.com/UNOPS/uimf-svelte',
+    img: uimfSvelte,
+    desc: 'Svelte implementation of UIMF components, created by backend metadata configs. Small, fast, and compatible with any environment. Used across multiple UN services.',
+  },
+  {
+    name: 'KaraAlwaysOK',
+    href: 'https://github.com/MohaElder/KaraAlwaysOK',
+    img: karaAlwaysOk,
+    desc: 'Turn any song into karaoke on your Mac: vocals removed, lyrics synced word by word, and friends sing into their phones as mics.',
+  },
+  {
+    name: 'stocka',
+    href: 'https://github.com/MohaElder/stocka',
+    img: stocka,
+    desc: "A 'what's in the box?' app: photograph items as you pack, let Workers AI name them, and find any box later by code or search.",
+  },
+  {
+    name: "Let's Plan A Trip",
+    href: 'https://github.com/MohaElder/Trip',
+    img: trip,
+    desc: 'A collaborative trip planning tool. Plan, organize, and share your travel adventures with friends.',
+  },
+  {
+    name: 'use-svelte-anywhere',
+    href: 'https://github.com/MohaElder/SvelteComponents',
+    img: svelte,
+    desc: 'Universal web components with Svelte. Build and bundle for any framework. Includes workflow and templates for easy integration.',
+  },
+  {
+    name: 'gpa-c',
+    href: 'https://github.com/MohaElder/gpa-c',
+    img: gpac,
+    desc: 'Lightweight GPA calculator framework for JavaScript. Works with React, Vue, WeChat Miniapp, and more.',
+  },
+]
+
+onMounted(() => window.scrollTo(0, 0))
 </script>
 
 <style scoped>
