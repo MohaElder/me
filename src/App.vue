@@ -8,7 +8,7 @@
 
 <template>
   <v-app style="overflow: hidden">
-    <v-app-bar class="liquid-glass-app-bar" @mousemove="handleAppBarMouseMove" @mouseleave="handleAppBarMouseLeave">
+    <v-app-bar class="liquid-glass-app-bar">
       <v-app-bar-nav-icon v-if="$vuetify.display.mobile" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <div class="d-flex align-center" v-else>
         <span class="app-bar-item" @click="$router.push({ name: 'Hi' }).catch(() => { })"
@@ -81,7 +81,7 @@
       <router-view />
     </v-main>
 
-    <v-footer class="liquid-glass-footer" padless @mousemove="handleFooterMouseMove" @mouseleave="handleFooterMouseLeave">
+    <v-footer class="liquid-glass-footer" padless>
       <div tile class="text-white text-center">
         <p class="text-white pt-0 text-xs">
           Made with
@@ -121,10 +121,6 @@ const i18n = useI18n()
 const icons = ref(["mdi-github", "mdi-linkedin"])
 const drawer = ref(false)
 const group = ref(null)
-const appBarMouseX = ref(0)
-const appBarMouseY = ref(0)
-const footerMouseX = ref(0)
-const footerMouseY = ref(0)
 
 watch(group, () => {
   drawer.value = false
@@ -132,28 +128,6 @@ watch(group, () => {
 
 const changeLanguage = () => {
   i18n.locale.value = i18n.locale.value === "en" ? "zh" : "en"
-}
-
-const handleAppBarMouseMove = (event: MouseEvent) => {
-  const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
-  appBarMouseX.value = event.clientX - rect.left
-  appBarMouseY.value = event.clientY - rect.top
-}
-
-const handleAppBarMouseLeave = () => {
-  appBarMouseX.value = 0
-  appBarMouseY.value = 0
-}
-
-const handleFooterMouseMove = (event: MouseEvent) => {
-  const rect = (event.currentTarget as HTMLElement).getBoundingClientRect()
-  footerMouseX.value = event.clientX - rect.left
-  footerMouseY.value = event.clientY - rect.top
-}
-
-const handleFooterMouseLeave = () => {
-  footerMouseX.value = 0
-  footerMouseY.value = 0
 }
 </script>
 
@@ -170,30 +144,6 @@ const handleFooterMouseLeave = () => {
     0 8px 32px 0 rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   overflow: hidden;
-}
-
-.liquid-glass-app-bar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(
-    circle at v-bind(appBarMouseX + 'px') v-bind(appBarMouseY + 'px'),
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.08) 30%,
-    rgba(255, 255, 255, 0.03) 60%,
-    transparent 80%
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.liquid-glass-app-bar:hover::before {
-  opacity: 1;
 }
 
 .liquid-glass-app-bar::after {
@@ -224,30 +174,6 @@ const handleFooterMouseLeave = () => {
     0 -8px 32px 0 rgba(0, 0, 0, 0.4),
     inset 0 -1px 0 rgba(255, 255, 255, 0.05);
   overflow: hidden;
-}
-
-.liquid-glass-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(
-    circle at v-bind(footerMouseX + 'px') v-bind(footerMouseY + 'px'),
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.08) 30%,
-    rgba(255, 255, 255, 0.03) 60%,
-    transparent 80%
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.liquid-glass-footer:hover::before {
-  opacity: 1;
 }
 
 .liquid-glass-footer::after {
