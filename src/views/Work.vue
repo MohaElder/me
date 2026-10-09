@@ -116,7 +116,7 @@ const sections = [
 ]
 
 const awards = [
-  { caption: 'message.awards.analog_sparks', img: analogSparks2025, href: 'https://www.analogsparksawards.com' },
+  { caption: 'message.awards.analog_sparks', img: analogSparks2025, href: 'https://www.analogsparksawards.com/winner/zoom.php?eid=3-6335-25' },
   { caption: 'message.awards.ipa_2nd', img: ipa2025, href: 'https://www.photoawards.com/winner/zoom.php?eid=8-1722599429-25' },
   { caption: 'message.awards.ipa_hm', img: ipa2025Mention, href: 'https://www.photoawards.com/winner/zoom.php?eid=8-1722610316-25' },
   { caption: 'message.awards.nd_hm', img: ndAwards2024, href: 'https://ndawards.net/winners-gallery/nd-awards-2024/non-professional/photojournalism-story/hm/22290/' },
