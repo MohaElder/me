@@ -1,4 +1,4 @@
-// Seal a new letter for the If I Die page:
+// Seal a new letter (Markdown) for the If I Die page:
 //   pnpm encrypt "<message>" "<key>"
 // Appends the ciphertext to src/utils/eulogies.json; give the key to its reader.
 import { readFileSync, writeFileSync } from 'node:fs'

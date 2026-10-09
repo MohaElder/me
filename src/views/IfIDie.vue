@@ -13,7 +13,7 @@
         <div class="back"></div>
         <div class="paper" :class="{ open: letter }">
           <span class="paper-label">{{ $t("message.if_i_die_for_you") }}</span>
-          <p class="letter-text">{{ letter }}</p>
+          <div class="letter-text" v-html="letterHtml"></div>
         </div>
         <div class="front"></div>
         <div class="flap" :class="{ open: letter }"></div>
@@ -23,7 +23,7 @@
 
     <article v-else class="letter" aria-live="polite">
       <span class="paper-label">{{ $t("message.if_i_die_for_you") }}</span>
-      <p class="letter-text">{{ letter }}</p>
+      <div class="letter-text" v-html="letterHtml"></div>
       <span class="paper-sign">{{ $t("message.if_i_die_sign") }}</span>
     </article>
     </Transition>
@@ -48,8 +48,9 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import CryptoJS from 'crypto-js'
+import MarkdownIt from 'markdown-it'
 import eulogies from '../utils/eulogies.json'
 
 // Letters are sealed with `pnpm encrypt`, which prefixes this marker so a
@@ -58,6 +59,9 @@ const MARKER = 'DECRYPTED '
 
 const key = ref('')
 const letter = ref(null)
+// Letters are Markdown; raw HTML is allowed since only `pnpm encrypt` can add one.
+const md = new MarkdownIt({ html: true, breaks: true })
+const letterHtml = computed(() => letter.value && md.render(letter.value))
 const unfolded = ref(false)
 const wrong = ref(false)
 const shake = ref(false)
@@ -263,11 +267,42 @@ onMounted(() => window.scrollTo(0, 0))
 }
 
 .letter-text {
-  margin: 0;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Rendered Markdown; Blog.vue's global h1/p rules would otherwise apply. */
+.letter-text :deep(h1),
+.letter-text :deep(h2),
+.letter-text :deep(h3) {
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: 26px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.letter-text :deep(p) {
+  margin: 0 0 1em;
+  font-size: inherit;
   font-weight: 400;
-  line-height: 1.6;
-  white-space: pre-wrap;
+  line-height: inherit;
+}
+
+.letter-text :deep(> :last-child) {
+  margin-bottom: 0;
+}
+
+/* The site's Helvetica Neue webfont has no real bold; fall back so emphasis shows. */
+.letter-text :deep(strong) {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.letter-text :deep(a) {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* The key */
