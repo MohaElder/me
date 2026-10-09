@@ -31,6 +31,16 @@ const messages = {
             open_source_desc: "Open source keeps the internet fair and open. Here's what I've built in the open.",
             open_source_all: "All repos on GitHub",
             open_source_view: "View repo",
+            open_source_new: "New",
+            projects: {
+                openenlarge: { kind: "Film scan editor · macOS, Windows, Linux", desc: "Professional-grade film scan editor that inverts negatives through real film-and-paper chemistry." },
+                karaalwaysok: { kind: "Karaoke app · macOS", desc: "Turn any song into karaoke on your Mac. Vocals removed, lyrics synced word by word, friends sing into their phones." },
+                stocka: { kind: "PWA · Cloudflare Workers", desc: "Photograph items as you pack, let Workers AI name them, and find any box later by code or search." },
+                uimf_svelte: { kind: "Svelte library · UNOPS", desc: "Svelte UIMF components generated from backend metadata. Used across multiple UN services." },
+                trip: { kind: "Web app", desc: "A collaborative trip planner that actually does trip planning." },
+                svelte_anywhere: { kind: "Build toolkit", desc: "Universal web components with Svelte, bundled for any framework." },
+                gpa_c: { kind: "JS library", desc: "Lightweight GPA calculator framework for React, Vue, WeChat Miniapp and more." },
+            },
 
             if_i_die_brief: "Hello! Welcome to this page. This page hosts my final words. \
             The page would non-periodically update until the day finally comes",
@@ -126,6 +136,16 @@ const messages = {
             open_source_desc: "开源让互联网保持公平与开放。这些是我公开构建的项目。",
             open_source_all: "GitHub 上的全部仓库",
             open_source_view: "查看仓库",
+            open_source_new: "新",
+            projects: {
+                openenlarge: { kind: "胶片扫描编辑器 · macOS、Windows、Linux", desc: "专业级胶片扫描编辑器，依照真实的胶片与相纸化学原理反转负片。" },
+                karaalwaysok: { kind: "卡拉 OK 应用 · macOS", desc: "把任何歌曲变成 Mac 上的卡拉 OK：去除人声、逐字同步歌词，朋友用手机当麦克风。" },
+                stocka: { kind: "PWA · Cloudflare Workers", desc: "打包时给物品拍照，由 Workers AI 自动命名，之后凭编号或搜索找到任意箱子。" },
+                uimf_svelte: { kind: "Svelte 组件库 · 联合国项目事务厅", desc: "根据后端元数据生成的 Svelte UIMF 组件，已在多个联合国服务中使用。" },
+                trip: { kind: "Web 应用", desc: "一个真正能做旅行规划的协作式旅行规划工具。" },
+                svelte_anywhere: { kind: "构建工具", desc: "用 Svelte 构建通用 Web 组件，可打包给任何框架使用。" },
+                gpa_c: { kind: "JS 库", desc: "轻量级 GPA 计算框架，支持 React、Vue、微信小程序等。" },
+            },
             if_i_die_brief: " 您好，欢迎访问这个页面。这个页面包含了我的遗言，以及遗嘱。本页面将会不定期更新，直至其正式生效。",
             if_i_die_music: "请在我的葬礼播放以下歌曲:",
             if_i_die_encryption_note: "以下数据为我的遗言，皆进行了AES-128加密，可通过相应的key解密",

@@ -15,17 +15,17 @@
             <span class="name-row">
               <span class="num">{{ String(i + 1).padStart(2, "0") }}</span>
               <span class="name">{{ project.name }}</span>
-              <span class="meta">{{ project.meta }}</span>
+              <span class="meta">{{ project.stars ? `★ ${project.stars}` : $t("message.open_source_new") }} · {{ project.year }}</span>
             </span>
-            <span class="inline-desc">{{ project.desc }}</span>
+            <span class="inline-desc">{{ $t(`message.projects.${project.id}.desc`) }}</span>
           </a>
         </li>
       </ol>
 
       <aside class="preview">
         <img :src="current.img" :alt="current.name">
-        <span class="kind">{{ current.kind }}</span>
-        <span class="desc">{{ current.desc }}</span>
+        <span class="kind">{{ $t(`message.projects.${current.id}.kind`) }}</span>
+        <span class="desc">{{ $t(`message.projects.${current.id}.desc`) }}</span>
         <a class="btn" :href="current.href" target="_blank">
           {{ $t("message.open_source_view") }}<v-icon size="18">mdi-arrow-top-right</v-icon>
         </a>
@@ -46,60 +46,60 @@ import gpac from '../assets/osp/gpac.png'
 
 const projects = [
   {
+    id: 'openenlarge',
     name: 'OpenEnlarge',
     href: 'https://github.com/MohaElder/openenlarge',
     img: openenlarge,
-    meta: '★ 44 · 2026',
-    kind: 'Film scan editor · macOS, Windows, Linux',
-    desc: 'Professional-grade film scan editor that inverts negatives through real film-and-paper chemistry.',
+    stars: 44,
+    year: 2026,
   },
   {
+    id: 'karaalwaysok',
     name: 'KaraAlwaysOK',
     href: 'https://github.com/MohaElder/KaraAlwaysOK',
     img: karaAlwaysOk,
-    meta: '★ 1 · 2026',
-    kind: 'Karaoke app · macOS',
-    desc: 'Turn any song into karaoke on your Mac. Vocals removed, lyrics synced word by word, friends sing into their phones.',
+    stars: 1,
+    year: 2026,
   },
   {
+    id: 'stocka',
     name: 'stocka',
     href: 'https://github.com/MohaElder/stocka',
     img: stocka,
-    meta: 'New · 2026',
-    kind: 'PWA · Cloudflare Workers',
-    desc: 'Photograph items as you pack, let Workers AI name them, and find any box later by code or search.',
+    stars: null,
+    year: 2026,
   },
   {
+    id: 'uimf_svelte',
     name: 'uimf-svelte',
     href: 'https://github.com/UNOPS/uimf-svelte',
     img: uimfSvelte,
-    meta: '★ 2 · 2026',
-    kind: 'Svelte library · UNOPS',
-    desc: 'Svelte UIMF components generated from backend metadata. Used across multiple UN services.',
+    stars: 2,
+    year: 2026,
   },
   {
+    id: 'trip',
     name: "Let's Plan A Trip",
     href: 'https://github.com/MohaElder/Trip',
     img: trip,
-    meta: '★ 12 · 2022',
-    kind: 'Web app',
-    desc: 'A collaborative trip planner that actually does trip planning.',
+    stars: 12,
+    year: 2022,
   },
   {
+    id: 'svelte_anywhere',
     name: 'use-svelte-anywhere',
     href: 'https://github.com/MohaElder/SvelteComponents',
     img: svelte,
-    meta: '★ 2 · 2023',
-    kind: 'Build toolkit',
-    desc: 'Universal web components with Svelte, bundled for any framework.',
+    stars: 2,
+    year: 2023,
   },
   {
+    id: 'gpa_c',
     name: 'gpa-c',
     href: 'https://github.com/MohaElder/gpa-c',
     img: gpac,
-    meta: '★ 1 · 2022',
-    kind: 'JS library',
-    desc: 'Lightweight GPA calculator framework for React, Vue, WeChat Miniapp and more.',
+    stars: 1,
+    year: 2022,
   },
 ]
 
