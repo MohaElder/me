@@ -12,6 +12,7 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import './styles/global.css'
 
 import { createI18n } from 'vue-i18n'
 import { messages } from './utils/messages'

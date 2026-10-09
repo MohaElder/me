@@ -2,19 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '../views/Home.vue'
-import Work from '../views/Work.vue'
-import Recipe from '../views/Recipe.vue'
-import Photos from '../views/Photos.vue'
-import Blogs from '../views/Blogs.vue'
-import Blog from '../views/Blog.vue'
-import IfIDie from '../views/IfIDie.vue'
-import OpenSource from '../views/OpenSource.vue'
 // import Guide from '../views/Guide.vue'
-import NothingToLose from '../views/NothingToLose.vue'
-import LandEmbodied from '../views/LandEmbodied.vue'
-import Art from '../views/Art.vue'
-import InterestingPeople from '../views/InterestingPeople.vue'
-import LetterToFutureAI from '../views/LetterToFutureAI.vue'
 const appRoot = '/me';
 
 const routes = [
@@ -30,67 +18,67 @@ const routes = [
   {
     path: appRoot + '/work',
     name: 'Work',
-    component: Work
+    component: () => import('../views/Work.vue')
   },
   {
     path: appRoot + '/opensource',
     name: 'OpenSource',
-    component: OpenSource
+    component: () => import('../views/OpenSource.vue')
   },
   {
     path: appRoot + '/Recipe',
     name: 'Recipe',
-    component: Recipe
+    component: () => import('../views/Recipe.vue')
   },
   {
     path: appRoot + '/photos',
     name: 'Photos',
-    component: Photos
+    component: () => import('../views/Photos.vue')
   },
   {
     path: appRoot + '/blogs',
     name: 'Blogs',
-    component: Blogs
+    component: () => import('../views/Blogs.vue')
   },
   {
     path: appRoot + '/blog',
     name: 'Blog',
-    component: Blog
+    component: () => import('../views/Blog.vue')
   },
   {
     path: appRoot + '/story',
     name: 'Story',
-    component: Blog  // Reusing Blog component for stories
+    component: () => import('../views/Blog.vue')  // Reusing Blog component for stories
   },
   {
     path: appRoot + '/final_words',
     name: 'IfIDie',
-    component: IfIDie
+    component: () => import('../views/IfIDie.vue')
   },
   {
     path: appRoot + '/nothing-to-lose',
     name: 'NothingToLose',
-    component: NothingToLose
+    component: () => import('../views/NothingToLose.vue')
   },
   {
     path: appRoot + '/land-embodied',
     name: 'LandEmbodied',
-    component: LandEmbodied
+    component: () => import('../views/LandEmbodied.vue')
   },
   {
     path: appRoot + '/art',
     name: 'Exhibitions',
-    component: Art
+    component: () => import('../views/Art.vue')
   },
   {
     path: appRoot + '/interesting-people',
     name: 'InterestingPeople',
-    component: InterestingPeople
+    component: () => import('../views/InterestingPeople.vue')
   },
   {
     path: appRoot + '/letter-to-future-ai',
     name: 'LetterToFutureAI',
-    component: LetterToFutureAI
+    component: () => import('../views/LetterToFutureAI.vue')
   },
   // {
   //   path: '/guide',
