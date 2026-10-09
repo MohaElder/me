@@ -42,16 +42,15 @@ const messages = {
                 gpa_c: { kind: "JS library", desc: "Lightweight GPA calculator framework for React, Vue, WeChat Miniapp and more." },
             },
 
-            if_i_die_brief: "Hello! Welcome to this page. This page hosts my final words. \
-            The page would non-periodically update until the day finally comes",
-            if_i_die_music: "Please play the following songs during my funeral:",
-            if_i_die_encryption_note: "The following data is my eulogy, they are all encrypted \
-            in AES-128, and can be decrypted with the corresponding key",
-            if_i_die_encryption_instructions: "Instruction: Paste your key at Paste key here, \
-            then click DECRYPT button. If the key is valid, the encrypted text will \
-            be unlocked, otherwise no response. Example key: TEST{'@'}TEST",
-            if_i_die_encryption_dev_note: "ENCRYPT and Paste Message Here are only used \
-            for encrypting my messages, you won't need it for decryption.",
+            if_i_die_title: "My last words, for now.",
+            if_i_die_brief: "Sealed until the day comes. If I gave you a key, it opens yours.",
+            if_i_die_music: "Please play these songs at my funeral.",
+            if_i_die_key_label: "The key I gave you",
+            if_i_die_unlock: "Break seal",
+            if_i_die_wrong: "This key doesn't fit. Nothing was sent anywhere; check it and try again.",
+            if_i_die_example: "Example key: TEST{'@'}TEST",
+            if_i_die_for_you: "For you",
+            if_i_die_sign: "— Yasushi",
             exhibitions_title: "Exhibitions",
             exhibitions_subtitle: "Press materials from past and online exhibitions are listed below.",
             exhibitions_land_embodied: "Land Embodied",
@@ -147,14 +146,15 @@ const messages = {
                 svelte_anywhere: { kind: "构建工具", desc: "用 Svelte 构建通用 Web 组件，可打包给任何框架使用。" },
                 gpa_c: { kind: "JS 库", desc: "轻量级 GPA 计算框架，支持 React、Vue、微信小程序等。" },
             },
-            if_i_die_brief: " 您好，欢迎访问这个页面。这个页面包含了我的遗言，以及遗嘱。本页面将会不定期更新，直至其正式生效。",
-            if_i_die_music: "请在我的葬礼播放以下歌曲:",
-            if_i_die_encryption_note: "以下数据为我的遗言，皆进行了AES-128加密，可通过相应的key解密",
-            if_i_die_encryption_instructions: "解密方式：将你收到的key粘贴在Paste key \
-            here处，并且点击DECRYPT按钮。如果key合法，相应的加密文本将解锁，否则不会有任何反应。 \
-            示例key: TEST{'@'}TEST",
-            if_i_die_encryption_dev_note: "ENCRYPT和Paste Message \
-            Here仅用于本人加密信息用，解密时不会用到。",
+            if_i_die_title: "我的遗言，暂且如此。",
+            if_i_die_brief: "封存至那一天到来。如果我给过你一把钥匙，它能打开属于你的那封信。",
+            if_i_die_music: "请在我的葬礼上播放这些歌。",
+            if_i_die_key_label: "我给你的钥匙",
+            if_i_die_unlock: "拆封",
+            if_i_die_wrong: "这把钥匙打不开。信息不会发送到任何地方，请检查后重试。",
+            if_i_die_example: "示例钥匙：TEST{'@'}TEST",
+            if_i_die_for_you: "给你的信",
+            if_i_die_sign: "— 安志",
             exhibitions_title: "展览",
             exhibitions_subtitle: "以下列出了过去和在线展览的新闻材料。",
             exhibitions_land_embodied: "大地具象",
