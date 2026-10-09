@@ -54,7 +54,8 @@
 <script setup>
 import Icon from '../components/Icon.vue'
 import { computed, onMounted, ref } from 'vue'
-import CryptoJS from 'crypto-js'
+import AES from 'crypto-js/aes'
+import Utf8 from 'crypto-js/enc-utf8'
 import MarkdownIt from 'markdown-it'
 import eulogies from '../utils/eulogies.json'
 
@@ -73,7 +74,7 @@ const shake = ref(false)
 
 const open = (cipher) => {
   try {
-    const text = CryptoJS.AES.decrypt(cipher, key.value.trim()).toString(CryptoJS.enc.Utf8)
+    const text = AES.decrypt(cipher, key.value.trim()).toString(Utf8)
     return text.startsWith(MARKER) ? text.slice(MARKER.length) : null
   } catch {
     return null
