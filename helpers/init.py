@@ -27,6 +27,9 @@ def updateImageData(image_data, file):
     picture = Image.open(filepath)
     thumbnail_extension = "_thumbnail"
     compress(filepath, thumbnail_extension, picture, True)
+    # compress() shrinks `picture` to the thumbnail; the gallery reserves each
+    # tile's shape from this size so nothing jumps while it loads.
+    image_data["w"], image_data["h"] = picture.size
 
     image_data["thumbnail"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + \
         file + thumbnail_extension + ".jpg"
@@ -73,6 +76,7 @@ def getImageData(file, verbose=False):
 
     thumbnail_extension = "_thumbnail"
     compress(filepath, thumbnail_extension, picture, False)
+    image_data["w"], image_data["h"] = picture.size
 
     image_data["url"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + file
     image_data["thumbnail"] = "https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/" + \
@@ -118,6 +122,13 @@ def updateImageLink(path):
         else:
             print("already processed before")
     print("All Images processed!")
+    for key, data in list(imageLinks["images"].items()):
+        thumb = os.path.join("../src/images", key + "_thumbnail.jpg")
+        if not os.path.exists(thumb):
+            del imageLinks["images"][key]  # file is gone; don't ship a broken tile
+        elif "w" not in data:
+            data["w"], data["h"] = Image.open(thumb).size
+
     for key in imageLinks["images"]:
         for tag in imageLinks["images"][key]["Tags"]:
             if tag not in imageLinks["tags"]:
