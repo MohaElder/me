@@ -1,5 +1,30 @@
 [
  {
+  "file": "bc2fc9dcd46a29312dad79818e9c30e7.jpg",
+  "w": 512,
+  "h": 366,
+  "category": "Street"
+ },
+ {
+  "file": "33738dbb57da7401aa232ac45a8c193b.jpg",
+  "w": 512,
+  "h": 366,
+  "category": "Street"
+ },
+ {
+  "file": "636de289ccef2a8576d32cd12fefb4d8.jpg",
+  "w": 342,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "Street"
+ },
+ {
+  "file": "f47414377bb08f762dc28606f076727c.jpg",
+  "w": 512,
+  "h": 366,
+  "category": "Architecture"
+ },
+ {
   "file": "scan_47-positive.jpg",
   "w": 410,
   "h": 512,
