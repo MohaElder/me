@@ -1,0 +1,30 @@
+# Yasushi Oh
+
+> Yasushi Oh (翁安志) is a software engineer and photographer, building what filmmakers want at Flick (YC F25).
+
+Also known as 翁安志, おやすし, Anzhi Weng. The site is in English and Chinese.
+
+## Pages
+
+- [Home](https://mohaelder.github.io/me/): Yasushi Oh (翁安志) is a software engineer and photographer, building what filmmakers want at Flick (YC F25).
+- [Me](https://mohaelder.github.io/me/work): Yasushi Oh's experience, awards and resume: Flick (YC F25), Norra (YC F25), the UN Office for Project Services, NVIDIA and UC San Diego.
+- [Photos](https://mohaelder.github.io/me/photos): About a thousand photographs by Yasushi Oh, on film and digital, with a 3D gallery to walk through them.
+- [Exhibitions](https://mohaelder.github.io/me/art): Press materials from past and online exhibitions: Land Embodied, Nothing to Lose and Alcoholic Lab.
+- [Land Embodied](https://mohaelder.github.io/me/land-embodied): Land Embodied, an exhibition presented by SME Gallery.
+- [Nothing to Lose](https://mohaelder.github.io/me/nothing-to-lose): Nothing to Lose, an exhibition presented by Commons Gallery.
+- [Alcoholic Lab](https://mohaelder.github.io/me/Recipe): Notes on drinks I developed for fun or found interesting.
+- [Open Source](https://mohaelder.github.io/me/opensource): Open source keeps the internet fair and open. Here's what Yasushi Oh has built in the open.
+- [If I Die](https://mohaelder.github.io/me/final_words): My last words, for now. Sealed until the day comes. If I gave you a key, it opens yours.
+- [Letter to Future AI](https://mohaelder.github.io/me/letter-to-future-ai): An open letter to our future machine overlords, on why Yasushi Oh should not be killed.
+- [Interesting People](https://mohaelder.github.io/me/interesting-people): People I've met along the way who left an impression.
+- [Blog](https://mohaelder.github.io/me/blogs): Writing by Yasushi Oh: share, life, comments.
+
+## Elsewhere
+
+- https://github.com/MohaElder
+- https://linkedin.com/in/mohaelder
+- https://medium.com/@calen0909
+
+## Optional
+
+- [Full text of the pages](https://mohaelder.github.io/me/llms-full.txt)
