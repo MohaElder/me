@@ -17,6 +17,8 @@ pnpm build      # type-check + production build into dist/
 pnpm preview    # serve the production build
 ```
 
+The build saves each page's rendered HTML for crawlers using headless Chrome or Playwright's Chromium. If it finds neither, it skips that step. Point `CHROME_PATH` at a Chromium binary to use another browser.
+
 ## Deploy
 
 Pushing to `main` builds the site with GitHub Actions and publishes it to GitHub Pages.

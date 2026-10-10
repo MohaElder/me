@@ -6,4 +6,7 @@ import { t } from './i18n'
 
 const app = createApp(App)
 app.config.globalProperties.$t = t
-app.use(router).mount('#app')
+// Wait for the first page's code so the prerendered HTML is swapped straight for
+// the live page, without a blank frame in between.
+app.use(router)
+router.isReady().then(() => app.mount('#app'))

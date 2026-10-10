@@ -1,10 +1,10 @@
 <template>
   <div class="app">
     <header class="app-bar liquid-glass-app-bar">
-      <button v-if="mobile" type="button" class="bar-btn" aria-label="Menu" @click="drawer = !drawer">
+      <button type="button" class="bar-btn menu-btn" aria-label="Menu" @click="drawer = !drawer">
         <Icon name="menu" />
       </button>
-      <nav v-else class="nav">
+      <nav class="nav">
         <RouterLink v-for="item in nav" :key="item.name" :to="{ name: item.name }" class="app-bar-item"
           :class="{ active: route.name === item.name }">{{ $t(item.label) }}</RouterLink>
       </nav>
@@ -46,7 +46,6 @@ import { useRoute } from 'vue-router'
 import { locale } from './i18n'
 import vueIcon from './components/vue-icon.vue'
 import Icon from './components/Icon.vue'
-import { useDisplay } from './composables/useDisplay'
 
 const nav = [
   { name: 'Hi', label: 'message.nav_hi' },
@@ -59,7 +58,6 @@ const nav = [
 ]
 
 const route = useRoute()
-const { mobile } = useDisplay()
 const drawer = ref(false)
 
 watch(() => route.fullPath, () => (drawer.value = false))
@@ -179,6 +177,22 @@ const changeLanguage = () => {
   font-weight: 500;
   letter-spacing: 0.09em;
   transition: color 0.3s;
+}
+
+/* Below useDisplay's 1280px breakpoint, a menu button replaces the links. Done in
+   CSS so the prerendered HTML is right at every width before Vue loads. */
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 1279.98px) {
+  .menu-btn {
+    display: inline-flex;
+  }
+
+  .nav {
+    display: none;
+  }
 }
 
 .lang {

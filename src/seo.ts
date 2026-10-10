@@ -1,3 +1,5 @@
+import { messages } from './utils/messages.ts'
+
 // Title and description of each page, keyed by its path under /me/. The build
 // writes one HTML file per page with these in its <head>, so GitHub Pages serves
 // every page with a 200 instead of through 404.html, and lists them in a
@@ -21,4 +23,21 @@ export const pages: Record<string, { title: string, description: string }> = {
   blogs: { title: 'Blog', description: 'Writing by Yasushi Oh: share, life, comments.' },
 }
 
-export const titleOf = (key: string) => key in pages && key ? `${pages[key].title} · Yasushi Oh` : name
+// Who the site is about, as schema.org data for search engines and AI assistants.
+export const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Yasushi Oh',
+  alternateName: ['翁安志', 'おやすし', 'Anzhi Weng'],
+  description: pages[''].description,
+  url: siteUrl,
+  image: siteUrl + 'og.jpg',
+  jobTitle: 'Software Engineer',
+  worksFor: { '@type': 'Organization', name: 'Flick', url: 'https://flick.art' },
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'UC San Diego', url: 'https://ucsd.edu/' },
+  knowsAbout: ['Software engineering', 'Photography', 'Film photography'],
+  award: Object.values(messages.en.message.awards),
+  sameAs: ['https://github.com/MohaElder', 'https://linkedin.com/in/mohaelder', 'https://medium.com/@calen0909'],
+}
+
+export const titleOf =(key: string) => key in pages && key ? `${pages[key].title} · Yasushi Oh` : name
