@@ -1,122 +1,1443 @@
 [
  {
+  "file": "scan_47-positive.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "scan_43-positive-2.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_41-positive-2.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_40-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_39-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_38-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_37-positive.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_36-positive-2.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_34-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_33-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_30-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_28-positive-2.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_27-positive-2.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_26-positive.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "scan_25-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_23-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_22-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_20-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_19-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_18-positive.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_14-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_9-positive-2.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_8-positive.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "scan_1-positive-2.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000064-positive-2.jpg",
+  "w": 366,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "Architecture"
+ },
+ {
+  "file": "000063-positive-2.jpg",
+  "w": 365,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "Architecture"
+ },
+ {
+  "file": "000062-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "Editorial"
+ },
+ {
+  "file": "000061-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "Architecture"
+ },
+ {
+  "file": "000060-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "People"
+ },
+ {
+  "file": "000058-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "People"
+ },
+ {
+  "file": "000057-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "Editorial"
+ },
+ {
+  "file": "000056-positive-2.jpg",
+  "w": 410,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "Editorial"
+ },
+ {
+  "file": "000055-positive-3.jpg",
+  "w": 512,
+  "h": 410,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "People"
+ },
+ {
+  "file": "000054-positive-3.jpg",
+  "w": 344,
+  "h": 512,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "People"
+ },
+ {
+  "file": "000053-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000052-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000051-positive.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000050-positive-2.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000048-positive-3.jpg",
+  "w": 409,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000047-positive-2.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000046-positive-3.jpg",
+  "w": 409,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000037-positive-2.jpg",
+  "w": 409,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000035-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
+  "category": "People"
+ },
+ {
+  "file": "000006-positive-3.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000005-positive-2.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000067-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000066-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000065-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000064-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000063-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000062-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000058-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000055-positive-2.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000054-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000052-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000049-positive.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000048-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000046-positive-2.jpg",
+  "w": 409,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000045-positive-2.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000043-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000040-positive.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000039-positive-2.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000038-positive-2.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000006-positive-2.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000005-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000004-positive-2.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000002-positive-2.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000013700033-positive.jpg",
+  "w": 512,
+  "h": 339,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000001-positive.jpg",
+  "w": 512,
+  "h": 366,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000013700032-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700030-positive.jpg",
+  "w": 512,
+  "h": 365,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700029-positive.jpg",
+  "w": 512,
+  "h": 339,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700028-positive.jpg",
+  "w": 339,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700027-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700026-positive.jpg",
+  "w": 340,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700022-positive.jpg",
+  "w": 512,
+  "h": 339,
+  "film": true,
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000013700018-positive.jpg",
+  "w": 339,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700017-positive.jpg",
+  "w": 339,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700016-positive.jpg",
+  "w": 339,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700013-positive.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000013700011-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "Nature"
+ },
+ {
+  "file": "000013700004-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480037-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480036-positive.jpg",
+  "w": 512,
+  "h": 366,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480035-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480034-positive.jpg",
+  "w": 512,
+  "h": 365,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000061-positive.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480032-positive.jpg",
+  "w": 512,
+  "h": 339,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000060-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480029-positive.jpg",
+  "w": 410,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000033480028-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000059-positive.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000033480027-positive.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000056-positive.jpg",
+  "w": 512,
+  "h": 365,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480021-positive.jpg",
+  "w": 512,
+  "h": 340,
+  "film": true,
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000033480018-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000055-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480017-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000054-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000033480012-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480011-positive.jpg",
+  "w": 512,
+  "h": 366,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480010-positive.jpg",
+  "w": 365,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000050-positive.jpg",
+  "w": 409,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000033480007-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "000048-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000033480002-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000047-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000046-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "Architecture"
+ },
+ {
+  "file": "000045-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "Architecture"
+ },
+ {
+  "file": "000044-positive.jpg",
+  "w": 512,
+  "h": 366,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000043-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000042-positive.jpg",
+  "w": 409,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000041-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000039-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000038-positive.jpg",
+  "w": 512,
+  "h": 410,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000037-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000036-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000031-positive.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000025-positive.jpg",
+  "w": 512,
+  "h": 409,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000006-positive.jpg",
+  "w": 344,
+  "h": 512,
+  "film": true,
+  "category": "Architecture"
+ },
+ {
+  "file": "000004-positive.jpg",
+  "w": 512,
+  "h": 344,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "000003-positive.jpg",
+  "w": 512,
+  "h": 366,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "000002-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "film": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_10.jpg",
+  "w": 512,
+  "h": 301,
+  "camera": "EPSON Perfection V600",
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_10_3_.jpg",
+  "w": 348,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_10_2_.jpg",
+  "w": 348,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_9_2_.jpg",
+  "w": 348,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_8.jpg",
+  "w": 512,
+  "h": 349,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_7.jpg",
+  "w": 349,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_7_2_.jpg",
+  "w": 348,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_6.jpg",
+  "w": 346,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_6_3_.jpg",
+  "w": 512,
+  "h": 345,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_6_2_.jpg",
+  "w": 345,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_5.jpg",
+  "w": 512,
+  "h": 341,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_5_3_.jpg",
+  "w": 340,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_5_2_.jpg",
+  "w": 512,
+  "h": 350,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_4.jpg",
+  "w": 347,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_4_3_.jpg",
+  "w": 512,
+  "h": 339,
+  "camera": "EPSON Perfection V600",
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_4_2_.jpg",
+  "w": 403,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_3.jpg",
+  "w": 512,
+  "h": 340,
+  "camera": "EPSON Perfection V600",
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_2_2_.jpg",
+  "w": 512,
+  "h": 339,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_1.jpg",
+  "w": 314,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_1_4_.jpg",
+  "w": 512,
+  "h": 357,
+  "camera": "EPSON Perfection V600",
+  "category": "People"
+ },
+ {
+  "file": "Image_1_3_.jpg",
+  "w": 336,
+  "h": 512,
+  "camera": "EPSON Perfection V600",
+  "category": "Editorial"
+ },
+ {
+  "file": "Image_1_2_-positive.jpg",
+  "w": 340,
+  "h": 512,
+  "film": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0084-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441391,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0081-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441349,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0079-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441292,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0078-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441285,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0077-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441275,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0074-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441163,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0072-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774441142,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0066-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774440863,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0065-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774440852,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0062-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774440750,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0060-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774440636,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0059-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774440442,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0055-positive.jpg",
+  "w": 512,
+  "h": 512,
+  "date": 1774440216,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0053-positive.jpg",
+  "w": 512,
+  "h": 384,
+  "date": 1773430070,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0050-positive.jpg",
+  "w": 512,
+  "h": 288,
+  "date": 1773410895,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0044-positive.jpg",
+  "w": 512,
+  "h": 384,
+  "date": 1773399975,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0041-positive.jpg",
+  "w": 512,
+  "h": 384,
+  "date": 1773395604,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0040-positive.jpg",
+  "w": 512,
+  "h": 384,
+  "date": 1773389112,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0039-positive.jpg",
+  "w": 384,
+  "h": 512,
+  "date": 1773389088,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0039-positive-2.jpg",
+  "w": 384,
+  "h": 512,
+  "date": 1773389088,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0002-positive.jpg",
+  "w": 512,
+  "h": 288,
+  "date": 1773149078,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "Editorial"
+ },
+ {
+  "file": "_DSF0057-positive.jpg",
+  "w": 384,
+  "h": 512,
+  "date": 1772711013,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0056-positive.jpg",
+  "w": 384,
+  "h": 512,
+  "date": 1772710981,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0055-positive-2.jpg",
+  "w": 384,
+  "h": 512,
+  "date": 1772709890,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0053-positive-2.jpg",
+  "w": 396,
+  "h": 512,
+  "date": 1772709669,
+  "camera": "FUJIFILM GFX100RF",
+  "bw": true,
+  "category": "People"
+ },
+ {
+  "file": "_DSF0052-positive.jpg",
+  "w": 384,
+  "h": 512,
+  "date": 1772709565,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0049-positive.jpg",
+  "w": 512,
+  "h": 384,
+  "date": 1772708519,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0046-positive.jpg",
+  "w": 366,
+  "h": 512,
+  "date": 1772708129,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
+  "file": "_DSF0042-positive.jpg",
+  "w": 512,
+  "h": 384,
+  "date": 1772707423,
+  "camera": "FUJIFILM GFX100RF",
+  "category": "People"
+ },
+ {
   "file": "scan_77-positive-positive.jpg",
   "w": 345,
   "h": 512,
   "date": 1763800972,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_74-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800972,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_73-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1763800971,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_72-positive.jpg",
   "w": 340,
   "h": 512,
   "date": 1763800971,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_64-positive.jpg",
   "w": 512,
   "h": 348,
   "date": 1763800970,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_66-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800970,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_67-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1763800970,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_59-positive-positive.jpg",
   "w": 343,
   "h": 512,
   "date": 1763800969,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_62-positive-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800969,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_43-positive-positive.jpg",
   "w": 347,
   "h": 512,
   "date": 1763800967,
-  "film": true
+  "film": true,
+  "category": "Editorial"
  },
  {
   "file": "scan_40-positive.jpg",
   "w": 409,
   "h": 512,
   "date": 1763800967,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_38-positive-positive.jpg",
   "w": 348,
   "h": 512,
   "date": 1763800967,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_13-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800966,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_35-positive-2-positive.jpg",
   "w": 341,
   "h": 512,
   "date": 1763800966,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_33-positive.jpg",
   "w": 512,
   "h": 366,
   "date": 1763800966,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_1-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800964,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_78-positive-positive.jpg",
   "w": 512,
   "h": 349,
   "date": 1763800964,
-  "film": true
+  "film": true,
+  "category": "People"
  },
  {
   "file": "scan_2 (2)-Edit-positive.jpg",
@@ -304,7 +1625,8 @@
   "w": 410,
   "h": 512,
   "date": 1746403105,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "scan_39-Edit-positive.jpg",
@@ -1715,7 +3037,8 @@
   "h": 366,
   "date": 1729630249,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Editorial"
  },
  {
   "file": "IMG_2192.jpg",
@@ -1723,7 +3046,8 @@
   "h": 366,
   "date": 1729630249,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2207.jpg",
@@ -1731,7 +3055,8 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2206.jpg",
@@ -1739,7 +3064,8 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2199.jpg",
@@ -1756,7 +3082,8 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2208.jpg",
@@ -1764,7 +3091,8 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2210.jpg",
@@ -1772,7 +3100,8 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2215.jpg",
@@ -1780,7 +3109,8 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2214.jpg",
@@ -1788,7 +3118,8 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2216.jpg",
@@ -1796,7 +3127,8 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_2209.jpg",
@@ -1804,7 +3136,8 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1915.jpg",
@@ -1812,7 +3145,8 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1903.jpg",
@@ -1820,7 +3154,8 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1907.jpg",
@@ -1828,7 +3163,8 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1908.jpg",
@@ -1836,7 +3172,8 @@
   "h": 512,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1898-2.jpg",
@@ -1844,7 +3181,8 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1909.jpg",
@@ -1852,7 +3190,8 @@
   "h": 512,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1898.jpg",
@@ -1860,7 +3199,8 @@
   "h": 366,
   "date": 1729305349,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1890.jpg",
@@ -1868,7 +3208,8 @@
   "h": 366,
   "date": 1729305343,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Editorial"
  },
  {
   "file": "IMG_1884.jpg",
@@ -1876,7 +3217,8 @@
   "h": 366,
   "date": 1729305343,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1886.jpg",
@@ -1884,7 +3226,8 @@
   "h": 366,
   "date": 1729305343,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1891.jpg",
@@ -1892,7 +3235,8 @@
   "h": 366,
   "date": 1729305342,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1892.jpg",
@@ -1900,7 +3244,8 @@
   "h": 384,
   "date": 1729305342,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1893.jpg",
@@ -1908,7 +3253,8 @@
   "h": 366,
   "date": 1729305342,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1786.jpg",
@@ -1916,7 +3262,8 @@
   "h": 512,
   "date": 1729049016,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1789.jpg",
@@ -1924,7 +3271,8 @@
   "h": 512,
   "date": 1729049016,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1793.jpg",
@@ -1932,7 +3280,8 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1803.jpg",
@@ -1940,7 +3289,8 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1804.jpg",
@@ -1948,7 +3298,8 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1805.jpg",
@@ -1956,7 +3307,8 @@
   "h": 384,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1798.jpg",
@@ -1964,7 +3316,8 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1799.jpg",
@@ -1972,7 +3325,8 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1815.jpg",
@@ -1980,7 +3334,8 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1810.jpg",
@@ -1988,7 +3343,8 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1811.jpg",
@@ -1996,7 +3352,8 @@
   "h": 512,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1806.jpg",
@@ -2004,7 +3361,8 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1809.jpg",
@@ -2012,7 +3370,8 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1818.jpg",
@@ -2020,7 +3379,8 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1732.jpg",
@@ -2028,7 +3388,8 @@
   "h": 384,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1731.jpg",
@@ -2036,7 +3397,8 @@
   "h": 384,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1725.jpg",
@@ -2044,7 +3406,8 @@
   "h": 512,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Editorial"
  },
  {
   "file": "IMG_1735.jpg",
@@ -2052,7 +3415,8 @@
   "h": 384,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1736.jpg",
@@ -2060,7 +3424,8 @@
   "h": 512,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1738.jpg",
@@ -2068,7 +3433,8 @@
   "h": 366,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1739.jpg",
@@ -2076,7 +3442,8 @@
   "h": 366,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1751.jpg",
@@ -2084,7 +3451,8 @@
   "h": 366,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "IMG_1752.jpg",
@@ -2092,7 +3460,8 @@
   "h": 366,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1753.jpg",
@@ -2100,7 +3469,8 @@
   "h": 512,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1756.jpg",
@@ -2108,7 +3478,8 @@
   "h": 384,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1755.jpg",
@@ -2116,7 +3487,8 @@
   "h": 366,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "IMG_1758.jpg",
@@ -2124,7 +3496,8 @@
   "h": 512,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "000000010004.png",
@@ -2217,7 +3590,8 @@
   "w": 366,
   "h": 512,
   "date": 1696721002,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "000000010020.jpg",
@@ -2256,7 +3630,8 @@
   "w": 512,
   "h": 340,
   "date": 1696719246,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "000000010001.jpg",
@@ -2343,14 +3718,16 @@
   "w": 512,
   "h": 340,
   "date": 1696719239,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "000000010029.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719239,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "000010670001.jpg",
@@ -2365,7 +3742,8 @@
   "w": 512,
   "h": 410,
   "date": 1694051580,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "People"
  },
  {
   "file": "000010670004.jpg",
@@ -2380,7 +3758,8 @@
   "w": 512,
   "h": 339,
   "date": 1694051580,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "Fine Art"
  },
  {
   "file": "000010670008.jpg",
@@ -2395,14 +3774,16 @@
   "w": 512,
   "h": 339,
   "date": 1694051580,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "People"
  },
  {
   "file": "000010670012.jpg",
   "w": 512,
   "h": 339,
   "date": 1694051579,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "Nature"
  },
  {
   "file": "000010670015.jpg",
@@ -2609,7 +3990,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2563.jpg",
@@ -2619,7 +4001,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2527-2.jpg",
@@ -2702,7 +4085,8 @@
   "place": [
    "Thailand",
    "Chiang Rai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2487.jpg",
@@ -2713,7 +4097,8 @@
   "place": [
    "Thailand",
    "Chiang Rai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2471.jpg",
@@ -2748,7 +4133,8 @@
   "place": [
    "Thailand",
    "Chiang Rai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2474.jpg",
@@ -2771,7 +4157,8 @@
   "place": [
    "Thailand",
    "Chiang Rai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2477.jpg",
@@ -2830,7 +4217,8 @@
   "place": [
    "Thailand",
    "Chiang Rai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2498.jpg",
@@ -2841,7 +4229,8 @@
   "place": [
    "Thailand",
    "Chiang Rai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2512.jpg",
@@ -2971,7 +4360,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2380.jpg",
@@ -2981,7 +4371,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2382.jpg",
@@ -2991,7 +4382,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2383.jpg",
@@ -3001,7 +4393,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2386.jpg",
@@ -3011,7 +4404,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2392.jpg",
@@ -3021,7 +4415,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2395.jpg",
@@ -3031,7 +4426,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2397.jpg",
@@ -3041,7 +4437,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2400.jpg",
@@ -3051,7 +4448,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Editorial"
  },
  {
   "file": "DSCF2399.jpg",
@@ -3061,7 +4459,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2402.jpg",
@@ -3071,7 +4470,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2403.jpg",
@@ -3081,7 +4481,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2405.jpg",
@@ -3091,7 +4492,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2406.jpg",
@@ -3101,7 +4503,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2410.jpg",
@@ -3122,7 +4525,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "DSCF2413.jpg",
@@ -3132,7 +4536,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2415.jpg",
@@ -3153,7 +4558,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "DSCF2411.jpg",
@@ -3320,7 +4726,8 @@
   "date": 1686913003,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2234.jpg",
@@ -3359,7 +4766,8 @@
   "date": 1686912991,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2222.jpg",
@@ -3368,7 +4776,8 @@
   "date": 1686912986,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2221.jpg",
@@ -3377,7 +4786,8 @@
   "date": 1686912982,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2216.jpg",
@@ -3386,7 +4796,8 @@
   "date": 1686912978,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2215.jpg",
@@ -3395,7 +4806,8 @@
   "date": 1686912975,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2214.jpg",
@@ -3404,7 +4816,8 @@
   "date": 1686912971,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2211.jpg",
@@ -3413,7 +4826,8 @@
   "date": 1686912966,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2208.jpg",
@@ -3422,7 +4836,8 @@
   "date": 1686912963,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2199.jpg",
@@ -3431,7 +4846,8 @@
   "date": 1686912957,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2195.jpg",
@@ -3440,7 +4856,8 @@
   "date": 1686912952,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2372.jpg",
@@ -3626,7 +5043,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2335.jpg",
@@ -3702,7 +5120,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2305.jpg",
@@ -4050,7 +5469,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230602-DSCF2079.jpg",
@@ -4061,7 +5481,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2067.jpg",
@@ -4072,7 +5493,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2069.jpg",
@@ -4095,7 +5517,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2053.jpg",
@@ -4106,7 +5529,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230602-DSCF2065.jpg",
@@ -4141,7 +5565,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2045.jpg",
@@ -4164,7 +5589,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230602-DSCF2044.jpg",
@@ -4211,7 +5637,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2029.jpg",
@@ -4222,7 +5649,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230602-DSCF2024.jpg",
@@ -4245,7 +5673,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2026.jpg",
@@ -4256,7 +5685,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "DSCF2144.jpg",
@@ -4327,7 +5757,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2164.jpg",
@@ -4338,7 +5769,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2166.jpg",
@@ -4445,7 +5877,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2189.jpg",
@@ -4456,7 +5889,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230602-DSCF2047.jpg",
@@ -4467,7 +5901,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2052.jpg",
@@ -4490,7 +5925,8 @@
   "place": [
    "Thailand",
    "Sukhothai"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF2020.jpg",
@@ -4588,7 +6024,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Editorial"
  },
  {
   "file": "DSCF1987.jpg",
@@ -4609,7 +6046,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1973.jpg",
@@ -4619,7 +6057,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1970.jpg",
@@ -4662,7 +6101,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1955.jpg",
@@ -4742,7 +6182,8 @@
   "w": 339,
   "h": 512,
   "date": 1684356828,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "People"
  },
  {
   "file": "000041170005.jpg",
@@ -4829,7 +6270,8 @@
   "w": 512,
   "h": 339,
   "date": 1684351578,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "People"
  },
  {
   "file": "000041170025.jpg",
@@ -4876,7 +6318,8 @@
   "w": 512,
   "h": 339,
   "date": 1684351566,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "Nature"
  },
  {
   "file": "000041170018.jpg",
@@ -4939,14 +6382,16 @@
   "w": 512,
   "h": 339,
   "date": 1684351552,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "People"
  },
  {
   "file": "000041170009.jpg",
   "w": 512,
   "h": 339,
   "date": 1684351551,
-  "camera": "NORITSU KOKI EZ Controller"
+  "camera": "NORITSU KOKI EZ Controller",
+  "category": "People"
  },
  {
   "file": "000041170008.jpg",
@@ -5064,7 +6509,8 @@
   "date": 1681144676,
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230408-DSCF1923.jpg",
@@ -5107,7 +6553,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20230408-DSCF1909.jpg",
@@ -5172,7 +6619,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230408-DSCF1888.jpg",
@@ -5259,7 +6707,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230407-DSCF1798.jpg",
@@ -5291,7 +6740,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230407-DSCF1782.jpg",
@@ -5301,7 +6751,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230406-DSCF1777.jpg",
@@ -5311,7 +6762,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20230406-DSCF1778.jpg",
@@ -5453,7 +6905,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "DSCF1682.jpg",
@@ -5463,7 +6916,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "DSCF1669.jpg",
@@ -5506,7 +6960,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "DSCF1667.jpg",
@@ -5538,7 +6993,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "DSCF1627.jpg",
@@ -5548,7 +7004,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0355.jpg",
@@ -5558,7 +7015,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230318-DJI_0370.jpg",
@@ -5579,7 +7037,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230318-DJI_0368.jpg",
@@ -5589,7 +7048,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0360.jpg",
@@ -5599,7 +7059,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0357.jpg",
@@ -5620,7 +7081,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0341.jpg",
@@ -5630,7 +7092,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0333.jpg",
@@ -5640,7 +7103,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0339.jpg",
@@ -5650,7 +7114,8 @@
   "camera": "DJI FC3411",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "DSCF1597.jpg",
@@ -5885,7 +7350,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1500.jpg",
@@ -5939,7 +7405,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Architecture"
  },
  {
   "file": "20180102-DSCF1446.jpg",
@@ -5949,7 +7416,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20180102-DSCF1384.jpg",
@@ -6025,7 +7493,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20180102-DSCF1389.jpg",
@@ -6035,7 +7504,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "20180102-DSCF1387.jpg",
@@ -6100,7 +7570,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "Nature"
  },
  {
   "file": "20180101-DSCF1362.jpg",
@@ -6198,7 +7669,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1285.jpg",
@@ -6219,7 +7691,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1268.jpg",
@@ -6229,7 +7702,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1249.jpg",
@@ -6239,7 +7713,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1247.jpg",
@@ -6337,7 +7812,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "DSCF1151.jpg",
@@ -6436,7 +7912,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "_DSF0711的副本.jpg",
@@ -6523,7 +8000,8 @@
   "camera": "FUJIFILM X-T3",
   "place": [
    "Thailand"
-  ]
+  ],
+  "category": "People"
  },
  {
   "file": "_DSF0658.jpg",
@@ -6546,7 +8024,8 @@
   "w": 512,
   "h": 341,
   "date": 1672352955,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "DSCF0963.jpg",
@@ -6569,7 +8048,8 @@
   "w": 341,
   "h": 512,
   "date": 1672352324,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "DSCF0826.jpg",
@@ -6584,21 +8064,24 @@
   "w": 366,
   "h": 512,
   "date": 1672352321,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "DSCF0821.jpg",
   "w": 341,
   "h": 512,
   "date": 1672352320,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "DSCF0823.jpg",
   "w": 341,
   "h": 512,
   "date": 1672352320,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0063.jpg",
@@ -6637,7 +8120,8 @@
   "w": 366,
   "h": 512,
   "date": 1671898075,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0044.jpg",
@@ -6676,35 +8160,40 @@
   "w": 512,
   "h": 341,
   "date": 1670969831,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220913-_DSF0210.jpg",
   "w": 512,
   "h": 410,
   "date": 1670969828,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220913-_DSF0165.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969822,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220913-_DSF0164.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969820,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220913-_DSF0163.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969810,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220913-_DSF0153.jpg",
@@ -6743,7 +8232,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969788,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "People"
  },
  {
   "file": "20220911-_DSF0042.jpg",
@@ -6758,14 +8248,16 @@
   "w": 341,
   "h": 512,
   "date": 1670969787,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220911-_DSF0023.jpg",
   "w": 512,
   "h": 410,
   "date": 1670969779,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220911-_DSF0040.jpg",
@@ -6797,28 +8289,32 @@
   "w": 512,
   "h": 410,
   "date": 1670969767,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220718-_DSF6475.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969759,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220717-_DSF6469.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969758,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220717-_DSF6466.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969746,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220715-_DSF6455.jpg",
@@ -6881,7 +8377,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969717,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220714-_DSF6154.jpg",
@@ -6912,7 +8409,8 @@
   "w": 512,
   "h": 512,
   "date": 1670969703,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220713-_DSF5717.jpg",
@@ -6935,7 +8433,8 @@
   "w": 341,
   "h": 512,
   "date": 1670969687,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220713-_DSF5694.jpg",
@@ -6966,7 +8465,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969671,
-  "camera": "DJI FC3411"
+  "camera": "DJI FC3411",
+  "category": "Nature"
  },
  {
   "file": "20220712-DJI_0294.jpg",
@@ -7030,7 +8530,8 @@
   "h": 366,
   "date": 1670969645,
   "camera": "FUJIFILM X-T3",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5665.jpg",
@@ -7045,7 +8546,8 @@
   "w": 512,
   "h": 410,
   "date": 1670969642,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5659.jpg",
@@ -7060,7 +8562,8 @@
   "w": 512,
   "h": 410,
   "date": 1670969635,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5644.jpg",
@@ -7075,14 +8578,16 @@
   "w": 512,
   "h": 341,
   "date": 1670969620,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5631.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969619,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5642.jpg",
@@ -7106,21 +8611,24 @@
   "w": 512,
   "h": 512,
   "date": 1670969613,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5624-2.jpg",
   "w": 512,
   "h": 512,
   "date": 1670969604,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5620-2.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969598,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220711-_DSF5622-2.jpg",
@@ -7135,7 +8643,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969593,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220708-_DSF5603.jpg",
@@ -7174,7 +8683,8 @@
   "w": 366,
   "h": 512,
   "date": 1670969571,
-  "camera": "DJI FC3411"
+  "camera": "DJI FC3411",
+  "category": "Nature"
  },
  {
   "file": "20220707-_DSF5584.jpg",
@@ -7261,7 +8771,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969533,
-  "camera": "DJI FC3411"
+  "camera": "DJI FC3411",
+  "category": "Nature"
  },
  {
   "file": "20220705-_DSF5541.jpg",
@@ -7277,7 +8788,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969526,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220706-DJI_0258.jpg",
@@ -7316,21 +8828,24 @@
   "w": 512,
   "h": 341,
   "date": 1670969508,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220703-_DSF5532.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969507,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220703-_DSF5526.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969505,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220704-DJI_0243.jpg",
@@ -7345,14 +8860,16 @@
   "w": 512,
   "h": 341,
   "date": 1670969488,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220703-_DSF5516.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969487,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220703-_DSF5503.jpg",
@@ -7399,14 +8916,16 @@
   "w": 512,
   "h": 341,
   "date": 1670969465,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220701-_DSF5490.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969465,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220628-_DSF5473.jpg",
@@ -7421,7 +8940,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969461,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220702-DJI_0224.jpg",
@@ -7452,14 +8972,16 @@
   "w": 396,
   "h": 512,
   "date": 1670969443,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220627-_DSF5441.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969443,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220628-_DSF5444.jpg",
@@ -7482,7 +9004,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969421,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220627-_DSF5407.jpg",
@@ -7497,21 +9020,24 @@
   "w": 512,
   "h": 341,
   "date": 1670969414,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220627-_DSF5404.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969414,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220627-_DSF5395.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969400,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20220626-_DSF5371.jpg",
@@ -7686,7 +9212,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969325,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4919.jpg",
@@ -7701,7 +9228,8 @@
   "w": 512,
   "h": 341,
   "date": 1670969319,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4872.jpg",
@@ -7716,79 +9244,91 @@
   "w": 512,
   "h": 341,
   "date": 1670969314,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4852.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969304,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4859.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969304,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4849.jpg",
   "w": 512,
   "h": 512,
   "date": 1670969302,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4854.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969302,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20211223-_DSF4857.jpg",
   "w": 512,
   "h": 341,
   "date": 1670969302,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "r2d2 (51).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103445
+  "date": 1670103445,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (50).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103432,
-  "favorite": true
+  "favorite": true,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (49).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103428
+  "date": 1670103428,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (48).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103423
+  "date": 1670103423,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (47).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103416
+  "date": 1670103416,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (46).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103412
+  "date": 1670103412,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (45).jpg",
@@ -7809,137 +9349,158 @@
   "file": "r2d2 (43).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103395
+  "date": 1670103395,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (42).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103388,
-  "mature": true
+  "mature": true,
+  "category": "Editorial"
  },
  {
   "file": "r2d2 (41).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103384
+  "date": 1670103384,
+  "category": "People"
  },
  {
   "file": "r2d2 (40).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103377,
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (39).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103374
+  "date": 1670103374,
+  "category": "People"
  },
  {
   "file": "r2d2 (38).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103369
+  "date": 1670103369,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (37).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103364,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "r2d2 (36).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103360
+  "date": 1670103360,
+  "category": "People"
  },
  {
   "file": "r2d2 (35).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103356,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "r2d2 (34).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103351,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "r2d2 (33).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103345,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "r2d2 (32).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103333,
-  "mature": true
+  "mature": true,
+  "category": "Editorial"
  },
  {
   "file": "r2d2 (31).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103329
+  "date": 1670103329,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (30).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103323,
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (29).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103316,
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (28).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103311
+  "date": 1670103311,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (27).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103304
+  "date": 1670103304,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (26).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103296
+  "date": 1670103296,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (25).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103291,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "r2d2 (24).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103289
+  "date": 1670103289,
+  "category": "People"
  },
  {
   "file": "r2d2 (23).jpg",
   "w": 512,
   "h": 288,
-  "date": 1670103285
+  "date": 1670103285,
+  "category": "Nature"
  },
  {
   "file": "r2d2 (22).jpg",
@@ -7960,13 +9521,15 @@
   "w": 410,
   "h": 512,
   "date": 1670103230,
-  "favorite": true
+  "favorite": true,
+  "category": "People"
  },
  {
   "file": "DJI_0193.jpg",
   "w": 512,
   "h": 410,
-  "date": 1670103228
+  "date": 1670103228,
+  "category": "Nature"
  },
  {
   "file": "DJI_0084.jpg",
@@ -7986,7 +9549,8 @@
   "file": "20210304-_DSF0649.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103214
+  "date": 1670103214,
+  "category": "Nature"
  },
  {
   "file": "20210304-_DSF0646.jpg",
@@ -8020,13 +9584,15 @@
   "file": "20210303-_DSF0620.jpg",
   "w": 512,
   "h": 341,
-  "date": 1670103193
+  "date": 1670103193,
+  "category": "Nature"
  },
  {
   "file": "20210303-_DSF0618.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103189
+  "date": 1670103189,
+  "category": "Nature"
  },
  {
   "file": "20210303-_DSF0609.jpg",
@@ -8039,13 +9605,15 @@
   "file": "20210303-_DSF0600.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103184
+  "date": 1670103184,
+  "category": "Nature"
  },
  {
   "file": "20210303-_DSF0593.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103179
+  "date": 1670103179,
+  "category": "Nature"
  },
  {
   "file": "20210303-_DSF0578.jpg",
@@ -8065,7 +9633,8 @@
   "file": "20210303-_DSF0567.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103167
+  "date": 1670103167,
+  "category": "Nature"
  },
  {
   "file": "20210303-_DSF0555.jpg",
@@ -8120,7 +9689,8 @@
   "file": "20210302-_DSF0541.jpg",
   "w": 396,
   "h": 512,
-  "date": 1670103143
+  "date": 1670103143,
+  "category": "Nature"
  },
  {
   "file": "20210302-_DSF0539.jpg",
@@ -8140,31 +9710,36 @@
   "file": "20210302-_DSF0520.jpg",
   "w": 512,
   "h": 320,
-  "date": 1670103134
+  "date": 1670103134,
+  "category": "Architecture"
  },
  {
   "file": "20210302-_DSF0515.jpg",
   "w": 366,
   "h": 512,
-  "date": 1670103131
+  "date": 1670103131,
+  "category": "People"
  },
  {
   "file": "20210302-_DSF0510.jpg",
   "w": 512,
   "h": 341,
-  "date": 1670103128
+  "date": 1670103128,
+  "category": "People"
  },
  {
   "file": "20210302-_DSF0509.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103123
+  "date": 1670103123,
+  "category": "People"
  },
  {
   "file": "20210302-_DSF0503.jpg",
   "w": 512,
   "h": 341,
-  "date": 1670103118
+  "date": 1670103118,
+  "category": "Architecture"
  },
  {
   "file": "20210302-_DSF0499.jpg",
@@ -8184,19 +9759,22 @@
   "file": "20210302-_DSF0482.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103103
+  "date": 1670103103,
+  "category": "People"
  },
  {
   "file": "20210302-_DSF0474.jpg",
   "w": 410,
   "h": 512,
-  "date": 1670103100
+  "date": 1670103100,
+  "category": "People"
  },
  {
   "file": "20210302-_DSF0473.jpg",
   "w": 512,
   "h": 341,
-  "date": 1670103097
+  "date": 1670103097,
+  "category": "Architecture"
  },
  {
   "file": "20210301-_DSF0464.jpg",
@@ -8209,25 +9787,29 @@
   "file": "20210301-_DSF0441.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103091
+  "date": 1670103091,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0428.jpg",
   "w": 512,
   "h": 410,
-  "date": 1670103088
+  "date": 1670103088,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0418.jpg",
   "w": 512,
   "h": 341,
-  "date": 1670103081
+  "date": 1670103081,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0410.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103078
+  "date": 1670103078,
+  "category": "People"
  },
  {
   "file": "20210301-_DSF0388.jpg",
@@ -8247,19 +9829,22 @@
   "file": "20210301-_DSF0381.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103064
+  "date": 1670103064,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0359.jpg",
   "w": 366,
   "h": 512,
-  "date": 1670103054
+  "date": 1670103054,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0336.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670103045
+  "date": 1670103045,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0334.jpg",
@@ -8307,7 +9892,8 @@
   "file": "20210301-_DSF0292.jpg",
   "w": 396,
   "h": 512,
-  "date": 1670103029
+  "date": 1670103029,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0288.jpg",
@@ -8320,7 +9906,8 @@
   "file": "20210301-_DSF0287.jpg",
   "w": 512,
   "h": 512,
-  "date": 1670103021
+  "date": 1670103021,
+  "category": "Nature"
  },
  {
   "file": "20210301-_DSF0284.jpg",
@@ -8417,13 +10004,15 @@
   "file": "20210228-_DSF0241.jpg",
   "w": 341,
   "h": 512,
-  "date": 1670102983
+  "date": 1670102983,
+  "category": "Nature"
  },
  {
   "file": "20210228-_DSF0237.jpg",
   "w": 512,
   "h": 410,
-  "date": 1670102975
+  "date": 1670102975,
+  "category": "Nature"
  },
  {
   "file": "20210228-_DSF0212.jpg",
@@ -8542,7 +10131,8 @@
   "w": 410,
   "h": 512,
   "date": 1670102930,
-  "bw": true
+  "bw": true,
+  "category": "Architecture"
  },
  {
   "file": "2019Choice_5.jpg",
@@ -8556,7 +10146,8 @@
   "w": 512,
   "h": 410,
   "date": 1670102899,
-  "favorite": true
+  "favorite": true,
+  "category": "Nature"
  },
  {
   "file": "2019Choice_3.jpg",
@@ -8577,21 +10168,24 @@
   "file": "2019Choice_1.jpg",
   "w": 512,
   "h": 410,
-  "date": 1670102883
+  "date": 1670102883,
+  "category": "Nature"
  },
  {
   "file": "2019Choice.jpg",
   "w": 512,
   "h": 410,
   "date": 1670102879,
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "_DSF0512.jpg",
   "w": 512,
   "h": 341,
   "date": 1669874527,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0594.jpg",
@@ -8615,7 +10209,8 @@
   "w": 512,
   "h": 341,
   "date": 1669874524,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0513.jpg",
@@ -8723,14 +10318,16 @@
   "w": 410,
   "h": 512,
   "date": 1669874503,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0380.jpg",
   "w": 512,
   "h": 341,
   "date": 1669874501,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0346.jpg",
@@ -8771,7 +10368,8 @@
   "w": 396,
   "h": 512,
   "date": 1669874491,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF5179.jpg",
@@ -8794,7 +10392,8 @@
   "w": 512,
   "h": 330,
   "date": 1669874465,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF5180.jpg",
@@ -8817,21 +10416,24 @@
   "w": 512,
   "h": 330,
   "date": 1669874460,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF5176.jpg",
   "w": 512,
   "h": 330,
   "date": 1669874460,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF5178.jpg",
   "w": 512,
   "h": 341,
   "date": 1669874460,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF5156.jpg",
@@ -8926,7 +10528,8 @@
   "w": 512,
   "h": 341,
   "date": 1669874442,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF5141.jpg",
@@ -8965,7 +10568,8 @@
   "w": 512,
   "h": 375,
   "date": 1669874436,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF4815.jpg",
@@ -9045,7 +10649,8 @@
   "h": 341,
   "date": 1669874419,
   "camera": "FUJIFILM X-T3",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "_DSF4774.jpg",
@@ -9053,14 +10658,16 @@
   "h": 341,
   "date": 1669874419,
   "camera": "FUJIFILM X-T3",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "_DSF4764.jpg",
   "w": 512,
   "h": 341,
   "date": 1669874418,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF4726.jpg",
@@ -9099,28 +10706,32 @@
   "w": 512,
   "h": 341,
   "date": 1669874408,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF4667.jpg",
   "w": 512,
   "h": 341,
   "date": 1669874408,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF4675.jpg",
   "w": 512,
   "h": 341,
   "date": 1669874408,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF4662.jpg",
   "w": 512,
   "h": 410,
   "date": 1669874407,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF4478.jpg",
@@ -9167,7 +10778,8 @@
   "w": 384,
   "h": 512,
   "date": 1669874394,
-  "camera": "Apple iPhone 12 Pro Max"
+  "camera": "Apple iPhone 12 Pro Max",
+  "category": "People"
  },
  {
   "file": "_DSF4340.jpg",
@@ -9238,14 +10850,16 @@
   "w": 512,
   "h": 512,
   "date": 1669874388,
-  "camera": "Apple iPhone 12 Pro Max"
+  "camera": "Apple iPhone 12 Pro Max",
+  "category": "Nature"
  },
  {
   "file": "IMG_6820.jpg",
   "w": 512,
   "h": 512,
   "date": 1669874388,
-  "camera": "Apple iPhone 12 Pro Max"
+  "camera": "Apple iPhone 12 Pro Max",
+  "category": "Nature"
  },
  {
   "file": "mmexport1566804589286.jpg",
@@ -9284,7 +10898,8 @@
   "w": 384,
   "h": 512,
   "date": 1669874383,
-  "camera": "Apple iPhone 12 Pro Max"
+  "camera": "Apple iPhone 12 Pro Max",
+  "category": "Nature"
  },
  {
   "file": "2019_0706_18311000.jpg",
@@ -9299,14 +10914,16 @@
   "w": 409,
   "h": 512,
   "date": 1669874382,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "2019_0706_23133200.jpg",
   "w": 409,
   "h": 512,
   "date": 1669874382,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "2019_0707_12443600.jpg",
@@ -9337,14 +10954,16 @@
   "w": 512,
   "h": 410,
   "date": 1669874382,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0237.jpg",
   "w": 344,
   "h": 512,
   "date": 1669844961,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "_DSF0451.jpg",
@@ -9368,7 +10987,8 @@
   "w": 512,
   "h": 341,
   "date": 1626579879,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "20210614-_DSF1466.jpg",
@@ -9376,7 +10996,8 @@
   "h": 288,
   "date": 1626579793,
   "camera": "FUJIFILM X-T3",
-  "bw": true
+  "bw": true,
+  "category": "People"
  },
  {
   "file": "20210616-_DSF1717.jpg",
@@ -9393,7 +11014,8 @@
   "h": 512,
   "date": 1626579679,
   "camera": "FUJIFILM X-T3",
-  "bw": true
+  "bw": true,
+  "category": "Nature"
  },
  {
   "file": "Norway2020Remake-6.jpg",
@@ -9408,7 +11030,8 @@
   "w": 512,
   "h": 410,
   "date": 1583649974,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "Norway2020Remake-2.jpg",
@@ -9431,7 +11054,8 @@
   "w": 512,
   "h": 288,
   "date": 1583649973,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "Nature"
  },
  {
   "file": "Norway2020Remake-4.jpg",
@@ -9446,7 +11070,8 @@
   "w": 384,
   "h": 512,
   "date": 1576348263,
-  "camera": "FUJIFILM X-T3"
+  "camera": "FUJIFILM X-T3",
+  "category": "People"
  },
  {
   "file": "_DSF0360_1.jpg",
@@ -9459,31 +11084,37 @@
  {
   "file": "20171028075339.jpg",
   "w": 512,
-  "h": 214
+  "h": 214,
+  "category": "Nature"
  },
  {
   "file": "20221026233034_1.jpg",
   "w": 512,
-  "h": 410
+  "h": 410,
+  "category": "Nature"
  },
  {
   "file": "20221026233238_1.jpg",
   "w": 512,
-  "h": 410
+  "h": 410,
+  "category": "People"
  },
  {
   "file": "20221027173155_1.jpg",
   "w": 512,
-  "h": 288
+  "h": 288,
+  "category": "Nature"
  },
  {
   "file": "20221027173554_1.jpg",
   "w": 512,
-  "h": 288
+  "h": 288,
+  "category": "Nature"
  },
  {
   "file": "20221027173921_1.jpg",
   "w": 512,
-  "h": 396
+  "h": 396,
+  "category": "People"
  }
 ]
