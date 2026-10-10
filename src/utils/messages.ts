@@ -5,7 +5,7 @@ const messages = {
             nav_hi: "Hi",
             nav_work: "Me",
                         nav_open_source: "Open Source",
-            nav_photos: "Photo",
+            nav_photos: "Photos",
                         nav_if_i_die: "If I Die",
                         nav_to_ai: "To AI",
             nav_exhibitions: "Exhibitions",
