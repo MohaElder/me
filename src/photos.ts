@@ -15,11 +15,20 @@ export interface Photo {
   suggestion?: { category: Category, score: number } // the admin's CLIP guess
 }
 
+// A series (src/content/series.json): photos by file name, in order; the first
+// is the cover. A photo can be in several.
+export interface Series {
+  id: string // its link: /me/series/<id>
+  title: string
+  statement: string
+  photos: string[]
+}
+
 // The CDN serves the repo from GitHub, so photos only reach it once pushed;
 // during development (and in the admin) they load from src/images directly.
 const images = import.meta.env.DEV ? '/me/src/images/' : 'https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/'
-export const photoUrl = (p: Photo) => images + p.file
-export const thumbUrl = (p: Photo) => images + p.file + '_thumbnail.jpg'
+export const photoUrl = (p: { file: string }) => images + p.file
+export const thumbUrl = (p: { file: string }) => images + p.file + '_thumbnail.jpg'
 
 // Shown under each photo, in the viewer and on the Room's wall label.
 export const caption = (p: Photo) => p.category ? t(`message.categories.${p.category}`) : ''

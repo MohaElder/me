@@ -9,7 +9,7 @@ import type { Photo } from '../src/photos.ts'
 // site's own files: src/content/*.json, src/stories and src/blogs (Markdown),
 // and src/images. Nothing here ships; commit the changes to publish them.
 
-const COLLECTIONS = ['photos', 'people', 'stories', 'blogs']
+const COLLECTIONS = ['photos', 'series', 'people', 'stories', 'blogs']
 const ARTICLES = ['stories', 'blogs']
 const SAFE_ID = /^[\w-]+$/
 

@@ -1,5 +1,5 @@
 import { reactive, ref, watch } from 'vue'
-import type { Photo } from '../photos'
+import type { Photo, Series } from '../photos'
 
 export interface Person { id: string, name: string, metAt: string }
 export interface Story { id: string, person: string, title: string, published: boolean }
@@ -16,7 +16,7 @@ export interface Post {
 
 // Everything the admin edits, as in src/content/*.json. Each collection is
 // written back shortly after it changes.
-export const content = reactive({ photos: [] as Photo[], people: [] as Person[], stories: [] as Story[], blogs: [] as Post[] })
+export const content = reactive({ photos: [] as Photo[], series: [] as Series[], people: [] as Person[], stories: [] as Story[], blogs: [] as Post[] })
 export const status = ref('All changes are saved to src/')
 
 const saved = (ok: boolean, path: string) =>

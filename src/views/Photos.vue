@@ -20,28 +20,43 @@
 
     <PhotoRoom v-if="room" :photos="shown" />
 
-    <div v-else class="layout">
-      <aside class="side">
-        <nav class="filters" :aria-label="$t('message.photos_category')">
-          <span class="group">{{ $t("message.photos_category") }}</span>
-          <button v-for="c in categoryList" :key="c.name" type="button" :class="{ active: c.name === category }"
-            @click="category = c.name">
-            <span>{{ c.label }}</span><span class="n">{{ c.count }}</span>
-          </button>
-        </nav>
-      </aside>
+    <template v-else>
+      <section v-if="series.length" class="series" :aria-label="$t('message.series')">
+        <span class="group">{{ $t("message.series") }}</span>
+        <div class="series-row">
+          <RouterLink v-for="s in series" :key="s.id" class="series-card" :to="{ name: 'Series', params: { id: s.id } }">
+            <img :src="thumbUrl({ file: s.photos[0] })" :alt="s.title">
+            <span class="series-label">
+              <span class="series-title">{{ s.title }}</span>
+              <span>{{ s.photos.length }} {{ $t("message.series_photos") }}</span>
+            </span>
+          </RouterLink>
+        </div>
+      </section>
 
-      <div class="grid">
-        <button v-for="(photo, i) in page" :key="photo.file" type="button" class="tile"
-          :class="{ ready: loaded.has(photo.file) }" @click="openAt(i)">
-          <img :src="thumbUrl(photo)" :alt="describe(photo)" loading="lazy" @load="loaded.add(photo.file)"
-            @error="failed.add(photo.file)">
-          <span class="cap">{{ caption(photo) }}</span>
-        </button>
-        <span v-for="n in skeletons" :key="`skeleton-${n}`" class="tile" aria-hidden="true"></span>
-        <div ref="sentinel" class="sentinel"></div>
+      <div class="layout">
+        <aside class="side">
+          <nav class="filters" :aria-label="$t('message.photos_category')">
+            <span class="group">{{ $t("message.photos_category") }}</span>
+            <button v-for="c in categoryList" :key="c.name" type="button" :class="{ active: c.name === category }"
+              @click="category = c.name">
+              <span>{{ c.label }}</span><span class="n">{{ c.count }}</span>
+            </button>
+          </nav>
+        </aside>
+
+        <div class="grid">
+          <button v-for="(photo, i) in page" :key="photo.file" type="button" class="tile"
+            :class="{ ready: loaded.has(photo.file) }" @click="openAt(i)">
+            <img :src="thumbUrl(photo)" :alt="describe(photo)" loading="lazy" @load="loaded.add(photo.file)"
+              @error="failed.add(photo.file)">
+            <span class="cap">{{ caption(photo) }}</span>
+          </button>
+          <span v-for="n in skeletons" :key="`skeleton-${n}`" class="tile" aria-hidden="true"></span>
+          <div ref="sentinel" class="sentinel"></div>
+        </div>
       </div>
-    </div>
+    </template>
 
     <Transition name="fade">
       <button v-if="showTop" type="button" class="to-top" :aria-label="$t('message.photos_top')"
@@ -53,67 +68,23 @@
       </button>
     </Transition>
 
-    <dialog ref="viewer" class="viewer" @close="current = null" @click.self="viewer?.close()"
-      @keydown.left="step(-1)" @keydown.right="step(1)">
-      <template v-if="current">
-        <!-- Darkroom: the thumbnail shows as a negative, the enlarger flashes, and the
-             print develops from white paper; the full photo fades in once it arrives. -->
-        <div :key="current.file" class="darkroom" :class="{ done: fullReady }"
-          :style="{ '--ar': current.w / current.h }">
-          <img class="negative" :src="thumbUrl(current)" alt="">
-          <img class="print" :src="thumbUrl(current)" alt="">
-          <img class="full" :src="photoUrl(current)" :alt="describe(current)" @load="fullLoaded = true">
-          <span class="safelight" aria-hidden="true"></span>
-        </div>
-        <div class="viewer-bar">
-          <span class="meta">{{ meta(current) }}</span>
-          <div class="viewer-actions">
-            <button type="button" class="icon-btn" aria-label="Previous photo" @click="step(-1)">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-                <path d="M15 6l-6 6 6 6" />
-              </svg>
-            </button>
-            <button type="button" class="icon-btn" aria-label="Next photo" @click="step(1)">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-                <path d="M9 6l6 6-6 6" />
-              </svg>
-            </button>
-            <button type="button" class="btn" @click="showUsage = !showUsage">{{ $t("message.photos_download") }}</button>
-            <button type="button" class="icon-btn" aria-label="Close" @click="viewer?.close()">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                aria-hidden="true">
-                <path d="M6 6l12 12M18 6L6 18" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div v-if="showUsage" class="usage">
-          <strong>{{ $t("message.using_my_photo") }}</strong>
-          <p>{{ $t("message.photo_usage_note") }}</p>
-          <div class="usage-actions">
-            <a class="btn" :href="photoUrl(current)" target="_blank" rel="noopener">{{ $t("message.download_picture") }}</a>
-            <a
-              href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)">
-              {{ $t("message.commercial") }}</a>
-          </div>
-        </div>
-      </template>
-    </dialog>
+    <PhotoViewer ref="viewer" :photos="shown" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed, defineAsyncComponent, nextTick, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
 import { t } from '../i18n'
-import { caption, categories, describe, photoUrl, thumbUrl, type Photo } from '../photos'
+import { caption, categories, describe, thumbUrl, type Photo, type Series } from '../photos'
+import PhotoViewer from '../components/PhotoViewer.vue'
+import allSeries from '../content/series.json'
 
 // Three.js only loads when someone opens Room.
 const PhotoRoom = defineAsyncComponent(() => import('../components/room/PhotoRoom.vue'))
 
 const PAGE = 48
-const DEVELOP_MS = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 2600
+
+const series = (allSeries as Series[]).filter(s => s.photos.length)
 
 const photos = ref<Photo[]>([])
 const catalogLoaded = ref(false)
@@ -166,46 +137,13 @@ watch([limit, catalogLoaded], () => nextTick(() => {
   if (nearSentinel()) loadMore()
 }))
 
-// Viewer
-const viewer = ref<HTMLDialogElement | null>(null)
-const current = ref<Photo | null>(null)
-const showUsage = ref(false)
-const fullLoaded = ref(false)
-const developed = ref(false)
-// Swap in the full photo only after the print has finished developing.
-const fullReady = computed(() => fullLoaded.value && developed.value)
-let index = 0
-let developTimer = 0
-
-const show = (photo: Photo) => {
-  current.value = photo
-  showUsage.value = false
-  fullLoaded.value = false
-  developed.value = false
-  clearTimeout(developTimer)
-  developTimer = window.setTimeout(() => (developed.value = true), DEVELOP_MS)
-}
-
-const openAt = (i: number) => {
-  index = i
-  show(page.value[i])
-  viewer.value?.showModal()
-}
-
-const step = (d: number) => {
-  index = (index + d + shown.value.length) % shown.value.length
-  show(shown.value[index])
-}
-
-const meta = (p: Photo) => [
-  caption(p),
-  p.camera,
-  p.date && new Date(p.date * 1000).toLocaleDateString(),
-].filter(Boolean).join(' — ')
 
 // Back to top, offered once the visitor is well down the grid.
 const showTop = ref(false)
 const onScroll = () => (showTop.value = window.scrollY > window.innerHeight * 1.5)
+const viewer = ref<InstanceType<typeof PhotoViewer> | null>(null)
+const openAt = (i: number) => viewer.value?.open(i)
+
 const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
 // Room takes the whole page, footer included.
@@ -225,7 +163,6 @@ onMounted(async () => {
 onUnmounted(() => {
   observer.disconnect()
   window.removeEventListener('scroll', onScroll)
-  clearTimeout(developTimer)
   document.body.classList.remove('room-active')
 })
 </script>
@@ -370,6 +307,63 @@ button {
   color: #CFCFCF;
 }
 
+.series {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.series-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.series-card {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  background: #141414;
+  text-decoration: none;
+}
+
+.series-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.series-card:hover img {
+  transform: scale(1.03);
+}
+
+.series-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.8));
+  font-size: 13px;
+  color: #D8D8D8;
+}
+
+.series-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #FEFEFE;
+  transition: color 0.3s;
+}
+
+.series-card:hover .series-title {
+  color: #FEE989;
+}
+
 .filters button.active {
   color: var(--accent);
 }
@@ -378,7 +372,7 @@ button {
   color: #6F6F6F;
 }
 
-.filters .group {
+.group {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -497,193 +491,6 @@ button {
   opacity: 0;
 }
 
-/* Viewer */
-.viewer {
-  width: 100vw;
-  max-width: none;
-  height: 100vh;
-  max-height: none;
-  margin: 0;
-  padding: 32px;
-  border: 0;
-  background: rgba(0, 0, 0, 0.94);
-  color: #FEFEFE;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.viewer[open] {
-  display: flex;
-}
-
-.viewer::backdrop {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-/* Darkroom: sized from the photo's aspect ratio so nothing jumps.
-   0–0.8s negative · 0.8–1s enlarger flash · 1–2.6s print develops under the safelight. */
-.darkroom {
-  position: relative;
-  height: min(78vh, calc((100vw - 64px) / var(--ar)));
-  aspect-ratio: var(--ar);
-  overflow: hidden;
-  background: #F4F1EA;
-}
-
-.darkroom img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* A colour negative: inverted, with film's orange base. */
-.negative {
-  filter: invert(1) sepia(0.45) saturate(1.6) hue-rotate(-12deg) brightness(0.9);
-  animation: negative 1s ease forwards;
-}
-
-@keyframes negative {
-  0% { opacity: 0; transform: scale(1.04); }
-  15%, 75% { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(1); }
-}
-
-/* Developing: the image rises out of white paper. */
-.print {
-  opacity: 0;
-  animation: develop 1.6s cubic-bezier(0.3, 0, 0.2, 1) 1s forwards;
-}
-
-@keyframes develop {
-  0% { opacity: 1; filter: brightness(2.6) contrast(0.2) saturate(0); }
-  60% { filter: brightness(1.25) contrast(0.8) saturate(0.6); }
-  100% { opacity: 1; filter: none; }
-}
-
-/* The red safelight, plus the enlarger's flash on top of it. */
-.safelight {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  mix-blend-mode: multiply;
-  background: rgba(255, 70, 40, 0.38);
-  animation: safelight 2.6s ease forwards;
-}
-
-.safelight::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: #FFF;
-  opacity: 0;
-  mix-blend-mode: normal;
-  animation: enlarger 0.35s ease-out 0.75s;
-}
-
-@keyframes safelight {
-  85% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-@keyframes enlarger {
-  40% { opacity: 0.9; }
-}
-
-.full {
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
-
-.darkroom.done .full {
-  opacity: 1;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .negative,
-  .safelight {
-    display: none;
-  }
-
-  .print {
-    animation: none;
-    opacity: 1;
-  }
-}
-
-.viewer-bar,
-.usage {
-  width: 100%;
-  max-width: 900px;
-}
-
-.viewer-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  font-size: 14px;
-  color: #A8A8A8;
-}
-
-.viewer-actions {
-  display: flex;
-  gap: 10px;
-}
-
-.icon-btn {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #FEFEFE;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0 18px;
-  border: 1px solid currentColor;
-  color: var(--accent);
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.icon-btn:hover,
-.btn:hover {
-  color: #FEE989;
-}
-
-.usage {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 14px;
-  color: #CFCFCF;
-}
-
-.usage p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.usage-actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
 @media (max-width: 900px) {
   .photos {

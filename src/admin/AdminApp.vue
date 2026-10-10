@@ -13,6 +13,8 @@
             Photos <span>{{ content.photos.length.toLocaleString() }}</span></a>
           <a href="#review" class="sub" :aria-current="section === 'review' && 'page'">
             To review <span class="badge">{{ toReview }}</span></a>
+          <a href="#series" :aria-current="section === 'series' && 'page'">
+            Series <span>{{ content.series.length }}</span></a>
           <a href="#stories" :aria-current="section === 'stories' && 'page'">
             People &amp; stories <span>{{ content.people.length }} · {{ content.stories.length }}</span></a>
           <a href="#blog" :aria-current="section === 'blog' && 'page'">
@@ -22,6 +24,7 @@
       <p class="status">{{ status }}<br>Commit when ready.</p>
     </aside>
     <PhotosAdmin v-if="section === 'photos' || section === 'review'" :review="section === 'review'" />
+    <SeriesAdmin v-else-if="section === 'series'" />
     <PeopleAdmin v-else-if="section === 'stories'" />
     <BlogAdmin v-else />
   </div>
@@ -31,6 +34,7 @@
 import { computed, onUnmounted, ref } from 'vue'
 import { content, status } from './store'
 import PhotosAdmin from './PhotosAdmin.vue'
+import SeriesAdmin from './SeriesAdmin.vue'
 import PeopleAdmin from './PeopleAdmin.vue'
 import BlogAdmin from './BlogAdmin.vue'
 

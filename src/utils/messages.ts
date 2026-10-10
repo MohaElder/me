@@ -26,6 +26,10 @@ const messages = {
             photos_title: "Photos",
             photos_all: "All",
             photos_category: "Category",
+            series: "Series",
+            series_photos: "photos",
+            series_all: "All photos",
+            series_open: "Click a photo to open it.",
             categories: {
                 Nature: "Nature",
                 Street: "Street",
@@ -152,6 +156,10 @@ const messages = {
             photos_title: "摄影",
             photos_all: "全部",
             photos_category: "类别",
+            series: "系列",
+            series_photos: "张",
+            series_all: "所有照片",
+            series_open: "点击照片查看大图。",
             categories: {
                 Nature: "自然",
                 Street: "街头",
