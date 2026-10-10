@@ -24,16 +24,27 @@ out vec4 outColor;
 
 vec2 cover(vec2 uv, vec2 s) { return (uv - 0.5) * s + 0.5; }
 
-// Three soft ellipses drifting around the lens centre: an organic, slowly
-// changing edge. uStretch elongates it vertically while a phone scrolls.
+float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+float noise(vec2 p) {
+  vec2 i = floor(p), f = fract(p);
+  f = f * f * (3.0 - 2.0 * f);
+  return mix(mix(hash(i), hash(i + vec2(1, 0)), f.x), mix(hash(i + vec2(0, 1)), hash(i + vec2(1, 1)), f.x), f.y);
+}
+float fbm(vec2 p) { return 0.5 * noise(p) + 0.3 * noise(p * 2.1 + 3.7) + 0.2 * noise(p * 4.3 - 1.9); }
+
+// Three soft ellipses drifting around the lens centre, their space warped by
+// slowly moving noise so the edge is wispy and irregular, like smoke.
+// uStretch elongates it vertically while a phone scrolls.
 float blob(vec2 p, float R) {
   vec2 s = vec2(inversesqrt(uStretch), uStretch);
   vec2 c = uLens.xy;
   float a = uT;
+  vec2 w = (p - c) / R * 1.4 + vec2(a * 0.06, -a * 0.045);
+  p += (vec2(fbm(w), fbm(w + 5.2)) - 0.5) * R * 0.55;
   float m1 = 1.0 - smoothstep(0.25, 1.0, length((p - c - R * vec2(0.18 * cos(a), 0.12 * sin(a * 1.2))) / (R * vec2(1.1, 0.85) * s)));
   float m2 = 1.0 - smoothstep(0.20, 1.0, length((p - c - R * vec2(-0.22 * sin(a * 1.3), 0.15 * cos(a * 0.9))) / (R * vec2(0.8, 1.0) * s)));
   float m3 = 1.0 - smoothstep(0.30, 1.0, length((p - c - R * vec2(0.12 * sin(a * 0.7), -0.2 * cos(a * 1.1))) / (R * vec2(0.75) * s)));
-  return clamp(m1 + m2 + m3, 0.0, 1.0);
+  return clamp(m1 + m2 + m3, 0.0, 1.0) * mix(0.7, 1.0, fbm(w * 1.7 + 9.1));
 }
 
 void main() {
@@ -47,22 +58,23 @@ void main() {
   float shade = (1.0 - 0.35 * (1.0 - smoothstep(0.0, 1.0, length(q))))
     * mix(0.55, 1.0, 1.0 - smoothstep(0.8, 1.0, vUv.y)) * mix(0.4, 1.0, smoothstep(0.0, 0.25, vUv.y)) * 1.35;
 
-  float ringD = length(px - uLens.xy) / (uLens.z * 1.5);
-  float ring = uOn * smoothstep(0.30, 0.62, ringD) * (1.0 - smoothstep(0.62, 1.0, ringD));
+  float ringD = length(px - uLens.xy) / (uLens.z * 1.35);
+  float ring = 0.85 * uOn * smoothstep(0.45, 0.7, ringD) * (1.0 - smoothstep(0.7, 0.95, ringD));
 
   vec3 sky = mix(texture(uSkyA, skyUv).rgb, texture(uSkyB, skyUv).rgb, uMix) * shade;
-  vec3 skySoft = mix(texture(uSkyA, skyUv, 3.0).rgb, texture(uSkyB, skyUv, 3.0).rgb, uMix) * shade;
+  vec3 skySoft = mix(texture(uSkyA, skyUv, 2.0).rgb, texture(uSkyB, skyUv, 2.0).rgb, uMix) * shade;
   float text = texture(uText, textUv).a;
-  float textSoft = texture(uText, textUv, 3.0).a;
+  float textSoft = texture(uText, textUv, 1.5).a;
   vec3 color = mix(mix(sky, vec3(1.0), text), mix(skySoft, vec3(1.0), textSoft), ring);
 
   if (uOn > 0.0) {
     vec2 vidUv = cover(vUv, uVidCover);
     float haze = blob(px, uLens.z * 1.7) * uOn;
     float lens = blob(px, uLens.z) * uOn;
-    color = mix(color, texture(uVideo, vidUv, 5.0).rgb, 0.55 * haze);
-    color = mix(color, texture(uVideo, vidUv, 1.5).rgb, 0.6 * lens);
-    color = mix(color, texture(uVideo, vidUv).rgb, text * lens);
+    vec3 smoke = mix(texture(uVideo, vidUv, 3.0).rgb, texture(uVideo, vidUv, 4.5).rgb, fbm(px / 140.0 + uT * 0.05));
+    color = mix(color, smoke, 0.55 * haze);
+    color = mix(color, texture(uVideo, vidUv, 1.0).rgb, 0.6 * lens);
+    color = mix(color, mix(texture(uVideo, vidUv).rgb * 1.12, vec3(1.0), 0.12), text * lens);
   }
   outColor = vec4(color, 1.0);
 }`

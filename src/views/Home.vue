@@ -6,7 +6,7 @@
       alt="Night sky over Minieta Road, Death Valley, photographed by Yasushi Oh">
     <h1 :key="activeName" class="hi-name">{{ activeName }}</h1>
     <canvas ref="canvas" class="hi-canvas" :class="{ live, cursorless: live && !phone }" aria-hidden="true"
-      @click="cutScene(1)"></canvas>
+      @click="onCanvasClick"></canvas>
 
     <div class="hi-below">
       <p class="hi-hook" :style="{ opacity: Math.max(0, 1 - progress * 5) }">{{ $t("message.hello") }}</p>
@@ -20,13 +20,13 @@
       {{ $t("message.wave_location") }}</a>
     <p v-if="live" class="hi-hint" :class="{ gone: cuts > 0 }">
       {{ $t(phone ? "message.hi_tap_hint" : "message.hi_click_hint") }}</p>
-    <div class="hi-progress" :style="{ width: `${progress * 100}%` }"></div>
     <div v-if="live && !phone" ref="cursor" class="hi-cursor" aria-hidden="true"></div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref, type ComponentPublicInstance } from 'vue'
+import { useRouter } from 'vue-router'
 import { createLens } from '../components/hi/lens'
 import reelUrl from '../assets/hi/reel.mp4'
 
@@ -106,6 +106,20 @@ const cutScene = (d: number) => {
   cuts.value += d === 0 ? 0 : 1
   scene += d
   cutAt = performance.now()
+}
+
+// Clicks on the canvas cut the scene, unless they land on a link: then they open
+// it, whichever element the browser hit-tested first.
+const router = useRouter()
+const onCanvasClick = (e: MouseEvent) => {
+  if (progress.value > 0.85) {
+    const i = linkEls.findIndex(el => {
+      const r = el?.getBoundingClientRect()
+      return r && e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom
+    })
+    if (i >= 0) return router.push({ name: links[i].name })
+  }
+  cutScene(1)
 }
 
 let lens: ReturnType<typeof createLens> = null
@@ -274,11 +288,13 @@ const tick = (now: number) => {
   const c = cursor.value
   if (c) {
     const m = mouse ?? pointer
+    // A snapped link already carries the block's padding.
+    const pad = linkEls[near]?.classList.contains('on') ? 0 : 14
     const box = rect
-      ? { x: rect.x - 14, y: rect.y + 6, w: rect.width + 28, h: rect.height - 4 }
+      ? { x: rect.x - pad, y: rect.y, w: rect.width + pad * 2, h: rect.height }
       : { x: m?.x ?? 0, y: m?.y ?? 0, w: 0, h: 0 }
     const blob = 100 - 100 * e
-    c.style.opacity = mouse && mouse.y > 64 ? '1' : '0'
+    c.style.opacity = mouse && mouse.y > 64 ? String(1 - Math.max(0, (e - 0.75) / 0.25)) : '0'
     c.style.transform = `translate(${(m?.x ?? 0) - 8 + (box.x - (m?.x ?? 0) + 8) * e}px, ${(m?.y ?? 0) - 8 + (box.y - (m?.y ?? 0) + 8) * e}px)`
     c.style.width = `${16 + (box.w - 16) * e}px`
     c.style.height = `${16 + (box.h - 16) * e}px`
@@ -465,23 +481,23 @@ onBeforeUnmount(() => {
   z-index: 1;
   min-height: 44px;
   display: flex;
-  align-items: flex-end;
-  padding: 12px 2px 4px;
+  align-items: center;
+  padding: 8px 2px 6px;
   color: #FEFEFE;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   pointer-events: auto;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 }
 
+/* A snapped link shows its own yellow block, as the cursor that drew it fades. */
 .hi-links a.on,
 .hi-links:not(.cursorless) a:hover {
+  margin: 0 -14px;
+  padding: 8px 16px 6px;
   color: #0a0a0a;
-  border-color: transparent;
-}
-
-.hi-links:not(.cursorless) a:hover {
   background: #FDDA3A;
+  border-color: transparent;
 }
 
 .hi-place {
@@ -511,15 +527,6 @@ onBeforeUnmount(() => {
 
 .hi-hint.gone {
   opacity: 0;
-}
-
-.hi-progress {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 3;
-  height: 2px;
-  background: #FDDA3A;
 }
 
 /* Under the links, so a link's text shows on the yellow block it snaps to. */
