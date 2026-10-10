@@ -1,9 +1,6 @@
 const messages = {
     en: {
         message: {
-            hello: "What will happen if I scroll down?",
-            hi_click_hint: "Click anywhere for another scene",
-            hi_tap_hint: "Tap or swipe for another scene",
             wave_location: "Minieta Rd, Death Valley, CA, USA",
             nav_hi: "Hi",
             nav_work: "Me",
@@ -133,9 +130,6 @@ const messages = {
     },
     zh: {
         message: {
-            hello: "嗨！很高兴见到你:) 下滑感受✨",
-            hi_click_hint: "点击任意处，换一个场景",
-            hi_tap_hint: "轻点或滑动，换一个场景",
             wave_location: "Minieta Rd, 美国, 加利福尼亚州，死亡谷",
             nav_hi: "嗨",
             nav_work: "我",

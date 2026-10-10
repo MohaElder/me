@@ -9,7 +9,6 @@
       @click="onCanvasClick"></canvas>
 
     <div class="hi-below">
-      <p class="hi-hook" :style="{ opacity: Math.max(0, 1 - progress * 5) }">{{ $t("message.hello") }}</p>
       <nav class="hi-links" :class="{ shown: progress > 0.85, cursorless: live && !phone }" aria-label="Next">
         <RouterLink v-for="(link, i) in links" :key="link.name" :ref="el => setLink(i, el)" :to="{ name: link.name }">
           {{ $t(link.label) }}</RouterLink>
@@ -18,8 +17,6 @@
 
     <a class="hi-place" href="https://maps.app.goo.gl/f1iggnxxYjswtCLUA">N 36°14.845′ W 117°21.295′<br>
       {{ $t("message.wave_location") }}</a>
-    <p v-if="live" class="hi-hint" :class="{ gone: cuts > 0 }">
-      {{ $t(phone ? "message.hi_tap_hint" : "message.hi_click_hint") }}</p>
     <div v-if="live && !phone" ref="cursor" class="hi-cursor" aria-hidden="true"></div>
   </div>
 </template>
@@ -50,7 +47,6 @@ const activeName = ref(names[0])
 const progress = ref(0) // how far down the page, 0–1
 const frame = ref(0) // the nearest loaded sky frame, for the plain hero
 const live = ref(false)
-const cuts = ref(0)
 const canvas = ref<HTMLCanvasElement | null>(null)
 const cursor = ref<HTMLElement | null>(null)
 
@@ -103,7 +99,6 @@ const nextName = () => {
 // A click, tap or sideways swipe cuts to another scene; the lens swells to show it.
 let cutAt = -1e9
 const cutScene = (d: number) => {
-  cuts.value += d === 0 ? 0 : 1
   scene += d
   cutAt = performance.now()
 }
@@ -446,18 +441,9 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
   pointer-events: none;
 }
 
-.hi-hook {
-  margin: 0;
-  font-size: 17px;
-  font-weight: 300;
-  letter-spacing: 0.04em;
-  color: #D8D8D8;
-  text-align: center;
-}
 
 .hi-links {
   display: flex;
@@ -512,22 +498,6 @@ onBeforeUnmount(() => {
   text-decoration: none;
 }
 
-.hi-hint {
-  position: fixed;
-  right: 32px;
-  bottom: 28px;
-  z-index: 3;
-  margin: 0;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  color: #A8A8A8;
-  pointer-events: none;
-  transition: opacity 0.6s;
-}
-
-.hi-hint.gone {
-  opacity: 0;
-}
 
 /* Under the links, so a link's text shows on the yellow block it snaps to. */
 .hi-cursor {
@@ -552,12 +522,8 @@ onBeforeUnmount(() => {
 
   .hi-below {
     top: calc(50% + 14vw);
-    gap: 18px;
   }
 
-  .hi-hook {
-    font-size: 14px;
-  }
 
   .hi-links {
     gap: 26px;
@@ -570,13 +536,5 @@ onBeforeUnmount(() => {
     font-size: 11px;
   }
 
-  .hi-hint {
-    right: 16px;
-    bottom: 22px;
-    max-width: 40vw;
-    text-align: right;
-    font-size: 11px;
-    line-height: 1.6;
-  }
 }
 </style>
