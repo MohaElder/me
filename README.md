@@ -15,7 +15,10 @@ pnpm install
 pnpm dev        # local dev server
 pnpm build      # type-check + production build into dist/
 pnpm preview    # serve the production build
+pnpm admin      # local admin: photos, people & stories, blog
 ```
+
+The admin edits the files in `src/content` and `src/images` directly, and only runs locally. Commit its changes to publish them. CLIP category suggestions run on your machine; the first run downloads the model, about 90 MB.
 
 The build saves each page's rendered HTML for crawlers using headless Chrome or Playwright's Chromium. If it finds neither, it skips that step. Point `CHROME_PATH` at a Chromium binary to use another browser.
 

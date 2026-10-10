@@ -2,3 +2,5 @@
 allowBuilds:
   esbuild: true # installs Vite's platform binary
   '@parcel/watcher': false # ships prebuilt binaries
+  onnxruntime-node: false # ships its CPU binaries; the script only fetches CUDA extras
+  protobufjs: false # the script is only a version check

@@ -7,6 +7,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { person, pages, siteUrl, titleOf } from './src/seo.ts'
 import { prerender } from './scripts/prerender.ts'
+import { admin } from './scripts/admin.ts'
 
 const head = (key: string, url: string | null = siteUrl + key) => [
   `<title>${titleOf(key)}</title>`,
@@ -75,6 +76,7 @@ export default defineConfig({
   plugins: [
     vue(),
     seo(),
+    admin(),
   ],
   resolve: {
     alias: {
