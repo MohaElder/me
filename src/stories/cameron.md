@@ -1,10 +1,3 @@
-<!--
-id: cameron
-title: The Big Hole, Man with One Eye, and Comic Book
-person: cameron
-published: true
--->
-
 I met Cameron when I was driving from San Diego to Alaska.
 
 That day, the landlord of my Airbnb warned me that there was a big hole on the road ahead. I didn’t really believe it — I thought, how big could a hole be? So I drove on.

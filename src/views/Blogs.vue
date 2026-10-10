@@ -10,7 +10,7 @@
         <div v-for="(item, key) in items" :key="key" class="cell" :class="{ 'cell-full pl-lg pr-lg': mobile }">
           <button type="button" class="card" :style="{ backgroundColor: item.color }" @click="travel(item.id)">
             <span class="card-img"
-              :style="{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)), url('${item.img}')` }">
+              :style="{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)), url('${item.cover}')` }">
               <span class="card-title">{{ item.title }}</span>
             </span>
             <span class="card-text" :style="{ color: item.color == '#ffee58' ? 'black' : 'white' }">
@@ -23,32 +23,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeMount, defineOptions } from 'vue'
+import { onBeforeMount, defineOptions } from 'vue'
 import { useRouter } from 'vue-router'
-import { blogs } from "../utils/blogLink.js"
+import blogs from '../content/blogs.json'
 import { useDisplay } from '../composables/useDisplay'
 
 defineOptions({
   name: 'Blogs'
 })
 
-interface BlogItem {
-  color: string
-  img: string
-  title: string
-  brief: string
-  id: string
-}
-
 const router = useRouter()
 const { mobile } = useDisplay()
-const items = ref<BlogItem[]>([{
-  color: "#1F7087",
-  img: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
-  title: "Default Blog",
-  brief: "Default Blog",
-  id: "a3c8-8992",
-}])
+// Published posts, newest first.
+const items = blogs.filter(b => b.published).sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 
 const travel = (blogId: string) => {
   router.push({ name: "Blog", query: { id: blogId } })
@@ -56,10 +43,6 @@ const travel = (blogId: string) => {
 
 onBeforeMount(() => {
   window.scrollTo(0, 0)
-  items.value = Object.entries(blogs).map(([id, blog]) => ({
-    ...blog,
-    id
-  }))
 })
 </script>
 

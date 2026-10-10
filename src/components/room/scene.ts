@@ -1,16 +1,7 @@
 import * as THREE from 'three'
 import wallUrl from '../../assets/room/wall.jpg'
 import wallNormalUrl from '../../assets/room/wall-normal.jpg'
-
-export interface RoomPhoto {
-  url: string
-  thumbnail: string
-  w: number
-  h: number
-  Tags: string[]
-  Camera?: string
-  DateTime?: number
-}
+import { caption, photoUrl, thumbUrl, type Photo } from '../../photos'
 
 // Metres. One framed photo on a paper wall under a single spotlight, like the Unity original.
 const FRAME_Y = 1.6
@@ -223,7 +214,7 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
   labelCanvas.width = 720
   labelCanvas.height = 400
   const label = textPlane(labelCanvas, 0.34, 0.008)
-  let labelInfo: { photo: RoomPhoto, index: number, total: number } | null = null
+  let labelInfo: { photo: Photo, index: number, total: number } | null = null
   let labelProgress: number | null = null
   const drawLabel = () => {
     if (!labelInfo) return
@@ -233,11 +224,11 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
     ctx.fillRect(0, 0, labelCanvas.width, labelCanvas.height)
     ctx.fillStyle = '#1A1A1A'
     ctx.font = '700 54px "Helvetica Neue", Helvetica, Arial, sans-serif'
-    ctx.fillText(photo.Tags.join(' · ') || '—', 44, 100)
+    ctx.fillText(caption(photo) || '—', 44, 100)
     ctx.fillStyle = '#4A4A4A'
     ctx.font = '400 42px "Helvetica Neue", Helvetica, Arial, sans-serif'
-    const year = photo.DateTime ? new Date(photo.DateTime * 1000).getFullYear() : ''
-    ctx.fillText([photo.Camera, year].filter(Boolean).join(' · '), 44, 170)
+    const year = photo.date ? new Date(photo.date * 1000).getFullYear() : ''
+    ctx.fillText([photo.camera, year].filter(Boolean).join(' · '), 44, 170)
     ctx.fillStyle = '#7A7A7A'
     ctx.font = '400 30px "Helvetica Neue", Helvetica, Arial, sans-serif'
     if (labelProgress === null) {
@@ -373,7 +364,7 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
     return new Blob(chunks as BlobPart[])
   }
 
-  const show = async (photo: RoomPhoto, index: number, total: number) => {
+  const show = async (photo: Photo, index: number, total: number) => {
     const mine = ++token
     pending?.abort()
     clearTimeout(fullTimer)
@@ -385,7 +376,7 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
     develop.value = 0.05
     developTarget = 0.35
     try {
-      const thumb = fromImage(await loadImage(photo.thumbnail))
+      const thumb = fromImage(await loadImage(thumbUrl(photo)))
       if (mine !== token) return thumb.dispose()
       setPhoto(thumb)
     } catch {
@@ -396,7 +387,7 @@ export function createRoom(container: HTMLElement, { mobile, developing }: { mob
       pending = new AbortController()
       let shown = 0
       try {
-        const blob = await download(photo.url, pending.signal, p => {
+        const blob = await download(photoUrl(photo), pending.signal, p => {
           developTarget = 0.35 + 0.5 * p
           if (p - shown > 0.02) {
             shown = p

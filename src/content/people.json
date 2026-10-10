@@ -1,0 +1,27 @@
+[
+ {
+  "id": "cameron",
+  "name": "Cameron",
+  "metAt": "Fort Nelson, Canada"
+ },
+ {
+  "id": "jerry",
+  "name": "Jerry",
+  "metAt": "Slab City"
+ },
+ {
+  "id": "mars",
+  "name": "Mars",
+  "metAt": "The Spot @UCSD"
+ },
+ {
+  "id": "rapter",
+  "name": "Rapter",
+  "metAt": "The Spot @UCSD"
+ },
+ {
+  "id": "tyler",
+  "name": "Tyler",
+  "metAt": "A class in UCSD"
+ }
+]

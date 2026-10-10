@@ -7,9 +7,9 @@
           @click="share(icon)">
           <Icon :name="icon" />
         </button>
-        <figure>
-          <img class="w-full" :src="blog.img" :alt="blog.title">
-          <figcaption>{{ blog.img_caption }}</figcaption>
+        <figure v-if="blog.cover">
+          <img class="w-full" :src="blog.cover" :alt="blog.title">
+          <figcaption>{{ blog.coverCaption }}</figcaption>
         </figure>
         <h2 class="w-full mt-sm blog-date">By MohaElder</h2>
         <h2 class="w-full blog-date">{{ blog.date }}</h2>
@@ -22,75 +22,23 @@
 <script setup lang="ts">
 import { ref, onBeforeMount, defineOptions } from 'vue'
 import { useRoute } from 'vue-router'
-import { blogs } from "../utils/blogLink.js"
-import { stories } from "../utils/storyLink.js"
-import MarkdownIt from "markdown-it"
+import blogs from '../content/blogs.json'
+import stories from '../content/stories.json'
+import { renderArticle } from '../article'
 import Icon from '../components/Icon.vue'
 
 defineOptions({
   name: 'Blog'
 })
 
-interface BlogData {
-  title: string
-  article: string
-  img: string
-  img_caption: string
-  date?: string
-  color?: string
-  brief?: string
-}
-
-// Type guard to check if a blog exists
-const isBlogValid = (id: string): id is keyof typeof blogs => {
-  return id in blogs
-}
-
-// Type guard to check if a story exists
-const isStoryValid = (id: string): id is keyof typeof stories => {
-  return id in stories
-}
+// Each article is its own chunk, loaded when it's opened.
+const bodies = import.meta.glob<string>(['../blogs/*.md', '../stories/*.md'], { query: '?raw', import: 'default' })
 
 const route = useRoute()
 const icons = ["link-box-variant-outline", "twitter", "linkedin", "facebook"] as const
 const copied = ref(false)
-const blog = ref<BlogData>({
-  title: "42",
-  article: "# Whoops! Seems like you have reached a nonexisting article ;)",
-  img: "",
-  img_caption: "",
-})
+const blog = ref<{ title: string, cover?: string, coverCaption?: string, date?: string }>({ title: "42" })
 const fileContent = ref<string | null>(null)
-
-const rendered = (e: string): string => {
-  const lines = e.split("\n")
-  for (let i = 0; i < lines.length; i++) {
-    const element = lines[i]
-    if (element.includes("<img")) {
-      const idx = element.indexOf("<img")
-      const startPos = idx + 10
-      const endPos = element.indexOf('"', startPos)
-      const src = element.slice(startPos, endPos)
-      const lst = element.split("")
-      lst[idx + 3] += ` class='md-img' onclick='view("${src}")'`
-      lines[i] = lst.join("")
-    }
-  }
-  return lines.join("\n")
-}
-
-const getContent = () => {
-  fileContent.value = "rendering "
-  fetch(blog.value.article)
-    .then((response) => response.text())
-    .then((data) => {
-      const ret = data
-        .split("../assets")
-        .join("https://cdn.jsdelivr.net/gh/mohaelder/me/src/assets")
-      const md = new MarkdownIt("commonmark")
-      fileContent.value = rendered(md.render(ret))
-    })
-}
 
 const share = (name: typeof icons[number]) => {
   const link = window.location.href
@@ -115,31 +63,19 @@ const share = (name: typeof icons[number]) => {
   copied.value = true
 }
 
-onBeforeMount(() => {
+onBeforeMount(async () => {
   window.scrollTo(0, 0)
   const id = route.query.id as string
-  const isStoryRoute = route.name === 'Story'
-  
-  if (isStoryRoute && isStoryValid(id)) {
-    // Loading a story
-    const story = stories[id]
-    blog.value = {
-      title: story.title,
-      article: story.article,
-      img: "",
-      img_caption: "",
-      date: "",
-    }
-    getContent()
-  } else if (isBlogValid(id)) {
-    // Loading a blog
-    blog.value = blogs[id]
-    getContent()
-  } else {
-    fileContent.value = blog.value.article
+  const kind = route.name === 'Story' ? 'stories' : 'blogs'
+  const entry = (kind === 'stories' ? stories : blogs).find(a => a.id === id && a.published)
+  const load = bodies[`../${kind}/${id}.md`]
+  if (!entry || !load) {
+    fileContent.value = renderArticle("# Whoops! Seems like you have reached a nonexisting article ;)")
     return
   }
-  document.title = `${blog.value.title} · Yasushi Oh`
+  blog.value = entry
+  document.title = `${entry.title} · Yasushi Oh`
+  fileContent.value = renderArticle(await load())
 })
 </script>
 

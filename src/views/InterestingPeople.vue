@@ -8,16 +8,16 @@
     </div>
 
     <div class="people-list">
-      <div v-for="person in people" :key="person.id" class="person-card">
+      <div v-for="person in met" :key="person.id" class="person-card">
         <div class="person-header">
           <h2 class="person-name">{{ person.name }}</h2>
-          <p class="person-met-at">{{ person.IMetThemAt }}</p>
+          <p class="person-met-at">{{ person.metAt }}</p>
         </div>
         
         <div class="stories-section">
           <h3 class="stories-title">Stories</h3>
-          <div v-for="(story, index) in person.stories" :key="index" class="story-item">
-            <a @click="viewStory(getStoryId(story))" class="story-link">{{ story.title }}</a>
+          <div v-for="story in person.stories" :key="story.id" class="story-item">
+            <RouterLink :to="{ name: 'Story', query: { id: story.id } }" class="story-link">{{ story.title }}</RouterLink>
           </div>
         </div>
       </div>
@@ -26,79 +26,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, defineOptions } from 'vue'
-import { useRouter } from 'vue-router'
-import { stories } from "../utils/storyLink.js"
-import peopleData from '../utils/peopleData.json'
+import { onMounted, defineOptions } from 'vue'
+import people from '../content/people.json'
+import stories from '../content/stories.json'
 
 defineOptions({
   name: 'InterestingPeople'
 })
 
-interface Story {
-  person: string
-  title: string
-  article: string
-  published?: string
-}
-
-interface PersonData {
-  id: string
-  name: string
-  IMetThemAt: string
-}
-
-interface Person {
-  id: string
-  name: string
-  IMetThemAt: string
-  stories: Story[]
-}
-
-const router = useRouter()
-
-// Group stories by person
-const people = ref<Person[]>([])
-
-const groupStoriesByPerson = () => {
-  // Create a map of person ID to their stories
-  const storiesMap = new Map<string, Story[]>()
-  
-  Object.values(stories as Record<string, Story>).forEach((story) => {
-    // Only include published stories
-    if (story.published === 'true' && story.person) {
-      if (!storiesMap.has(story.person)) {
-        storiesMap.set(story.person, [])
-      }
-      storiesMap.get(story.person)?.push(story)
-    }
-  })
-  
-  // Map people from peopleData.json with their stories
-  people.value = peopleData.people
-    .map((person: PersonData) => ({
-      id: person.id,
-      name: person.name,
-      IMetThemAt: person.IMetThemAt,
-      stories: storiesMap.get(person.id) || []
-    }))
-    .filter((person: Person) => person.stories.length > 0) // Only show people with published stories
-}
-
-const viewStory = (storyId: string) => {
-  router.push({ name: "Story", query: { id: storyId } })
-}
-
-const getStoryId = (story: Story): string => {
-  // Find the story ID from the stories object by matching article URL
-  const entries = Object.entries(stories as Record<string, Story>)
-  const found = entries.find(([_, s]) => s.article === story.article && s.title === story.title)
-  return found ? found[0] : ''
-}
+// Everyone with at least one published story, with those stories.
+const met = people
+  .map(person => ({ ...person, stories: stories.filter(s => s.published && s.person === person.id) }))
+  .filter(person => person.stories.length)
 
 onMounted(() => {
   window.scrollTo(0, 0)
-  groupStoriesByPerson()
 })
 </script>
 

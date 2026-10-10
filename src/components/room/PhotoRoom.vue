@@ -12,9 +12,9 @@
         </svg>
       </button>
       <div ref="strip" class="strip">
-        <button v-for="(photo, i) in photos" :key="photo.url" type="button" class="thumb"
+        <button v-for="(photo, i) in photos" :key="photo.file" type="button" class="thumb"
           :class="{ current: i === index }" :aria-label="`Photo ${i + 1}`" @click="go(i)">
-          <img :src="photo.thumbnail" alt="" loading="lazy">
+          <img :src="thumbUrl(photo)" alt="" loading="lazy">
         </button>
       </div>
       <button type="button" class="hud-btn" aria-label="Next photo" @click="go(index + 1)">
@@ -40,9 +40,10 @@
 <script setup lang="ts">
 import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { t } from '../../i18n'
-import { createRoom, type RoomPhoto } from './scene'
+import { thumbUrl, type Photo } from '../../photos'
+import { createRoom } from './scene'
 
-const props = defineProps<{ photos: RoomPhoto[] }>()
+const props = defineProps<{ photos: Photo[] }>()
 
 const stage = ref<HTMLElement | null>(null)
 const strip = ref<HTMLElement | null>(null)

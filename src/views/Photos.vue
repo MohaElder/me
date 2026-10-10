@@ -22,20 +22,32 @@
 
     <div v-else class="layout">
       <aside class="side">
-        <nav class="filters" aria-label="Filter photos">
-          <button v-for="tag in tagList" :key="tag.name" type="button" :class="{ active: tag.name === activeTag }"
-            @click="activeTag = tag.name">
-            <span>{{ tag.label }}</span><span class="n">{{ tag.count }}</span>
+        <nav class="filters" :aria-label="$t('message.photos_category')">
+          <span class="group">{{ $t("message.photos_category") }}</span>
+          <button v-for="c in categoryList" :key="c.name" type="button" :class="{ active: c.name === category }"
+            @click="category = c.name">
+            <span>{{ c.label }}</span><span class="n">{{ c.count }}</span>
           </button>
         </nav>
+        <nav class="filters" :aria-label="$t('message.photos_place')">
+          <span class="group">{{ $t("message.photos_place") }}</span>
+          <button v-for="p in placeList" :key="p.name" type="button" :class="{ active: p.name === place, sub: p.sub }"
+            @click="place = p.name === place ? '' : p.name">
+            <span>{{ p.name }}</span><span class="n">{{ p.count }}</span>
+          </button>
+        </nav>
+        <div class="toggles">
+          <button v-for="key in toggleKeys" :key="key" type="button" :aria-pressed="only[key]"
+            @click="only[key] = !only[key]">{{ $t(`message.photos_${key}`) }}</button>
+        </div>
       </aside>
 
       <div class="grid">
-        <button v-for="(photo, i) in page" :key="photo.url" type="button" class="tile"
-          :class="{ ready: loaded.has(photo.url) }" @click="openAt(i)">
-          <img :src="photo.thumbnail" :alt="alt(photo)" loading="lazy" @load="loaded.add(photo.url)"
-            @error="failed.add(photo.url)">
-          <span class="cap">{{ photo.Tags.join(" · ") }}</span>
+        <button v-for="(photo, i) in page" :key="photo.file" type="button" class="tile"
+          :class="{ ready: loaded.has(photo.file) }" @click="openAt(i)">
+          <img :src="thumbUrl(photo)" :alt="describe(photo)" loading="lazy" @load="loaded.add(photo.file)"
+            @error="failed.add(photo.file)">
+          <span class="cap">{{ caption(photo) }}</span>
         </button>
         <span v-for="n in skeletons" :key="`skeleton-${n}`" class="tile" aria-hidden="true"></span>
         <div ref="sentinel" class="sentinel"></div>
@@ -57,11 +69,11 @@
       <template v-if="current">
         <!-- Darkroom: the thumbnail shows as a negative, the enlarger flashes, and the
              print develops from white paper; the full photo fades in once it arrives. -->
-        <div :key="current.url" class="darkroom" :class="{ done: fullReady }"
+        <div :key="current.file" class="darkroom" :class="{ done: fullReady }"
           :style="{ '--ar': current.w / current.h }">
-          <img class="negative" :src="current.thumbnail" alt="">
-          <img class="print" :src="current.thumbnail" alt="">
-          <img class="full" :src="current.url" :alt="alt(current)" @load="fullLoaded = true">
+          <img class="negative" :src="thumbUrl(current)" alt="">
+          <img class="print" :src="thumbUrl(current)" alt="">
+          <img class="full" :src="photoUrl(current)" :alt="describe(current)" @load="fullLoaded = true">
           <span class="safelight" aria-hidden="true"></span>
         </div>
         <div class="viewer-bar">
@@ -92,7 +104,7 @@
           <strong>{{ $t("message.using_my_photo") }}</strong>
           <p>{{ $t("message.photo_usage_note") }}</p>
           <div class="usage-actions">
-            <a class="btn" :href="current.url" target="_blank" rel="noopener">{{ $t("message.download_picture") }}</a>
+            <a class="btn" :href="photoUrl(current)" target="_blank" rel="noopener">{{ $t("message.download_picture") }}</a>
             <a
               href="mailto:calen0909@hotmail.com?subject=Photo Commercial Usage Request&body=(Thank you for showing interest in my photo! Please address your usage and attach the photo that you want to use)">
               {{ $t("message.commercial") }}</a>
@@ -106,26 +118,20 @@
 <script setup lang="ts">
 import { computed, defineAsyncComponent, nextTick, onMounted, onUnmounted, reactive, ref, watch } from 'vue'
 import { t } from '../i18n'
+import { caption, categories, describe, photoUrl, thumbUrl, type Photo } from '../photos'
 
 // Three.js only loads when someone opens Room.
 const PhotoRoom = defineAsyncComponent(() => import('../components/room/PhotoRoom.vue'))
-
-interface Photo {
-  url: string
-  thumbnail: string
-  w: number // thumbnail size, recorded by helpers/init.py
-  h: number
-  DateTime?: number
-  Tags: string[]
-  Camera?: string
-}
 
 const PAGE = 48
 const DEVELOP_MS = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 2600
 
 const photos = ref<Photo[]>([])
 const catalogLoaded = ref(false)
-const activeTag = ref('')
+const category = ref('')
+const place = ref('')
+const toggleKeys = ['film', 'bw', 'favorite'] as const
+const only = reactive({ film: false, bw: false, favorite: false })
 const newestFirst = ref(true)
 const limit = ref(PAGE)
 const loaded = reactive(new Set<string>())
@@ -134,23 +140,43 @@ const room = ref(false)
 
 const total = computed(() => photos.value.length)
 const shown = computed(() => {
-  const list = photos.value.filter(p =>
-    !failed.has(p.url) && (!activeTag.value || p.Tags.includes(activeTag.value)))
+  const list = photos.value.filter(p => !failed.has(p.file)
+    && (!category.value || p.category === category.value)
+    && (!place.value || p.place?.includes(place.value))
+    && toggleKeys.every(key => !only[key] || p[key]))
   return newestFirst.value ? list : [...list].reverse()
 })
 const page = computed(() => shown.value.slice(0, limit.value))
 // A row of shimmering tiles while the catalogue or the next page is on its way.
 const skeletons = computed(() => !catalogLoaded.value ? 15 : limit.value < shown.value.length ? 5 : 0)
 
-const tagList = computed(() => {
+const countBy = (key: (p: Photo) => string[] | undefined) => {
   const counts = new Map<string, number>()
-  photos.value.forEach(p => p.Tags.forEach(tag => counts.set(tag, (counts.get(tag) ?? 0) + 1)))
-  const tags = [...counts].sort(([a], [b]) => a.localeCompare(b))
-    .map(([name, count]) => ({ name, label: name, count: count.toLocaleString() }))
-  return [{ name: '', label: t('message.photos_all'), count: total.value.toLocaleString() }, ...tags]
+  photos.value.forEach(p => key(p)?.forEach(k => counts.set(k, (counts.get(k) ?? 0) + 1)))
+  return counts
+}
+
+const categoryList = computed(() => {
+  const counts = countBy(p => p.category && [p.category])
+  return [
+    { name: '', label: t('message.photos_all'), count: total.value.toLocaleString() },
+    ...categories.filter(c => counts.has(c))
+      .map(c => ({ name: c, label: t(`message.categories.${c}`), count: counts.get(c)!.toLocaleString() })),
+  ]
 })
 
-watch([activeTag, newestFirst], () => {
+// Countries by photo count, each followed by the places within it.
+const placeList = computed(() => {
+  const counts = countBy(p => p.place)
+  const within = new Map<string, Set<string>>()
+  photos.value.forEach(({ place }) => place && within.set(place[0], new Set([...within.get(place[0]) ?? [], ...place.slice(1)])))
+  const byCount = (a: string, b: string) => counts.get(b)! - counts.get(a)!
+  const item = (name: string, sub = false) => ({ name, sub, count: counts.get(name)!.toLocaleString() })
+  return [...within.keys()].sort(byCount)
+    .flatMap(country => [item(country), ...[...within.get(country)!].sort(byCount).map(name => item(name, true))])
+})
+
+watch([category, place, only, newestFirst], () => {
   limit.value = PAGE
   window.scrollTo({ top: 0 })
 })
@@ -205,13 +231,10 @@ const step = (d: number) => {
 }
 
 const meta = (p: Photo) => [
-  p.Tags.join(' · '),
-  p.Camera,
-  p.DateTime && new Date(p.DateTime * 1000).toLocaleDateString(),
+  caption(p),
+  p.camera,
+  p.date && new Date(p.date * 1000).toLocaleDateString(),
 ].filter(Boolean).join(' — ')
-
-// Alt text for image search and screen readers.
-const alt = (p: Photo) => `${p.Tags.join(', ')} photograph by Yasushi Oh${p.Camera ? `, shot on ${p.Camera}` : ''}`
 
 // Back to top, offered once the visitor is well down the grid.
 const showTop = ref(false)
@@ -228,8 +251,7 @@ onMounted(async () => {
   window.scrollTo(0, 0)
   window.addEventListener('scroll', onScroll, { passive: true })
   // Loaded on demand so the catalogue stays out of the page's JavaScript.
-  const { images } = await import('../utils/imageLink.json')
-  photos.value = (Object.values(images) as Photo[]).sort((a, b) => (b.DateTime ?? 0) - (a.DateTime ?? 0))
+  photos.value = (await import('../content/photos.json')).default as Photo[]
   catalogLoaded.value = true
 })
 
@@ -387,6 +409,42 @@ button {
 
 .filters .n {
   color: #6F6F6F;
+}
+
+.filters .group {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8A8A8A;
+}
+
+.filters button.sub {
+  padding-left: 14px;
+}
+
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toggles button {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.toggles button:hover {
+  color: #FEE989;
+  border-color: #FEE989;
+}
+
+.toggles button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0a0a0a;
 }
 
 .grid {
@@ -707,6 +765,10 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px 18px;
+  }
+
+  .filters .group {
+    width: 100%;
   }
 
   .grid {
