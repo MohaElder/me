@@ -54,25 +54,12 @@
         </div>
       </div>
 
-      <label class="block"><span class="label">Place</span>
-        <input class="field" list="places" :value="selected.place?.join(' › ') ?? ''" placeholder="Country › City"
-          @change="setPlace(($event.target as HTMLInputElement).value)">
-        <datalist id="places"><option v-for="p in places" :key="p" :value="p" /></datalist>
-      </label>
-
-      <div class="flags">
-        <label class="check"><input v-model="selected.film" type="checkbox"> Film</label>
-        <label class="check"><input v-model="selected.bw" type="checkbox"> Black and white</label>
-        <label class="check"><input v-model="selected.favorite" type="checkbox"> Favorite</label>
-        <label class="check"><input v-model="selected.mature" type="checkbox"> 17+</label>
-      </div>
-
       <div v-if="review" class="confirm">
         <button type="button" class="btn primary" :disabled="!selected.suggestion" @click="choose(selected.suggestion!.category)">
           Confirm &amp; next</button>
         <button type="button" class="btn" @click="step(1)">Skip</button>
       </div>
-      <p class="muted keys">1–7 pick a category · Enter confirms · ← → move</p>
+      <p class="muted keys">1–{{ categories.length }} pick a category · Enter confirms · ← → move</p>
     </aside>
   </div>
 </template>
@@ -102,14 +89,6 @@ watch(() => props.review, () => {
   limit.value = PAGE
   selected.value = list.value[0] ?? null
 }, { immediate: true })
-
-const places = computed(() => [...new Set(content.photos.flatMap(p => p.place ? [p.place.join(' › ')] : []))].sort())
-
-const setPlace = (value: string) => {
-  const place = value.split('›').map(s => s.trim()).filter(Boolean)
-  if (place.length) selected.value!.place = place
-  else delete selected.value!.place
-}
 
 const step = (d: number) => {
   const i = list.value.indexOf(selected.value!)
@@ -366,12 +345,6 @@ main {
   background: #FDDA3A;
   border-color: #FDDA3A;
   color: #0a0a0a;
-}
-
-.flags {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
 }
 
 .confirm {

@@ -26,9 +26,7 @@ const timers: Record<string, number> = {}
 const save = (name: keyof typeof content) => {
   clearTimeout(timers[name])
   timers[name] = window.setTimeout(async () => {
-    // Photo flags are only written when set.
-    const body = JSON.stringify(content[name], (_, v) => name === 'photos' && v === false ? undefined : v)
-    const res = await fetch(`/__admin/content/${name}`, { method: 'PUT', body })
+    const res = await fetch(`/__admin/content/${name}`, { method: 'PUT', body: JSON.stringify(content[name]) })
     saved(res.ok, `src/content/${name}.json`)
   }, 400)
 }

@@ -2,8 +2,7 @@
 // Photos page, the Room and the admin.
 import { t } from './i18n'
 
-// IPA's competition categories that fit this work.
-export const categories = ['Nature', 'People', 'Architecture', 'Editorial', 'Fine Art', 'Event', 'Sports'] as const
+export const categories = ['Nature', 'Street', 'Architecture', 'Other'] as const
 export type Category = typeof categories[number]
 
 export interface Photo {
@@ -14,11 +13,6 @@ export interface Photo {
   camera?: string
   category?: Category // unset until confirmed in the admin
   suggestion?: { category: Category, score: number } // the admin's CLIP guess
-  place?: string[] // country first, e.g. ['Thailand', 'Sukhothai']
-  film?: boolean
-  bw?: boolean
-  favorite?: boolean
-  mature?: boolean
 }
 
 // The CDN serves the repo from GitHub, so photos only reach it once pushed;
@@ -28,15 +22,8 @@ export const photoUrl = (p: Photo) => images + p.file
 export const thumbUrl = (p: Photo) => images + p.file + '_thumbnail.jpg'
 
 // Shown under each photo, in the viewer and on the Room's wall label.
-export const caption = (p: Photo) => [p.category && t(`message.categories.${p.category}`), p.place?.at(-1)]
-  .filter(Boolean).join(' · ')
+export const caption = (p: Photo) => p.category ? t(`message.categories.${p.category}`) : ''
 
 // For image search and screen readers.
-export const describe = (p: Photo) => [
-  p.bw ? 'Black-and-white' : '',
-  p.film ? 'film' : '',
-  p.category ? p.category.toLowerCase() : '',
-  'photograph',
-  p.place ? `from ${[...p.place].reverse().join(', ')}` : '',
-  'by Yasushi Oh',
-].filter(Boolean).join(' ').replace(/^./, c => c.toUpperCase()) + (p.camera ? `, shot on ${p.camera}` : '')
+export const describe = (p: Photo) =>
+  `${p.category && p.category !== 'Other' ? `${p.category} photograph` : 'Photograph'} by Yasushi Oh${p.camera ? `, shot on ${p.camera}` : ''}`

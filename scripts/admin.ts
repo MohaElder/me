@@ -29,8 +29,7 @@ const send = (res: ServerResponse, status: number, data: unknown) => {
 const collection = (name: string) => JSON.parse(readFileSync(`src/content/${name}.json`, 'utf8'))
 
 // Saves a full-size copy (long edge 4096px, metadata stripped) and a 512px
-// thumbnail, and returns the catalogue entry, with the date and camera from
-// EXIF. No camera usually means a film scan; black and white is measured.
+// thumbnail, and returns the catalogue entry, with the date and camera from EXIF.
 async function importPhoto(name: string, bytes: Buffer): Promise<Photo> {
   const stem = name.replace(/\.[^.]+$/, '').replace(/[^\w-]+/g, '_')
   let file = `${stem}.jpg`
@@ -42,18 +41,13 @@ async function importPhoto(name: string, bytes: Buffer): Promise<Photo> {
     .jpeg({ quality: 82, mozjpeg: true }).toFile(`src/images/${file}`)
   const thumb = await image.clone().resize(512, 512, { fit: 'inside' })
     .jpeg({ quality: 80 }).toFile(`src/images/${file}_thumbnail.jpg`)
-  const { data } = await image.clone().resize(64, 64, { fit: 'inside' }).removeAlpha().raw().toBuffer({ resolveWithObject: true })
-  let spread = 0
-  for (let i = 0; i < data.length; i += 3) spread += Math.max(data[i], data[i + 1], data[i + 2]) - Math.min(data[i], data[i + 1], data[i + 2])
-
   const camera = [exif?.Make, exif?.Model].filter(Boolean).join(' ')
   return {
     file,
     w: thumb.width,
     h: thumb.height,
     ...exif?.DateTimeOriginal && { date: Math.round(exif.DateTimeOriginal.getTime() / 1000) },
-    ...camera ? { camera } : { film: true },
-    ...spread / (data.length / 3) < 8 && { bw: true },
+    ...camera && { camera },
   }
 }
 

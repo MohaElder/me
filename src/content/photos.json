@@ -3,180 +3,145 @@
   "file": "scan_47-positive.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "scan_43-positive-2.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_41-positive-2.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_40-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_39-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_38-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_37-positive.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_36-positive-2.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_34-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_33-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_30-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_28-positive-2.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_27-positive-2.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_26-positive.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "scan_25-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_23-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_22-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_20-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_19-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_18-positive.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_14-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_9-positive-2.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_8-positive.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_1-positive-2.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000064-positive-2.jpg",
@@ -197,7 +162,7 @@
   "w": 344,
   "h": 512,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000061-positive-2.jpg",
@@ -211,851 +176,730 @@
   "w": 344,
   "h": 512,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000058-positive-2.jpg",
   "w": 344,
   "h": 512,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000057-positive.jpg",
   "w": 512,
   "h": 344,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000056-positive-2.jpg",
   "w": 410,
   "h": 512,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000055-positive-3.jpg",
   "w": 512,
   "h": 410,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000054-positive-3.jpg",
   "w": 344,
   "h": 512,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000053-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000052-positive-2.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000051-positive.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000050-positive-2.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000048-positive-3.jpg",
   "w": 409,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000047-positive-2.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000046-positive-3.jpg",
   "w": 409,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000037-positive-2.jpg",
   "w": 409,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000035-positive.jpg",
   "w": 512,
   "h": 344,
   "camera": "FUJI PHOTO FILM CO., LTD. SP-3000",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000006-positive-3.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000005-positive-2.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000067-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000066-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000065-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000064-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000063-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000062-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000058-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000055-positive-2.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000054-positive-2.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000052-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000049-positive.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000048-positive-2.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000046-positive-2.jpg",
   "w": 409,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000045-positive-2.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000043-positive-2.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000040-positive.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000039-positive-2.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000038-positive-2.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000006-positive-2.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000005-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000004-positive-2.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000002-positive-2.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000013700033-positive.jpg",
   "w": 512,
   "h": 339,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000001-positive.jpg",
   "w": 512,
   "h": 366,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000013700032-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700030-positive.jpg",
   "w": 512,
   "h": 365,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700029-positive.jpg",
   "w": 512,
   "h": 339,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700028-positive.jpg",
   "w": 339,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700027-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700026-positive.jpg",
   "w": 340,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700022-positive.jpg",
   "w": 512,
   "h": 339,
-  "film": true,
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000013700018-positive.jpg",
   "w": 339,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700017-positive.jpg",
   "w": 339,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700016-positive.jpg",
   "w": 339,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700013-positive.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000013700011-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
   "category": "Nature"
  },
  {
   "file": "000013700004-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480037-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480036-positive.jpg",
   "w": 512,
   "h": 366,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480035-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480034-positive.jpg",
   "w": 512,
   "h": 365,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000061-positive.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480032-positive.jpg",
   "w": 512,
   "h": 339,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000060-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480029-positive.jpg",
   "w": 410,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000033480028-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000059-positive.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000033480027-positive.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000056-positive.jpg",
   "w": 512,
   "h": 365,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480021-positive.jpg",
   "w": 512,
   "h": 340,
-  "film": true,
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000033480018-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000055-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480017-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000054-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000033480012-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480011-positive.jpg",
   "w": 512,
   "h": 366,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480010-positive.jpg",
   "w": 365,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000050-positive.jpg",
   "w": 409,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000033480007-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000048-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000033480002-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000047-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000046-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
   "category": "Architecture"
  },
  {
   "file": "000045-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
   "category": "Architecture"
  },
  {
   "file": "000044-positive.jpg",
   "w": 512,
   "h": 366,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000043-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000042-positive.jpg",
   "w": 409,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000039-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000038-positive.jpg",
   "w": 512,
   "h": 410,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000037-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000036-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000031-positive.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000025-positive.jpg",
   "w": 512,
   "h": 409,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000006-positive.jpg",
   "w": 344,
   "h": 512,
-  "film": true,
   "category": "Architecture"
  },
  {
   "file": "000004-positive.jpg",
   "w": 512,
   "h": 344,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "000003-positive.jpg",
   "w": 512,
   "h": 366,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000002-positive.jpg",
   "w": 366,
   "h": 512,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_10.jpg",
   "w": 512,
   "h": 301,
   "camera": "EPSON Perfection V600",
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_10_3_.jpg",
   "w": 348,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_10_2_.jpg",
   "w": 348,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_9_2_.jpg",
   "w": 348,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_8.jpg",
   "w": 512,
   "h": 349,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_7.jpg",
   "w": 349,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_7_2_.jpg",
   "w": 348,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_6.jpg",
   "w": 346,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_6_3_.jpg",
   "w": 512,
   "h": 345,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_6_2_.jpg",
   "w": 345,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_5.jpg",
   "w": 512,
   "h": 341,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_5_3_.jpg",
   "w": 340,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_5_2_.jpg",
   "w": 512,
   "h": 350,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_4.jpg",
   "w": 347,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_4_3_.jpg",
   "w": 512,
   "h": 339,
   "camera": "EPSON Perfection V600",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_4_2_.jpg",
   "w": 403,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_3.jpg",
   "w": 512,
   "h": 340,
   "camera": "EPSON Perfection V600",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_2_2_.jpg",
   "w": 512,
   "h": 339,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_1.jpg",
   "w": 314,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_1_4_.jpg",
   "w": 512,
   "h": 357,
   "camera": "EPSON Perfection V600",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "Image_1_3_.jpg",
   "w": 336,
   "h": 512,
   "camera": "EPSON Perfection V600",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "Image_1_2_-positive.jpg",
   "w": 340,
   "h": 512,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0084-positive.jpg",
@@ -1063,8 +907,7 @@
   "h": 512,
   "date": 1774441391,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0081-positive.jpg",
@@ -1072,8 +915,7 @@
   "h": 512,
   "date": 1774441349,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0079-positive.jpg",
@@ -1081,8 +923,7 @@
   "h": 512,
   "date": 1774441292,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0078-positive.jpg",
@@ -1090,8 +931,7 @@
   "h": 512,
   "date": 1774441285,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0077-positive.jpg",
@@ -1099,8 +939,7 @@
   "h": 512,
   "date": 1774441275,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0074-positive.jpg",
@@ -1108,8 +947,7 @@
   "h": 512,
   "date": 1774441163,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0072-positive.jpg",
@@ -1117,8 +955,7 @@
   "h": 512,
   "date": 1774441142,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0066-positive.jpg",
@@ -1126,8 +963,7 @@
   "h": 512,
   "date": 1774440863,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0065-positive.jpg",
@@ -1135,8 +971,7 @@
   "h": 512,
   "date": 1774440852,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0062-positive.jpg",
@@ -1144,8 +979,7 @@
   "h": 512,
   "date": 1774440750,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0060-positive.jpg",
@@ -1153,8 +987,7 @@
   "h": 512,
   "date": 1774440636,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0059-positive.jpg",
@@ -1162,8 +995,7 @@
   "h": 512,
   "date": 1774440442,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0055-positive.jpg",
@@ -1171,8 +1003,7 @@
   "h": 512,
   "date": 1774440216,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0053-positive.jpg",
@@ -1180,7 +1011,7 @@
   "h": 384,
   "date": 1773430070,
   "camera": "FUJIFILM GFX100RF",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0050-positive.jpg",
@@ -1188,7 +1019,7 @@
   "h": 288,
   "date": 1773410895,
   "camera": "FUJIFILM GFX100RF",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0044-positive.jpg",
@@ -1196,7 +1027,7 @@
   "h": 384,
   "date": 1773399975,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0041-positive.jpg",
@@ -1204,7 +1035,7 @@
   "h": 384,
   "date": 1773395604,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0040-positive.jpg",
@@ -1212,7 +1043,7 @@
   "h": 384,
   "date": 1773389112,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0039-positive.jpg",
@@ -1220,7 +1051,7 @@
   "h": 512,
   "date": 1773389088,
   "camera": "FUJIFILM GFX100RF",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0039-positive-2.jpg",
@@ -1228,7 +1059,7 @@
   "h": 512,
   "date": 1773389088,
   "camera": "FUJIFILM GFX100RF",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0002-positive.jpg",
@@ -1236,7 +1067,7 @@
   "h": 288,
   "date": 1773149078,
   "camera": "FUJIFILM GFX100RF",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF0057-positive.jpg",
@@ -1244,7 +1075,7 @@
   "h": 512,
   "date": 1772711013,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0056-positive.jpg",
@@ -1252,7 +1083,7 @@
   "h": 512,
   "date": 1772710981,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0055-positive-2.jpg",
@@ -1260,7 +1091,7 @@
   "h": 512,
   "date": 1772709890,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0053-positive-2.jpg",
@@ -1268,8 +1099,7 @@
   "h": 512,
   "date": 1772709669,
   "camera": "FUJIFILM GFX100RF",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0052-positive.jpg",
@@ -1277,7 +1107,7 @@
   "h": 512,
   "date": 1772709565,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0049-positive.jpg",
@@ -1285,7 +1115,7 @@
   "h": 384,
   "date": 1772708519,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0046-positive.jpg",
@@ -1293,7 +1123,7 @@
   "h": 512,
   "date": 1772708129,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0042-positive.jpg",
@@ -1301,257 +1131,231 @@
   "h": 384,
   "date": 1772707423,
   "camera": "FUJIFILM GFX100RF",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_77-positive-positive.jpg",
   "w": 345,
   "h": 512,
   "date": 1763800972,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_74-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800972,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_73-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1763800971,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_72-positive.jpg",
   "w": 340,
   "h": 512,
   "date": 1763800971,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_64-positive.jpg",
   "w": 512,
   "h": 348,
   "date": 1763800970,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_66-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800970,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_67-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1763800970,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_59-positive-positive.jpg",
   "w": 343,
   "h": 512,
   "date": 1763800969,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_62-positive-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800969,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_43-positive-positive.jpg",
   "w": 347,
   "h": 512,
   "date": 1763800967,
-  "film": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "scan_40-positive.jpg",
   "w": 409,
   "h": 512,
   "date": 1763800967,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_38-positive-positive.jpg",
   "w": 348,
   "h": 512,
   "date": 1763800967,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_13-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800966,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_35-positive-2-positive.jpg",
   "w": 341,
   "h": 512,
   "date": 1763800966,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_33-positive.jpg",
   "w": 512,
   "h": 366,
   "date": 1763800966,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_1-positive.jpg",
   "w": 366,
   "h": 512,
   "date": 1763800964,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_78-positive-positive.jpg",
   "w": 512,
   "h": 349,
   "date": 1763800964,
-  "film": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_2 (2)-Edit-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746468361,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_84-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403153,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_90-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403153,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_88-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403150,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_79-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403148,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_83-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403143,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_78-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403143,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_76-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403140,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_71-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403139,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_68-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403138,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_62-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1746403137,
-  "category": "Architecture",
-  "bw": true
+  "category": "Architecture"
  },
  {
   "file": "scan_60-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403132,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_59-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1746403130,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "Untitled (2)-positive.jpg",
   "w": 512,
   "h": 165,
   "date": 1746403126,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_54-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403124,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_56-positive.jpg",
@@ -1559,186 +1363,182 @@
   "h": 410,
   "date": 1746403124,
   "camera": "Mamiya RB67 Pro S",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_55-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1746403123,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_52-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403120,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_51-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403117,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_47-Enhanced-NR-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403116,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_48-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403111,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_45-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403109,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "scan_44-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403108,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_43-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403107,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_41-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1746403105,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_39-Edit-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403105,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_36-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403103,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_38-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403103,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_35-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403102,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_33-Edit-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403098,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_34-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403097,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_31-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403095,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_32-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403095,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_29-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403093,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_27-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403089,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_28-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403088,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_15-Enhanced-NR-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403084,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_25-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1746403083,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_24-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403083,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_22-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403080,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_4-Enhanced-NR-positive.jpg",
   "w": 512,
   "h": 410,
   "date": 1746403080,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_23-positive.jpg",
@@ -1752,42 +1552,42 @@
   "w": 512,
   "h": 410,
   "date": 1746403076,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_21-positive.jpg",
   "w": 410,
   "h": 512,
   "date": 1746403076,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_9-positive.jpg",
   "w": 384,
   "h": 512,
   "date": 1746403074,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_12-positive.jpg",
   "w": 512,
   "h": 384,
   "date": 1746403072,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_11-positive.jpg",
   "w": 512,
   "h": 384,
   "date": 1746403066,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_3-positive.jpg",
   "w": 512,
   "h": 384,
   "date": 1746403065,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "scan_6-positive.jpg",
@@ -1795,7 +1595,7 @@
   "h": 410,
   "date": 1746403065,
   "camera": "Mamiya RB67 Pro S",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_8070 2-2.jpg",
@@ -1803,10 +1603,7 @@
   "h": 512,
   "date": 1730329937,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3696.jpg",
@@ -1814,10 +1611,7 @@
   "h": 512,
   "date": 1730329653,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3698.jpg",
@@ -1825,10 +1619,7 @@
   "h": 410,
   "date": 1730329653,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3708.jpg",
@@ -1836,10 +1627,7 @@
   "h": 288,
   "date": 1730329652,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3697.jpg",
@@ -1847,10 +1635,7 @@
   "h": 288,
   "date": 1730329652,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_8070 2.jpg",
@@ -1858,10 +1643,7 @@
   "h": 512,
   "date": 1730329652,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3710.jpg",
@@ -1869,10 +1651,7 @@
   "h": 288,
   "date": 1730329652,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3706.jpg",
@@ -1880,10 +1659,7 @@
   "h": 288,
   "date": 1730329652,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3715.jpg",
@@ -1891,10 +1667,7 @@
   "h": 288,
   "date": 1730329651,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3714.jpg",
@@ -1902,10 +1675,7 @@
   "h": 366,
   "date": 1730329651,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3713.jpg",
@@ -1913,10 +1683,7 @@
   "h": 410,
   "date": 1730329651,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3712.jpg",
@@ -1924,10 +1691,7 @@
   "h": 288,
   "date": 1730329651,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3719.jpg",
@@ -1935,10 +1699,7 @@
   "h": 288,
   "date": 1730329650,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3716.jpg",
@@ -1946,10 +1707,7 @@
   "h": 410,
   "date": 1730329650,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3720.jpg",
@@ -1957,10 +1715,7 @@
   "h": 512,
   "date": 1730329649,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3721.jpg",
@@ -1968,10 +1723,7 @@
   "h": 512,
   "date": 1730329649,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3717.jpg",
@@ -1979,10 +1731,7 @@
   "h": 410,
   "date": 1730329649,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3723.jpg",
@@ -1990,10 +1739,7 @@
   "h": 512,
   "date": 1730329648,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3724.jpg",
@@ -2001,10 +1747,7 @@
   "h": 512,
   "date": 1730329648,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3726.jpg",
@@ -2012,10 +1755,7 @@
   "h": 512,
   "date": 1730329647,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3732.jpg",
@@ -2023,10 +1763,7 @@
   "h": 512,
   "date": 1730329647,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3727.jpg",
@@ -2034,10 +1771,7 @@
   "h": 512,
   "date": 1730329647,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3733.jpg",
@@ -2045,10 +1779,7 @@
   "h": 512,
   "date": 1730329646,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3774.jpg",
@@ -2056,10 +1787,7 @@
   "h": 512,
   "date": 1730329646,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3767.jpg",
@@ -2067,10 +1795,7 @@
   "h": 512,
   "date": 1730329646,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3781.jpg",
@@ -2078,10 +1803,7 @@
   "h": 512,
   "date": 1730329645,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3779.jpg",
@@ -2089,10 +1811,7 @@
   "h": 512,
   "date": 1730329645,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3776.jpg",
@@ -2100,10 +1819,7 @@
   "h": 512,
   "date": 1730329645,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3785.jpg",
@@ -2111,10 +1827,7 @@
   "h": 512,
   "date": 1730329644,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3790.jpg",
@@ -2122,10 +1835,7 @@
   "h": 512,
   "date": 1730329644,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3787.jpg",
@@ -2133,10 +1843,7 @@
   "h": 512,
   "date": 1730329644,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3789.jpg",
@@ -2144,10 +1851,7 @@
   "h": 512,
   "date": 1730329644,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3791.jpg",
@@ -2155,10 +1859,7 @@
   "h": 512,
   "date": 1730329643,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3793.jpg",
@@ -2166,10 +1867,7 @@
   "h": 512,
   "date": 1730329643,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3805.jpg",
@@ -2177,10 +1875,7 @@
   "h": 512,
   "date": 1730329642,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3795.jpg",
@@ -2188,10 +1883,7 @@
   "h": 512,
   "date": 1730329642,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3799.jpg",
@@ -2199,10 +1891,7 @@
   "h": 512,
   "date": 1730329642,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3813.jpg",
@@ -2210,10 +1899,7 @@
   "h": 512,
   "date": 1730329641,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3806.jpg",
@@ -2221,10 +1907,7 @@
   "h": 512,
   "date": 1730329641,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3809.jpg",
@@ -2232,10 +1915,7 @@
   "h": 512,
   "date": 1730329641,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3817.jpg",
@@ -2243,10 +1923,7 @@
   "h": 512,
   "date": 1730329640,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3819.jpg",
@@ -2254,10 +1931,7 @@
   "h": 512,
   "date": 1730329640,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3820.jpg",
@@ -2265,10 +1939,7 @@
   "h": 512,
   "date": 1730329640,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3829.jpg",
@@ -2276,10 +1947,7 @@
   "h": 410,
   "date": 1730329639,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3834.jpg",
@@ -2287,10 +1955,7 @@
   "h": 288,
   "date": 1730329639,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3835.jpg",
@@ -2298,10 +1963,7 @@
   "h": 410,
   "date": 1730329639,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3845.jpg",
@@ -2309,10 +1971,7 @@
   "h": 410,
   "date": 1730329638,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3847.jpg",
@@ -2320,10 +1979,7 @@
   "h": 410,
   "date": 1730329638,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3842.jpg",
@@ -2331,10 +1987,7 @@
   "h": 410,
   "date": 1730329638,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3849.jpg",
@@ -2342,10 +1995,7 @@
   "h": 410,
   "date": 1730329637,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3848.jpg",
@@ -2353,10 +2003,7 @@
   "h": 410,
   "date": 1730329637,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3850.jpg",
@@ -2364,10 +2011,7 @@
   "h": 410,
   "date": 1730329637,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3852.jpg",
@@ -2375,10 +2019,7 @@
   "h": 410,
   "date": 1730329636,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3857.jpg",
@@ -2386,10 +2027,7 @@
   "h": 512,
   "date": 1730329636,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3855.jpg",
@@ -2397,10 +2035,7 @@
   "h": 512,
   "date": 1730329636,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3864.jpg",
@@ -2408,10 +2043,7 @@
   "h": 410,
   "date": 1730329635,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3862.jpg",
@@ -2419,10 +2051,7 @@
   "h": 512,
   "date": 1730329635,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3860.jpg",
@@ -2430,10 +2059,7 @@
   "h": 512,
   "date": 1730329635,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3870.jpg",
@@ -2441,10 +2067,7 @@
   "h": 512,
   "date": 1730329634,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3867.jpg",
@@ -2452,10 +2075,7 @@
   "h": 512,
   "date": 1730329634,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3869.jpg",
@@ -2463,10 +2083,7 @@
   "h": 512,
   "date": 1730329634,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3873.jpg",
@@ -2474,10 +2091,7 @@
   "h": 410,
   "date": 1730329633,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3876.jpg",
@@ -2485,10 +2099,7 @@
   "h": 512,
   "date": 1730329633,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3879.jpg",
@@ -2496,10 +2107,7 @@
   "h": 410,
   "date": 1730329633,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3885.jpg",
@@ -2507,10 +2115,7 @@
   "h": 410,
   "date": 1730329632,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3884.jpg",
@@ -2518,10 +2123,7 @@
   "h": 410,
   "date": 1730329632,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3882.jpg",
@@ -2529,10 +2131,7 @@
   "h": 410,
   "date": 1730329632,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3889.jpg",
@@ -2540,10 +2139,7 @@
   "h": 512,
   "date": 1730329631,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3888.jpg",
@@ -2551,10 +2147,7 @@
   "h": 512,
   "date": 1730329631,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3886.jpg",
@@ -2562,10 +2155,7 @@
   "h": 410,
   "date": 1730329631,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3892.jpg",
@@ -2573,10 +2163,7 @@
   "h": 512,
   "date": 1730329630,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3891.jpg",
@@ -2584,10 +2171,7 @@
   "h": 512,
   "date": 1730329630,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3893.jpg",
@@ -2595,10 +2179,7 @@
   "h": 512,
   "date": 1730329629,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3895.jpg",
@@ -2606,10 +2187,7 @@
   "h": 512,
   "date": 1730329629,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3897.jpg",
@@ -2617,10 +2195,7 @@
   "h": 512,
   "date": 1730329629,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3899.jpg",
@@ -2628,10 +2203,7 @@
   "h": 512,
   "date": 1730329628,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3901.jpg",
@@ -2639,10 +2211,7 @@
   "h": 512,
   "date": 1730329628,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3900.jpg",
@@ -2650,10 +2219,7 @@
   "h": 512,
   "date": 1730329628,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3904.jpg",
@@ -2661,10 +2227,7 @@
   "h": 512,
   "date": 1730329627,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3903.jpg",
@@ -2672,10 +2235,7 @@
   "h": 512,
   "date": 1730329627,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3905.jpg",
@@ -2683,10 +2243,7 @@
   "h": 512,
   "date": 1730329626,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3907.jpg",
@@ -2694,10 +2251,7 @@
   "h": 512,
   "date": 1730329626,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3906.jpg",
@@ -2705,10 +2259,7 @@
   "h": 512,
   "date": 1730329626,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3910.jpg",
@@ -2716,10 +2267,7 @@
   "h": 512,
   "date": 1730329625,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3911.jpg",
@@ -2727,10 +2275,7 @@
   "h": 512,
   "date": 1730329625,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3909.jpg",
@@ -2738,10 +2283,7 @@
   "h": 410,
   "date": 1730329625,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3913.jpg",
@@ -2749,10 +2291,7 @@
   "h": 512,
   "date": 1730329624,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3916.jpg",
@@ -2760,10 +2299,7 @@
   "h": 410,
   "date": 1730329624,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3915.jpg",
@@ -2771,10 +2307,7 @@
   "h": 512,
   "date": 1730329624,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3919.jpg",
@@ -2782,10 +2315,7 @@
   "h": 512,
   "date": 1730329623,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3923.jpg",
@@ -2793,10 +2323,7 @@
   "h": 512,
   "date": 1730329623,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3920.jpg",
@@ -2804,10 +2331,7 @@
   "h": 512,
   "date": 1730329623,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3924.jpg",
@@ -2815,10 +2339,7 @@
   "h": 512,
   "date": 1730329622,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3928.jpg",
@@ -2826,10 +2347,7 @@
   "h": 512,
   "date": 1730329621,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3925.jpg",
@@ -2837,10 +2355,7 @@
   "h": 512,
   "date": 1730329621,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3934.jpg",
@@ -2848,10 +2363,7 @@
   "h": 512,
   "date": 1730329621,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3941.jpg",
@@ -2859,10 +2371,7 @@
   "h": 512,
   "date": 1730329620,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3937.jpg",
@@ -2870,10 +2379,7 @@
   "h": 512,
   "date": 1730329620,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3935.jpg",
@@ -2881,10 +2387,7 @@
   "h": 512,
   "date": 1730329620,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3943.jpg",
@@ -2892,10 +2395,7 @@
   "h": 366,
   "date": 1730329619,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3936.jpg",
@@ -2903,10 +2403,7 @@
   "h": 512,
   "date": 1730329619,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "IMG_3946.jpg",
@@ -2914,10 +2411,7 @@
   "h": 410,
   "date": 1730329618,
   "camera": "Canon Canon EOS 80D",
-  "category": "Editorial",
-  "place": [
-   "Ukraine"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF0980.jpg",
@@ -2925,7 +2419,7 @@
   "h": 341,
   "date": 1730263069,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF0988.jpg",
@@ -2933,7 +2427,7 @@
   "h": 341,
   "date": 1730263067,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF0987.jpg",
@@ -2941,7 +2435,7 @@
   "h": 341,
   "date": 1730263067,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF0986.jpg",
@@ -2949,7 +2443,7 @@
   "h": 341,
   "date": 1730263067,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF0998.jpg",
@@ -2957,7 +2451,7 @@
   "h": 341,
   "date": 1730263066,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF0993.jpg",
@@ -2965,7 +2459,7 @@
   "h": 341,
   "date": 1730263066,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF0994.jpg",
@@ -2973,7 +2467,7 @@
   "h": 341,
   "date": 1730263066,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1003.jpg",
@@ -2981,7 +2475,7 @@
   "h": 341,
   "date": 1730263065,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1004.jpg",
@@ -2989,7 +2483,7 @@
   "h": 341,
   "date": 1730263064,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1005.jpg",
@@ -2997,7 +2491,7 @@
   "h": 341,
   "date": 1730263064,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1006.jpg",
@@ -3005,7 +2499,7 @@
   "h": 341,
   "date": 1730263063,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1007.jpg",
@@ -3013,7 +2507,7 @@
   "h": 341,
   "date": 1730263062,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1008.jpg",
@@ -3021,7 +2515,7 @@
   "h": 341,
   "date": 1730263062,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1010.jpg",
@@ -3029,7 +2523,7 @@
   "h": 341,
   "date": 1730263061,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "IMG_2200.jpg",
@@ -3037,8 +2531,7 @@
   "h": 366,
   "date": 1729630249,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "IMG_2192.jpg",
@@ -3046,8 +2539,7 @@
   "h": 366,
   "date": 1729630249,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2207.jpg",
@@ -3055,8 +2547,7 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2206.jpg",
@@ -3064,8 +2555,7 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2199.jpg",
@@ -3073,8 +2563,7 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "IMG_2193.jpg",
@@ -3082,8 +2571,7 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2208.jpg",
@@ -3091,8 +2579,7 @@
   "h": 366,
   "date": 1729630248,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2210.jpg",
@@ -3100,8 +2587,7 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2215.jpg",
@@ -3109,8 +2595,7 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2214.jpg",
@@ -3118,8 +2603,7 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2216.jpg",
@@ -3127,8 +2611,7 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_2209.jpg",
@@ -3136,8 +2619,7 @@
   "h": 366,
   "date": 1729630247,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1915.jpg",
@@ -3145,7 +2627,6 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3154,7 +2635,6 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3163,7 +2643,6 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3172,7 +2651,6 @@
   "h": 512,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3181,8 +2659,7 @@
   "h": 366,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1909.jpg",
@@ -3190,8 +2667,7 @@
   "h": 512,
   "date": 1729305670,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1898.jpg",
@@ -3199,8 +2675,7 @@
   "h": 366,
   "date": 1729305349,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1890.jpg",
@@ -3208,8 +2683,7 @@
   "h": 366,
   "date": 1729305343,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "IMG_1884.jpg",
@@ -3217,8 +2691,7 @@
   "h": 366,
   "date": 1729305343,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1886.jpg",
@@ -3226,8 +2699,7 @@
   "h": 366,
   "date": 1729305343,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1891.jpg",
@@ -3235,8 +2707,7 @@
   "h": 366,
   "date": 1729305342,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1892.jpg",
@@ -3244,8 +2715,7 @@
   "h": 384,
   "date": 1729305342,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1893.jpg",
@@ -3253,8 +2723,7 @@
   "h": 366,
   "date": 1729305342,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1786.jpg",
@@ -3262,8 +2731,7 @@
   "h": 512,
   "date": 1729049016,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1789.jpg",
@@ -3271,8 +2739,7 @@
   "h": 512,
   "date": 1729049016,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1793.jpg",
@@ -3280,8 +2747,7 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1803.jpg",
@@ -3289,8 +2755,7 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1804.jpg",
@@ -3298,7 +2763,6 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3307,8 +2771,7 @@
   "h": 384,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1798.jpg",
@@ -3316,8 +2779,7 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1799.jpg",
@@ -3325,8 +2787,7 @@
   "h": 366,
   "date": 1729049015,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1815.jpg",
@@ -3334,8 +2795,7 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1810.jpg",
@@ -3343,8 +2803,7 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1811.jpg",
@@ -3352,8 +2811,7 @@
   "h": 512,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1806.jpg",
@@ -3361,8 +2819,7 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1809.jpg",
@@ -3370,8 +2827,7 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1818.jpg",
@@ -3379,7 +2835,6 @@
   "h": 366,
   "date": 1729049014,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3388,8 +2843,7 @@
   "h": 384,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1731.jpg",
@@ -3397,7 +2851,6 @@
   "h": 384,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3406,8 +2859,7 @@
   "h": 512,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "IMG_1735.jpg",
@@ -3415,8 +2867,7 @@
   "h": 384,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1736.jpg",
@@ -3424,8 +2875,7 @@
   "h": 512,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1738.jpg",
@@ -3433,8 +2883,7 @@
   "h": 366,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1739.jpg",
@@ -3442,8 +2891,7 @@
   "h": 366,
   "date": 1728954426,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1751.jpg",
@@ -3451,7 +2899,6 @@
   "h": 366,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -3460,8 +2907,7 @@
   "h": 366,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1753.jpg",
@@ -3469,8 +2915,7 @@
   "h": 512,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1756.jpg",
@@ -3478,8 +2923,7 @@
   "h": 384,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1755.jpg",
@@ -3487,8 +2931,7 @@
   "h": 366,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_1758.jpg",
@@ -3496,38 +2939,35 @@
   "h": 512,
   "date": 1728954425,
   "camera": "Apple iPhone 13 Pro Max",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000000010004.png",
   "w": 512,
   "h": 512,
   "date": 1712253667,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000000010008.jpg",
   "w": 512,
   "h": 339,
   "date": 1712253090,
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "000000010011.jpg",
   "w": 512,
   "h": 340,
   "date": 1712253090,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "0000000100122.jpg",
   "w": 512,
   "h": 340,
   "date": 1712253090,
-  "category": "Fine Art"
+  "category": "Other"
  },
  {
   "file": "DSCF2725.jpg",
@@ -3598,136 +3038,119 @@
   "w": 340,
   "h": 512,
   "date": 1696719248,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010021.jpg",
   "w": 340,
   "h": 512,
   "date": 1696719248,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010026.jpg",
   "w": 512,
   "h": 512,
   "date": 1696719247,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010014.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719246,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010024.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719246,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000000010001.jpg",
   "w": 339,
   "h": 512,
   "date": 1696719245,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010004.jpg",
   "w": 340,
   "h": 512,
   "date": 1696719245,
-  "category": "Architecture",
-  "bw": true
+  "category": "Architecture"
  },
  {
   "file": "000000010003.jpg",
   "w": 512,
   "h": 410,
   "date": 1696719244,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010005.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719244,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010010.jpg",
   "w": 512,
   "h": 339,
   "date": 1696719243,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010013.jpg",
   "w": 512,
   "h": 410,
   "date": 1696719243,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010006.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719242,
-  "category": "Architecture",
-  "bw": true
+  "category": "Architecture"
  },
  {
   "file": "000000010032.jpg",
   "w": 512,
   "h": 410,
   "date": 1696719242,
-  "category": "People",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "000000010022.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719241,
-  "category": "Architecture",
-  "bw": true
+  "category": "Architecture"
  },
  {
   "file": "000000010025.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719241,
-  "category": "Architecture",
-  "bw": true
+  "category": "Architecture"
  },
  {
   "file": "000000010012.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719239,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000000010029.jpg",
   "w": 512,
   "h": 340,
   "date": 1696719239,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670001.jpg",
@@ -3735,7 +3158,7 @@
   "h": 339,
   "date": 1694051580,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670003.jpg",
@@ -3743,7 +3166,7 @@
   "h": 410,
   "date": 1694051580,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670004.jpg",
@@ -3751,7 +3174,7 @@
   "h": 339,
   "date": 1694051580,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670007.jpg",
@@ -3759,7 +3182,7 @@
   "h": 339,
   "date": 1694051580,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "Fine Art"
+  "category": "Other"
  },
  {
   "file": "000010670008.jpg",
@@ -3767,7 +3190,7 @@
   "h": 339,
   "date": 1694051580,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670011.jpg",
@@ -3775,7 +3198,7 @@
   "h": 339,
   "date": 1694051580,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670012.jpg",
@@ -3799,7 +3222,7 @@
   "h": 339,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670017.jpg",
@@ -3807,7 +3230,7 @@
   "h": 340,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670018.jpg",
@@ -3815,8 +3238,7 @@
   "h": 340,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "favorite": true
+  "category": "Street"
  },
  {
   "file": "000010670019.jpg",
@@ -3824,7 +3246,7 @@
   "h": 410,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670020.jpg",
@@ -3832,7 +3254,7 @@
   "h": 339,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670022.jpg",
@@ -3840,7 +3262,7 @@
   "h": 339,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670025.jpg",
@@ -3848,10 +3270,7 @@
   "h": 339,
   "date": 1694051579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "000010670021.jpg",
@@ -3859,7 +3278,7 @@
   "h": 339,
   "date": 1694051578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000010670023.jpg",
@@ -3867,10 +3286,7 @@
   "h": 366,
   "date": 1694051578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "000010670028.jpg",
@@ -3878,10 +3294,7 @@
   "h": 339,
   "date": 1694051578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "000010670029.jpg",
@@ -3889,10 +3302,7 @@
   "h": 339,
   "date": 1694051578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "000010670032.jpg",
@@ -3900,10 +3310,7 @@
   "h": 339,
   "date": 1694051578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "000010670033.jpg",
@@ -3911,10 +3318,7 @@
   "h": 410,
   "date": 1694051578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2540.jpg",
@@ -3922,10 +3326,7 @@
   "h": 341,
   "date": 1691133921,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2543.jpg",
@@ -3933,10 +3334,7 @@
   "h": 341,
   "date": 1691133920,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2547.jpg",
@@ -3944,10 +3342,7 @@
   "h": 366,
   "date": 1691133920,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2553.jpg",
@@ -3955,10 +3350,7 @@
   "h": 341,
   "date": 1691133919,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2560.jpg",
@@ -3966,10 +3358,7 @@
   "h": 366,
   "date": 1691133919,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2558.jpg",
@@ -3977,10 +3366,7 @@
   "h": 410,
   "date": 1691133918,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2565.jpg",
@@ -3988,10 +3374,7 @@
   "h": 366,
   "date": 1691133918,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2563.jpg",
@@ -3999,10 +3382,7 @@
   "h": 410,
   "date": 1691133917,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2527-2.jpg",
@@ -4010,11 +3390,7 @@
   "h": 512,
   "date": 1689167444,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2447.jpg",
@@ -4022,11 +3398,7 @@
   "h": 384,
   "date": 1689167356,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2449.jpg",
@@ -4034,11 +3406,7 @@
   "h": 341,
   "date": 1689167355,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2461.jpg",
@@ -4046,11 +3414,7 @@
   "h": 341,
   "date": 1689167354,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2451.jpg",
@@ -4058,11 +3422,7 @@
   "h": 341,
   "date": 1689167353,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2465.jpg",
@@ -4070,11 +3430,7 @@
   "h": 341,
   "date": 1689167352,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2493.jpg",
@@ -4082,11 +3438,7 @@
   "h": 512,
   "date": 1689167343,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2487.jpg",
@@ -4094,11 +3446,7 @@
   "h": 341,
   "date": 1689167343,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2471.jpg",
@@ -4106,11 +3454,7 @@
   "h": 410,
   "date": 1689167343,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2473.jpg",
@@ -4118,11 +3462,7 @@
   "h": 512,
   "date": 1689167343,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2467.jpg",
@@ -4130,11 +3470,7 @@
   "h": 341,
   "date": 1689167343,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2474.jpg",
@@ -4142,11 +3478,7 @@
   "h": 410,
   "date": 1689167343,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2497.jpg",
@@ -4154,11 +3486,7 @@
   "h": 410,
   "date": 1689167333,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2477.jpg",
@@ -4166,11 +3494,7 @@
   "h": 341,
   "date": 1689167333,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2501.jpg",
@@ -4178,11 +3502,7 @@
   "h": 366,
   "date": 1689167323,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2500.jpg",
@@ -4190,11 +3510,7 @@
   "h": 366,
   "date": 1689167322,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2509.jpg",
@@ -4202,11 +3518,7 @@
   "h": 512,
   "date": 1689167318,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2505.jpg",
@@ -4214,11 +3526,7 @@
   "h": 366,
   "date": 1689167318,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2498.jpg",
@@ -4226,11 +3534,7 @@
   "h": 341,
   "date": 1689167318,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2512.jpg",
@@ -4238,11 +3542,7 @@
   "h": 410,
   "date": 1689167318,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2506.jpg",
@@ -4250,11 +3550,7 @@
   "h": 288,
   "date": 1689167318,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2516.jpg",
@@ -4262,11 +3558,7 @@
   "h": 341,
   "date": 1689167318,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2519.jpg",
@@ -4274,11 +3566,7 @@
   "h": 341,
   "date": 1689167303,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2524.jpg",
@@ -4286,11 +3574,7 @@
   "h": 512,
   "date": 1689167303,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2523.jpg",
@@ -4298,11 +3582,7 @@
   "h": 341,
   "date": 1689167302,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2522.jpg",
@@ -4310,11 +3590,7 @@
   "h": 341,
   "date": 1689167302,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2530.jpg",
@@ -4322,11 +3598,7 @@
   "h": 341,
   "date": 1689167300,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2532.jpg",
@@ -4334,11 +3606,7 @@
   "h": 341,
   "date": 1689167296,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2534.jpg",
@@ -4346,11 +3614,7 @@
   "h": 341,
   "date": 1689167294,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Chiang Rai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2378.jpg",
@@ -4358,10 +3622,7 @@
   "h": 410,
   "date": 1686914833,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2380.jpg",
@@ -4369,10 +3630,7 @@
   "h": 366,
   "date": 1686914833,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2382.jpg",
@@ -4380,10 +3638,7 @@
   "h": 341,
   "date": 1686914833,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2383.jpg",
@@ -4391,10 +3646,7 @@
   "h": 341,
   "date": 1686914832,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2386.jpg",
@@ -4402,10 +3654,7 @@
   "h": 341,
   "date": 1686914832,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2392.jpg",
@@ -4413,10 +3662,7 @@
   "h": 410,
   "date": 1686914832,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2395.jpg",
@@ -4424,10 +3670,7 @@
   "h": 341,
   "date": 1686914831,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2397.jpg",
@@ -4435,10 +3678,7 @@
   "h": 512,
   "date": 1686914831,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2400.jpg",
@@ -4446,10 +3686,7 @@
   "h": 341,
   "date": 1686914831,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF2399.jpg",
@@ -4457,10 +3694,7 @@
   "h": 410,
   "date": 1686914830,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2402.jpg",
@@ -4468,10 +3702,7 @@
   "h": 341,
   "date": 1686914829,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2403.jpg",
@@ -4479,10 +3710,7 @@
   "h": 341,
   "date": 1686914828,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2405.jpg",
@@ -4490,10 +3718,7 @@
   "h": 341,
   "date": 1686914828,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2406.jpg",
@@ -4501,10 +3726,7 @@
   "h": 341,
   "date": 1686914828,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2410.jpg",
@@ -4512,10 +3734,7 @@
   "h": 512,
   "date": 1686914827,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2412.jpg",
@@ -4523,9 +3742,6 @@
   "h": 410,
   "date": 1686914827,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Architecture"
  },
  {
@@ -4534,10 +3750,7 @@
   "h": 366,
   "date": 1686914826,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2415.jpg",
@@ -4545,10 +3758,7 @@
   "h": 341,
   "date": 1686914825,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2420.jpg",
@@ -4556,9 +3766,6 @@
   "h": 512,
   "date": 1686914825,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Architecture"
  },
  {
@@ -4567,10 +3774,7 @@
   "h": 410,
   "date": 1686914824,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2421.jpg",
@@ -4578,10 +3782,7 @@
   "h": 410,
   "date": 1686914823,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2428.jpg",
@@ -4589,10 +3790,7 @@
   "h": 410,
   "date": 1686914823,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2425.jpg",
@@ -4600,10 +3798,7 @@
   "h": 410,
   "date": 1686914822,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2426.jpg",
@@ -4611,10 +3806,7 @@
   "h": 512,
   "date": 1686914821,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2430.jpg",
@@ -4622,10 +3814,7 @@
   "h": 384,
   "date": 1686914821,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2432.jpg",
@@ -4633,10 +3822,7 @@
   "h": 410,
   "date": 1686914820,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2434.jpg",
@@ -4644,220 +3830,154 @@
   "h": 341,
   "date": 1686914819,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2253.jpg",
   "w": 512,
   "h": 341,
   "date": 1686913027,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2252.jpg",
   "w": 512,
   "h": 410,
   "date": 1686913022,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2250.jpg",
   "w": 512,
   "h": 410,
   "date": 1686913020,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2249.jpg",
   "w": 512,
   "h": 410,
   "date": 1686913017,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2247.jpg",
   "w": 512,
   "h": 410,
   "date": 1686913015,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2245.jpg",
   "w": 512,
   "h": 410,
   "date": 1686913012,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2242.jpg",
   "w": 512,
   "h": 366,
   "date": 1686913009,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2235.jpg",
   "w": 512,
   "h": 341,
   "date": 1686913003,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2234.jpg",
   "w": 512,
   "h": 341,
   "date": 1686913001,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2232.jpg",
   "w": 512,
   "h": 341,
   "date": 1686912998,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2231.jpg",
   "w": 512,
   "h": 410,
   "date": 1686912994,
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2226.jpg",
   "w": 512,
   "h": 366,
   "date": 1686912991,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2222.jpg",
   "w": 512,
   "h": 396,
   "date": 1686912986,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2221.jpg",
   "w": 341,
   "h": 512,
   "date": 1686912982,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2216.jpg",
   "w": 512,
   "h": 341,
   "date": 1686912978,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2215.jpg",
   "w": 512,
   "h": 366,
   "date": 1686912975,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2214.jpg",
   "w": 512,
   "h": 341,
   "date": 1686912971,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2211.jpg",
   "w": 512,
   "h": 366,
   "date": 1686912966,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2208.jpg",
   "w": 512,
   "h": 341,
   "date": 1686912963,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2199.jpg",
   "w": 512,
   "h": 341,
   "date": 1686912957,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2195.jpg",
   "w": 512,
   "h": 410,
   "date": 1686912952,
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2372.jpg",
@@ -4865,10 +3985,7 @@
   "h": 396,
   "date": 1686497283,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2374.jpg",
@@ -4876,10 +3993,7 @@
   "h": 512,
   "date": 1686497283,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2375.jpg",
@@ -4887,10 +4001,7 @@
   "h": 341,
   "date": 1686497283,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2371.jpg",
@@ -4898,10 +4009,7 @@
   "h": 341,
   "date": 1686497282,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2363.jpg",
@@ -4909,10 +4017,7 @@
   "h": 341,
   "date": 1686497281,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2369.jpg",
@@ -4920,10 +4025,7 @@
   "h": 410,
   "date": 1686497281,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2359.jpg",
@@ -4931,10 +4033,7 @@
   "h": 410,
   "date": 1686497280,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2360.jpg",
@@ -4942,10 +4041,7 @@
   "h": 341,
   "date": 1686497280,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2348.jpg",
@@ -4953,10 +4049,7 @@
   "h": 341,
   "date": 1686497279,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2353.jpg",
@@ -4964,10 +4057,7 @@
   "h": 341,
   "date": 1686497279,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2356.jpg",
@@ -4975,10 +4065,7 @@
   "h": 341,
   "date": 1686497279,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2358.jpg",
@@ -4986,10 +4073,7 @@
   "h": 341,
   "date": 1686497279,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2351.jpg",
@@ -4997,10 +4081,7 @@
   "h": 341,
   "date": 1686497278,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2344.jpg",
@@ -5008,10 +4089,7 @@
   "h": 396,
   "date": 1686497277,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2337.jpg",
@@ -5019,10 +4097,7 @@
   "h": 341,
   "date": 1686497276,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2341.jpg",
@@ -5030,10 +4105,7 @@
   "h": 341,
   "date": 1686497276,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2343.jpg",
@@ -5041,10 +4113,7 @@
   "h": 512,
   "date": 1686497276,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2335.jpg",
@@ -5052,10 +4121,7 @@
   "h": 341,
   "date": 1686497275,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2328.jpg",
@@ -5063,10 +4129,7 @@
   "h": 341,
   "date": 1686497274,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2333.jpg",
@@ -5074,10 +4137,7 @@
   "h": 341,
   "date": 1686497273,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2318.jpg",
@@ -5085,10 +4145,7 @@
   "h": 396,
   "date": 1686497272,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2324.jpg",
@@ -5096,10 +4153,7 @@
   "h": 366,
   "date": 1686497272,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2325.jpg",
@@ -5107,10 +4161,7 @@
   "h": 396,
   "date": 1686497272,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2315.jpg",
@@ -5118,10 +4169,7 @@
   "h": 512,
   "date": 1686497271,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2305.jpg",
@@ -5129,10 +4177,7 @@
   "h": 512,
   "date": 1686497270,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2313.jpg",
@@ -5140,10 +4185,7 @@
   "h": 396,
   "date": 1686497270,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2306.jpg",
@@ -5151,10 +4193,7 @@
   "h": 341,
   "date": 1686497269,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2301.jpg",
@@ -5162,10 +4201,7 @@
   "h": 341,
   "date": 1686497268,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2303.jpg",
@@ -5173,10 +4209,7 @@
   "h": 396,
   "date": 1686497268,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2294.jpg",
@@ -5184,10 +4217,7 @@
   "h": 410,
   "date": 1686497267,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2298.jpg",
@@ -5195,10 +4225,7 @@
   "h": 410,
   "date": 1686497267,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2290.jpg",
@@ -5206,10 +4233,7 @@
   "h": 341,
   "date": 1686497266,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2291.jpg",
@@ -5217,10 +4241,7 @@
   "h": 410,
   "date": 1686497266,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2286.jpg",
@@ -5228,10 +4249,7 @@
   "h": 341,
   "date": 1686497265,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2289.jpg",
@@ -5239,10 +4257,7 @@
   "h": 410,
   "date": 1686497265,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2282.jpg",
@@ -5250,10 +4265,7 @@
   "h": 410,
   "date": 1686497264,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2287.jpg",
@@ -5261,10 +4273,7 @@
   "h": 341,
   "date": 1686497264,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2276.jpg",
@@ -5272,10 +4281,7 @@
   "h": 410,
   "date": 1686497263,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2280.jpg",
@@ -5283,10 +4289,7 @@
   "h": 341,
   "date": 1686497263,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2278.jpg",
@@ -5294,10 +4297,7 @@
   "h": 341,
   "date": 1686497262,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2268.jpg",
@@ -5305,10 +4305,7 @@
   "h": 366,
   "date": 1686497261,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2271.jpg",
@@ -5316,10 +4313,7 @@
   "h": 396,
   "date": 1686497261,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2260.jpg",
@@ -5327,10 +4321,7 @@
   "h": 341,
   "date": 1686497260,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2264.jpg",
@@ -5338,10 +4329,7 @@
   "h": 410,
   "date": 1686497260,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2259.jpg",
@@ -5349,10 +4337,7 @@
   "h": 410,
   "date": 1686497259,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2254.jpg",
@@ -5360,10 +4345,7 @@
   "h": 341,
   "date": 1686494746,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2255.jpg",
@@ -5371,10 +4353,7 @@
   "h": 341,
   "date": 1686494746,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2126.jpg",
@@ -5382,11 +4361,7 @@
   "h": 341,
   "date": 1685796891,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2102.jpg",
@@ -5394,11 +4369,7 @@
   "h": 341,
   "date": 1685796889,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2103.jpg",
@@ -5406,11 +4377,7 @@
   "h": 410,
   "date": 1685796886,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2095.jpg",
@@ -5418,11 +4385,7 @@
   "h": 366,
   "date": 1685796884,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2089.jpg",
@@ -5430,11 +4393,7 @@
   "h": 341,
   "date": 1685796884,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2088.jpg",
@@ -5442,11 +4401,7 @@
   "h": 366,
   "date": 1685796877,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2087.jpg",
@@ -5454,11 +4409,7 @@
   "h": 341,
   "date": 1685796869,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230602-DSCF2075.jpg",
@@ -5466,11 +4417,7 @@
   "h": 341,
   "date": 1685796867,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2079.jpg",
@@ -5478,10 +4425,6 @@
   "h": 341,
   "date": 1685796866,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5490,10 +4433,6 @@
   "h": 341,
   "date": 1685796866,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5502,11 +4441,7 @@
   "h": 341,
   "date": 1685796860,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2057.jpg",
@@ -5514,10 +4449,6 @@
   "h": 341,
   "date": 1685796848,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5526,11 +4457,7 @@
   "h": 341,
   "date": 1685796847,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2065.jpg",
@@ -5538,11 +4465,7 @@
   "h": 288,
   "date": 1685796847,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2064.jpg",
@@ -5550,11 +4473,7 @@
   "h": 288,
   "date": 1685796847,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2048.jpg",
@@ -5562,10 +4481,6 @@
   "h": 341,
   "date": 1685796844,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5574,11 +4489,7 @@
   "h": 341,
   "date": 1685796830,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2037.jpg",
@@ -5586,11 +4497,7 @@
   "h": 341,
   "date": 1685796829,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2044.jpg",
@@ -5598,11 +4505,7 @@
   "h": 410,
   "date": 1685796828,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2036.jpg",
@@ -5610,11 +4513,7 @@
   "h": 341,
   "date": 1685796825,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2035.jpg",
@@ -5622,11 +4521,7 @@
   "h": 288,
   "date": 1685796824,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2031.jpg",
@@ -5634,10 +4529,6 @@
   "h": 396,
   "date": 1685796809,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5646,11 +4537,7 @@
   "h": 410,
   "date": 1685796807,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2024.jpg",
@@ -5658,11 +4545,7 @@
   "h": 341,
   "date": 1685796804,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "20230602-DSCF2027.jpg",
@@ -5670,10 +4553,6 @@
   "h": 366,
   "date": 1685796803,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5682,10 +4561,6 @@
   "h": 341,
   "date": 1685796803,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5694,11 +4569,7 @@
   "h": 341,
   "date": 1685796462,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2150.jpg",
@@ -5706,11 +4577,7 @@
   "h": 512,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2153.jpg",
@@ -5718,11 +4585,7 @@
   "h": 396,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2152.jpg",
@@ -5730,11 +4593,7 @@
   "h": 512,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2177.jpg",
@@ -5742,11 +4601,7 @@
   "h": 366,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "category": "Fine Art",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Other"
  },
  {
   "file": "DSCF2158.jpg",
@@ -5754,11 +4609,7 @@
   "h": 512,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2164.jpg",
@@ -5766,11 +4617,7 @@
   "h": 384,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2166.jpg",
@@ -5778,11 +4625,7 @@
   "h": 410,
   "date": 1685796459,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2161.jpg",
@@ -5790,11 +4633,7 @@
   "h": 410,
   "date": 1685796451,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF2187.jpg",
@@ -5802,11 +4641,7 @@
   "h": 341,
   "date": 1685796439,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2184.jpg",
@@ -5814,11 +4649,7 @@
   "h": 384,
   "date": 1685796437,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2181.jpg",
@@ -5826,11 +4657,7 @@
   "h": 512,
   "date": 1685796433,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2193.jpg",
@@ -5838,11 +4665,7 @@
   "h": 410,
   "date": 1685796433,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2186.jpg",
@@ -5850,11 +4673,7 @@
   "h": 341,
   "date": 1685796433,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2190.jpg",
@@ -5862,11 +4681,7 @@
   "h": 410,
   "date": 1685796433,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2191.jpg",
@@ -5874,11 +4689,7 @@
   "h": 410,
   "date": 1685796433,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2189.jpg",
@@ -5886,11 +4697,7 @@
   "h": 410,
   "date": 1685796433,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2047.jpg",
@@ -5898,10 +4705,6 @@
   "h": 341,
   "date": 1685708006,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
   "category": "Architecture"
  },
  {
@@ -5910,11 +4713,7 @@
   "h": 512,
   "date": 1685708006,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230602-DSCF2041.jpg",
@@ -5922,11 +4721,7 @@
   "h": 341,
   "date": 1685708006,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand",
-   "Sukhothai"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF2020.jpg",
@@ -5934,10 +4729,7 @@
   "h": 341,
   "date": 1685283751,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2023.jpg",
@@ -5945,10 +4737,7 @@
   "h": 341,
   "date": 1685283751,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2014.jpg",
@@ -5956,10 +4745,7 @@
   "h": 396,
   "date": 1685283750,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2009.jpg",
@@ -5967,10 +4753,7 @@
   "h": 341,
   "date": 1685283749,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2012.jpg",
@@ -5978,10 +4761,7 @@
   "h": 512,
   "date": 1685283749,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1995.jpg",
@@ -5989,10 +4769,7 @@
   "h": 396,
   "date": 1685283748,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1986.jpg",
@@ -6000,10 +4777,7 @@
   "h": 341,
   "date": 1685283747,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF2003.jpg",
@@ -6011,10 +4785,7 @@
   "h": 396,
   "date": 1685283746,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1993.jpg",
@@ -6022,10 +4793,7 @@
   "h": 410,
   "date": 1685283745,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "DSCF1987.jpg",
@@ -6033,10 +4801,7 @@
   "h": 366,
   "date": 1685283744,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1977.jpg",
@@ -6044,10 +4809,7 @@
   "h": 341,
   "date": 1685283743,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1973.jpg",
@@ -6055,10 +4817,7 @@
   "h": 410,
   "date": 1685283742,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1970.jpg",
@@ -6066,10 +4825,7 @@
   "h": 410,
   "date": 1685283741,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1963.jpg",
@@ -6077,10 +4833,7 @@
   "h": 341,
   "date": 1685283740,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1961.jpg",
@@ -6088,10 +4841,7 @@
   "h": 410,
   "date": 1685283738,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1968.jpg",
@@ -6099,10 +4849,7 @@
   "h": 288,
   "date": 1685283738,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1955.jpg",
@@ -6110,10 +4857,7 @@
   "h": 396,
   "date": 1685283736,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1957.jpg",
@@ -6121,10 +4865,7 @@
   "h": 341,
   "date": 1685283736,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1952.jpg",
@@ -6132,10 +4873,7 @@
   "h": 366,
   "date": 1685283735,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "000041170031.jpg",
@@ -6143,7 +4881,7 @@
   "h": 339,
   "date": 1684356878,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170030.jpg",
@@ -6151,7 +4889,7 @@
   "h": 339,
   "date": 1684356864,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170026.jpg",
@@ -6159,7 +4897,7 @@
   "h": 512,
   "date": 1684356854,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170024.jpg",
@@ -6167,7 +4905,7 @@
   "h": 512,
   "date": 1684356851,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170014.jpg",
@@ -6175,7 +4913,7 @@
   "h": 512,
   "date": 1684356834,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170007.jpg",
@@ -6183,7 +4921,7 @@
   "h": 512,
   "date": 1684356828,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170005.jpg",
@@ -6191,7 +4929,7 @@
   "h": 512,
   "date": 1684356825,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170004.jpg",
@@ -6199,7 +4937,7 @@
   "h": 512,
   "date": 1684356822,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170002.jpg",
@@ -6207,7 +4945,7 @@
   "h": 512,
   "date": 1684356816,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170036.jpg",
@@ -6215,7 +4953,7 @@
   "h": 339,
   "date": 1684351591,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170035.jpg",
@@ -6231,7 +4969,7 @@
   "h": 339,
   "date": 1684351588,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170033.jpg",
@@ -6239,7 +4977,7 @@
   "h": 339,
   "date": 1684351586,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170032.jpg",
@@ -6247,7 +4985,7 @@
   "h": 339,
   "date": 1684351585,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170029.jpg",
@@ -6255,7 +4993,7 @@
   "h": 339,
   "date": 1684351581,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170028.jpg",
@@ -6263,7 +5001,7 @@
   "h": 339,
   "date": 1684351579,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170027.jpg",
@@ -6271,7 +5009,7 @@
   "h": 339,
   "date": 1684351578,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170025.jpg",
@@ -6279,7 +5017,7 @@
   "h": 339,
   "date": 1684351575,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170023.jpg",
@@ -6287,7 +5025,7 @@
   "h": 339,
   "date": 1684351571,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170022.jpg",
@@ -6295,7 +5033,7 @@
   "h": 339,
   "date": 1684351570,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170021.jpg",
@@ -6303,7 +5041,7 @@
   "h": 339,
   "date": 1684351569,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170020.jpg",
@@ -6311,7 +5049,7 @@
   "h": 339,
   "date": 1684351567,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170019.jpg",
@@ -6327,7 +5065,7 @@
   "h": 339,
   "date": 1684351564,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170017.jpg",
@@ -6335,7 +5073,7 @@
   "h": 339,
   "date": 1684351563,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170016.jpg",
@@ -6343,7 +5081,7 @@
   "h": 339,
   "date": 1684351561,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170015.jpg",
@@ -6351,7 +5089,7 @@
   "h": 339,
   "date": 1684351560,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170013.jpg",
@@ -6359,7 +5097,7 @@
   "h": 339,
   "date": 1684351557,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170012.jpg",
@@ -6367,7 +5105,7 @@
   "h": 339,
   "date": 1684351555,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170011.jpg",
@@ -6375,7 +5113,7 @@
   "h": 339,
   "date": 1684351554,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170010.jpg",
@@ -6383,7 +5121,7 @@
   "h": 339,
   "date": 1684351552,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170009.jpg",
@@ -6391,7 +5129,7 @@
   "h": 339,
   "date": 1684351551,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170008.jpg",
@@ -6399,7 +5137,7 @@
   "h": 339,
   "date": 1684351550,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170006.jpg",
@@ -6407,7 +5145,7 @@
   "h": 339,
   "date": 1684351547,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170003.jpg",
@@ -6415,7 +5153,7 @@
   "h": 339,
   "date": 1684351543,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "000041170001.jpg",
@@ -6423,7 +5161,7 @@
   "h": 339,
   "date": 1684351539,
   "camera": "NORITSU KOKI EZ Controller",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1944.jpg",
@@ -6431,10 +5169,7 @@
   "h": 384,
   "date": 1681147307,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1945.jpg",
@@ -6442,10 +5177,7 @@
   "h": 341,
   "date": 1681147307,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1932.jpg",
@@ -6453,10 +5185,7 @@
   "h": 410,
   "date": 1681147306,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1937.jpg",
@@ -6464,10 +5193,7 @@
   "h": 410,
   "date": 1681147306,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1877.jpg",
@@ -6475,10 +5201,7 @@
   "h": 320,
   "date": 1681147304,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "DSCF1931.jpg",
@@ -6486,10 +5209,7 @@
   "h": 341,
   "date": 1681147304,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1928.jpg",
@@ -6497,19 +5217,13 @@
   "h": 341,
   "date": 1681147299,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1849.jpg",
   "w": 512,
   "h": 341,
   "date": 1681144676,
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -6518,10 +5232,7 @@
   "h": 341,
   "date": 1681144402,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1922.jpg",
@@ -6529,10 +5240,7 @@
   "h": 341,
   "date": 1681144400,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1920.jpg",
@@ -6540,10 +5248,7 @@
   "h": 410,
   "date": 1681144392,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1918.jpg",
@@ -6551,9 +5256,6 @@
   "h": 341,
   "date": 1681144392,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Architecture"
  },
  {
@@ -6562,10 +5264,7 @@
   "h": 410,
   "date": 1681144391,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1905.jpg",
@@ -6573,10 +5272,7 @@
   "h": 512,
   "date": 1681144390,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1904.jpg",
@@ -6584,10 +5280,7 @@
   "h": 341,
   "date": 1681144390,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1897.jpg",
@@ -6595,10 +5288,7 @@
   "h": 512,
   "date": 1681144376,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230408-DSCF1892.jpg",
@@ -6606,10 +5296,7 @@
   "h": 341,
   "date": 1681144368,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230407-DSCF1852.jpg",
@@ -6617,10 +5304,7 @@
   "h": 512,
   "date": 1681144368,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230408-DSCF1888.jpg",
@@ -6628,10 +5312,7 @@
   "h": 512,
   "date": 1681144366,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1845.jpg",
@@ -6639,10 +5320,7 @@
   "h": 341,
   "date": 1681144351,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230407-DSCF1822.jpg",
@@ -6650,10 +5328,7 @@
   "h": 341,
   "date": 1681144344,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1802.jpg",
@@ -6661,10 +5336,7 @@
   "h": 341,
   "date": 1681144343,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1842.jpg",
@@ -6672,10 +5344,7 @@
   "h": 341,
   "date": 1681144343,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230407-DSCF1840.jpg",
@@ -6683,10 +5352,7 @@
   "h": 341,
   "date": 1681144341,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1801.jpg",
@@ -6694,10 +5360,7 @@
   "h": 288,
   "date": 1681144337,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1784.jpg",
@@ -6705,10 +5368,7 @@
   "h": 410,
   "date": 1681144324,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1798.jpg",
@@ -6716,10 +5376,7 @@
   "h": 410,
   "date": 1681144324,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1794.jpg",
@@ -6727,10 +5384,7 @@
   "h": 341,
   "date": 1681144319,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1781.jpg",
@@ -6738,10 +5392,7 @@
   "h": 341,
   "date": 1681144319,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230407-DSCF1782.jpg",
@@ -6749,10 +5400,7 @@
   "h": 341,
   "date": 1681144317,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230406-DSCF1777.jpg",
@@ -6760,10 +5408,7 @@
   "h": 341,
   "date": 1681144307,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20230406-DSCF1778.jpg",
@@ -6771,10 +5416,7 @@
   "h": 341,
   "date": 1681144306,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230406-DSCF1772.jpg",
@@ -6782,10 +5424,7 @@
   "h": 396,
   "date": 1681144302,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230406-DSCF1776.jpg",
@@ -6793,10 +5432,7 @@
   "h": 366,
   "date": 1681144301,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20230406-DSCF1770.jpg",
@@ -6804,10 +5440,7 @@
   "h": 512,
   "date": 1681144301,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1761.jpg",
@@ -6815,10 +5448,7 @@
   "h": 341,
   "date": 1680452769,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1764.jpg",
@@ -6826,10 +5456,7 @@
   "h": 341,
   "date": 1680452769,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1755.jpg",
@@ -6837,10 +5464,7 @@
   "h": 341,
   "date": 1680452768,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1765.jpg",
@@ -6848,10 +5472,7 @@
   "h": 341,
   "date": 1680452768,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1758.jpg",
@@ -6859,10 +5480,7 @@
   "h": 341,
   "date": 1680452767,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1759.jpg",
@@ -6870,10 +5488,7 @@
   "h": 341,
   "date": 1680452767,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1607.jpg",
@@ -6881,10 +5496,7 @@
   "h": 366,
   "date": 1679328212,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1613.jpg",
@@ -6892,10 +5504,7 @@
   "h": 341,
   "date": 1679328212,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1715.jpg",
@@ -6903,9 +5512,6 @@
   "h": 512,
   "date": 1679328210,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -6914,9 +5520,6 @@
   "h": 410,
   "date": 1679328209,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -6925,10 +5528,7 @@
   "h": 396,
   "date": 1679328208,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "DSCF1706.jpg",
@@ -6936,10 +5536,7 @@
   "h": 410,
   "date": 1679328208,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1660.jpg",
@@ -6947,10 +5544,7 @@
   "h": 410,
   "date": 1679328206,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1665.jpg",
@@ -6958,9 +5552,6 @@
   "h": 512,
   "date": 1679328206,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -6969,10 +5560,7 @@
   "h": 288,
   "date": 1679328205,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "DSCF1659.jpg",
@@ -6980,10 +5568,7 @@
   "h": 410,
   "date": 1679328204,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1629.jpg",
@@ -6991,9 +5576,6 @@
   "h": 410,
   "date": 1679328202,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7002,9 +5584,6 @@
   "h": 410,
   "date": 1679328199,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7013,9 +5592,6 @@
   "h": 410,
   "date": 1679147422,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7024,10 +5600,7 @@
   "h": 341,
   "date": 1679147388,
   "camera": "DJI FC3411",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230318-DJI_0376.jpg",
@@ -7035,9 +5608,6 @@
   "h": 341,
   "date": 1679147388,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7046,9 +5616,6 @@
   "h": 341,
   "date": 1679147388,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7057,9 +5624,6 @@
   "h": 366,
   "date": 1679066860,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7068,10 +5632,7 @@
   "h": 341,
   "date": 1679066859,
   "camera": "DJI FC3411",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20230317-DJI_0350.jpg",
@@ -7079,9 +5640,6 @@
   "h": 341,
   "date": 1679066856,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7090,9 +5648,6 @@
   "h": 341,
   "date": 1679066856,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7101,9 +5656,6 @@
   "h": 366,
   "date": 1679066854,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7112,9 +5664,6 @@
   "h": 341,
   "date": 1679066850,
   "camera": "DJI FC3411",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7123,10 +5672,7 @@
   "h": 512,
   "date": 1678546952,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1593.jpg",
@@ -7134,10 +5680,7 @@
   "h": 512,
   "date": 1678546951,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1582.jpg",
@@ -7145,10 +5688,7 @@
   "h": 341,
   "date": 1678546950,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1592.jpg",
@@ -7156,10 +5696,7 @@
   "h": 341,
   "date": 1678546950,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1581.jpg",
@@ -7167,10 +5704,7 @@
   "h": 341,
   "date": 1678546949,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1584.jpg",
@@ -7178,10 +5712,7 @@
   "h": 341,
   "date": 1678546948,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1580.jpg",
@@ -7189,10 +5720,7 @@
   "h": 366,
   "date": 1678546947,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1589.jpg",
@@ -7200,10 +5728,7 @@
   "h": 341,
   "date": 1678546947,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1578.jpg",
@@ -7211,10 +5736,7 @@
   "h": 410,
   "date": 1678546946,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1575.jpg",
@@ -7222,10 +5744,7 @@
   "h": 396,
   "date": 1678546945,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1551.jpg",
@@ -7233,10 +5752,7 @@
   "h": 341,
   "date": 1678546944,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1567.jpg",
@@ -7244,10 +5760,7 @@
   "h": 366,
   "date": 1678546944,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1539.jpg",
@@ -7255,10 +5768,7 @@
   "h": 512,
   "date": 1678546942,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1541.jpg",
@@ -7266,10 +5776,7 @@
   "h": 512,
   "date": 1678546942,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1529.jpg",
@@ -7277,7 +5784,7 @@
   "h": 512,
   "date": 1678546940,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1535.jpg",
@@ -7285,10 +5792,7 @@
   "h": 341,
   "date": 1678546940,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1506.jpg",
@@ -7296,7 +5800,7 @@
   "h": 366,
   "date": 1678546938,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1514.jpg",
@@ -7304,10 +5808,7 @@
   "h": 512,
   "date": 1678546938,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1458.jpg",
@@ -7315,10 +5816,7 @@
   "h": 410,
   "date": 1677517179,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "DSCF1469.jpg",
@@ -7326,10 +5824,7 @@
   "h": 366,
   "date": 1677517179,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF1455.jpg",
@@ -7337,10 +5832,7 @@
   "h": 341,
   "date": 1677517178,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "DSCF1477.jpg",
@@ -7348,10 +5840,7 @@
   "h": 512,
   "date": 1677517178,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1500.jpg",
@@ -7359,10 +5848,7 @@
   "h": 512,
   "date": 1677514924,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1493.jpg",
@@ -7370,10 +5856,7 @@
   "h": 512,
   "date": 1677514923,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF1494.jpg",
@@ -7381,10 +5864,7 @@
   "h": 512,
   "date": 1677514923,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1481.jpg",
@@ -7392,10 +5872,7 @@
   "h": 512,
   "date": 1677514922,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1484.jpg",
@@ -7403,9 +5880,6 @@
   "h": 512,
   "date": 1677514922,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Architecture"
  },
  {
@@ -7414,9 +5888,6 @@
   "h": 396,
   "date": 1677320949,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7425,10 +5896,7 @@
   "h": 410,
   "date": 1677320939,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180102-DSCF1390.jpg",
@@ -7436,10 +5904,7 @@
   "h": 341,
   "date": 1677320937,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180102-DSCF1392.jpg",
@@ -7447,10 +5912,7 @@
   "h": 341,
   "date": 1677320936,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180102-DSCF1418.jpg",
@@ -7458,10 +5920,7 @@
   "h": 366,
   "date": 1677320936,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180102-DSCF1394.jpg",
@@ -7469,10 +5928,7 @@
   "h": 341,
   "date": 1677320936,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20180102-DSCF1395.jpg",
@@ -7480,10 +5936,7 @@
   "h": 341,
   "date": 1677320935,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180102-DSCF1393.jpg",
@@ -7491,9 +5944,6 @@
   "h": 341,
   "date": 1677320934,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7502,10 +5952,7 @@
   "h": 410,
   "date": 1677320933,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20180102-DSCF1387.jpg",
@@ -7513,10 +5960,7 @@
   "h": 410,
   "date": 1677320932,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180101-DSCF1370.jpg",
@@ -7524,10 +5968,7 @@
   "h": 366,
   "date": 1677320932,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20180102-DSCF1380.jpg",
@@ -7535,10 +5976,7 @@
   "h": 341,
   "date": 1677320932,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180101-DSCF1348.jpg",
@@ -7546,10 +5984,7 @@
   "h": 366,
   "date": 1677320930,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20180101-DSCF1352.jpg",
@@ -7557,10 +5992,7 @@
   "h": 288,
   "date": 1677320929,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180101-DSCF1350.jpg",
@@ -7568,9 +6000,6 @@
   "h": 410,
   "date": 1677320928,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
   "category": "Nature"
  },
  {
@@ -7579,10 +6008,7 @@
   "h": 512,
   "date": 1677320928,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180101-DSCF1336.jpg",
@@ -7590,10 +6016,7 @@
   "h": 366,
   "date": 1677163712,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20180101-DSCF1324.jpg",
@@ -7601,10 +6024,7 @@
   "h": 410,
   "date": 1677163711,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "20180101-DSCF1333.jpg",
@@ -7612,10 +6032,7 @@
   "h": 410,
   "date": 1677163710,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "20180101-DSCF1340.jpg",
@@ -7623,10 +6040,7 @@
   "h": 341,
   "date": 1677163710,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Nature"
  },
  {
   "file": "DSCF1311.jpg",
@@ -7634,10 +6048,7 @@
   "h": 512,
   "date": 1676803506,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1279.jpg",
@@ -7645,10 +6056,7 @@
   "h": 512,
   "date": 1676803505,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1283.jpg",
@@ -7656,10 +6064,7 @@
   "h": 512,
   "date": 1676803505,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1269.jpg",
@@ -7667,10 +6072,7 @@
   "h": 410,
   "date": 1676803504,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1285.jpg",
@@ -7678,10 +6080,7 @@
   "h": 512,
   "date": 1676803504,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1301.jpg",
@@ -7689,10 +6088,7 @@
   "h": 512,
   "date": 1676803504,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1268.jpg",
@@ -7700,10 +6096,7 @@
   "h": 512,
   "date": 1676803503,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1249.jpg",
@@ -7711,10 +6104,7 @@
   "h": 341,
   "date": 1676803502,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1247.jpg",
@@ -7722,10 +6112,7 @@
   "h": 410,
   "date": 1676803501,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1234.jpg",
@@ -7733,10 +6120,7 @@
   "h": 512,
   "date": 1676803500,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1232.jpg",
@@ -7744,10 +6128,7 @@
   "h": 512,
   "date": 1676803499,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1226.jpg",
@@ -7755,10 +6136,7 @@
   "h": 341,
   "date": 1676803498,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1229.jpg",
@@ -7766,10 +6144,7 @@
   "h": 341,
   "date": 1676803498,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF1212.jpg",
@@ -7777,10 +6152,7 @@
   "h": 341,
   "date": 1676708107,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1183.jpg",
@@ -7788,10 +6160,7 @@
   "h": 410,
   "date": 1676708106,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1189.jpg",
@@ -7799,10 +6168,7 @@
   "h": 410,
   "date": 1676708106,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1147.jpg",
@@ -7810,10 +6176,7 @@
   "h": 288,
   "date": 1676708105,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DSCF1151.jpg",
@@ -7821,10 +6184,7 @@
   "h": 410,
   "date": 1676708105,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1149.jpg",
@@ -7832,11 +6192,7 @@
   "h": 341,
   "date": 1676708104,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ],
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "DSCF1141.jpg",
@@ -7844,10 +6200,7 @@
   "h": 410,
   "date": 1676708103,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1121.jpg",
@@ -7855,10 +6208,7 @@
   "h": 410,
   "date": 1676708102,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1123.jpg",
@@ -7866,10 +6216,7 @@
   "h": 410,
   "date": 1676708102,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1118.jpg",
@@ -7877,10 +6224,7 @@
   "h": 366,
   "date": 1676708100,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1122.jpg",
@@ -7888,10 +6232,7 @@
   "h": 410,
   "date": 1676708100,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1116.jpg",
@@ -7899,10 +6240,7 @@
   "h": 366,
   "date": 1676708099,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1119.jpg",
@@ -7910,10 +6248,7 @@
   "h": 341,
   "date": 1676708099,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0711的副本.jpg",
@@ -7927,8 +6262,7 @@
   "w": 512,
   "h": 366,
   "date": 1676219377,
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "20220627-_DSF5427的副本.jpg",
@@ -7943,10 +6277,7 @@
   "h": 410,
   "date": 1676218973,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1205.jpg",
@@ -7954,10 +6285,7 @@
   "h": 341,
   "date": 1676218973,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1093.jpg",
@@ -7965,10 +6293,7 @@
   "h": 341,
   "date": 1676218972,
   "camera": "FUJIFILM X-T3",
-  "category": "Architecture",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Architecture"
  },
  {
   "file": "DSCF1098.jpg",
@@ -7976,10 +6301,7 @@
   "h": 384,
   "date": 1676218972,
   "camera": "FUJIFILM X-T3",
-  "category": "People",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1109.jpg",
@@ -7987,10 +6309,7 @@
   "h": 410,
   "date": 1676218971,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "place": [
-   "Thailand"
-  ]
+  "category": "Street"
  },
  {
   "file": "DSCF1196.jpg",
@@ -7998,10 +6317,7 @@
   "h": 384,
   "date": 1676218005,
   "camera": "FUJIFILM X-T3",
-  "place": [
-   "Thailand"
-  ],
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0658.jpg",
@@ -8209,7 +6525,7 @@
   "h": 341,
   "date": 1670969808,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220912-_DSF0076.jpg",
@@ -8217,7 +6533,7 @@
   "h": 341,
   "date": 1670969798,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220911-_DSF0064.jpg",
@@ -8225,7 +6541,7 @@
   "h": 341,
   "date": 1670969797,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220911-_DSF0062.jpg",
@@ -8233,7 +6549,7 @@
   "h": 341,
   "date": 1670969788,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220911-_DSF0042.jpg",
@@ -8241,7 +6557,7 @@
   "h": 366,
   "date": 1670969787,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220911-_DSF0052.jpg",
@@ -8273,8 +6589,7 @@
   "h": 410,
   "date": 1670969774,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "favorite": true
+  "category": "Nature"
  },
  {
   "file": "20220718-_DSF6482.jpg",
@@ -8330,7 +6645,7 @@
   "h": 341,
   "date": 1670969738,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220715-_DSF6387.jpg",
@@ -8338,7 +6653,7 @@
   "h": 341,
   "date": 1670969737,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220715-_DSF6416.jpg",
@@ -8346,7 +6661,7 @@
   "h": 341,
   "date": 1670969736,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220715-_DSF6370.jpg",
@@ -8530,7 +6845,6 @@
   "h": 366,
   "date": 1670969645,
   "camera": "FUJIFILM X-T3",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -8539,7 +6853,7 @@
   "h": 341,
   "date": 1670969643,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220711-_DSF5655.jpg",
@@ -8571,7 +6885,7 @@
   "h": 410,
   "date": 1670969627,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220711-_DSF5638.jpg",
@@ -8595,7 +6909,7 @@
   "h": 410,
   "date": 1670969619,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220711-_DSF5628-2.jpg",
@@ -8603,8 +6917,7 @@
   "h": 341,
   "date": 1670969613,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "bw": true
+  "category": "Street"
  },
  {
   "file": "20220711-_DSF5629.jpg",
@@ -8636,7 +6949,7 @@
   "h": 341,
   "date": 1670969598,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220708-_DSF5608.jpg",
@@ -8780,8 +7093,7 @@
   "h": 341,
   "date": 1670969526,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "20220705-_DSF5547.jpg",
@@ -8797,7 +7109,7 @@
   "h": 341,
   "date": 1670969526,
   "camera": "DJI FC3411",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220706-DJI_0253.jpg",
@@ -8805,7 +7117,7 @@
   "h": 341,
   "date": 1670969518,
   "camera": "DJI FC3411",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220706-DJI_0256.jpg",
@@ -8813,7 +7125,7 @@
   "h": 341,
   "date": 1670969518,
   "camera": "DJI FC3411",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220705-_DSF5537.jpg",
@@ -8997,7 +7309,7 @@
   "h": 410,
   "date": 1670969421,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220627-_DSF5417.jpg",
@@ -9013,7 +7325,7 @@
   "h": 410,
   "date": 1670969416,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20220627-_DSF5397.jpg",
@@ -9045,7 +7357,7 @@
   "h": 512,
   "date": 1670969399,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220626-_DSF5368.jpg",
@@ -9053,7 +7365,7 @@
   "h": 341,
   "date": 1670969397,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220626-_DSF5365.jpg",
@@ -9061,7 +7373,7 @@
   "h": 512,
   "date": 1670969395,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220626-_DSF5357.jpg",
@@ -9069,7 +7381,7 @@
   "h": 341,
   "date": 1670969394,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20220626-Photo_1080295430_DJI_6_jpg_5239787_0_202262616302_photo_original.jpg.jpg",
@@ -9299,7 +7611,6 @@
   "w": 512,
   "h": 288,
   "date": 1670103432,
-  "favorite": true,
   "category": "Nature"
  },
  {
@@ -9335,15 +7646,14 @@
   "w": 512,
   "h": 288,
   "date": 1670103409,
-  "category": "Fine Art"
+  "category": "Other"
  },
  {
   "file": "r2d2 (44).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103401,
-  "category": "Fine Art",
-  "bw": true
+  "category": "Other"
  },
  {
   "file": "r2d2 (43).jpg",
@@ -9357,22 +7667,20 @@
   "w": 512,
   "h": 288,
   "date": 1670103388,
-  "mature": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "r2d2 (41).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103384,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (40).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103377,
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -9380,7 +7688,7 @@
   "w": 512,
   "h": 288,
   "date": 1670103374,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (38).jpg",
@@ -9394,47 +7702,42 @@
   "w": 512,
   "h": 288,
   "date": 1670103364,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (36).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103360,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (35).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103356,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (34).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103351,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (33).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103345,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (32).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103333,
-  "mature": true,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "r2d2 (31).jpg",
@@ -9448,7 +7751,6 @@
   "w": 512,
   "h": 288,
   "date": 1670103323,
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -9456,7 +7758,6 @@
   "w": 512,
   "h": 288,
   "date": 1670103316,
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -9485,15 +7786,14 @@
   "w": 512,
   "h": 288,
   "date": 1670103291,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (24).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103289,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "r2d2 (23).jpg",
@@ -9507,22 +7807,21 @@
   "w": 512,
   "h": 288,
   "date": 1670103283,
-  "category": "Fine Art"
+  "category": "Other"
  },
  {
   "file": "r2d2 (1).jpg",
   "w": 512,
   "h": 288,
   "date": 1670103280,
-  "category": "Fine Art"
+  "category": "Other"
  },
  {
   "file": "DSCF3511.jpg",
   "w": 410,
   "h": 512,
   "date": 1670103230,
-  "favorite": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "DJI_0193.jpg",
@@ -9599,7 +7898,7 @@
   "w": 512,
   "h": 410,
   "date": 1670103188,
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "20210303-_DSF0600.jpg",
@@ -9718,21 +8017,21 @@
   "w": 366,
   "h": 512,
   "date": 1670103131,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210302-_DSF0510.jpg",
   "w": 512,
   "h": 341,
   "date": 1670103128,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210302-_DSF0509.jpg",
   "w": 341,
   "h": 512,
   "date": 1670103123,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210302-_DSF0503.jpg",
@@ -9760,14 +8059,14 @@
   "w": 341,
   "h": 512,
   "date": 1670103103,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210302-_DSF0474.jpg",
   "w": 410,
   "h": 512,
   "date": 1670103100,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210302-_DSF0473.jpg",
@@ -9809,7 +8108,7 @@
   "w": 341,
   "h": 512,
   "date": 1670103078,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210301-_DSF0388.jpg",
@@ -9984,21 +8283,21 @@
   "w": 512,
   "h": 341,
   "date": 1670102992,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210228-_DSF0247.jpg",
   "w": 341,
   "h": 512,
   "date": 1670102991,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210228-_DSF0246.jpg",
   "w": 512,
   "h": 341,
   "date": 1670102989,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210228-_DSF0241.jpg",
@@ -10019,7 +8318,7 @@
   "w": 410,
   "h": 512,
   "date": 1670102969,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210228-_DSF0194.jpg",
@@ -10124,14 +8423,13 @@
   "w": 366,
   "h": 512,
   "date": 1670102936,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "2019Choice_6.jpg",
   "w": 410,
   "h": 512,
   "date": 1670102930,
-  "bw": true,
   "category": "Architecture"
  },
  {
@@ -10146,7 +8444,6 @@
   "w": 512,
   "h": 410,
   "date": 1670102899,
-  "favorite": true,
   "category": "Nature"
  },
  {
@@ -10154,8 +8451,7 @@
   "w": 512,
   "h": 410,
   "date": 1670102894,
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "2019Choice_2.jpg",
@@ -10176,8 +8472,7 @@
   "w": 512,
   "h": 410,
   "date": 1670102879,
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0512.jpg",
@@ -10201,8 +8496,7 @@
   "h": 341,
   "date": 1669874525,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0569.jpg",
@@ -10226,8 +8520,7 @@
   "h": 341,
   "date": 1669874520,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0508.jpg",
@@ -10259,8 +8552,7 @@
   "h": 366,
   "date": 1669874513,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0397.jpg",
@@ -10268,8 +8560,7 @@
   "h": 366,
   "date": 1669874512,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0496.jpg",
@@ -10301,8 +8592,7 @@
   "h": 366,
   "date": 1669874506,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0354.jpg",
@@ -10310,8 +8600,7 @@
   "h": 341,
   "date": 1669874504,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0388.jpg",
@@ -10335,8 +8624,7 @@
   "h": 341,
   "date": 1669874500,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0306.jpg",
@@ -10360,8 +8648,7 @@
   "h": 341,
   "date": 1669874493,
   "camera": "FUJIFILM X-T3",
-  "category": "Nature",
-  "bw": true
+  "category": "Nature"
  },
  {
   "file": "_DSF0293.jpg",
@@ -10577,7 +8864,7 @@
   "h": 341,
   "date": 1669874432,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4821.jpg",
@@ -10585,7 +8872,7 @@
   "h": 341,
   "date": 1669874432,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4803.jpg",
@@ -10593,7 +8880,7 @@
   "h": 341,
   "date": 1669874430,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4799.jpg",
@@ -10601,7 +8888,7 @@
   "h": 341,
   "date": 1669874429,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4818.jpg",
@@ -10609,7 +8896,7 @@
   "h": 341,
   "date": 1669874429,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4794.jpg",
@@ -10617,7 +8904,7 @@
   "h": 512,
   "date": 1669874426,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF4795.jpg",
@@ -10625,7 +8912,7 @@
   "h": 512,
   "date": 1669874426,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF4793.jpg",
@@ -10633,7 +8920,7 @@
   "h": 512,
   "date": 1669874423,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF4788.jpg",
@@ -10641,7 +8928,7 @@
   "h": 512,
   "date": 1669874422,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4771.jpg",
@@ -10649,7 +8936,6 @@
   "h": 341,
   "date": 1669874419,
   "camera": "FUJIFILM X-T3",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -10658,7 +8944,6 @@
   "h": 341,
   "date": 1669874419,
   "camera": "FUJIFILM X-T3",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -10691,7 +8976,7 @@
   "h": 341,
   "date": 1669874413,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF4695.jpg",
@@ -10755,7 +9040,7 @@
   "h": 396,
   "date": 1669874401,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "_DSF4474.jpg",
@@ -10779,7 +9064,7 @@
   "h": 512,
   "date": 1669874394,
   "camera": "Apple iPhone 12 Pro Max",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF4340.jpg",
@@ -10787,7 +9072,7 @@
   "h": 396,
   "date": 1669874394,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "IMG_6572.jpg",
@@ -10795,7 +9080,7 @@
   "h": 384,
   "date": 1669874392,
   "camera": "Apple iPhone 12 Pro Max",
-  "category": "Editorial"
+  "category": "Street"
  },
  {
   "file": "IMG_9541_jpg.jpg",
@@ -10803,7 +9088,7 @@
   "h": 512,
   "date": 1669874392,
   "camera": "Apple iPhone 12 Pro Max",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_9542.jpg",
@@ -10811,7 +9096,7 @@
   "h": 512,
   "date": 1669874391,
   "camera": "Apple iPhone 12 Pro Max",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "IMG_6603.jpg",
@@ -10931,7 +9216,7 @@
   "h": 410,
   "date": 1669874382,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "2019_0707_12444600.jpg",
@@ -10939,7 +9224,7 @@
   "h": 410,
   "date": 1669874382,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "2019_0707_12445000.jpg",
@@ -10947,7 +9232,7 @@
   "h": 410,
   "date": 1669874382,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "2019_0708_16033600.jpg",
@@ -10979,8 +9264,7 @@
   "h": 341,
   "date": 1644694270,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "favorite": true
+  "category": "Street"
  },
  {
   "file": "20210615-_DSF1642.jpg",
@@ -10996,8 +9280,7 @@
   "h": 288,
   "date": 1626579793,
   "camera": "FUJIFILM X-T3",
-  "bw": true,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20210616-_DSF1717.jpg",
@@ -11005,8 +9288,7 @@
   "h": 341,
   "date": 1626579771,
   "camera": "FUJIFILM X-T3",
-  "category": "Editorial",
-  "mature": true
+  "category": "Street"
  },
  {
   "file": "20210615-_DSF1589.jpg",
@@ -11014,7 +9296,6 @@
   "h": 512,
   "date": 1626579679,
   "camera": "FUJIFILM X-T3",
-  "bw": true,
   "category": "Nature"
  },
  {
@@ -11071,7 +9352,7 @@
   "h": 512,
   "date": 1576348263,
   "camera": "FUJIFILM X-T3",
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "_DSF0360_1.jpg",
@@ -11097,7 +9378,7 @@
   "file": "20221026233238_1.jpg",
   "w": 512,
   "h": 410,
-  "category": "People"
+  "category": "Street"
  },
  {
   "file": "20221027173155_1.jpg",
@@ -11115,6 +9396,6 @@
   "file": "20221027173921_1.jpg",
   "w": 512,
   "h": 396,
-  "category": "People"
+  "category": "Street"
  }
 ]

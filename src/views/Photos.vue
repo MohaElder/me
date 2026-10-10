@@ -29,17 +29,6 @@
             <span>{{ c.label }}</span><span class="n">{{ c.count }}</span>
           </button>
         </nav>
-        <nav class="filters" :aria-label="$t('message.photos_place')">
-          <span class="group">{{ $t("message.photos_place") }}</span>
-          <button v-for="p in placeList" :key="p.name" type="button" :class="{ active: p.name === place, sub: p.sub }"
-            @click="place = p.name === place ? '' : p.name">
-            <span>{{ p.name }}</span><span class="n">{{ p.count }}</span>
-          </button>
-        </nav>
-        <div class="toggles">
-          <button v-for="key in toggleKeys" :key="key" type="button" :aria-pressed="only[key]"
-            @click="only[key] = !only[key]">{{ $t(`message.photos_${key}`) }}</button>
-        </div>
       </aside>
 
       <div class="grid">
@@ -129,9 +118,6 @@ const DEVELOP_MS = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 
 const photos = ref<Photo[]>([])
 const catalogLoaded = ref(false)
 const category = ref('')
-const place = ref('')
-const toggleKeys = ['film', 'bw', 'favorite'] as const
-const only = reactive({ film: false, bw: false, favorite: false })
 const newestFirst = ref(true)
 const limit = ref(PAGE)
 const loaded = reactive(new Set<string>())
@@ -140,24 +126,16 @@ const room = ref(false)
 
 const total = computed(() => photos.value.length)
 const shown = computed(() => {
-  const list = photos.value.filter(p => !failed.has(p.file)
-    && (!category.value || p.category === category.value)
-    && (!place.value || p.place?.includes(place.value))
-    && toggleKeys.every(key => !only[key] || p[key]))
+  const list = photos.value.filter(p => !failed.has(p.file) && (!category.value || p.category === category.value))
   return newestFirst.value ? list : [...list].reverse()
 })
 const page = computed(() => shown.value.slice(0, limit.value))
 // A row of shimmering tiles while the catalogue or the next page is on its way.
 const skeletons = computed(() => !catalogLoaded.value ? 15 : limit.value < shown.value.length ? 5 : 0)
 
-const countBy = (key: (p: Photo) => string[] | undefined) => {
-  const counts = new Map<string, number>()
-  photos.value.forEach(p => key(p)?.forEach(k => counts.set(k, (counts.get(k) ?? 0) + 1)))
-  return counts
-}
-
 const categoryList = computed(() => {
-  const counts = countBy(p => p.category && [p.category])
+  const counts = new Map<string, number>()
+  photos.value.forEach(p => p.category && counts.set(p.category, (counts.get(p.category) ?? 0) + 1))
   return [
     { name: '', label: t('message.photos_all'), count: total.value.toLocaleString() },
     ...categories.filter(c => counts.has(c))
@@ -165,18 +143,7 @@ const categoryList = computed(() => {
   ]
 })
 
-// Countries by photo count, each followed by the places within it.
-const placeList = computed(() => {
-  const counts = countBy(p => p.place)
-  const within = new Map<string, Set<string>>()
-  photos.value.forEach(({ place }) => place && within.set(place[0], new Set([...within.get(place[0]) ?? [], ...place.slice(1)])))
-  const byCount = (a: string, b: string) => counts.get(b)! - counts.get(a)!
-  const item = (name: string, sub = false) => ({ name, sub, count: counts.get(name)!.toLocaleString() })
-  return [...within.keys()].sort(byCount)
-    .flatMap(country => [item(country), ...[...within.get(country)!].sort(byCount).map(name => item(name, true))])
-})
-
-watch([category, place, only, newestFirst], () => {
+watch([category, newestFirst], () => {
   limit.value = PAGE
   window.scrollTo({ top: 0 })
 })
@@ -418,34 +385,6 @@ button {
   color: #8A8A8A;
 }
 
-.filters button.sub {
-  padding-left: 14px;
-}
-
-.toggles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.toggles button {
-  height: 36px;
-  padding: 0 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 13px;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.toggles button:hover {
-  color: #FEE989;
-  border-color: #FEE989;
-}
-
-.toggles button[aria-pressed="true"] {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #0a0a0a;
-}
 
 .grid {
   grid-column: 3 / span 10;
