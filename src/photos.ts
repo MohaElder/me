@@ -21,9 +21,11 @@ export interface Photo {
   mature?: boolean
 }
 
-const cdn = 'https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/'
-export const photoUrl = (p: Photo) => cdn + p.file
-export const thumbUrl = (p: Photo) => cdn + p.file + '_thumbnail.jpg'
+// The CDN serves the repo from GitHub, so photos only reach it once pushed;
+// during development (and in the admin) they load from src/images directly.
+const images = import.meta.env.DEV ? '/me/src/images/' : 'https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/'
+export const photoUrl = (p: Photo) => images + p.file
+export const thumbUrl = (p: Photo) => images + p.file + '_thumbnail.jpg'
 
 // Shown under each photo, in the viewer and on the Room's wall label.
 export const caption = (p: Photo) => [p.category && t(`message.categories.${p.category}`), p.place?.at(-1)]
