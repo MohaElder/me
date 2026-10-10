@@ -68,7 +68,7 @@
 
     <div class="works">
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/happy_accidents.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/happy_accidents.png" alt="Happy accidents, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>Happy accidents</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
@@ -83,7 +83,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/never_again.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/never_again.png" alt="Never Again, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>Never Again</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
@@ -96,7 +96,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/imprint.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/imprint.png" alt="Imprints, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>Imprints</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a> & Vanessa Mirez <a
@@ -110,7 +110,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/sand.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/sand.png" alt="Get Naked and Kiss Your Friends, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>Get Naked and Kiss Your Friends</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
@@ -124,7 +124,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/tent.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/tent.png" alt="PigPen, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>PigPen</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses</a></p>
@@ -144,7 +144,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/body.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/body.png" alt="Body of Art, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Body of Art</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -155,7 +155,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/blue.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/blue.png" alt="Myself, Submerged II, by Gabriella Crisa" loading="lazy"></div>
         <div class="grid-col">
           <h3>Myself, Submerged II</h3>
           <p>By Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></p>
@@ -163,7 +163,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/consoleme.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/consoleme.png" alt="Console Me, by Gabriella Crisa" loading="lazy"></div>
         <div class="grid-col">
           <h3>Console Me</h3>
           <p>By Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></p>
@@ -171,7 +171,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cornered.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cornered.png" alt="Cornered, by Isabelle Simon" loading="lazy"></div>
         <div class="grid-col">
           <h3>Cornered</h3>
           <p>By Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></p>
@@ -179,7 +179,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/women.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/women.png" alt="The Promiscuous Nature of Women's Youth, by Vanessa Mirez" loading="lazy"></div>
         <div class="grid-col">
           <h3>The Promiscuous Nature of Women's Youth</h3>
           <p>By Vanessa Mirez <a href="https://www.instagram.com/galeria.de.vanessa/">@galeria.de.vanessa</a></p>
@@ -189,7 +189,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/vr.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/vr.png" alt="見證 COME AND SEE, by Yasushi Oh" loading="lazy"></div>
         <div class="grid-col">
           <h3>見證 COME AND SEE</h3>
           <p>By Yasushi Oh <a href="https://www.instagram.com/anzhi.weng/">@anzhi.weng</a></p>
@@ -202,7 +202,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cig.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cig.png" alt="BREATH TIL DEATH AWAKES, by Yasushi Oh" loading="lazy"></div>
         <div class="grid-col">
           <h3>BREATH TIL DEATH AWAKES</h3>
           <p>By Yasushi Oh <a href="https://www.instagram.com/anzhi.weng/">@anzhi.weng</a> & Nataly Pastukhov <a
@@ -221,7 +221,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/poker.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/poker.png" alt="I'm a Fool!, by Isabelle Simon" loading="lazy"></div>
         <div class="grid-col">
           <h3>I'm a Fool!</h3>
           <p>By Isabelle Simon <a href="https://www.instagram.com/i.z.b.e.l/">@i.z.b.e.l</a></p>
@@ -230,7 +230,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/la.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/la.png" alt="LA, by Leo Noriega" loading="lazy"></div>
         <div class="grid-col">
           <h3>LA</h3>
           <p>By Leo Noriega <a href="https://www.instagram.com/photo.book_1/">@photo.book_1</a></p>
@@ -243,7 +243,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/hydrants.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/hydrants.png" alt="Fire Hydrants, by Zelda Waite" loading="lazy"></div>
         <div class="grid-col">
           <h3>Fire Hydrants</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
@@ -252,7 +252,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/ritual.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/ritual.png" alt="Ritual, by Paris Blanco" loading="lazy"></div>
         <div class="grid-col">
           <h3>Ritual</h3>
           <p>By Paris Blanco <a href="https://www.instagram.com/parissblanco/">@parissblanco</a>
@@ -264,7 +264,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/qrcode.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/qrcode.png" alt="How Long This Takes, by Heath Rawers" loading="lazy"></div>
         <div class="grid-col">
           <h3>How Long This Takes</h3>
           <p>By Heath Rawers <a href="https://www.instagram.com/heath_the_mcgee/">@heath_the_mcgee</a></p>
@@ -272,7 +272,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/hair.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/hair.png" alt="Untitled, by Attalia Rogers" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Attalia Rogers <a href="https://www.instagram.com/talia_exists/">@talia_exists</a></p>
@@ -280,7 +280,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/door.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/door.png" alt="DOOR, by Kenny Qiu" loading="lazy"></div>
         <div class="grid-col">
           <h3>DOOR</h3>
           <p>By Kenny Qiu <a href="https://www.instagram.com/kennykenny0524/">@kennykenny0524</a></p>
@@ -288,7 +288,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cool_vid.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cool_vid.png" alt="Untitled, by Soodabeh Saghravanian" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Soodabeh Saghravanian</p>
@@ -296,7 +296,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/white_shirt.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/white_shirt.png" alt="the show must go on, by Aimee Zhang" loading="lazy"></div>
         <div class="grid-col">
           <h3>the show must go on</h3>
           <p>By Aimee Zhang <a href="https://www.instagram.com/azllluv/">@azllluv</a></p>
@@ -304,7 +304,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/raw.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/raw.png" alt="Is There A Way Out?, by Farhang Dadfar" loading="lazy"></div>
         <div class="grid-col">
           <h3>Is There A Way Out?</h3>
           <p>By Farhang Dadfar <a href="https://www.instagram.com/farhangdadfar/">@farhangdadfar</a></p>
@@ -312,7 +312,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/love_fear.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/love_fear.png" alt="Love, Fear, by Tyee Arey" loading="lazy"></div>
         <div class="grid-col">
           <h3>Love, Fear</h3>
           <p>By Tyee Arey <a href="https://www.instagram.com/tyee_akee/">@tyee_akee</a></p>
@@ -320,7 +320,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/monitor.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/monitor.png" alt="Limit Your Gaze, by Brooklyn Lee" loading="lazy"></div>
         <div class="grid-col">
           <h3>Limit Your Gaze</h3>
           <p>By Brooklyn Lee</p>
@@ -328,7 +328,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/figures.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/figures.png" alt="Figures, by Kenny Qiu" loading="lazy"></div>
         <div class="grid-col">
           <h3>Figures</h3>
           <p>By Kenny Qiu <a href="https://www.instagram.com/kennykenny0524/">@kennykenny0524</a></p>
@@ -336,7 +336,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/toilet.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/toilet.png" alt="Hollywood toilet, by Zelda Waite" loading="lazy"></div>
         <div class="grid-col">
           <h3>Hollywood toilet</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
@@ -345,7 +345,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/solo.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/solo.png" alt="Untitled, by Zelda Waite" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Zelda Waite <a href="https://www.instagram.com/zeldawaite/">@zeldawaite</a></p>
@@ -353,21 +353,21 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/ashley.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/ashley.png" alt="Untitled, by Ashley Wu" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Ashley Wu <a href="https://www.instagram.com/ashleywu_photography/">@ashleywu_photography</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/mom.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/mom.png" alt="Mi Mami, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Mi Mami</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k1.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k1.png" alt="Untitled, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -375,7 +375,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k2.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k2.png" alt="Untitled, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -383,7 +383,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k3.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/k3.png" alt="Untitled, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -391,7 +391,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cynotype.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/cynotype.png" alt="Untitled, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Untitled</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -399,7 +399,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/books.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/books.png" alt="Books I made throughout this quarter, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Books I made throughout this quarter.</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -407,7 +407,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/shovel.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="grid-img" src="../assets/nothingToLose/shovel.png" alt="7x10, 11, by Anthony Keegan" loading="lazy"></div>
         <div class="grid-col">
           <h3>7x10, 11</h3>
           <p>By Anthony Keegan <br> <a href="https://www.instagram.com/me.when.im.anthony.keegan./">@me.when.im.anthony.keegan.</a></p>

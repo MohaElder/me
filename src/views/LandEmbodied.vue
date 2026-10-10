@@ -36,7 +36,7 @@
 
     <div class="works">
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6245.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6245.png" alt="Never Forget This, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>Never Forget This</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses </a></p>
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/DSC04761 2 Large - Joshua Chew.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/DSC04761 2 Large - Joshua Chew.jpeg" alt="Slam Jam, by Joshua Chew" loading="lazy"></div>
         <div class="grid-col">
           <h3>Slam Jam</h3>
           <p>By Joshua Chew <a href="https://www.instagram.com/josh.cheww/">@josh.cheww</a></p>
@@ -53,35 +53,35 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/9S4A2760 - Evan Wu.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/9S4A2760 - Evan Wu.jpeg" alt="Alpe di Siusi, by Evan Wu" loading="lazy"></div>
         <div class="grid-col">
           <h3>Alpe di Siusi</h3>
           <p>By Evan Wu <a href="https://www.instagram.com/evanwuu/">@evanwuu</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/128A4651 - Shiv Bhardwaj.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/128A4651 - Shiv Bhardwaj.jpeg" alt="Shred Sesh, by Shiv Bhardwaj" loading="lazy"></div>
         <div class="grid-col">
           <h3>Shred Sesh</h3>
           <p>By Shiv Bhardwaj <a href="https://www.instagram.com/shivsocial/">@shivsocial</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/9S4A3496 - Evan Wu.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/9S4A3496 - Evan Wu.jpeg" alt="Tre Cime di Lavaredo, by Evan Wu" loading="lazy"></div>
         <div class="grid-col">
           <h3>Tre Cime di Lavaredo</h3>
           <p>By Evan Wu <a href="https://www.instagram.com/evanwuu/">@evanwuu</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_8377 - Reed Solbach.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_8377 - Reed Solbach.jpeg" alt="Subway Strangers, by Reed Solbach" loading="lazy"></div>
         <div class="grid-col">
           <h3>Subway Strangers</h3>
           <p>By Reed Solbach <a href="https://www.instagram.com/reed_solbach/">@reed_solbach</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_8379 - Ryan Giordano.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_8379 - Ryan Giordano.jpeg" alt="The Edge of Stillness, by Ryan Giordano" loading="lazy"></div>
         <div class="grid-col">
           <h3>The Edge of Stillness</h3>
           <p>By Ryan Giordano <a href="https://www.instagram.com/ryangiordanophotographyco/">@ryangiordanophotographyco</a></p>
@@ -89,7 +89,7 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/8EB928A9-54B2-4061-A7B7-CCB010F9832E - Leopoldo Noriega.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/8EB928A9-54B2-4061-A7B7-CCB010F9832E - Leopoldo Noriega.jpeg" alt="Día del los Muertos, by Leo Noriega" loading="lazy"></div>
         <div class="grid-col">
           <h3>Día del los Muertos</h3>
           <p>By Leo Noriega <a href="https://www.instagram.com/photo.book_1/">@photo.book_1</a></p>
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/20250310_222110 - Kirsten Yen.jpg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/20250310_222110 - Kirsten Yen.jpg" alt="Ghostlight, by Kirsten Yen" loading="lazy"></div>
         <div class="grid-col">
           <h3>Ghostlight</h3>
           <p>By Kirsten Yen <a href="https://www.instagram.com/kirsten_makes_stuff/">@kirsten_makes_stuff</a></p>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/12 - Erqian Sun.jpg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/12 - Erqian Sun.jpg" alt="Les Parisiens, by Erqian Sun" loading="lazy"></div>
         <div class="grid-col">
           <h3>Les Parisiens</h3>
           <p>By Erqian Sun <a href="https://www.instagram.com/gracersun_/">@gracersun_</a></p>
@@ -113,14 +113,14 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/20250310194844 - Jiukan Li.jpg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/20250310194844 - Jiukan Li.jpg" alt="Obelisks, by Jiukan Terry Li" loading="lazy"></div>
         <div class="grid-col">
           <h3>Obelisks</h3>
           <p>By Jiukan Terry Li <a href="https://www.instagram.com/tliphotography_/">@tliphotography_</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_8287.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_8287.jpeg" alt="OVERTIME HOURS, by Eric Cai" loading="lazy"></div>
         <div class="grid-col">
           <h3>OVERTIME HOURS</h3>
           <p>By Eric Cai</p>
@@ -129,7 +129,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/Ashley_Wu_Gallery - Ashley Wu.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/Ashley_Wu_Gallery - Ashley Wu.png" alt="The Little Red Book, Darling, The Yellow Wallpaper, by Ashley Wu" loading="lazy"></div>
         <div class="grid-col">
           <h3>The Little Red Book, Darling, The Yellow Wallpaper</h3>
           <p>By Ashley Wu <a href="https://www.instagram.com/ashleywu_photography/">@ashleywu_photography</a></p>
@@ -138,7 +138,7 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_2522 - Gabriella Crisa.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_2522 - Gabriella Crisa.jpeg" alt="The kiss of life, by Gabriella Crisa" loading="lazy"></div>
         <div class="grid-col">
           <h3>The kiss of life</h3>
           <p>By Gabriella Crisa <a href="https://www.instagram.com/fuzzzyfotos/">@fuzzzyfotos</a></p>
@@ -146,7 +146,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6900 - Blake Riesenfeld.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6900 - Blake Riesenfeld.jpeg" alt="Sabotage (covet) #1, by Blake Riesenfeld" loading="lazy"></div>
         <div class="grid-col">
           <h3>Sabotage (covet) #1</h3>
           <p>By Blake Riesenfeld <a href="https://www.instagram.com/Blakeries_/">@Blakeries_</a></p>
@@ -154,7 +154,7 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6900 copy - Blake Riesenfeld.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6900 copy - Blake Riesenfeld.jpeg" alt="Sabotage (covet) #2, by Blake Riesenfeld" loading="lazy"></div>
         <div class="grid-col">
           <h3>Sabotage (covet) #2</h3>
           <p>By Blake Riesenfeld <a href="https://www.instagram.com/Blakeries_/">@Blakeries_</a></p>
@@ -162,14 +162,14 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6900 2 - Blake Riesenfeld.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6900 2 - Blake Riesenfeld.jpeg" alt="Sabotage (covet) #3, by Blake Riesenfeld" loading="lazy"></div>
         <div class="grid-col">
           <h3>Sabotage (covet) #3</h3>
           <p>By Blake Riesenfeld <a href="https://www.instagram.com/Blakeries_/">@Blakeries_</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/DSC07745 - Kelly Tapia.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/DSC07745 - Kelly Tapia.jpeg" alt="Love Letter, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Love Letter</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
@@ -178,14 +178,14 @@
       </div>
 
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_7876 - Kelly Tapia.jpeg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_7876 - Kelly Tapia.jpeg" alt="Love Letter, by Kelly Tapia" loading="lazy"></div>
         <div class="grid-col">
           <h3>Love Letter</h3>
           <p>By Kelly Tapia <a href="https://www.instagram.com/kellyt_art/">@kellyt_art</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/PXL_20250311_051213580 - Payton Martinez.jpg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/PXL_20250311_051213580 - Payton Martinez.jpg" alt="Gaze, by Payton" loading="lazy"></div>
         <div class="grid-col">
           <h3>Gaze</h3>
           <p>By Payton <a href="https://www.instagram.com/c0mfortcruise/">@c0mfortcruise</a></p>
@@ -193,14 +193,14 @@
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/exhibitionPhoto1 - Sarai Nava.jpg" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/exhibitionPhoto1 - Sarai Nava.jpg" alt="Distorted Self Portrait, by Sarai Nava" loading="lazy"></div>
         <div class="grid-col">
           <h3>Distorted Self Portrait</h3>
           <p>By Sarai Nava <a href="https://www.instagram.com/dinosaraii/">@dinosaraii</a></p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6244.png" alt="" loading="lazy"></div>
+        <div class="grid-col"><img class="square-img" src="../assets/landEmbodied/IMG_6244.png" alt="Я Україна, by Nataly Pastukhov" loading="lazy"></div>
         <div class="grid-col">
           <h3>Я Україна</h3>
           <p>By Nataly Pastukhov <a href="https://www.instagram.com/nats.lenses/">@nats.lenses </a></p>

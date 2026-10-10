@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img :class="mobile ? 'banner-image-mobile' : 'banner-image'" src="../assets/drink_lab.png" alt="">
+    <img :class="mobile ? 'banner-image-mobile' : 'banner-image'" src="../assets/drink_lab.png" alt="Alcoholic Lab">
     <div class="grid-row" :class="mobile ? 'banner-row-mobile' : 'banner-row'">
       <p :class="mobile ? 'banner-text-mobile' : 'banner-text'">
         {{ $t("message.cocktail_desc_before") }}

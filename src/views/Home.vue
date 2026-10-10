@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <div class="animated-image">
-      <img :src="frames[frame]" alt="" class="each-image" :style="{ opacity: frame / 30 }">
+      <img :src="frames[frame]" alt="Night sky over Minieta Road, Death Valley, photographed by Yasushi Oh" class="each-image" :style="{ opacity: frame / 30 }">
     </div>
 
     <!-- :key re-mounts the heading on every name change, which replays the fade. -->
@@ -11,7 +11,7 @@
     </h1>
 
     <div class="intro second text-center" :style="{ opacity: 1 - target / 7, top: mobile ? '11%' : '10.5%' }">
-      <img :src="bak" alt="" class="bak" :style="{ width: mobile ? '100%' : '62.5%' }">
+      <img :src="bak" alt="Hand-drawn moon, stars, planets and clouds" class="bak" :style="{ width: mobile ? '100%' : '62.5%' }">
       <h3 class="intro-text"
         :style="{ fontSize: mobile ? '50%' : '100%', paddingLeft: mobile ? '0' : '30%', paddingRight: mobile ? '0' : '30%' }">
         {{ $t("message.hello") }}

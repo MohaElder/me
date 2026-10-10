@@ -8,7 +8,7 @@
           <Icon :name="icon" />
         </button>
         <figure>
-          <img class="w-full" :src="blog.img" alt="">
+          <img class="w-full" :src="blog.img" :alt="blog.title">
           <figcaption>{{ blog.img_caption }}</figcaption>
         </figure>
         <h2 class="w-full mt-sm blog-date">By MohaElder</h2>

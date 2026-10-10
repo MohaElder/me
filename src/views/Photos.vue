@@ -33,7 +33,7 @@
       <div class="grid">
         <button v-for="(photo, i) in page" :key="photo.url" type="button" class="tile"
           :class="{ ready: loaded.has(photo.url) }" @click="openAt(i)">
-          <img :src="photo.thumbnail" alt="" loading="lazy" @load="loaded.add(photo.url)"
+          <img :src="photo.thumbnail" :alt="alt(photo)" loading="lazy" @load="loaded.add(photo.url)"
             @error="failed.add(photo.url)">
           <span class="cap">{{ photo.Tags.join(" · ") }}</span>
         </button>
@@ -61,7 +61,7 @@
           :style="{ '--ar': current.w / current.h }">
           <img class="negative" :src="current.thumbnail" alt="">
           <img class="print" :src="current.thumbnail" alt="">
-          <img class="full" :src="current.url" alt="" @load="fullLoaded = true">
+          <img class="full" :src="current.url" :alt="alt(current)" @load="fullLoaded = true">
           <span class="safelight" aria-hidden="true"></span>
         </div>
         <div class="viewer-bar">
@@ -209,6 +209,9 @@ const meta = (p: Photo) => [
   p.Camera,
   p.DateTime && new Date(p.DateTime * 1000).toLocaleDateString(),
 ].filter(Boolean).join(' — ')
+
+// Alt text for image search and screen readers.
+const alt = (p: Photo) => `${p.Tags.join(', ')} photograph by Yasushi Oh${p.Camera ? `, shot on ${p.Camera}` : ''}`
 
 // Back to top, offered once the visitor is well down the grid.
 const showTop = ref(false)
