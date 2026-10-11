@@ -306,6 +306,10 @@ onMounted(async () => {
   preload()
 
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  // Set up WebGL only after the plain sky and name have painted: compiling the
+  // shader on a first visit would otherwise hold up the first frame.
+  await new Promise(resolve => requestAnimationFrame(() => setTimeout(resolve)))
+  if (!active) return
   lens = createLens(canvas.value!)
   if (!lens) return
   resize()
