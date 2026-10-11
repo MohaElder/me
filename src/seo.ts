@@ -37,7 +37,7 @@ export const person = {
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'UC San Diego', url: 'https://ucsd.edu/' },
   knowsAbout: ['Software engineering', 'Photography', 'Film photography'],
   award: Object.values(messages.en.message.awards),
-  sameAs: ['https://github.com/MohaElder', 'https://linkedin.com/in/mohaelder', 'https://medium.com/@calen0909', 'https://www.instagram.com/anzhiweng/'],
+  sameAs: ['https://github.com/MohaElder', 'https://linkedin.com/in/mohaelder', 'https://medium.com/@calen0909', 'https://www.instagram.com/anzhiweng/', 'https://x.com/YasushiOh'],
 }
 
 export const titleOf =(key: string) => key in pages && key ? `${pages[key].title} · Yasushi Oh` : name
