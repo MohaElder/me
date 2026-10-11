@@ -39,7 +39,7 @@ export default {
     menu: [
       {
         name: "balboa milktea (White Russian Twist)",
-        link: "https://mohaelder.github.io/me/blog?id=2d3a604cfaf311ec9fe5acde48001122",
+        link: "/blog?id=2d3a604cfaf311ec9fe5acde48001122",
         ingredients: [
           "Fresh Milk 30ml",
           "Homemade Earl Gray Vodka 45ml",
@@ -51,7 +51,7 @@ export default {
       },
       {
         name: "Earl Grey Sour (Daiquiri Twist)",
-        link: "https://mohaelder.github.io/me/blog?id=bb309f2fb17011ecbef668545a57002a",
+        link: "/blog?id=bb309f2fb17011ecbef668545a57002a",
         ingredients: [
           "Homemade Earl Grey Vodka 45ml",
           "Lime Juice 25ml",
@@ -89,7 +89,7 @@ export default {
       },
       {
         name: "Johnny Silverhand",
-        link: "https://mohaelder.github.io/me/#/blog?id=d6ffad89baf711eca94e68545a57002a",
+        link: "/blog?id=d6ffad89baf711eca94e68545a57002a",
         ingredients: [
           "Tequila 20ml",
           "Overproof Rum 25ml",
@@ -112,7 +112,7 @@ export default {
       // },
       {
         name: "Jade Grape Juice",
-        link: "https://mohaelder.github.io/me/blog?id=bb309f2fb17011ecbef668545a57002a",
+        link: "/blog?id=bb309f2fb17011ecbef668545a57002a",
         ingredients: [
           "Fresh Grapes 7-12",
           "Irish Whisky 30ml",

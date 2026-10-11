@@ -21,5 +21,6 @@ jobs:
       with:
         username: 'MohaElder'
         reponame: 'me'
+        cname: 'ohyasushi.io' # the deploy rebuilds gh-pages, so it rewrites CNAME each time
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
 

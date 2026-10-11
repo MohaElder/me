@@ -9,7 +9,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "encrypt": "node scripts/encrypt-eulogy.mjs",
-    "admin": "vite --open /me/admin.html"
+    "admin": "vite --open /admin.html"
   },
   "dependencies": {
     "crypto-js": "^4.2.0",

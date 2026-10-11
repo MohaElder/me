@@ -17,7 +17,7 @@ export async function prerender(dir: string, keys: string[]) {
     console.warn('prerender: no Chromium found, skipped')
     return {}
   }
-  const server = await preview({ configFile: false, base: '/me/', build: { outDir: dir }, logLevel: 'silent' })
+  const server = await preview({ configFile: false, base: '/', build: { outDir: dir }, logLevel: 'silent' })
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 } })
   const text: Record<string, string> = {}
   try {

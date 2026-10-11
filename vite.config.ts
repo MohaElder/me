@@ -52,7 +52,7 @@ const intro = `# Yasushi Oh
 
 Also known as ${person.alternateName.join(', ')}. The site is in English and Chinese.`
 
-// Writes <path>.html for every entry (GitHub Pages serves /me/photos from
+// Writes <path>.html for every entry (GitHub Pages serves /photos from
 // photos.html), fills each with its rendered content, and writes a sitemap,
 // llms.txt and llms-full.txt. Blog posts and stories share blog.html and
 // story.html, which keep the site-wide head without a canonical URL, as their
@@ -95,7 +95,7 @@ ${full.length ? `\n## Optional\n\n- [Full text of the pages](${siteUrl}llms-full
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/me/',
+  base: '/',
   plugins: [
     vue(),
     seo(),

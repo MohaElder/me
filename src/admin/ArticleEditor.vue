@@ -11,7 +11,7 @@
     <section class="preview" aria-label="Preview">
       <div class="preview-head label">
         <span>Preview · as on the site</span>
-        <a :href="`/me/${kind === 'stories' ? 'story' : 'blog'}?id=${id}`" target="_blank">Open page</a>
+        <a :href="`/${kind === 'stories' ? 'story' : 'blog'}?id=${id}`" target="_blank">Open page</a>
       </div>
       <article>
         <h2>{{ title }}</h2>

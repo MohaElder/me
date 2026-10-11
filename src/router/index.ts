@@ -4,85 +4,80 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import { titleOf } from '../seo'
 // import Guide from '../views/Guide.vue'
-const appRoot = '/me';
 
 const routes = [
   {
     path: '/',
-    redirect: appRoot + '/'
-  },
-  {
-    path: appRoot + '/',
     name: 'Hi',
     component: Home
   },
   {
-    path: appRoot + '/work',
+    path: '/work',
     name: 'Work',
     component: () => import('../views/Work.vue')
   },
   {
-    path: appRoot + '/opensource',
+    path: '/opensource',
     name: 'OpenSource',
     component: () => import('../views/OpenSource.vue')
   },
   {
-    path: appRoot + '/Recipe',
+    path: '/Recipe',
     name: 'Recipe',
     component: () => import('../views/Recipe.vue')
   },
   {
-    path: appRoot + '/photos',
+    path: '/photos',
     name: 'Photos',
     component: () => import('../views/Photos.vue')
   },
   {
-    path: appRoot + '/series/:id',
+    path: '/series/:id',
     name: 'Series',
     component: () => import('../views/SeriesPage.vue')
   },
   {
-    path: appRoot + '/blogs',
+    path: '/blogs',
     name: 'Blogs',
     component: () => import('../views/Blogs.vue')
   },
   {
-    path: appRoot + '/blog',
+    path: '/blog',
     name: 'Blog',
     component: () => import('../views/Blog.vue')
   },
   {
-    path: appRoot + '/story',
+    path: '/story',
     name: 'Story',
     component: () => import('../views/Blog.vue')  // Reusing Blog component for stories
   },
   {
-    path: appRoot + '/final_words',
+    path: '/final_words',
     name: 'IfIDie',
     component: () => import('../views/IfIDie.vue')
   },
   {
-    path: appRoot + '/nothing-to-lose',
+    path: '/nothing-to-lose',
     name: 'NothingToLose',
     component: () => import('../views/NothingToLose.vue')
   },
   {
-    path: appRoot + '/land-embodied',
+    path: '/land-embodied',
     name: 'LandEmbodied',
     component: () => import('../views/LandEmbodied.vue')
   },
   {
-    path: appRoot + '/art',
+    path: '/art',
     name: 'Exhibitions',
     component: () => import('../views/Art.vue')
   },
   {
-    path: appRoot + '/interesting-people',
+    path: '/interesting-people',
     name: 'InterestingPeople',
     component: () => import('../views/InterestingPeople.vue')
   },
   {
-    path: appRoot + '/letter-to-future-ai',
+    path: '/letter-to-future-ai',
     name: 'LetterToFutureAI',
     component: () => import('../views/LetterToFutureAI.vue')
   },
@@ -93,7 +88,7 @@ const routes = [
   // },
   {
     path: '/:pathMatch(.*)*',
-    redirect: appRoot + '/'
+    redirect: '/'
   }
 ]
 
@@ -103,7 +98,7 @@ const router = createRouter({
 })
 
 router.afterEach(to => {
-  document.title = titleOf(to.path.slice(appRoot.length + 1).replace(/\/$/, ''))
+  document.title = titleOf(to.path.slice(1).replace(/\/$/, ''))
 })
 
 export default router

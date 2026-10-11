@@ -1,10 +1,10 @@
 import { messages } from './utils/messages.ts'
 
-// Title and description of each page, keyed by its path under /me/. The build
+// Title and description of each page, keyed by its path. The build
 // writes one HTML file per page with these in its <head>, so GitHub Pages serves
 // every page with a 200 instead of through 404.html, and lists them in a
 // sitemap. The router keeps the tab title in step while browsing.
-export const siteUrl = 'https://mohaelder.github.io/me/'
+export const siteUrl = 'https://ohyasushi.io/'
 
 const name = '翁安志 · おやすし · Yasushi Oh'
 

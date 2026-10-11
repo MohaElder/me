@@ -1,6 +1,6 @@
 # me
 
-The source of my personal website, [mohaelder.github.io/me](https://mohaelder.github.io/me/), in English and Chinese.
+The source of my personal website, [ohyasushi.io](https://ohyasushi.io), in English and Chinese.
 
 ## Tech
 

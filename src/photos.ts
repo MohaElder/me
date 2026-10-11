@@ -18,7 +18,7 @@ export interface Photo {
 // A series (src/content/series.json): photos by file name, in order; the first
 // is the cover. A photo can be in several.
 export interface Series {
-  id: string // its link: /me/series/<id>
+  id: string // its link: /series/<id>
   title: string
   statement: string
   photos: string[]
@@ -26,7 +26,7 @@ export interface Series {
 
 // The CDN serves the repo from GitHub, so photos only reach it once pushed;
 // during development (and in the admin) they load from src/images directly.
-const images = import.meta.env.DEV ? '/me/src/images/' : 'https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/'
+const images = import.meta.env.DEV ? '/src/images/' : 'https://cdn.jsdelivr.net/gh/mohaelder/me/src/images/'
 export const photoUrl = (p: { file: string }) => images + p.file
 export const thumbUrl = (p: { file: string }) => images + p.file + '_thumbnail.jpg'
 

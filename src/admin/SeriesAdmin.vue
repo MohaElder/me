@@ -19,10 +19,10 @@
         <label class="wide"><span class="label">Title</span>
           <input v-model="selected.title" class="field title" @blur="nameLink(selected)"></label>
         <label><span class="label">Link</span>
-          <span class="link"><span class="muted">/me/series/</span><input v-model="selected.id" class="field"
+          <span class="link"><span class="muted">/series/</span><input v-model="selected.id" class="field"
               @change="selected.id = slug(selected.id) || selected.id"></span></label>
         <div class="actions">
-          <a class="btn" :href="`/me/series/${selected.id}`" target="_blank">Open page</a>
+          <a class="btn" :href="`/series/${selected.id}`" target="_blank">Open page</a>
           <button type="button" class="btn" @click="removeSeries(selected)">Delete series</button>
         </div>
         <label class="wide"><span class="label">Statement</span>
