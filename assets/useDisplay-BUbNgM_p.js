@@ -1,0 +1,1 @@
+import{P as e}from"./index-CShB-Pvk.js";var t=window.matchMedia(`(max-width: 1279.98px)`),n=e(t.matches),r=e(window.innerWidth);t.addEventListener(`change`,e=>n.value=e.matches),window.addEventListener(`resize`,()=>r.value=window.innerWidth,{passive:!0});var i=()=>({mobile:n,width:r});export{i as t};

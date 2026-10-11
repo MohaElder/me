@@ -1,0 +1,4 @@
+var e=`I heard this from a mutual friend of us. There's one morning Mars got a job interview offer for an Executive Assistant job. She had a conflicting flight back home that day. So she cancelled the flight. When my friend asked her why. Mars said: "Cuz I'm committed to this Life Style."
+
+That's a cinematic moment.
+`;export{e as default};

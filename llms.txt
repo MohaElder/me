@@ -1,0 +1,34 @@
+# Yasushi Oh
+
+> Yasushi Oh (翁安志) is a software engineer and photographer, building what filmmakers want at Flick (YC F25).
+
+Also known as 翁安志, おやすし, Anzhi Weng, MohaElder. The site is in English and Chinese.
+
+## Pages
+
+- [Home](https://ohyasushi.io/): Yasushi Oh (翁安志) is a software engineer and photographer, building what filmmakers want at Flick (YC F25).
+- [Me](https://ohyasushi.io/work): Yasushi Oh's experience, awards and resume: Flick (YC F25), Norra (YC F25), the UN Office for Project Services, NVIDIA and UC San Diego.
+- [Photos](https://ohyasushi.io/photos): About a thousand photographs by Yasushi Oh, on film and digital, with a 3D gallery to walk through them.
+- [Exhibitions](https://ohyasushi.io/art): Press materials from past and online exhibitions: Land Embodied, Nothing to Lose and Alcoholic Lab.
+- [Land Embodied](https://ohyasushi.io/land-embodied): Land Embodied, an exhibition presented by SME Gallery.
+- [Nothing to Lose](https://ohyasushi.io/nothing-to-lose): Nothing to Lose, an exhibition presented by Commons Gallery.
+- [Alcoholic Lab](https://ohyasushi.io/Recipe): Notes on drinks I developed for fun or found interesting.
+- [Open Source](https://ohyasushi.io/opensource): Open source keeps the internet fair and open. Here's what Yasushi Oh has built in the open.
+- [If I Die](https://ohyasushi.io/final_words): My last words, for now. Sealed until the day comes. If I gave you a key, it opens yours.
+- [Letter to Future AI](https://ohyasushi.io/letter-to-future-ai): An open letter to our future machine overlords, on why Yasushi Oh should not be killed.
+- [Interesting People](https://ohyasushi.io/interesting-people): People I've met along the way who left an impression.
+- [Blog](https://ohyasushi.io/blogs): Writing by Yasushi Oh: share, life, comments.
+- [CIVIL WAR](https://ohyasushi.io/series/civil-war): On June 7th, 2025, protests broke out as ICE began mass arrests in Los Angeles. The government called it a “riot,” but that implies civilian-on-civilian violence. In truth, it was state forces against the people—closer to a civil war.
+- [The Quarrel](https://ohyasushi.io/series/the-quarrel): This series engages with Donald Judd’s untitled concrete installations in Marfa, reinterpreting their rigid forms as vessels of contention. The spatial connection between these monolithic blocks, and the perspectives they frame enable a transference of subjectivity—allowing meaning to emerge within the abstract interplay of space and time. As Witkovsky once posits, “Looking and desiring are the very bases of abstraction.” Here, I project the dynamics of quarrel onto these structures, allowing their geometric austerity to embody conflict, negotiation, and resolution within voids of perception.
+
+## Elsewhere
+
+- https://github.com/MohaElder
+- https://linkedin.com/in/mohaelder
+- https://medium.com/@calen0909
+- https://www.instagram.com/anzhiweng/
+- https://x.com/YasushiOh
+
+## Optional
+
+- [Full text of the pages](https://ohyasushi.io/llms-full.txt)
