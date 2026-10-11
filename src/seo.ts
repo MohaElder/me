@@ -28,7 +28,7 @@ export const person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Yasushi Oh',
-  alternateName: ['翁安志', 'おやすし', 'Anzhi Weng'],
+  alternateName: ['翁安志', 'おやすし', 'Anzhi Weng', 'MohaElder'],
   description: pages[''].description,
   url: siteUrl,
   image: siteUrl + 'og.jpg',
